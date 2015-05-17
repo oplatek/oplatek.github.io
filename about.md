@@ -3,11 +3,15 @@ layout: page
 title: About me
 ---
 
-<p class="message">
+```
     Hi there! 
-    I posted here mainly technical stuff to rember it myself.
-    I hope that in the future I will write about statistics, spoken dialogue systems, climbing, hiking, ...
-</p>
+    I have posted here mainly technical stuff to rember it myself.
+    I hope that in the future I will write more about statistics, spoken dialogue systems, climbing, hiking, ...
+
+    Have fun
+
+    Ondrej Platek, 2015-05-18
+```
 
 You can learn what I do from other sources too:
 
