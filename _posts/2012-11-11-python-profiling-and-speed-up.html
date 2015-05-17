@@ -1,0 +1,14 @@
+---
+layout: post
+title: Python Profiling and speed up
+date: '2012-11-11T00:49:00.002+01:00'
+author: Ondrej Platek
+tags:
+- Python
+modified_time: '2012-11-11T00:51:37.123+01:00'
+thumbnail: https://img.youtube.com/vi/Iw9-GckD-gQ/default.jpg
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-730008173809273865
+blogger_orig_url: http://oplatek.blogspot.com/2012/11/python-profiling-and-speed-up.html
+---
+
+I just watched a quite nice tutorial about the "High performance Python".  The task was to generate Mandelbrot Image of 1000x1000 pixels.  Below you can find several tools and commands which I have used by following the tutorial (just for C Python). <pre><br />bash $ python -m cProfile -o rep.prof pure_python.py 1000 1000  # generates rep.prof<br /></pre> <pre><br />ipython $ import pstats<br />ipython $ p = pstats.Stats('rep.prof')<br />ipython $ p.sort_stats('cumulative').print_stats(10)<br />.... # some output<br />   ncalls  tottime  percall  cumtime  percall filename:lineno(function)<br />.... # many (10) similar lines<br />    10173    0.059    0.000    0.059    0.000 {range}<br />.... # some end of output<br /></pre> <pre><br /># runsnake visualize table <br />bash $ runsnake rep.prof<br /></pre> <pre><br />cp pure_python.py pure_python_added-decoration-profile.py<br /><br /># I edited pure_python_added-decoration-profile.py <br /># and added @profile decorater to funtion <br /># which I want profile line by line<br />kernprof.py -l -v pure_python_added-decoration-profile.py 1000 1000<br /></pre>   <iframe width="420" height="315" src="http://www.youtube.com/embed/Iw9-GckD-gQ" frameborder="0" allowfullscreen></iframe>

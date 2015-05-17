@@ -1,0 +1,15 @@
+---
+layout: post
+title: C++ suprising execution order
+date: '2012-03-13T16:00:00.000+01:00'
+author: Ondrej Platek
+tags:
+- Mff
+- C++
+- Techtips
+modified_time: '2012-07-23T17:17:05.751+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-7454684625656876085
+blogger_orig_url: http://oplatek.blogspot.com/2012/03/c-suprising-execution-order.html
+---
+
+<pre><br/>#include <br/><br/>using std::cout;<br/>using std::endl;<br/><br/>template  void func(X val) {<br/>    cout &lt;&lt; &quot;func" &lt;&lt; endl;<br/>}<br/><br/>// partial specialisation<br/>template  void func(double val) {<br/>    cout &lt;&lt; &quot;func" &lt;&lt; endl;<br/>}<br/><br/>void func2(double x) {<br/>    cout &lt;&lt; &quot;func2&quot; &lt;&lt; endl;<br/>}<br/><br/>class obj {<br/>    public:<br/>        void callFunc() { <br/>            func(4.5); <br/>            func2(6.3);<br/>        }<br/>    private:<br/>        // even conversion here, but still callled!<br/>        void func(int val) {<br/>            cout &lt;&lt; &quot;obj::func&quot; &lt;&lt; endl;<br/>        }<br/>        <br/>        // even conversion here, but still callled!<br/>        void func2(int val) {<br/>            cout &lt;&lt; &quot;obj::func2&quot; &lt;&lt; endl;<br/>        }<br/>};<br/><br/>int main() {<br/>    obj o;<br/>    o.callFunc();<br/>}<br/></pre><br/><br/><strong>OUTPUT:</strong><br/><pre><br/>obj::func<br/>obj::func2<br/></pre>

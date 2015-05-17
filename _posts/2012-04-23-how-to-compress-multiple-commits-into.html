@@ -1,0 +1,15 @@
+---
+layout: post
+title: How to compress multiple commits into one in Git by rebasing?
+date: '2012-04-23T20:20:00.000+02:00'
+author: Ondrej Platek
+tags:
+- Git
+- Linux
+- Techtips
+modified_time: '2012-07-23T17:16:05.266+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-7004531357198457654
+blogger_orig_url: http://oplatek.blogspot.com/2012/04/how-to-compress-multiple-commits-into.html
+---
+
+Problem is that if you are not the maintainer of a repository merging creates<br/>more complicated history than rebasing.<br/><br/><pre><br/># Git merging history<br/>    a - b - c<br/>  /          \<br/>1              Z<br/> \            /<br/>    2 - 3 - 4<br/></pre><br/><pre><br/>1 - a -2 -b -c -3 -4 -Z<br/></pre><br/>Rebasing creates single line history which is easier to maintain<br/>and further more you can compress your work into single commit by<br/>following commands described at this <a href="http://feeding.cloud.geek.nz/2010/08/combining-multiple-commits-into-one.html">blog</a><br/><pre><br/>git log --oneline<br/>git rebase -i SHA1<br/></pre><br/><br/>Nice trick is to use rebase --autosquash. Check help for more info!<br/><br/>Another solution is to use a <strong>merge command with --squash option.</strong>

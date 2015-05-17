@@ -1,0 +1,14 @@
+---
+layout: post
+title: Disabling MySQL, Apache2 on startup
+date: '2013-06-08T10:08:00.000+02:00'
+author: Ondrej Platek
+tags:
+- sql
+- apache
+modified_time: '2013-06-08T19:01:33.553+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-5492644543872723958
+blogger_orig_url: http://oplatek.blogspot.com/2013/06/disabling-mysql-apache2-on-startup.html
+---
+
+There are a lot of similar articles. This one is for my configuration (Lubuntu 12.10).  <h3>Disabling on startup</h3> Disable mysql: At /etc/init/mysql.conf comment out the 6 row <pre><br />sudo vi /etc/init/mysql.conf<br /># edit the 6 line<br /><br /># start on runlevel [2345]   # automatic starting - disabled by Ondra<br /></pre> Disable apache2: <pre><br />sudo update-rc.d -f apache2 remove<br /></pre> Disable postgresql: <pre><br />sudo update-rc.d -f postgresql remove<br /></pre> <h3> Reenabling on startup</h3> Renable mysql: At /etc/init/mysql.conf uncomment the 6 row <pre><br />start on runlevel [2345]   # automatic starting - enabled by Ondra<br /></pre> Renable apache2: <pre><br />sudo update-rc.d apache2 defaults<br /></pre> Renable postgresql: <pre><br />sudo update-rc.d postgresql defaults<br /></pre>  Other links: <a href="http://linuxpoison.blogspot.cz/2012/01/how-to-install-configure-postgresql.html">How to configure PostgreSQL</a>

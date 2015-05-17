@@ -1,0 +1,15 @@
+---
+layout: post
+title: How to link with system library? Ask pkg-config
+date: '2013-07-03T18:23:00.002+02:00'
+author: Ondrej Platek
+tags:
+- C
+- gcc
+- Linux
+modified_time: '2013-07-03T18:23:15.923+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-8079260444448396830
+blogger_orig_url: http://oplatek.blogspot.com/2013/07/how-to-link-with-system-library-ask-pkg.html
+---
+
+How I find parameters for gcc if I need link with alsa library?  <pre><br />$ pkg-config --cflags --libs alsa<br />-I/usr/include/alsa  -lasound   # settings for my Ubuntu 12.10<br /></pre>

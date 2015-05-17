@@ -1,0 +1,14 @@
+---
+layout: post
+title: Screen - finally I can use not only my computer but also the screen :)
+date: '2012-01-14T12:48:00.000+01:00'
+author: Ondrej Platek
+tags:
+- Linux
+- Techtips
+modified_time: '2012-07-23T17:17:21.110+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-5022020044579532781
+blogger_orig_url: http://oplatek.blogspot.com/2012/01/screen-finally-i-can-use-not-only-my.html
+---
+
+I am somehow using sreen for a long time.<br/>Except traditional usage like window multiplexer for one terminal or process deatacher,<br/>I used it for making Vim a CLI IDE for Python, SQL, or what so ever language using CLI.<br/>See <a href="http://technotales.wordpress.com/2007/10/03/like-slime-for-vim/">Slime plugin</a><br/><br/>This post will only concetrate on only on Screen basic functionality and commands<br/><br/><ul> <br/>    <li>At the begining launch screen from terminal <pre><br/>    $ screen<br/>    </pre></li><br/>    <li><br/>    Screen hot keys start with<br/>    <pre><br/>    C-a // Ctrl and a at the same time<br/>    </pre><br/>    </li><br/>    <li><br/>    Create new window<br/>    <pre><br/>    C-a c <br/>    </pre><br/>    </li><br/>    <li><br/>    Go to previous and next window<br/>    <pre><br/>    C-a p<br/>    C-a n <br/>    </pre><br/>    </li><br/>    <li><br/>    Change to a window marked by Number 0-9 (First window has number 0)<br/>    <pre><br/>    C-a Number <br/>    </pre><br/>    </li><br/>    <li><br/>    List all created windows<br/>    <pre><br/>   C-a " <br/>    </pre><br/>    </li><br/>    <li><br/>    Name your window<br/>    <pre><br/>   C-a A <br/>    </pre><br/>    </li><br/>    <li><br/>    Kill the misbehaving program<br/>    <pre><br/>    C-a K<br/>    </pre><br/>    </li><br/>    <li><br/>    Deatach process by this shortcut or by closing the terminal<br/>    <pre><br/>    C-a d<br/>    </pre><br/>    </li><br/>    <li><br/>    Reatach in new emulator/session<br/>    <pre><br/>    $ screen -r <br/>    </pre><br/>    </li><br/>    <li><br/>    Help<br/>    <pre><br/>    C-a ?<br/>    </pre><br/>    </li><br/>    <li><br/>    Copying and pasting - screen has its own scroll buffer.<br/>    <pre><br/>    C-a [  // copying<br/>    C-a ]  // pasting<br/>    </pre><br/>    </li><br/>    <li><br/>    Monitoring if other window is still doing activity (e.g. compiling). Triggered when there is silence<br/>    <pre><br/>    C-a _<br/>    </pre><br/>    </li><br/>    <li><br/>    Monitoring if other window is still without activity (e.g. IRC session). Triggered when you receives message <br/>    <pre><br/>    C-a M<br/>    </pre><br/>    </li><br/>    <li>Screen is closed when all programs are closed</li><br/></ul>

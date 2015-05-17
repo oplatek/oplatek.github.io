@@ -1,0 +1,13 @@
+---
+layout: post
+title: Color through pipe used by less
+date: '2012-11-27T15:18:00.001+01:00'
+author: Ondrej Platek
+tags:
+- Bash
+modified_time: '2012-11-27T15:18:36.951+01:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-1438418749258024278
+blogger_orig_url: http://oplatek.blogspot.com/2012/11/color-through-pipe-used-by-less.html
+---
+
+The 'less' command is necessity for longer output.<br />Color is really neat.<br /><b>How can I combine color and less? </b><br /><pre> grep --color=always pattern *yourfiles*.txt |less -r <br /></pre>The flag<i> -r </i>tells the less command to interpret the escape sequences for colors and on the other side we have to tell the command to push the color escape sequences even through pipeline!  The default behaviour is to turn off the colors when sending the colors to pipeline, so I used <i>--color=always</i> to enforce the colors. 

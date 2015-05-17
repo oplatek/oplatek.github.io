@@ -1,0 +1,14 @@
+---
+layout: post
+title: Convert Images to one PDF
+date: '2013-03-18T12:35:00.003+01:00'
+author: Ondrej Platek
+tags:
+- Pdf
+- Bash
+modified_time: '2013-05-14T13:12:56.421+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-7000476638178941313
+blogger_orig_url: http://oplatek.blogspot.com/2013/03/convert-images-to-one-pdf.html
+---
+
+<pre>convert *.jpg -resize 50% figures.pdf;  # for *.jpg files named in alphabetical order, resize reduce the size of image<br /></pre> And doing the vice versa operation: <pre><br />mkdir images; pdfimages -j my_pdf.pdf images/my_pdf<br /></pre>The command above will create the folder "images" and extract images numbered with prefix "my_pdf" into that folder.

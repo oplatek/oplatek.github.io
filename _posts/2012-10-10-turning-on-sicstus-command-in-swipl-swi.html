@@ -1,0 +1,15 @@
+---
+layout: post
+title: Turning on sicstus command in swipl SWI-prolog
+date: '2012-10-10T17:12:00.001+02:00'
+author: Ondrej Platek
+tags:
+- Mff
+- School
+- Prolog
+modified_time: '2012-10-22T12:08:12.895+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-3479470579279224813
+blogger_orig_url: http://oplatek.blogspot.com/2012/10/turning-on-sicstus-command-in-swipl-swi.html
+---
+
+I started swi-prolog <pre><br />swipl<br /></pre> and enter command: <pre><br />expects_dialect(sicstus).<br /></pre> It allowed me to use code of Mr. Roman Bartak from <a href="http://ktiml.mff.cuni.cz/~bartak/podminky/index.html">his lectures</a> -nice example of blackboard usage <pre><br />sat_num(Query,_NumAnswers):-<br />    bb_put(counter,0),<br />    call(Query),<br />    bb_get(counter,N),<br />    N1 is N+1,<br />    bb_put(counter,N1),<br />    fail.<br /></pre>

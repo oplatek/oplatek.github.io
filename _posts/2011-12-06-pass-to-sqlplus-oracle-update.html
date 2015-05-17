@@ -1,0 +1,14 @@
+---
+layout: post
+title: Pass '&' to sqlplus oracle? UPDATE
+date: '2011-12-06T17:11:00.000+01:00'
+author: Ondrej Platek
+tags:
+- Oracle
+- Techtips
+modified_time: '2012-07-23T17:17:21.096+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-4006084176461155616
+blogger_orig_url: http://oplatek.blogspot.com/2011/12/pass-to-sqlplus-oracle-update.html
+---
+
+<h3> Problem </h3><br/>Inserting '&amp;' to <strong>sqlplus</strong> failed. See results below:<br/><pre><br/>create table test3 ( c varchar(30));<br/>insert into test3 values ('blabla &amp; testvalue');<br/>Enter value for testvalue:<br/><br/></pre><br/>Solution is to turn off interpreting string after &amp; like variable<br/><pre><br/>set define off;<br/></pre><br/><br/><br/><br/><strong>If you need variables</strong> it is necessary to <strong>define escape character.</strong><br/><pre><br/>set define on<br/>set escape on<br/></pre><br/>See discussion at <a href="http://stackoverflow.com/questions/152837/how-to-insert-a-string-which-contains-an">stackoverflow.com</a>!

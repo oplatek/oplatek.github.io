@@ -1,0 +1,14 @@
+---
+layout: post
+title: C++ hints
+date: '2012-02-28T12:04:00.000+01:00'
+author: Ondrej Platek
+tags:
+- School
+- C++
+modified_time: '2013-07-12T15:18:45.336+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-5235245869023020709
+blogger_orig_url: http://oplatek.blogspot.com/2012/02/c-hints.html
+---
+
+<ul> <br/>    <li>How to convert number to string effectively and back?<br/>    <pre><br/>    lexical_cast&lt;int&gt;(my_string);<br/>    lexical_cast(my_int);<br/>    </pre></li><br/>    <li>In templates always write<br/>    <pre><br/>    template&lt; typename T &gt; class X : public T {<br/>        void f() { return this-&gt;m();}   // best use, calls parent or current method(virtual) <br/>        void h() {return m(); } // calls possibly global method m()!!!<br/>        void g() { return T::m();// calls parent method but disables virtual method<br/>    }<br/>    </pre></li><br/>    <li>So called Policy class in associative containers<br/>    <pre><br/>    map&lt;K,T,cmp&gt; // cmp funktor if there is no operator "&lt;" for K<br/>    // so we need cmp<br/>    struct cmp {<br/>        bool operator () (K a, K b) { return /* correct ordering */  }<br/>    }<br/>    </pre><br/>    Problems: Policy class  creates object cmp, and operator is not static as Policy class should have<br/>    </li><br/></ul>

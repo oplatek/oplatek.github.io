@@ -1,0 +1,14 @@
+---
+layout: post
+title: Pogamut events
+date: '2012-03-23T13:36:00.000+01:00'
+author: Ondrej Platek
+tags:
+- Mff
+- School
+modified_time: '2012-07-23T17:17:05.722+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-1014517597621886924
+blogger_orig_url: http://oplatek.blogspot.com/2012/03/pogamut-events.html
+---
+
+<pre><br/>1)<br/>@EventListener(eventClass = BotDamaged.class)<br/>public void bodyDamaged(BotDamaged myDamagedEvent) {<br/><br/>}<br/>2) @ObjectClassEventListner(objectClass = Player.class, event Class =  WorldObjectAppearedEvent.class | UpdatedEvent.class | DisapperaedEvent.class)<br/><br/>3) DistanceUtils.getNearest(world.getAll(NavPoint.class).values(), info.getLocation())<br/><br/>4)fwMap.getNearestItem(Item.class, info.getNearestNavPoint())<br/><br/>5) if(navigation.isNavigating()) {<br/>// do nothing<br/>}<br/>else {<br/>     Player target = players.getNearestVisiblePlayer() ;<br/>     if(target!= null) {<br/>        navigation.navigate(target);<br/>        } else { // search}<br/>}<br/><br/><br/>6)<br/>weaponPref.addGeneraPreff<br/>weaponPref.addDistanceProj<br/></pre><br/><br/>CTF- Capture the flag<br/>3.3.1-SNAPSHOT for FlagInfo ctx <br/><br/>flag can be (HOME| HELD|DROPPED)<br/><br/><br/>navigation.navigate(ctx.getCtf().getEnemyBase())<br/>navigation.navigate(ctx.getCtf().getOurBase())

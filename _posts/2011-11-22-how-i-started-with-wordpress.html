@@ -1,0 +1,14 @@
+---
+layout: post
+title: How I started with WordPress
+date: '2011-11-22T18:11:00.000+01:00'
+author: Ondrej Platek
+tags:
+- Techtips
+- WordPress
+modified_time: '2012-07-23T17:17:05.738+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-2823552281366830949
+blogger_orig_url: http://oplatek.blogspot.com/2011/11/how-i-started-with-wordpress.html
+---
+
+<p><br/>Today I setted up WordPress. I wrote this my first external memory using vim and <a href="http://www.vim.org/scripts/script.php?script_id=3510">VimRepress</a> plugin. To use VimPress type <pre>:Blog</pre> and pres TAB at Vim command line<br/></p><br/><h3>Problems</h3><br/><ul><br/>  <li> How to create new Posts not new page? Do not specify the StrID!</li><br/>  <li> How to use html syntax highlighting for html for writing blogs? <pre>:set syntax=html</pre> or you can change the syntax for all blog post at directly to ".vim/syntax/blogsyntax.vim" by <strong>updating</strong> <pre>let b:current_syntax = "html"</pre><br/>  </li><br/>  <li> How to use html snippets for writing blogs? <br/>  <p><br/>    <pre>set ft=html</pre> in ".vim/syntax/blogsyntax.vim"<br/>    If you do not know snippets, definitely check the <a href="http://www.vim.org/scripts/script.php?script_id=2540">snippets</a> out!     <br/>  </p><br/>   <br/></ul><br/><p><br/>I have to figure out how to safely store my password but keep .vimrc with 644 permission available to synchronisation.<br/></p>

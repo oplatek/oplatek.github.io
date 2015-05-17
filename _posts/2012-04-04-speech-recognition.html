@@ -1,0 +1,14 @@
+---
+layout: post
+title: Speech recognition
+date: '2012-04-04T15:34:00.000+02:00'
+author: Ondrej Platek
+tags:
+- Mff
+- School
+modified_time: '2012-10-26T13:28:54.191+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-7674554265274473679
+blogger_orig_url: http://oplatek.blogspot.com/2012/04/speech-recognition.html
+---
+
+<script type="text/x-mathjax-config">   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}}); </script> <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script><ol> <br/>    <li>Vector quantisation - k-Means or Loyd<br/>         $ u_i = Centroid(R_i) $<br/>  $ C_i = \sum_{X in R_i} { (x-u_i) *(x-u_i)^T}$<br/>    </li><br/>    <li> we can change the distance to  $ d_{Mahalanobis(X,u)} = (x-y)^T * C^{-1} * (x-u)$</li><br/>    <li> we can choose as the centroid according to  $ R_i = \{ x | i = argmax_j Norm(x | u_j, C_j)\}$ </li><br/>    <li>expectation and maximisation of EM algorithm<br/>     $ p(x|\theta) = \sum_{i=1}^{N}{ c_i * Norm(x | u_i, C_i)}$ where  $ \theta = (u_i = E(Norm), C_i= Var(norm)$<br/>     $ w = { x_1, ..., x_T}$<br/>    MLE (the observation x are independent, so we can write Sum for logarithm):<br/>     $ L^{'}(\theta|w) = p(x_1, ..., x_{T}|\theta)$<br/>     $ L(\theta|w) = ln(L^{'}(\theta|w)) = \sum_{x in w} {ln( p(x|\theta))}$<br/>     <ol> <br/>         <li>E-step $w = {x_1, ..., x_{T}}$</li><br/>        <li>M-step N</li><br/>    </ol><br/>        </li><br/>    <li>Rest in Fing: basicly we recalculate the Gaussions after each update step</li><br/>    <li>mfcc mell function fourier  todo</li><br/>    <li>HDK todo</li><br/><br/></ol>trellis - mřížka                               

@@ -1,0 +1,16 @@
+---
+layout: post
+title: Oracle cheat sheet
+date: '2011-12-05T15:27:00.000+01:00'
+author: Ondrej Platek
+tags:
+- Unibz
+- Oracle
+- Data Warehousing
+- Techtips
+modified_time: '2012-07-23T17:17:21.097+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-406578755687259007
+blogger_orig_url: http://oplatek.blogspot.com/2011/12/oracle-cheat-sheet.html
+---
+
+<ol> <br/>    <li><br/><h3> List tables </h3><br/>You should set the column width<br/><pre><br/>COL table_name FORMAT a30;<br/>COL table_type FORMAT a30;<br/></pre><br/><strong>Show the tables</strong><br/><pre><br/>SELECT * FROM cat;<br/></pre><br/></li><br/><li><br/><strong>imple table with primary key  </strong><br/><pre><br/>CREATE TABLE test (keydate smallint NOT NULL, PRIMARY KEY (keydate));<br/></pre><br/></li><br/><li><br/><pre><br/><strong>Show schema of a table</strong><br/>desc advert_date;<br/></pre><br/></li><br/><li><br/><pre><br/>set autotrace  traceonly explain<br/></pre><br/></li><br/></ol>

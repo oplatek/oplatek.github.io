@@ -1,0 +1,16 @@
+---
+layout: post
+title: Building OpenGL Tutorial
+date: '2011-12-26T00:18:00.000+01:00'
+author: Ondrej Platek
+tags:
+- Linux
+- OpenGL
+- Building
+- Techtips
+modified_time: '2012-07-23T17:17:21.112+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-5462450813925853300
+blogger_orig_url: http://oplatek.blogspot.com/2011/12/building-opengl-tutorial.html
+---
+
+Building OpenGL tutorials from great book Learning Modern 3D Graphics Programming Jason L. McKesson was pain, but no blame goes on authors head.<br/><a href="https://bitbucket.org/alfonse/gltut/overview">Bitbucket repo of the book</a><br/><br/>I follow steps of tutorial at <a href="http://arcsynthesis.org/gltut/Building%20the%20Tutorials.html">Tutorial</a>. I was supposed to be using <strong>premake4</strong>  so I typed <br/><pre><br/>sudo apt-get install premake4<br/></pre><br/>Now it comes, I had installed software called <strong>premake4</strong>, which is <strong>still version 3.7</strong> (really stupid naming convention).<br/>After that I got the error below and the tutorial did not build.<br/><pre><br/>** premake4.lua: ../framework/framework.lua:8: attempt to call global 'solution' (a nil value)<br/></pre><br/><br/><h3> Solution </h3><br/>Solution is very simple. To download premake 4.3 from  <a>SourceForge</a><br/><br/><h2> Remarks on other building steps </h2><br/><ul> <br/>    <li>Use Premake and building utility of your choice to build libraries shipped with project too! <br/>    It means run it in directories <strong>tinyxml, glsdk</strong></li><br/>    <li>I got error <pre><br/>    freeglut (./Tut 01 MainD): glXCreateContextAttribsARB not found<br/>    </pre><br/>    <strong>The reason is that this tutorial is teaching Opengl 3.0 so I need to grab some real hardware not my crappy notebook.</strong><br/>    Seriously, It means that my graphic card does not support OpenGL 3.0:( I have to move to school tu run it.<br/>    </li><br/></ul><br/><h2> Second build on different computer, path problems </h2><br/>With premake4 correctly set up I hoped for better experience.<br/>Nevertheless, I end up at looking following error.<br/><pre><br/>/usr/lib/gcc/i686-pc-linux-gnu/4.5.3/../../../../i686-pc-linux-gnu/bin/ld: ../glsdk/freeglut/lib/libfreeglutD.a(freeglut_main.o): undefined reference to symbol 'XPending'<br/>/usr/lib/gcc/i686-pc-linux-gnu/4.5.3/../../../../i686-pc-linux-gnu/bin/ld: note: 'XPending' is defined in DSO /usr/lib/libX11.so.6 so try adding it to the linker command line<br/>/usr/lib/libX11.so.6: could not read symbols: Invalid operation<br/>collect2: ld returned 1 exit status<br/></pre><br/><br/>Simple solution is to add <br/><pre><br/>LIBS+=-lX11 <br/></pre><br/>to correct makefile. I finally found that correct makefile is<br/><pre><br/>Tut 02 Fragment Position.make<br/></pre><br/>for Tutorial 2.<br/><br/>Unfortunately, I did not find out quickly how to add X11 to path quickly.<br/>I tried setting several variables but without effect.<br/>Mention the one I remember:<br/><pre><br/>LD_RUN_PATH<br/>LD_LIBRARY_PATH<br/></pre>

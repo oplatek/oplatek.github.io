@@ -1,0 +1,14 @@
+---
+layout: post
+title: Entropy calculation example
+date: '2012-03-30T11:20:00.000+02:00'
+author: Ondrej Platek
+tags:
+- School
+- Data mining
+modified_time: '2012-10-26T13:22:01.483+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-9010490258844960846
+blogger_orig_url: http://oplatek.blogspot.com/2012/03/entropy-calculation-example.html
+---
+
+<script type="text/x-mathjax-config">   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}}); </script> <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>  <a href="http://ksvi.mff.cuni.cz/~mraz/datamining/Cvicenie_DT.pdf">Pdf with task data (CZE)</a><br/><br/><strong><br/>The example of Entropy calculation<br/></strong><br/>$H(Vit(B)) = - \frac{n_{+}(Vitamin(B))}{Vitamin(B)} * log (\frac{n_{+}(Vitamin(B))}{Vitamin(B)})- \frac{n_{-}(Vitamin(B))}{Vitamin(B)} * log (\frac{n_{-}(Vitamin(B))}{Vitamin(B)})  $ <br/><br/>where  $n_{-}$ they died<br/>where  $n_{+}$ they survived<br/><br/><strong><br/>The formula for Entropy<br/></strong><br/>$H(A(v)) = - \sum_{t=1}^{T} \frac{n_{t}(A(v))} {n(A(v))}* log (\frac{n_{t}(A(v))} {n(A(v))}) $ <br/>where  $n_t(A(v))$  is frequency of inputs which belongs to target class with value <strong>t</strong> and also have value <strong>v</strong> for attribute <strong>A</strong><br/>where  $n(A(v))$ is frequency of inputs which have value <strong>v</strong> for attribute <strong>A</strong>

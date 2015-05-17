@@ -1,0 +1,14 @@
+---
+layout: post
+title: Bash news with little bit git
+date: '2012-08-10T09:29:00.001+02:00'
+author: Ondrej Platek
+tags:
+- Linux
+- Bash
+modified_time: '2012-10-27T15:24:29.606+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-644826783504285494
+blogger_orig_url: http://oplatek.blogspot.com/2012/08/bash-news-with-little-bit-git_10.html
+---
+
+Nowadays I am on Internship at <br /><a href="http://hlt.fbk.eu/en/research/MT">FBK hlt unit</a><br />doing machine translation.<br /><br />The cool (apart climbing, via ferrata,..stuff for different page) is that I am practicing bash programming and generally Unix command usage.<br /><br />What I have learn/ revised and I should not forget?<br /><ul> <br /><li>pushd, popd, df -h, xdg-open(open file with preferred application)</li><br /><li>$$ process id</li><br /><li>nl  number lines</li><br /><li>basename, alternative to basename is bash expansion ${MY_VARR##*/}</li><br /><li>screen</li><br /><li>git reset RESET ~HEAD:file ; git show SHA:file ,<strong>git show HEAD~2</strong> gives you files changed 2 commits ago </li><br /><li>qstat (etc. sge cluster commands)</li></ul><br /><br /><h2> Screen tips </h2><br />If you're attaching to an existing screen (which hasn't read 'defbce on' from ~/.screenrc yet) you have to do the following: <br /><pre>C-a and type:<br /> :bce on</pre><br /><br /><br /><h3>Commands:</h3><br />Reataching<br /><pre>screen -ls # list the sessions<br />screen -r # enter the unique regexp matching the session you want from screen -ls<br />screen -rd SESSION_NAME # if the session is still attached</pre><br /><br /><pre>CTRL-a d #  detach screen from the TTY and put it in the background. </pre><br /><br />Shifts input focus to the next and previous window, respectively.<br /><pre>CTRL-a n <br />CTRL-a p </pre><br /><br />Set the title of the focus window.<br /><pre>CTRL-a SHIFT-a (CTRL-a A) </pre><br /><br />List available windows<br /><pre>CTRL-” </pre><br /><br />Splitting screen<br /><pre> CTRL-a TAB to move between the panes<br /> CTRL-a SHIFT-s # (CTRL-a S) Split the right pane horizontally<br /> CTRL-a SHIFT-\ # (CTRL-a |)  Split the right pane vertically works on version 4.00.03jw4 (FAU) 2-May-06<br /> CTRL-a SHIFT-x #(CTRL-a X)   close the pane that has focus<br /> CTRL-a d # detach the session</pre><br /><br />Others<br /><pre>CTRL-[ # inspecting history buffer</pre><br /><br /><h2> qstat </h2><br /><pre>qstat -r -u platek # displays full information about jobs of user platek</pre><br />

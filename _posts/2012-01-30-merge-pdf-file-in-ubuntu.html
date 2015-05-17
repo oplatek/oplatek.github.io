@@ -1,0 +1,16 @@
+---
+layout: post
+title: Merge pdf file in Ubuntu
+date: '2012-01-30T12:27:00.000+01:00'
+author: Ondrej Platek
+tags:
+- Pdf
+- Merging
+- Ubuntu
+- Techtips
+modified_time: '2012-08-27T20:57:22.889+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-4417949409466548971
+blogger_orig_url: http://oplatek.blogspot.com/2012/01/merge-pdf-file-in-ubuntu.html
+---
+
+<pre><br/>gs -dNOPAUSE -sDEVICE=pdfwrite -sOUTPUTFILE=combinedpdf.pdf -dBATCH 1.pdf 2.pdf 3.pdf<br/></pre> alternative:  <pre><br />pdftk *pdf cat output ../FINAL_NAME.pdf<br /></pre> extract images from pdf <pre><br />pdfimages -j Arco\ Big\ Walls-en.pdf  arco-big<br /></pre> Lot of other tricks with pdf including OCR(not working very well, It would need some boosting - language model, domain adaptation, contrast adjustment, .., etc) in tutorial: <a href="pdfimages -j Arco\ Big\ Walls-en.pdf  arco-big  #http://blog.konradvoelkel.de/2010/01/linux-ocr-and-pdf-problem-solved/">http://blog.konradvoelkel.de/2010/01/linux-ocr-and-pdf-problem-solved/</a>

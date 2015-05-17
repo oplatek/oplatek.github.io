@@ -1,0 +1,15 @@
+---
+layout: post
+title: Fishers test - true probability
+date: '2012-03-12T10:27:00.000+01:00'
+author: Ondrej Platek
+tags:
+- Mff
+- School
+- Data mining
+modified_time: '2012-10-26T13:30:21.744+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-62990594335652745
+blogger_orig_url: http://oplatek.blogspot.com/2012/03/fishers-test-true-probability.html
+---
+
+<script type="text/x-mathjax-config">   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}}); </script> <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>We suppose $ a_{11} = min \{ a_{kl}; k \in 1..numberOfRows, l \in 1.. numberOfColumns\}$<br/><br/>$ P = \sum_{i=0}^{a_{11}} \frac{r_1! r_2! s_1! s_2!} { n! (a_{11}-i)! (a_{12}+1)! (a_{21}+i)! (a_{22}-i)!} $<br/><br/><strong>Questions is why P represents PROBABILITY that random variables A,B are independent?</strong><br/><br/><strong>We usually reject hypothesis that that A,B are independent if the P is smaller $ \alpha = 0.05$ </strong><br/><br/><strong>Example</strong><br/><ul> <br/><li><br/>Original table $ a_{11}$ represents that number of people injured on place A.<br/></ul><br/><table border="0"><br/>    <tr><td></td><td>Injured</td><td>Survived</td><td></td></tr><br/>    <tr><td>A</td><td>5</td><td>10</td><td>15</td></tr><br/>    <tr><td>B</td><td>2</td><td>38</td><td>40</td></tr><br/>    <tr><td></td><td>7</td><td>48</td><td>55</td></tr><br/></table><br/></li><br/><li><br/>Switched rows to get minimum at $ a_{11}$:<br/><table border="0"><br/>    <tr><td>2</td><td>38</td><td>40</td></tr><br/>    <tr><td>5</td><td>10</td><td>15</td></tr><br/>    <tr><td>7</td><td>48</td><td>55</td></tr><br/></table><br/></li><br/><li><br/>P0:<br/><table border="0"><br/>    <tr><td>0</td><td>40</td><td>40</td></tr><br/>    <tr><td>7</td><td>8</td><td>15</td></tr><br/>    <tr><td>7</td><td>48</td><td>55</td></tr><br/></table><br/></li><br/><li><br/>P1:<br/><table border="0"><br/>    <tr><td>1</td><td>39</td><td>40</td></tr><br/>    <tr><td>6</td><td>9</td><td>15</td></tr><br/>    <tr><td>7</td><td>48</td><td>55</td></tr><br/></table><br/></li><br/><li><br/>P2:<br/><table border="0"><br/>    <tr><td>2</td><td>38</td><td>40</td></tr><br/>    <tr><td>5</td><td>10</td><td>15</td></tr><br/>    <tr><td>7</td><td>48</td><td>55</td></tr><br/></table><br/></li><br/><br/><strong>Overall probability: $ P = P_0 + P_1 + P_2$</strong>

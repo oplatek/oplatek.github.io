@@ -1,0 +1,15 @@
+---
+layout: post
+title: Searching within the files cat, find, grep
+date: '2011-12-09T14:15:00.000+01:00'
+author: Ondrej Platek
+tags:
+- Linux
+- Techtips
+- Bash
+modified_time: '2012-07-23T17:17:21.095+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-3431911090050199340
+blogger_orig_url: http://oplatek.blogspot.com/2011/12/searching-within-files-cat-find-grep.html
+---
+
+<h3>Greping and also printing the file name for a lot of files </h3><br/><strong>-H prints the filename of search documents</strong><br/><pre><br/>find . -type f -exec grep -H maps {} \;<br/></pre><br/>This searches all files in <strong>current directory</strong> for word <strong>maps</strong>.<br/><br/>Obvious alternative is to find the files and use for loop to grep it.

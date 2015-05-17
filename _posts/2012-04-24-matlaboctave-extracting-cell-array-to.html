@@ -1,0 +1,15 @@
+---
+layout: post
+title: 'Matlab/Octave: Extracting cell array to list'
+date: '2012-04-24T13:08:00.000+02:00'
+author: Ondrej Platek
+tags:
+- Data mining
+- Matlab
+- Techtips
+modified_time: '2012-07-23T17:16:05.271+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-7718030366235401692
+blogger_orig_url: http://oplatek.blogspot.com/2012/04/matlaboctave-extracting-cell-array-to.html
+---
+
+Problem: For loops in Matlab are slow and ungly.<br/>Nevertherless, processing cell array needs for loop, right?<br/><br/>Not always, for example when we want maximum from all lists in cell array.<br/>Or any other transitive property e.g. minimum, Sum of all elements, etc..<br/><br/><pre><br/>% extract all elements to list from cell array D<br/>list = [D{:}] ;<br/><br/>max(list)<br/>min(list)<br/>sum(list)<br/>%...etc<br/></pre>

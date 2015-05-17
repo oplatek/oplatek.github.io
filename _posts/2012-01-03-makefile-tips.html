@@ -1,0 +1,14 @@
+---
+layout: post
+title: Makefile tips
+date: '2012-01-03T16:10:00.000+01:00'
+author: Ondrej Platek
+tags:
+- Makefile Gcc Linux
+- Techtips
+modified_time: '2012-07-23T17:17:21.108+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-4774757449381096477
+blogger_orig_url: http://oplatek.blogspot.com/2012/01/makefile-tips.html
+---
+
+<h2> Makefile tips </h2><br/>I am using makefiles heavily in last year and I am still feeling like a completely newbie.<br/>I hope that putting my knowledge together will improve my feeling.<br/><ul> <br/>    <li>To find out dependencies from C/C++ files use <strong>makedepend</strong> utility. Be careful it modifies Makefile and Makefile.bat</li><br/>    <li>More variables at <a href="http://www.cprogramming.com/tutorial/makefiles_continued.html">cprogramming.com</a>. Samples I use. <pre><br/>$&lt; #stands for first dependency<br/>$@ # stands for target<br/>$^ # stands for all dependencies<br/>$? # stands for dependencies newer than target<br/><br/>#example  <br/>p1 : MovieList.o Movie.o NameList.o Name.o Iterator.o<br/>    g++ -Wall MoveList.o Movie.o NameList.o Name.o Iterator.o -o p1<br/><br/>p1_ekvivalent : MovieList.o Movie.o NameList.o Name.o Iterator.o<br/>    g++ -Wall $^; -o $@<br/>    </pre></li><br/></ul>

@@ -1,0 +1,15 @@
+---
+layout: post
+title: How to upload images to WordPress using VimRepress?
+date: '2011-11-30T19:39:00.000+01:00'
+author: Ondrej Platek
+tags:
+- Vim
+- Techtips
+- WordPress
+modified_time: '2012-07-23T17:17:21.105+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-4670572366498218690
+blogger_orig_url: http://oplatek.blogspot.com/2011/11/how-to-upload-images-to-wordpress-using.html
+---
+
+At first it it did not work out, because I did not specify the full path.<br/>However vim and shell knows path expansion, so why not to use it?<br/><pre>:BlogUpload ./start.jpg</pre><br/>I just uploaded a <strong>start.jpg</strong> from my <strong>current</strong> directory. <br/><br/><a href="http://oplatek.files.wordpress.com/2011/11/start.jpg"><img width="300px" title="/home/wpcom/public_html/wp-content/blogs.dir/8e8/29715473/files/2011/11/start.jpg" alt="/home/wpcom/public_html/wp-content/blogs.dir/8e8/29715473/files/2011/11/start.jpg" src="http://oplatek.files.wordpress.com/2011/11/start.jpg" class="aligncenter" /></a><br/><br/>The rest (like adjusting picture size in html) is a piece of cake.

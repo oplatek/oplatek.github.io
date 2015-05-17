@@ -1,0 +1,15 @@
+---
+layout: post
+title: 'Lubuntu without X11: fixed suprisingly fast?'
+date: '2013-04-08T12:20:00.001+02:00'
+author: Ondrej Platek
+tags:
+- Linux
+- X11
+- lightdm
+modified_time: '2013-04-08T12:20:52.185+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-2876162330930456654
+blogger_orig_url: http://oplatek.blogspot.com/2013/04/lubuntu-without-x11-fixed-suprisingly.html
+---
+
+The story begins very classically. On Wednesday I presented some examples of Dirichlet Process during our Bayesian Reading Group seminar. When I turned on my Asus notebook I cannot see the familiar X11/lightdm login. &nbsp;Everything which I was able to accomplish was to switch Ctrl+Alt+F6 to console login. There work everything smoothly.<br /><br />I took another notebook and went to school.With a dread of setting up Nvidia drivers I postponed fixing X11 on my notebook till Friday.<br /><br />&nbsp;On Friday I learned several points in very fast way. I consider it luck:)<br /><br /><ul><li>I learned that I do not have any <i>/etc/x11/xorg.conf</i> (and that it's not such a problem)</li><li>That I can run <i>lightdm</i> from commandline and it works</li><li>However I can login with another user login (my girlfriends), but I can not login to mine account through the <i>lightdm</i>&nbsp;graphical login</li><li>I can not change from <b>lightdm launched from commandline to another terminal via </b>Ctrl+Alt+F4</li><li>However when I launch it under screen I can see the error output or I can log it:)</li><li>Then it was simple, I figure out the <i>lightdm</i>&nbsp;does not start because it can not delete <i>.XAuthority</i> file at my $HOME directory. So I <b>deleted it</b>. It fixed the problem.</li></ul><div>Lessons learned:</div><div><ul><li>I do not know nothing about X11. I should change it.</li><li>It's always good to have another test user at your computer</li><li>Logging is the common way how to debug and I like Linux because it logs almost everything.:)</li></ul></div>

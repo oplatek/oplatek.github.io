@@ -1,0 +1,15 @@
+---
+layout: post
+title: Command Localhost tcp traffic monitoring
+date: '2012-06-16T14:58:00.000+02:00'
+author: Ondrej Platek
+tags:
+- Unix
+- Techtips
+- Networking
+modified_time: '2012-07-23T17:16:05.249+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-1309905041612378095
+blogger_orig_url: http://oplatek.blogspot.com/2012/06/command-localhost-tcp-traffic-monitoring.html
+---
+
+C option means that it logs to standart output. <br/>Without it it creates reasonable named files "host.ip-client.ip.log"<br/><pre><br/>tcpflow -i any -C -e port 7777  # as sudo/root<br/></pre>

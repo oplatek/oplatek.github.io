@@ -1,0 +1,14 @@
+---
+layout: post
+title: Unknown class after unpickling in ipython
+date: '2012-07-09T15:22:00.000+02:00'
+author: Ondrej Platek
+tags:
+- Python
+- Techtips
+modified_time: '2012-07-23T17:16:05.269+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-7614122357110834899
+blogger_orig_url: http://oplatek.blogspot.com/2012/07/unknown-class-after-unpickling-in.html
+---
+
+You have pickled something in your modelu and now you can not unpickle it in ipython?<br/>E.g.<br/><pre><br/># in mymodule.py you have<br/>record=namedtuple('record', 'name img_link format link text')<br/></pre><br/><br/>In ipython you try:<br/><pre><br/>$ import pickle<br/>$ with open('crawled.data','rb') as f:<br/>        rds=pickle.load(f)<br/><br/></pre><br/>and you got<br/><pre><br/>AttributeError: 'FakeModule' object has no attribute 'record'<br/></pre><br/><br/>The solution is simple. You have to import the definition from the module, where is defined and you have to register it to the place where the pickle module search for it.<br/>For more explanation see <a href="http://stackoverflow.com/questions/3431419/how-to-get-unpickling-to-work-with-ipython">stackoverflow</a><br/>.<br/>The code is:<br/><pre><br/>$import sys<br/>$import mymodule <br/>$sys.modules['__main__'].record=mymodule.record<br/><br/>$import pickle<br/>$ with open('crawled.data','rb') as f:<br/>        rds=pickle.load(f)<br/><br/></pre>

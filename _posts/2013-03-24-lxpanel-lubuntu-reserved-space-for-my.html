@@ -1,0 +1,14 @@
+---
+layout: post
+title: Lxpanel Lubuntu, reserved space for my second monitor
+date: '2013-03-24T18:43:00.000+01:00'
+author: Ondrej Platek
+tags:
+- LXDE
+- Lubuntu
+modified_time: '2013-03-24T18:45:01.465+01:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-2103341349556058816
+blogger_orig_url: http://oplatek.blogspot.com/2013/03/lxpanel-lubuntu-reserved-space-for-my.html
+---
+
+I have a problem about reserved spaced for my LXpanel on one of my two monitors using Lubuntu 12.10.  <br /><br /><br /><b>Bug symptoms:</b><br />After starting Lubuntu to one monitor setup<br /><pre>$ xrandr<br />Screen 0: minimum 320 x 200, current 1920 x 1848, maximum 8192 x 8192<br />...<br /></pre>I switch to dual monitor set up by running <br /><pre> <br />xrandr --output LVDS1 --auto --output VGA1 --auto --above LVDS1 <br /></pre><br />Now I have LXPanel displayed on the left side of both LVDS1 and VGA1, which I like. However, maximizing the window on LVDS1 causes the LXPanel to cover the maximized window, so I cannot see the left bar of the maximized window.<br /><br /><b>Temporal work around:</b><br />Open Panel settings (by right clicking the LXpanel) and unchecked and rechecked again<br />the Advanced/Reserve space, and not covered by maximized windows<br /><br /><b>Todo:</b><br />a) Report it? Where?<br />b) Automate it together with the xrandr command<br /><br />Btw. During searching for solution of this bug I have discovered how to restart the LXpanel at Lubuntu. <pre><br />killall lxpanel<br />lxpanel --profile Lubuntu &<br /></pre>

@@ -1,0 +1,14 @@
+---
+layout: post
+title: Mosh better ssh?
+date: '2012-09-02T14:33:00.000+02:00'
+author: Ondrej Platek
+tags:
+- Linux
+- SSH
+modified_time: '2012-12-13T15:07:45.070+01:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-4230889353108458386
+blogger_orig_url: http://oplatek.blogspot.com/2012/09/mosh-better-ssh.html
+---
+
+My friend recommended me <a href="http://mosh.mit.edu/">http://mosh.mit.edu/</a>Free ssh client which make life easier on changing environments like bad Internet connections or traveling.  <p>It works <strong>great after 2 month of using it</strong>! </p> <p>It turns out to work great and after building it(I have no sudo on the server where mosh-server is running) and launching it. I needed to change Makefiles and figure out the launching (guys from the issues forum of Mosh helped me quickly) </p> So I am launching Mosh by  <pre><br />mosh --server=/home/oplatek/bin/mosh-install/bin/mosh-server oplatek@myserver.cz<br /></pre> and on the server is running <pre><br />#!/bin/sh<br /># this script is called mosh-server<br />mosh=/home/oplatek/bin/mosh-install<br />LD_LIBRARY_PATH=$mosh/lib # <br />ls -al "$LD_LIBRARY_PATH/libprotobuf.so.7"<br />exec $mosh/bin/mosh-server.exe "$@"<br /></pre>

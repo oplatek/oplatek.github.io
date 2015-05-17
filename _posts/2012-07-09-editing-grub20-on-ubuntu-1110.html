@@ -1,0 +1,15 @@
+---
+layout: post
+title: Editing grub2.0 on Ubuntu 11.10
+date: '2012-07-09T13:38:00.000+02:00'
+author: Ondrej Platek
+tags:
+- Linux
+- Grub
+- Techtips
+modified_time: '2012-07-23T17:16:05.256+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-362254371856645554
+blogger_orig_url: http://oplatek.blogspot.com/2012/07/editing-grub20-on-ubuntu-1110.html
+---
+
+Edit this file<br/><pre><br/>/etc/default/grub<br/></pre><br/>And after it run <br/><pre><br/>sudo update-grub<br/></pre><br/>It will update the settings in generated file  <br/><pre><br/>/boot/grub/grub.cfg<br/></pre><br/><br/>Count the number of entries in the menu when the computer starts and <br/>if you want to select i-th  entry write to /etc/default/grub i-1

@@ -1,0 +1,15 @@
+---
+layout: post
+title: Why to prefer public functions instead of methods in C++?
+date: '2012-03-13T12:14:00.000+01:00'
+author: Ondrej Platek
+tags:
+- Mff
+- C++
+- Techtips
+modified_time: '2012-07-23T17:17:05.752+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-782278752684935232
+blogger_orig_url: http://oplatek.blogspot.com/2012/03/why-to-prefer-public-functions-instead.html
+---
+
+It is more usable, because it allows type conversion!<br/>e.g:<br/><pre><br/>MyMatrix b; // suppose it support conversion to Matrix<br/>MyMatrix c; // suppose it support conversion to Matrix<br/>Matrix a =  b + c; // works only with first solution<br/></pre><br/><br/>First solution: Allows type conversion<br/><pre><br/>Matrix operator+( const Matrix &amp; a, const Matrix &amp; b);<br/></pre><br/><br/>Second solution: Does not allow type conversion on first operand<br/><pre><br/>class Matrix {<br/>    public:<br/>        Matrix operator+(const Matrix &amp; b);<br/>}<br/></pre><br/><br/>Implementation of operator + from first solution:<br/><pre><br/>Matrix operator+( const Matrix &amp; a, const Matrix &amp; b) {<br/>    // It is OK += as a method, <br/>    // because there is no need of type conversion on left side<br/>    x += y ;<br/>    return x;<br/>}<br/></pre>

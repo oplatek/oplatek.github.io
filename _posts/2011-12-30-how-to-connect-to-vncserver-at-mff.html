@@ -1,0 +1,16 @@
+---
+layout: post
+title: How to connect to vncserver at Mff
+date: '2011-12-30T03:08:00.000+01:00'
+author: Ondrej Platek
+tags:
+- Mff
+- SSH
+- OpenGL
+- Techtips
+modified_time: '2012-07-23T17:17:21.106+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-4678635176200326081
+blogger_orig_url: http://oplatek.blogspot.com/2011/12/how-to-connect-to-vncserver-at-mff.html
+---
+
+I want to render OpenGL on server side.<br/>One of my first step was to try out currently available software<br/>for remote desktop.<br/>One of them was <strong>TightVNC</strong><br/>I followed these steps<br/><br/><ol> <br/>    <li>I connected over ssh to u-pl3</li><br/>    <li>Checked that vncserver is installed at /usr/bin/vncserver at u-pl3</li><br/>    <li>u-pl3: Run vncpasswd</li><br/>    <li>u-pl3: Enter the password</li><br/>    <li>u-pl3: vncserver (open at port 5900 + display number -first is 5901)</li><br/>    <li>u-pl3: run ifconfig in order to see the ip address</li><br/>    <li>home: I run tightvnc and enter ip address of u-pl3</li><br/>    <li>home: I enter the ip address and change the port to 5901</li><br/>    <li>home: I enter the password set up at u-pl3</li><br/>    <li>I get connected</li><br/>    <li>I ran OpenGL example and get following error<br/>    <pre> <br/>Xlib:  extension "NV-GLX" missing on display "u-pl2:14.0".<br/>Xlib:  extension "NV-GLX" missing on display "u-pl2:14.0".<br/>X Error of failed request:  BadRequest (invalid request code or no such operation)<br/>Major opcode of failed request:  154 (GLX)<br/>Minor opcode of failed request:  34 ()<br/>Serial number of failed request:  29<br/>Current serial number in output stream:  30<br/>    </pre><br/>    </li><br/>    <li>home: I disconnect</li><br/>    <li>I run <br/>    <pre><br/>    vncserver -list<br/>#output like<br/>    1:    23443<br/>#end of output<br/>    vncserver -kill :1<br/>    </pre><br/>    </li><br/></ol>

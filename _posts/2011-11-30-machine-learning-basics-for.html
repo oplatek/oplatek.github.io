@@ -1,0 +1,16 @@
+---
+layout: post
+title: Machine Learning basics for Computational Linguistics
+date: '2011-11-30T17:50:00.000+01:00'
+author: Ondrej Platek
+tags:
+- Computational Linguistic
+- School
+- Unibz
+- Techtips
+modified_time: '2012-07-23T17:17:21.123+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-7983425832111332062
+blogger_orig_url: http://oplatek.blogspot.com/2011/11/machine-learning-basics-for.html
+---
+
+<h3>Machine learning general structure</h3><br/>Processing steps<br/><ol><br/>    <li> Objects/Instances     </li><br/>    <li> Training data(<strong>features</strong>,<strong>selection of data</strong>)  </li><br/>    <li> <strong>Machine Learning alg.</strong>(Simple generalisation, Decision Trees, Example based, Memory based, Support Vector Machine</li><br/>    <li> Classifier / Model </li><br/>    <li> Test Data </li><br/>    <li> Evaluation and back to revise the things in <strong>bold</strong>(features, data, algorithm)</li><br/></ol><br/><h3>Decision trees</h3><br/><pre><br/>tree BuildDecTree(Training Data T, Classes c) <br/>BEGIN<br/>    IF all examples in T belong to the same class C<sub>i</sub> THEN<br/>        create Node for C<sub>i</sub><br/>    ELSE<br/>        1.a Select attribute F  with values V1, .., Vm <br/>        1.a Create new<br/>        1.c Divide the T according F into subsets T1,.. Tm <br/>        2   foreach not empty TN in T1,...Tm<br/>              run BuildDecTree(TN,c)<br/><br/>END<br/><br/><pre><br/>log<sub>2<sub /> p<sub>t</sub><br/></pre><br/>p<sub>t</sub> ... probability (the number) of Class <i>t</i><br/><br/>How to select attribute? Introduce information gain(less of entropy, entropy measures confusion)<br/><pre><br/>GAIN(T,A) = todo <br/></pre><br/><br/><br/><h3> The Word Disabmiguation Problem </h3><br/>We have different meanings<br/>Example world: <i>chair</i><br/>Sentence examples:<br/>I sit on my new chair.<br/>The chair of local newspaper earns unknown amount of money.<br/><ol><br/>    <li> chair -kind of furniture</li><br/>    <li> chair - role in institution</li><br/></ol><br/><br/><br/><h4>Lexical Matrix Wordnet</h4><br/>In lexical matrix are on rows synsets (<br/>Synsets ; set of synonym - example  home = {home#1,abitation#1} <br/>senses of one world are in column - example home = ("place to live", "cell on chess")<br/>This is lexical relation<br/><br/>In Lexical <strong> matrix are not stored semantic relation!</strong><br/>Example - hypernyms are not stored in Lexila Matrix <br/><strong>semantic relation are between synsets</strong>

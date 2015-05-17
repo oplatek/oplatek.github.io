@@ -1,0 +1,15 @@
+---
+layout: post
+title: 'Renaming files: parameter expansion is good but not so good'
+date: '2011-12-08T14:43:00.000+01:00'
+author: Ondrej Platek
+tags:
+- Linux
+- Techtips
+- Bash
+modified_time: '2012-08-10T09:39:30.340+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-2445265993071973523
+blogger_orig_url: http://oplatek.blogspot.com/2011/12/renaming-files-parameter-expansion-is.html
+---
+
+<h3> Why do I need it? </h3><br />From time to time, I need to have more files in one directory than is healthy (I can not see them on one screen). In order to group them by simple ls command I need to change a prefix. As an example, I want to have separately labs and lectures:)<br /><pre><br />$ ls<br />Lecture1_LabTeacher_topicA.pdf<br />Lecture1_LectureTeacher_topicE.pdf<br />Lecture2_LabTeacher_topicF.pdf<br />Lecture2_LectureTeacher_topicB.pdf<br />Lecture3_LectureTeacher_topicC.pdf<br />Lecture4_LectureTeacher_topicD.pdf</pre><br />Let us say, that I want to solve it by putting <b>Lab</b> prefix instead of <b>Lecture</b> prefix.<br /><pre><br />$ for F in *Lab*; do echo "${F}" "Lab${F#Lecture}"; done</pre><br />Results:<br /><pre><br />Lab1_LabTeacher_topicA.pdf<br />Lab2_LabTeacher_topicF.pdf<br />Lecture1_LectureTeacher_topicE.pdf<br />Lecture2_LectureTeacher_topicB.pdf<br />Lecture3_LectureTeacher_topicC.pdf<br />Lecture4_LectureTeacher_topicD.pdf</pre><br />Similarly variable expansion is useful for batch converting of images:<br /><pre><br />for I in *.jpg; do convert "$I" "${I%jpg}png" ; done</pre><br /><h3> Drawbacks: If you need batch substitution </h3><br />Not everything you can split into prefix, middle part and suffix. So I started using sed instead of bash substitution. In example below you can use both, bash variable expansion and sed. I choose it like a good example. Typical situation when I need substitution in arguments of commands is during renaming another set of lectures. Usually, we have 12-14 slides per semester, which makes a mess on command line.<br /><pre><br />$ ls<br />Lecture11.pdf<br />Lecture12.pdf<br />Lecture1.pdf<br />Lecture2.pdf<br />Lecture3.pdf<br />...<br />Lecture9.pdf</pre><br />Renaming using sed substitution:<br /><pre><br />for F in *e[0-9].pdf; do mv "$F" `echo "$F"|sed s:Lecture:Lecture0:`; done</pre>

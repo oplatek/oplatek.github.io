@@ -1,0 +1,14 @@
+---
+layout: post
+title: Remove duplicities in Python list- unique list
+date: '2012-07-09T13:08:00.000+02:00'
+author: Ondrej Platek
+tags:
+- Python
+- Techtips
+modified_time: '2012-07-23T17:16:05.251+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-2196361246176942862
+blogger_orig_url: http://oplatek.blogspot.com/2012/07/remove-duplicities-in-python-list.html
+---
+
+<pre><br/>seen=set()<br/>unique_formats=[x for x in formats if x not in seen and not seen.add(x)]<br/></pre><br/><br/>Find the duplicates<br/><pre><br/>seen=set() <br/>duplicates=[x for x in formats if x.name in seen or seen.add(x.name)]<br/></pre>

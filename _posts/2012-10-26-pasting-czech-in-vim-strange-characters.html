@@ -1,0 +1,14 @@
+---
+layout: post
+title: Pasting Czech in Vim -> Strange characters? Solved
+date: '2012-10-26T12:11:00.001+02:00'
+author: Ondrej Platek
+tags:
+- Vim
+- Linux
+modified_time: '2012-10-26T12:11:05.849+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-4875463120080637432
+blogger_orig_url: http://oplatek.blogspot.com/2012/10/pasting-czech-in-vim-strange-characters.html
+---
+
+I used to have a problem that copy pasting text from Czech web page in my browser into Vim did not worked.  The diacritic was completely broken.  I ignored the problem, because I thought the problem is caused by Vim, which wrongly detected encoding.  However, Yesterday I realized that it is not the problem, since my file encoding did not changed.  After short search I found the right answer. Set up your locale for Czech! That's easy. Edit your bashrc and source it again an you are done!  Paste this into your bashrc <pre><br />export LANG=cs_CZ.UTF-8<br />export LC_ALL="$LANG"<br />export LANGUAGE="$LANG"<br /></pre> and run <pre><br />$source ~/.bashrc <br /></pre> That's it!   Česky: Pro nastavení Vimu, aby jste mohli vkládat české texty, přidejte první tři exporty do ~/.bashrc a proveďte source bashrc.

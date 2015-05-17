@@ -1,0 +1,16 @@
+---
+layout: post
+title: Debugging Sqlite in Android
+date: '2011-12-06T01:47:00.000+01:00'
+author: Ondrej Platek
+tags:
+- Sqlite
+- Android
+- Techtips
+- Debuggin
+modified_time: '2012-07-23T17:17:21.099+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-4221613288518870515
+blogger_orig_url: http://oplatek.blogspot.com/2011/12/debugging-sqlite-in-android.html
+---
+
+<h3>Is android uncapable creating two tables? <strong>UPDATED</strong></h3><br/><p><br/>Firstly, I want to create 2 tables called <strong>objSources</strong> and <strong>preferences</strong>.<br/>Secondly, I failed...:) (I hope only for today)<br/><strong>SOLUTION: DO NOT EXECUTE MULTIPLE COMMANDS AT ONE CALL</strong><br/><pre><br/>String SQL = "create table A ( integer t); create table B ( integer t2 );" ;<br/>// does not work, but does not throw and Exception<br/>Cursor c = mDb.rawQuery(, null); <br/></pre><br/></p><br/><p><br/>During the debugging I realise that is <strong>could</strong> be good to print SQL queries to <strong>LogCat</strong><br/><pre><br/>Log.i(TAG,MY_SQL);<br/>Cursor c = mDb.rawQuery(MY_SQL, null);<br/></pre><br/></p><br/><p><br/>Unfortunately, Android and  Sqlite3 on my Ubuntu 11.10 <strong>differs</strong> in executing <strong>the same queries.</strong> I tried both ways by exactly copy and pasting the command (I made the whole circle: Copied from LogCat, pasted in Sqlite3, worked OK so I pasted it back to Android app). <br/></p><br/><p><br/>    To be concrete following query does not work for me.<br/>    Firstly, the more readable version.<br/><pre><br/>    create table objSources( <br/>        _id integer primary key autoincrement, <br/>        title text not null, path text, <br/>        resource_id integer default -1, <br/>        info text not null<br/>    );  <br/>    <br/>    create table preferences( <br/>        _id integer primary key autoincrement, <br/>        preference text not null, <br/>        preference_state text not null<br/>    );  <br/>    insert into preferences <br/>        (preference,preference_state) values ('db_loaded','no');<br/></pre><br/>The copy pasted one liner:<br/><pre><br/> create table objSources( <br/> _id integer primary key autoincrement, title text not null, path text, resource_id integer default -1, info text not null);  create table preferences( _id integer primary key autoincrement, preference text not null, preference_state text not null);  insert into preferences (preference,preference_state) values ('db_loaded','no');<br/></pre><br/></p><br/><p><br/>    Btw. I wrote a snippet to print all tables in my android app<br/>    <pre><br/>    Cursor t =mDb.rawQuery("select name from sqlite_master;",null);<br/>    int ind = t.getColumnIndex("name");<br/>    t.moveToFirst();<br/>    Log.i(TAG, t.getString(ind));<br/>    while(t.moveToNext()) {<br/>        Log.i(TAG, t.getString(ind));<br/>    }    <br/>    </pre><br/></p>

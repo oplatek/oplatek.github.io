@@ -1,0 +1,13 @@
+---
+layout: post
+title: Visual C++ see results in Debug mode
+date: '2012-03-11T16:07:00.000+01:00'
+author: Ondrej Platek
+tags:
+- Techtips
+modified_time: '2012-07-23T17:17:05.745+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-473025586923607235
+blogger_orig_url: http://oplatek.blogspot.com/2012/03/visual-c-see-results-in-debug-mode.html
+---
+
+<strong>Problem</strong>:<br/>MS Visual Studio terminates program in <strong>Debug</strong> mode immediately after executing it,<br/>so it is impossible to see output of the program. <br/><br/><strong>Solution:</strong><br/><pre><br/>#ifdef _DEBUG<br/>    // enable seeing the results in debug mode <br/>    // require #include <br/>    int l;<br/>    std::cin&gt;&gt;l;<br/>    std::cout&lt;&lt; &quot;Press any key (debug mode) to terminate the program&quot;&lt;&lt;td::endl;<br/>#endif<br/></pre>

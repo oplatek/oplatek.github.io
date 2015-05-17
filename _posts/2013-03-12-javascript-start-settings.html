@@ -1,0 +1,14 @@
+---
+layout: post
+title: Javascript start settings
+date: '2013-03-12T19:26:00.002+01:00'
+author: Ondrej Platek
+tags:
+- JavaScript
+- Vim
+modified_time: '2013-03-12T19:37:51.207+01:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-1458995709079148326
+blogger_orig_url: http://oplatek.blogspot.com/2013/03/javascript-start-settings.html
+---
+
+I decided to learn JavaScripts. In fact, after years of refusing doing anything with the web presenting technologies,  I admit it, they are pretty cool now.<br />The reasons for not learning JavaScripts(JavaScripts, Css, Html,...) were:<br /><br /><ul><li>Laziness:)&nbsp;</li><li>The huge effort of making something look nice</li><li>I wanted to practice programming not to match colors</li><li>It was not as interesting as bash, algorithms, c#, nlp, python, ...</li></ul><div>The new reasons are:</div><div><ul><li>I am trying to do "go" publicly (Just this blog and my thesis so far:))</li><li>Html, Css, JavaScript are imho the best multi platform tools for presenting content</li><li>The only library for GUI which I liked was WPF with combination with C# (on Linux now)</li><li>WebGL, HTML5, WebRTC, ... pretty cool stuff (almost) working</li><li>V8, fast, open source .... can give it try AND it has a shell:)</li></ul><div>So, I set up V8 and V8 shell using this tutorials(15minutes):</div></div><div><ol><li>Get V8 engine:&nbsp;<a href="http://code.google.com/p/v8/wiki/UsingGit">http://code.google.com/p/v8/wiki/UsingGit</a></li><li>Build it:&nbsp;<a href="http://code.google.com/p/v8/wiki/BuildingWithGYP">http://code.google.com/p/v8/wiki/BuildingWithGYP</a></li><ul><li>For my settings &nbsp; <pre>$ make x64.debug console=readline &nbsp;# needs readline-dev package on ubuntu</pre></li></ul><li>Running the V8 shell (<a href="http://www.sandeepdatta.com/2011/10/using-v8-javascript-shell-d8.html">http://www.sandeepdatta.com/2011/10/using-v8-javascript-shell-d8.html</a>):</li><ul><li><pre>$ v8/out/x64.debug/d8</pre></li></ul><li>In .vimrc I added a line for using omnicompletition (Ctrl+X+O)</li><ul><li>autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS</li></ul></ol><div><br /></div><div>Lets start!</div></div>

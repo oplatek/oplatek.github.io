@@ -1,0 +1,15 @@
+---
+layout: post
+title: Fixed slow wifi (n mode) on Lubuntu 11.10
+date: '2012-06-16T12:53:00.000+02:00'
+author: Ondrej Platek
+tags:
+- Lubuntu
+- wifi
+- Techtips
+modified_time: '2012-07-23T17:16:05.261+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-4583547188670683398
+blogger_orig_url: http://oplatek.blogspot.com/2012/06/fixed-slow-wifi-n-mode-on-lubuntu-1110.html
+---
+
+I followed <a href="http://www.unixmen.com/resolve-slow-connexion-when-using-wifi-in-ubuntu-1104-natty-narwhal/">this guide.</a><br/>In particular the second method worked for me.<br/><br/><h4> 2- Second Method: </h4><br/><br/>This method involves forcing iwlagn to not use n, the commands will disable n on the device without making it a permanant change, check first if this work for you, if you notice that the speed improved then continue to make the change permanant. If this solution didn`t work for you, then reboot your computer to revert the chnages.<br/><br/><pre><br/>sudo rmmod -f iwlagn<br/>sudo modprobe iwlagn 11n_disable=1<br/></pre><br/><br/>If you notice that the wifi speed improved, then make the change permanent :<br/><br/><pre><br/>sudo vi /etc/modprobe.d/iwlagn-disable11n.conf<br/></pre><br/><br/>and add this line to the file:<br/><pre><br/>options iwlagn 11n_disable=1<br/></pre><br/><br/>save &amp; quit

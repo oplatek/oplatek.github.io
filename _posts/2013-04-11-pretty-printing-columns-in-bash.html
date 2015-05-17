@@ -1,0 +1,13 @@
+---
+layout: post
+title: Pretty printing columns in Bash
+date: '2013-04-11T13:40:00.002+02:00'
+author: Ondrej Platek
+tags:
+- Bash
+modified_time: '2013-04-11T13:40:24.180+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-4149708194427287459
+blogger_orig_url: http://oplatek.blogspot.com/2013/04/pretty-printing-columns-in-bash.html
+---
+
+Nice and simple: <pre><br />$ ls -al | awk '{print $9" "$1" " $3}' | column -t<br /></pre> The command produces following output  <pre><br />...<br />...<br /><br />...<br /><br />.winpdb_settings.cfg          Nov  7   -rw-r--r--<br />work                          Jan  10  lrwxr-xr-x<br />WWW                           May  3   lrwxr-xr-x<br />.Xauthority                   Apr  11  -rw-------<br />.xdvirc                       Jul  25  lrwxr-xr-x<br />.xine                         Aug  25  lrwxr-xr-x<br />.xscreensaver-getimage.cache  Feb  10  lrwxr-xr-x<br /><br />...<br />...<br /></pre>

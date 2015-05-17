@@ -1,0 +1,14 @@
+---
+layout: post
+title: K-means trivial matlab implementation
+date: '2012-04-03T18:29:00.000+02:00'
+author: Ondrej Platek
+tags:
+- Mff
+- School
+modified_time: '2012-07-23T17:16:05.265+02:00'
+blogger_id: tag:blogger.com,1999:blog-1883852367990943689.post-6196405250221807153
+blogger_orig_url: http://oplatek.blogspot.com/2012/04/k-means-trivial-matlab-implementation.html
+---
+
+I implemented a simple and heavile commented k-means algorithm example.<br/>With visualisation.<br/><br/>The thing that suprised me, that initialization of Centroids by<br/> randomly choosen input vector is in fact bad idea.<br/> The problem is when the Centroid is set up as a distance outlier<br/> and gets stuck there.<br/><br/> On the other hand, randomly chosen vectors from interval where all the data points are located perform without any such unexpected problems.<br/><br/> The source code is at <a href="https://github.com/oplatek/octave-k-means">github</a>.<br/><br/> On of the visualised results for 2D sample inputs<br/> <a href="https://github.com/oplatek/octave-k-means"><img src="https://github.com/oplatek/octave-k-means/raw/master/results/input_3_steps_5.5344_err.png" alt="k-means 2D results" width="800px" /></a>.
