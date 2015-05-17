@@ -9,7 +9,7 @@ title: About me
     I hope that in the future I will write about statistics, spoken dialogue systems, climbing, hiking, ...
 </p>
 
-In meantime you can check out other related web pages to my person:
+You can learn what I do from other sources too:
 
 * [Ufal website](https://ufal.mff.cuni.cz/ondrej-platek)
 * [LinkedIn](https://cz.linkedin.com/in/ondrejplatek)
