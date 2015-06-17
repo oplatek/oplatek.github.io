@@ -6,7 +6,7 @@ tags: pdf, citation, manager
 ---
 
 The fun fact about [Zotero](https://www.zotero.org/) is that I have never wanted to use it until I see it in action.
-In fact, I would not have wanted to use any citation manager before I saw one.
+In fact, I did not want to use any citation manager.
 
 What is a citation manager? A pretty boring piece of software:
 
