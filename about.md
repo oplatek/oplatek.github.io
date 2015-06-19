@@ -19,10 +19,10 @@ If you like one of my projects, or activities, please do not hesitate to contact
 I am open to both criticism, and new ideas!
 
 
-You can learn what I do from other sources too:
+You can learn more about me from the sources below:
 
-* [Ufal website](https://ufal.mff.cuni.cz/ondrej-platek)
+* [Ufal website - I am a research assistant](https://ufal.mff.cuni.cz/ondrej-platek)
 * [LinkedIn](https://cz.linkedin.com/in/ondrejplatek)
-* [Github](https://github.com/oplatek/)
-* [Bitbucket](https://bitbucket.org/oplatek)
-* [HoMedik (CZ)](http://www.homedik.cz)
+* [Github - larger projects](https://github.com/oplatek/)
+* [Bitbucket - settings & school projects](https://bitbucket.org/oplatek)
+* [HoMedik (CZ) - my climbing friends](http://www.homedik.cz)
