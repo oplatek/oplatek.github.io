@@ -15,6 +15,10 @@ title: About me
 
     Ondrej Platek, 2015-05-18
 
+If you like one of my projects, or activities, please do not hesitate to contact me!
+I love collaboration, and I am open to both criticism, and new ideas!
+
+
 You can learn what I do from other sources too:
 
 * [Ufal website](https://ufal.mff.cuni.cz/ondrej-platek)
