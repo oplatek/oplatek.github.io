@@ -11,5 +11,9 @@ blogger_orig_url: http://oplatek.blogspot.com/2012/09/ho.html
 ---
 
 Command to print name and the length. (Btw. You need to build sox with mp3 codec for just adding MP3 to sox recognized filetypes) <br />
+<pre>find fbooks -name '*.MP3' -print -exec  soxi  -D {} \; \<br /></pre>
+Produces output like <br /><pre>first_found.MP3 <br />4.100998<br />second_found.MP3 <br />4.336009<br />...<br />...<br /><br />...<br /></pre>I used Python to join the 2 lines together to produce <br /><pre>first_found.MP3 4.100998<br />second_found.MP3 4.336009<br />...<br />...<br /><br />...<br />
+</pre>
+
+Following Python snippet sums the lengths
 <pre>find fbooks -name '*.MP3' -print -exec  soxi  -D {} \; \|<br /> python -c 'import sys; print sum([float(l) for i, l in enumerate(sys.stdin) if i % 2 == 1]) / 3600.0'<br /></pre>
-Produces output like <br /><pre>first_found.MP3 <br />4.100998<br />second_found.MP3 <br />4.336009<br />...<br />...<br /><br />...<br /></pre>I used Python to join the 2 lines together to produce <br /><pre>first_found.MP3 4.100998<br />second_found.MP3 4.336009<br />...<br />...<br /><br />...<br /></pre>Maybe there is a cool Bash command for joining 2 consecutive lines, but unfortunately I do not know it. (UPDATE: Actually it should be quite easy with sed.) <br /><br />Another way for short list of files is to pass them all as arguments to sox:<br /><br />sox *.wav -n stat
