@@ -16,4 +16,10 @@ Produces output like <br /><pre>first_found.MP3 <br />4.100998<br />second_found
 </pre>
 
 Following Python snippet sums the lengths
-<small><pre>find fbooks -name '*.MP3' -print -exec  soxi  -D {} \; \|<br /> python -c 'import sys; print sum([float(l) for i, l in enumerate(sys.stdin) if i % 2 == 1]) / 3600.0'<br /></pre></small>
+<small>
+<pre>
+<code>
+find fbooks -name '*.MP3' -print -exec  soxi  -D {} \; \| 
+python -c 'import sys; print sum([float(l) for i, l in enumerate(sys.stdin) if i % 2 == 1]) / 3600.0'
+</code>
+</pre></small>
