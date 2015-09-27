@@ -7,7 +7,7 @@ See http://opla.cz or http://oplatek.github.io/
  - I just simply followed the (simple guide)[http://joshualande.com/jekyll-github-pages-poole/]
 
 ## Bugs
-Please report bugs here via [Github issue tracker](https://github.com/oplatek/oplatek.github.io/issues/new) 
+Please report bugs via [Github issue tracker](https://github.com/oplatek/oplatek.github.io/issues/new).
 
-If you do not have a Github account, drop me an email.
-More about me at http://opla.cz/about where you can find pointers how to contact me.
+If you do not have a Github account or want to give me more detailed feedback, drop me an email.
+You can find information how to contact me on [page about me](http://opla.cz/about). 
