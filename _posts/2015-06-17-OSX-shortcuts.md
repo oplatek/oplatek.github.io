@@ -30,8 +30,9 @@ The defaults adds the following mappings:
 Spectacle shortcuts
 -------------------
 Spectacle is a window manager which allows you to move window around.
-Its functionality ranges from
-    - moving window to left/right half screen
-    - maximizing selected window
-    - filling up/down half
-    - and few more
+Its functionality varies from:
+
+- moving window to left/right half screen,
+- maximizing selected window,
+- filling up/down half,
+- to moving window to center or left/right third.
