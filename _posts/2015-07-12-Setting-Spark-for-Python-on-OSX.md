@@ -6,6 +6,7 @@ tags: Big data, Spark, Python, OSX, Yosemite
 ---
 
 The good news first, I managed to install Spark for Python in less than 30 minutes with basic googling.[1][2]
+If you do not Google it yourself you may follow steps below:
 
 * Verify your Java version
 
@@ -19,6 +20,7 @@ java version "1.8.0_20"
 Java(TM) SE Runtime Environment (build 1.8.0_20-b26)
 Java HotSpot(TM) 64-Bit Server VM (build 25.20-b23, mixed mode)
 ```
+
 * Install Homebrew if you do not have it
 
 ```sh
