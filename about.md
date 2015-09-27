@@ -28,7 +28,7 @@ You can learn more about me from the sources below:
 * [HoMedik (CZ) - my climbing friends](http://www.homedik.cz)
 
 
-## Bugs & feedback
+### Bugs & feedback
 Please report bugs via [Github issue tracker](https://github.com/oplatek/oplatek.github.io/issues/new).
 
 If you do not have a Github account or want to give me more detailed feedback, drop me an email.
