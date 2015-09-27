@@ -18,7 +18,8 @@ There are few shortcuts I always forget, and a few I have not even discovered or
 Karabiner default extension
 ---------------------------
 I use https://pqrs.org/osx/karabiner/
-The defaults adds the following mappings
+The defaults adds the following mappings:
+
 - ``fn + RIGHT_ARROW`` emulates ``End`` button
 - ``fn + LEFT_ARROW`` emulates ``Home`` button
 - ``fn + UP_ARROW`` emulates ``PgUp`` page up button
