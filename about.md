@@ -26,3 +26,10 @@ You can learn more about me from the sources below:
 * [Github - larger projects](https://github.com/oplatek/)
 * [Bitbucket - settings & school projects](https://bitbucket.org/oplatek)
 * [HoMedik (CZ) - my climbing friends](http://www.homedik.cz)
+
+
+### Bugs & feedback
+Please report bugs via [Github issue tracker](https://github.com/oplatek/oplatek.github.io/issues/new).
+
+If you do not have a Github account or want to give me more detailed feedback, drop me an email.
+You can find information how to contact me on one of the web pages linked above.
