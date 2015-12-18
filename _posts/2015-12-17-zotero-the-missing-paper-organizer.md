@@ -5,6 +5,14 @@ author: Ondrej Platek
 tags: pdf, citation, manager
 ---
 
+**Update**: Even more usable by [zotfile](https://github.com/jlegewie/zotfile).
+
+- Automatic extraction of pdf content?
+- Automatic extraction of notes?
+
+Yes, zotfile please!
+
+**original post**
 The fun fact about [Zotero](https://www.zotero.org/) is that I have never wanted to use it until I see it in action.
 In fact, I did not want to use any citation manager.
 
