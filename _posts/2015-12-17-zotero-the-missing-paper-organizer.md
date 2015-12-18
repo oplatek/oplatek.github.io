@@ -12,7 +12,8 @@ tags: pdf, citation, manager
 
 Yes, zotfile please!
 
-**original post**
+**Original post:**
+
 The fun fact about [Zotero](https://www.zotero.org/) is that I have never wanted to use it until I see it in action.
 In fact, I did not want to use any citation manager.
 
