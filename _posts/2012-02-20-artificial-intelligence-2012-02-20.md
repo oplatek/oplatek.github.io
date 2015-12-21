@@ -16,9 +16,8 @@ tags:
 - Act as in **believe state**. 
 - We eliminated some states by performing actions.
 - Big problem of large number <strong>of n states</strong>. 
-- Trying can explore actions by going to <strong> 2^n</strong> (I can use 2 actions from one state)
+- Trying can explore actions by going to $$ 2^n$$ (I can use 2 actions from one state)
 - Apriorni pravděpodobnost (?aprior probability?) -- unconditional probability
-- soucinovy pravidlo (Chain rule))$ P(a \wedge b) = P(a|b)*P(b)$
 - Příklad:  $$ P(Cavity \mid toothache) = \alpha $$ 
 - Nezavislost nam umoznuje ukladat mensi tabulky pro vypocet marginalni pravdepodobnosti.
-- Podminena nezavislost je castejsi a take setri $$ P(X|Y,Z) = P(X|Y)*P(X|Z) $$ vypocet
+- Podminena nezavislost je castejsi a take setri $$ P(X \mid Y,Z) = P(X \mid Y)*P(X \mid Z) $$ vypocet
