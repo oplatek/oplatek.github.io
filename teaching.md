@@ -1,9 +1,13 @@
-Teaching
-========
+---
+layout: page
+title: Teaching
+---
 
-## [Thesis and projects](https://ufal.mff.cuni.cz/ondrej-platek#projects)
+## Thesis and projects
+[See topics on my UFAL website](https://ufal.mff.cuni.cz/ondrej-platek#projects)
 
-*CS: Vyberte si projekt pro ročníkovou, bakalářskou, diplomovou anebo dobrouvolnou práci:-)*
+
+*CS: Vyberte si projekt pro ročníkovou, bakalářskou, diplomovou anebo dobrovolnou práci:-)*
 
 ## Labs for Introduction to unix (shell)
-- [Labs 2016 summer]()
+- [Labs 2016 summer](/2016/02/22/labs-unix/)
