@@ -11,3 +11,8 @@ title: Teaching
 
 ## Labs for Introduction to Unix (shell)
 - [Labs 2016 summer](/2016/02/02/labs-unix/)
+
+
+## Labs for Statistical Dialog Systems (SDS)
+- [Labs 2016 summer](/2016/02/02/labs-sds/)
+
