@@ -4,7 +4,7 @@ title: About me
 ---
 
     Hi there! 
-    I have posted here mainly technical stuff to rember it myself.
+    I have posted here mainly technical stuff to remember it myself.
     I hope that in the future I will write more about 
         statistics, 
         spoken dialogue systems, 
