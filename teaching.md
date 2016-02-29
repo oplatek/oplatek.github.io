@@ -14,5 +14,5 @@ title: Teaching
 
 
 ## Labs for Statistical Dialog Systems (SDS)
-- [Labs 2016 summer](/2016/02/02/labs-sds/)
+- [Labs 2016 summer](/2016/02/20/labs-sds/)
 
