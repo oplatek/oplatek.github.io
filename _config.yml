@@ -31,6 +31,5 @@ pages_list:
   About: '/about'
   Teaching: '/teaching'
   Archive: '/archive'
-  Search: '/search'
 
 gems: [jekyll-paginate]
