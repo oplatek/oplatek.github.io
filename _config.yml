@@ -31,6 +31,6 @@ pages_list:
   About: '/about'
   Teaching: '/teaching'
   Archive: '/archive'
-  # Feed: '/atom.xml'
+  Search: '/search'
 
 gems: [jekyll-paginate]
