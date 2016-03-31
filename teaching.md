@@ -4,9 +4,7 @@ title: Teaching
 ---
 
 ## Thesis and projects
-*Ročníké, bakalářskě, diplomov práce*
-[See topics on my UFAL website](https://ufal.mff.cuni.cz/ondrej-platek#projects)
-
+[*Ročníké, bakalářskě, diplomové práce*: See my UFAL website](https://ufal.mff.cuni.cz/ondrej-platek#projects)
 
 
 ## Labs for Introduction to Unix (shell)
