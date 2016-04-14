@@ -32,4 +32,4 @@ Before that I have some todos:
 1. *Consider your feedback.*
 2. *Read more about contrastive estimation - which as I learned basically described above. I bet Mr Hinton have some notes on this.*
 3. *Explore if someone else did something similar.*
-4. *What if I will sample the inputs given the golden label $$ \hat{y} $$?
+4. *What if I will sample the inputs given the golden label $$ \hat{y} $$?*
