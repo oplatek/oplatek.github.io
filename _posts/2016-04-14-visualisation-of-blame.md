@@ -25,6 +25,9 @@ The key idea is simple:
     4. Find the member $$ i \in \{1, ..., \mid x_k \mid \} $$ with the "largest gradient" to be blamed the most!
         - **Why?** Suppose that our input $$ x_k $$ consisted from words $$ w_1, w_2, w_3, ..., w_{\mid x_k \mid} $$ and $$ w_2 $$ has the "largest gradient". As a result, if I could change only one word in the input in order change the output of the network to the correct label, I would change $$ w_2 $$. Obviously, the network might still predict the same incorrect label or other incorrect label after changing one input. However, if there exist input $$ x_{artificial} $$ for which the network with parameters $$ \phi $$ predicts label $$ y_{k-gold} $$, I would start changing values of $$ x_k $$ into $$ x_{artificial} $$ according the order "gradients" on the input from step 3.
 
+
+![Illustration of gradients sums on the first layer](/downloads/input-first-layer.svg)
+
 **Please let me know what you think about the proposal!**
 
 I want to code it up soon, so please let me your opinions.
