@@ -18,7 +18,8 @@ The key idea is simple:
 4. Let's start to compute the "*blame*":
     1. Compute the expected $$ E_{x \in X}(P(y \mid x)) $$ distribution over your set $$ X $$
         - The expected distribution is our uninformative prior  before presenting input $$ x_k $$ but after training the network with inputs from $$ X $$.
-    2. Compute gradients of the network with respect to its parameters from the loss function $$ \nabla_{\phi} E_{x \in X}(P(y \mid x)) - P(y_{k-gold} \mid x_k) $$ 
+    2. Compute gradients of the network with respect to its parameters from the loss function $$ \nabla_{\phi} distance(E_{x \in X}(P(y \mid x)), P(y_{k-gold} \mid x_k)) $$ 
+        - Note: I intend to use cross-entropy as the *distance* function
         - The difference between the expected distribution and the gold (one-hot) distribution is how surprising the gold label is.
     3. For each coordinate $$ x^i_k \mid i \in \{1, ..., \mid x_k \mid \} $$ in input vector $$ x_k $$ and corresponding true label sum the gradients computed from previous step $$ \sum_{j \in \mid FirstHidden \mid}{\nabla_{\phi} W^{i,j}_k} $$
         - Note that we are only interested in gradients on weights $$ W $$ between input and first hidden layer 
@@ -34,6 +35,8 @@ I want to code it up soon, so please let me your opinions.
 Before that I have some todos: 
 
 1. *Consider your feedback.*
+    - read [Distributted Representations of Sentences and Documents](http://arxiv.org/pdf/1405.4053.pdf)
+    - look for implementations tricks in [Extraction of Salient Sentences from Labelled Documents](http://arxiv.org/abs/1412.6815)
 2. *Read more about contrastive estimation - which as I learned basically described above. I bet Mr Hinton have some notes on this.*
 3. *Explore if someone else did something similar.*
 4. *How can I use samples from inputs distribution given the golden label $$ y_{k-gold} $$, the parameters $$ \phi $$ and the expected distribution $$ E_{x \in X}(P(y \mid x)) $$?*
