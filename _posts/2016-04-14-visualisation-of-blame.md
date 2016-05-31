@@ -34,6 +34,8 @@ The key idea is simple:
 I want to code it up soon, so please let me your opinions.
 Before that I have some todos: 
 
+0. **The idea is already implemented!** See [Inverting a neural net](http://www.r2rt.com/posts/experiments/2016-04-05-inverting-a-neural-net/)
+    - Training the inversion directly may be easier than sampling from the expected probability over training data
 1. *Consider your feedback.*
     - read [Distributted Representations of Sentences and Documents](http://arxiv.org/pdf/1405.4053.pdf)
     - look for implementations tricks in [Extraction of Salient Sentences from Labelled Documents](http://arxiv.org/abs/1412.6815)
