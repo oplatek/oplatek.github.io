@@ -5,15 +5,27 @@ Selected Questions for Doctoral State Exam (Vybrané okruhy pro doktorskou zkou�
 -----------------------------------------------------------------
 
 - Types of task in NLP, mathematical and linguistic basics. (Typy úloh v počítačovém zpracování přirozeného jazyka, matematické a lingvistické základy.)
+    - [Statistical NLP I, II](http://ufal.mff.cuni.cz/courses/npfl067)
 - Linguistic data collection, corpora, annotations. (Lingvistická data, korpusy, anotace.)
+    [NPFL092 Technology for NLP](http://ufal.mff.cuni.cz/~zabokrtsky/courses/npfl092/html/)
+    [Prague Dependency Treebank](http://ufal.mff.cuni.cz/course/npfl075)
 - Design and evaluation of linguistic experiments, evaluation metrics. (Návrh a vyhodnocení lingvistických experimentů, evaluační metriky.)
 - Basics of graph theory. (Základy teorie grafů.)
-- TODO translate. (Systém rovin popisu jazyka.)
+    [Invitation to Discrete Mathematics, Nesetril, Matousek](http://home.iitj.ac.in/~vinod2292/discrete_math/Matousek%20%20Discrete%20Math.pdf)
+- Layered description of language (TODO check translation) (Systém rovin popisu jazyka.)
 - General linguistics, language topology. (Obecná lingvistika, jazyková typologie.)
 - Morphology and syntax. (Morfologie a syntax přirozeného jazyka.)
+    - [Introduction to Linguistics, Jirka Hana](http://ufal.mff.cuni.cz/courses/npfl063-2015-wi]
 - Automata and grammars, ?constituency/generative? grammar, Chomsky hierarchy. (Automaty a gramatiky, složková syntax, Chomského hierarchie.)
+    [Introduction to formal linguistics](http://ufal.mff.cuni.cz/courses/npfl006)
 - Dependency syntax, properties of dependency syntax trees. (Závislostní syntax, vlastnosti závislostních stromů.)
+    [Introduction to formal linguistics](http://ufal.mff.cuni.cz/courses/npfl006)
+    [Prague Dependency Treebank](http://ufal.mff.cuni.cz/course/npfl075)
 - Language modeling. (Jazykové modelování.)
+
+General links
+- [CS Offline Úvod do teoretické a počítačové lingvistiky. I. sv. Teoretická lingvistika. Panevová Jarmila - Sgall Petr - Hajičová Eva](http://www.cupress.cuni.cz/ink2_ext/index.jsp?include=podrobnosti&id=182798)
+- [CS: Wiki Matfyz - Matematická lingvistika](http://wiki.matfyz.cz/wiki/St%C3%A1tnice_-_Informatika_-_I3:_Matematick%C3%A1_lingvistika)
 
 3. Statistical Methods and Machine Learning in NLP (Statistické metody a strojové učení v počítačové lingvistice)
 -----------------------------------------------------------------
