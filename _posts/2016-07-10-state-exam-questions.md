@@ -15,39 +15,59 @@ Selected Questions for Doctoral State Exam (Vybrané okruhy pro doktorskou zkou�
 - Dependency syntax, properties of dependency syntax trees. (Závislostní syntax, vlastnosti závislostních stromů.)
 - Language modeling. (Jazykové modelování.)
 
-3. Statistické metody a strojové učení v počítačové lingvistice
+3. Statistical Methods and Machine Learning in NLP (Statistické metody a strojové učení v počítačové lingvistice)
 -----------------------------------------------------------------
 
-- Pravděpodobnostní modelování jazyka. 
-- Metody řízeného učení pro klasifikaci a regresi. 
-- Lineární a nelineární metody. 
-- Support Vector Machines a kernelové funkce. 
-- Logistická regrese. 
-- Rozhodovací stromy. 
-- Metody neřízeného učení. 
-- Jazykové modely a modely kanálu. 
-- Vyhlazování modelů. 
-- Skryté Markovovy modely (algoritmy Baum–Welch, Forward–Backward, Viterbi). 
-- Algoritmy pro statistický tagging. 
-- Algoritmy pro složkový a závislostní statistický parsing. 
-- Statistický strojový překlad. Základy neuronových sítí pro využití v počítačovém zpracování jazyka. 
-- Testy signifikance.
+- Probabilistic modelling of language (Pravděpodobnostní modelování jazyka.)
+- Classification and regression (Metody řízeného učení pro klasifikaci a regresi.)
+- Linear and non-linear methods (Lineární a nelineární metody.)
+- SVM and kernel functions (Support Vector Machines a kernelové funkce.)
+- Logistic regression (Logistická regrese.)
+- Decision trees (Rozhodovací stromy.)
+- Unsupervised learning (Metody neřízeného učení.)
+- ?Noisy channel and language models? (Jazykové modely a modely kanálu.)
+- LM smoothing (Vyhlazování modelů.)
+- HMM (Skryté Markovovy modely (algoritmy Baum–Welch, Forward–Backward, Viterbi).)
+- Algorithms for statistical POS tagging (Algoritmy pro statistický tagging.)
+- Algorithms for constituency and dependency parsing (Algoritmy pro složkový a závislostní statistický parsing.)
+- SMT & NN (Statistický strojový překlad. Základy neuronových sítí pro využití v počítačovém zpracování jazyka.)
+- Significance testing (Testy signifikance.)
+
+General links
+- [Intro to ML by Raquel Urtasun with references to Bishop](http://www.cs.toronto.edu/~urtasun/courses/CSC411/CSC411_Fall15.html)
+
 
 
 5. Aplikace metod pro zpracování mluvené řeči
 ----------------------------------------------------------------
 
 - Metody zpracování řečového signálu. 
+    - **TODO**
 - HMM modelování akustiky fonému. 
 - Implementace Baum-Welch a Viterbi algoritmu pro rozpoznáváni řeči. 
+    - Offline CS Psutka
+    - [Automatic speech recognition using Kaldi](https://github.com/oplatek/kaldi-thesis/blob/master/text/tags/oplatek_thesis013.pdf?raw=true)
 - Adaptační techniky.
+    - **TODO**
 - Sumarizace řečových nahrávek. 
+    - Offline CS Psutka
 - Vyhledávání témat a slov v řečových korpusech. 
+    - Offline CS Psutka
 - Rozpoznávání mluvčího. 
+    - Offline CS Psutka
+    - [Comparison of scoring methods used in speaker recognition with joint factor analysis](http://www.crim.ca/perso/patrick.kenny/Ondrej_icassp2009.pdf)
+    - [Audio enhancing with DNN autoencoder for speaker recognition](http://www.fit.vutbr.cz/research/groups/speech/publi/2016/plchot_icassp2016_0005090.pdf)
 - Generování promluvy. 
+    [Sequence-to-Sequence Generation for Spoken Dialogue via Deep Syntax Trees and Strings](http://arxiv.org/pdf/1606.05491v1.pdf)
 - Metody syntézy řeči. 
+    - [data-driven phrasing for speech synthesis in low-resource languages](https://www.cs.cmu.edu/~awb/papers/icassp2012_phrasing_lrl.pdf)
+    - [A beginners’ guide to statistical parametric speech synthesis](http://www.cstr.ed.ac.uk/downloads/publications/2010/king_hmm_tutorial.pdf)
 - Zpracování textu pro syntézu řeči, prozodie. 
+    - [A beginners’ guide to statistical parametric speech synthesis](http://www.cstr.ed.ac.uk/downloads/publications/2010/king_hmm_tutorial.pdf)
 - Základní komponenty dialogového systému.
 - Porozumění mluvené řeči. 
 - Stav dialogu, řízení dialogu. 
 - Hodnocení kvality dialogových systémů.
+
+
+PS: As usual, suggestions and improvements are welcome by [pull request](https://github.com/oplatek/oplatek.github.io/blob/master/_posts/2016-07-10-state-exam-questions.md).
