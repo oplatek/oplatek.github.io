@@ -27,6 +27,9 @@ General links
 - [CS Offline Úvod do teoretické a počítačové lingvistiky. I. sv. Teoretická lingvistika. Panevová Jarmila - Sgall Petr - Hajičová Eva](http://www.cupress.cuni.cz/ink2_ext/index.jsp?include=podrobnosti&id=182798)
 - [CS: Wiki Matfyz - Matematická lingvistika](http://wiki.matfyz.cz/wiki/St%C3%A1tnice_-_Informatika_-_I3:_Matematick%C3%A1_lingvistika)
 
+- TODO link to habilitation thesis of Marketa Lopatkova
+- TODO link to habilitation thesis of Zdenek Zabokrtsky 
+
 3. Statistical Methods and Machine Learning in NLP (Statistické metody a strojové učení v počítačové lingvistice)
 -----------------------------------------------------------------
 
