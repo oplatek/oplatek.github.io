@@ -29,6 +29,8 @@ General links
 
 - TODO link to habilitation thesis of Marketa Lopatkova
 - TODO link to habilitation thesis of Zdenek Zabokrtsky 
+- TODO link to semantika peregrin
+- [Focus topic articulation by Jaroslav Peregrin (E. Hajicova)](http://www.jarda.peregrin.cz/mybibl/PDFTxt/313.pdf)
 
 3. Statistical Methods and Machine Learning in NLP (Statistické metody a strojové učení v počítačové lingvistice)
 -----------------------------------------------------------------
