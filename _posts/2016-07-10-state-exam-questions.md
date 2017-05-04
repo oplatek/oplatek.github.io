@@ -1,5 +1,9 @@
-Selected Questions for Doctoral State Exam (Vybrané okruhy pro doktorskou zkoušku)
-==================================================================================
+---
+layout: post
+title: Selected Questions for Doctoral State Exam (Vybrané okruhy pro doktorskou zkoušku)
+author: Ondrej Platek
+tags: Mff, School,Linguistics 
+---
 
 1. Basic Methods in Natural Language Processing (Základní přístupy k počítačovému zpracování přirozeného jazyka)
 -----------------------------------------------------------------
@@ -15,7 +19,7 @@ Selected Questions for Doctoral State Exam (Vybrané okruhy pro doktorskou zkou�
 - Layered description of language (TODO check translation) (Systém rovin popisu jazyka.)
 - General linguistics, language topology. (Obecná lingvistika, jazyková typologie.)
 - Morphology and syntax. (Morfologie a syntax přirozeného jazyka.)
-    - [Introduction to Linguistics, Jirka Hana](http://ufal.mff.cuni.cz/courses/npfl063-2015-wi]
+    - [Introduction to Linguistics, Jirka Hana](http://ufal.mff.cuni.cz/courses/npfl063-2015-wi)
 - Automata and grammars, ?constituency/generative? grammar, Chomsky hierarchy. (Automaty a gramatiky, složková syntax, Chomského hierarchie.)
     [Introduction to formal linguistics](http://ufal.mff.cuni.cz/courses/npfl006)
 - Dependency syntax, properties of dependency syntax trees. (Závislostní syntax, vlastnosti závislostních stromů.)
@@ -29,8 +33,9 @@ General links
 
 - TODO link to habilitation thesis of Marketa Lopatkova
 - TODO link to habilitation thesis of Zdenek Zabokrtsky 
-- TODO link to semantika peregrin
+- [CS: Úvod do teoretické sémantiky](http://jarda.peregrin.cz/mybibl/PDFTxt/469.pdf),[Skripta Peregrin](http://artax.karlin.mff.cuni.cz/upload/index.php?action=downloadfile&filename=skripta-Peregrin.doc&directory=predmety/NPFL026&PHPSESSID=b8cd26fb9c6fa4379bb0f77f87beb339)
 - [Focus topic articulation by Jaroslav Peregrin (E. Hajicova)](http://www.jarda.peregrin.cz/mybibl/PDFTxt/313.pdf)
+- [wiki](https://cs.wikipedia.org/wiki/Zpracov%C3%A1n%C3%AD_p%C5%99irozen%C3%A9ho_jazyka#Fonetick.C3.A1_rovina)
 
 3. Statistical Methods and Machine Learning in NLP (Statistické metody a strojové učení v počítačové lingvistice)
 -----------------------------------------------------------------
