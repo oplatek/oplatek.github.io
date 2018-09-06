@@ -1,5 +1,25 @@
-1. Learn keyboard shotcuts:
-http://askubuntu.com/questions/28086/what-are-unitys-keyboard-and-mouse-shortcuts
-   Note: the wallpaper: https://i.stack.imgur.com/krD8y.jpg
-2. Enable each monitor has separate workspace, and sending windows among them
-http://askubuntu.com/questions/141752/keyboard-shortcut-to-move-windows-between-monitors
+---
+layout: post
+title: Learning default shortcuts
+author: Ondrej Platek
+tags: GUI, Ubuntu, settings
+---
+
+I used to tweak everything. Vim, Openbox, Xfce, window managers, desktop environments.
+Luckily, latest LTS Ubuntu 16.04 (despite many controversial - non-standard decision) comes with sane default GUI and shortcuts.
+
+I take a complete new approach:
+- Choose sensible defaults
+- Learn the shortcuts - do not over-optimize, soon in year or two you would need to setup it up again.
+
+My current challenge:
+
+[Remember keyboard shortcuts: http://askubuntu.com/questions/28086/what-are-unitys-keyboard-and-mouse-shortcuts](http://askubuntu.com/questions/28086/what-are-unitys-keyboard-and-mouse-shortcuts)
+
+There is also a handy wallpaper from imgur.com
+
+![https://i.stack.imgur.com/krD8y.jpg](https://i.stack.imgur.com/krD8y.jpg)
+
+[Enabling for each monitor has separate workspace, and sending windows among them](http://askubuntu.com/questions/141752/keyboard-shortcut-to-move-windows-between-monitors)
+
+Life is much simpler now. Finally, some time to write a short a blog post.
