@@ -19,7 +19,7 @@ title: Oplatek
 * [Github - larger projects](https://github.com/oplatek/)
 * [HoMedik (CZ) - my climbing friends](http://www.homedik.cz)
 * [Ufal website - I was a research assistant](https://ufal.mff.cuni.cz/ondrej-platek)
-* [Oplatai s.r.o - a company and my opportunity to work with smart, amazing collegues](https://ufal.mff.cuni.cz/ondrej-platek)
+* [Oplatai s.r.o - my company ](https://ufal.mff.cuni.cz/ondrej-platek)
 
 
 ![Oplatek climbing on Czech Sandstone]({{ site.baseurl }}/public/oplatek-tisa.kocka1.jpg)

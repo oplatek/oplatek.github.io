@@ -16,10 +16,10 @@ My current challenge:
 
 [Remember keyboard shortcuts: http://askubuntu.com/questions/28086/what-are-unitys-keyboard-and-mouse-shortcuts](http://askubuntu.com/questions/28086/what-are-unitys-keyboard-and-mouse-shortcuts)
 
-There is also a handy wallpaper from imgur.com
+A handy wallpaper from imgur.com helps quite a lot.
 
 ![https://i.stack.imgur.com/krD8y.jpg](https://i.stack.imgur.com/krD8y.jpg)
 
-[Enabling for each monitor has separate workspace, and sending windows among them](http://askubuntu.com/questions/141752/keyboard-shortcut-to-move-windows-between-monitors)
+I also need to [enable for each monitor a separate workspace](http://askubuntu.com/questions/141752/keyboard-shortcut-to-move-windows-between-monitors) so I can send windows among them.
 
-Life is much simpler now. Finally, some time to write a short a blog post.
+Life is much simpler now. Finally, some time to write a short blog post.

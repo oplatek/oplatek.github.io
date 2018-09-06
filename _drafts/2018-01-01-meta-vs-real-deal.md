@@ -1,0 +1,16 @@
+
+- every process has its assumptions & preconditions
+  - improving in climbing
+  - code a simple script
+  - deploy a product
+  - code (and deploy) ASR service
+- incredible time is spent in meta-doing the process i.e. meta-activity
+  - changing the conditions so the process can be done
+  - planning the process
+  - setting up the infrastructure
+  - some of the meta-activity has meta-meta-activity
+- should we focus only on the *process*?
+  - probably *yes*
+  - how to reduce the time?
+    - get rid off the unnecessary parts (never)
+    - laziness (do only the parts which are important right now

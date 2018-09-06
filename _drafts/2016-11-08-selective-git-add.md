@@ -1,0 +1,1 @@
+ Kdybyste nekdo potrebovali splitnout obri pull request do mensich commitu tak v command line git add —path (complicated), nebo v git gui (add hunks to stage), nebo ve vimu (http://vimcasts.org/episodes/fugitive-vim-working-with-the-git-index/ cas 7:30 Gdiff, diffget, diffput )

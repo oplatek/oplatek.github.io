@@ -1,12 +1,14 @@
 ---
 layout: post
-title: Selected Questions for Doctoral State Exam (Vybrané okruhy pro doktorskou zkoušku)
+title: Doctoral State Exam
 author: Ondrej Platek
 tags: Mff, School,Linguistics 
 ---
+#### Cs:  Vybrané okruhy pro doktorskou zkoušku
 
-1. Basic Methods in Natural Language Processing (Základní přístupy k počítačovému zpracování přirozeného jazyka)
------------------------------------------------------------------
+## 1. Basic Methods in Natural Language Processing
+
+#### Cs: Základní přístupy k počítačovému zpracování přirozeného jazyka
 
 - Types of task in NLP, mathematical and linguistic basics. (Typy úloh v počítačovém zpracování přirozeného jazyka, matematické a lingvistické základy.)
     - [Statistical NLP I, II](http://ufal.mff.cuni.cz/courses/npfl067)
@@ -16,7 +18,7 @@ tags: Mff, School,Linguistics
 - Design and evaluation of linguistic experiments, evaluation metrics. (Návrh a vyhodnocení lingvistických experimentů, evaluační metriky.)
 - Basics of graph theory. (Základy teorie grafů.)
     [Invitation to Discrete Mathematics, Nesetril, Matousek](http://home.iitj.ac.in/~vinod2292/discrete_math/Matousek%20%20Discrete%20Math.pdf)
-- Layered description of language (TODO check translation) (Systém rovin popisu jazyka.)
+- Layered description of language (Systém rovin popisu jazyka.)
 - General linguistics, language topology. (Obecná lingvistika, jazyková typologie.)
 - Morphology and syntax. (Morfologie a syntax přirozeného jazyka.)
     - [Introduction to Linguistics, Jirka Hana](http://ufal.mff.cuni.cz/courses/npfl063-2015-wi)
@@ -31,8 +33,8 @@ General links
 - [CS Offline Úvod do teoretické a počítačové lingvistiky. I. sv. Teoretická lingvistika. Panevová Jarmila - Sgall Petr - Hajičová Eva](http://www.cupress.cuni.cz/ink2_ext/index.jsp?include=podrobnosti&id=182798)
 - [CS: Wiki Matfyz - Matematická lingvistika](http://wiki.matfyz.cz/wiki/St%C3%A1tnice_-_Informatika_-_I3:_Matematick%C3%A1_lingvistika)
 
-- TODO link to habilitation thesis of Marketa Lopatkova
-- TODO link to habilitation thesis of Zdenek Zabokrtsky 
+- [Valency in the Prague Dependency Treebank - Lopatková](http://ufal.mff.cuni.cz/DEV/pbml/79-80/lopatkova.pdf)
+- [From Treebanking to Machine Translation](https://ufal.mff.cuni.cz/~zabokrtsky/publications/theses/hab-zz.pdf)
 - [CS: Úvod do teoretické sémantiky](http://jarda.peregrin.cz/mybibl/PDFTxt/469.pdf),[Skripta Peregrin](http://artax.karlin.mff.cuni.cz/upload/index.php?action=downloadfile&filename=skripta-Peregrin.doc&directory=predmety/NPFL026&PHPSESSID=b8cd26fb9c6fa4379bb0f77f87beb339)
 - [Focus topic articulation by Jaroslav Peregrin (E. Hajicova)](http://www.jarda.peregrin.cz/mybibl/PDFTxt/313.pdf)
 - [wiki](https://cs.wikipedia.org/wiki/Zpracov%C3%A1n%C3%AD_p%C5%99irozen%C3%A9ho_jazyka#Fonetick.C3.A1_rovina)
@@ -64,14 +66,12 @@ General links
 ----------------------------------------------------------------
 
 - Metody zpracování řečového signálu. 
-    - **TODO**
-- HMM modelování akustiky fonému. 
+- HMM modelování akustiky fonému.
 - Implementace Baum-Welch a Viterbi algoritmu pro rozpoznáváni řeči. 
     - Offline CS Psutka
     - [Automatic speech recognition using Kaldi](https://github.com/oplatek/kaldi-thesis/blob/master/text/tags/oplatek_thesis013.pdf?raw=true)
 - Adaptační techniky.
-    - **TODO**
-- Sumarizace řečových nahrávek. 
+- Sumarizace řečových nahrávek.
     - Offline CS Psutka
 - Vyhledávání témat a slov v řečových korpusech. 
     - Offline CS Psutka

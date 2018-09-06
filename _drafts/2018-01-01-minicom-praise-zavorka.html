@@ -1,0 +1,86 @@
+ahoj, nevis jak bych si pres Angee seriak mohl vypisovat logy z `ang-voice-control` do souboru na pocitaci?
+
+ja jedine co umim je se tam pripojit pres minicom a zapnout to na Angee, ale ja bych si to rad logoval do souboru.
+
+diky
+
+
+zavorka [02:10]
+inside [minicom]: <Command> --> L --> enter filename
+
+
+oplatek
+[10:30]
+super!
+
+
+oplatek [10:46]
+mimochodem jaky mas <Command> defaultni na osx?  ja minicom vzdycky na macu zabijim
+
+
+zavorka
+[10:53]
+pouzivas iTerm2, nebo Terminal.app?
+
+
+oplatek [10:54]
+defaultni terminal.app
+
+
+zavorka [10:56]
+zkratkou ⌥⌘O si aktivuj _Use Option as Meta Key_
+
+
+[10:56]
+pak `<Command> == ⌥` (edited)
+
+
+[10:57]
+a pouzivej iTerm :wink:
+
+
+oplatek [10:59]
+chjo .. jsem asi uplne mimo. No nic podivam se na to vecer
+
+
+[11:00]
+nejde mi to nastavit
+
+
+[11:00]
+ ```
+Welcome to minicom 2.7.1
+
+OPTIONS:
+Compiled on May 17 2017, 15:29:14.
+Port /dev/tty.usbmodem1411, 10:57:29
+
+Press Meta-Z for help on special keys
+
+??Ω?¸?Ω?¸?Ω?Ω?Ω?Ω?Ω?Ω?Ω?Ω?Ω?Ω?Ω
+
+```
+
+
+[11:00]
+ty ohmy mi to pise kdyz mackam optoin Z
+
+
+[11:00]
+zkusim ten iterm
+
+
+zavorka [11:00]
+a prepnul sis to na meta?
+
+
+oplatek [11:00]
+jj
+
+
+zavorka [11:01]
+zkus jeste `Esc` misto ⌥
+
+
+[11:03]
+pripadne muzes pustit minicom v setupu a nastavit si to predem: `minicom -s` -> _Screen and Keyboard_ -> _A - Command key is_ (edited)
