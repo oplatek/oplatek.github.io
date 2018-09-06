@@ -1,19 +1,19 @@
 ---
 layout: post
-title: What to learn first on AWS?
+title: What to setup first on AWS?
 author: Ondrej Platek
 tags: AWS, automation
 ---
 
-### What to learn first?
+### What to setup first?
+is the most important question.
 AWS is useful, well documented but overwhelming.
-The most important question for me is:
 
-**What to setup first?**
+Let me introduce my strategy.
 
 #### Billing alerts
  There is always danger of accidentally spending money.
- [By setting up alerts for](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html#turning_on_billing_metrics)
+ [Setting up alerts prevents](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html#turning_on_billing_metrics)
   - overstepping budget actual budget plan
   - expected budget plan
  one can be quite safe not to spend a fortune or at least know about it very soon.
@@ -50,12 +50,13 @@ In addition, IaC and open-source development offers a lot of examples and resour
 
 I really enjoy combining the tools for debugging: Terraform plan & deploy commands are the commands where I discover the bugs. The AWS cli often helps me analyze the problemms, but returning to gold old fashion web browser and AWS console gives me alternative view where it is often on the first sight obvious what is wrong.
 
-### List of services which I use
+### List of services which
 - EC2
-    - autoscaling groups
-- ECR
-- ECS/Fargate
-- CloudWatch
-- ALB or ELB
-- S3
-- Route 53
+    - renting machines
+    - autoscaling groups - which can automatically scale based on traffic
+- ALB or ELB - load balancers
+- ECR - hosted docker container registry
+- ECS/Fargate - hosted containers on demand. I have only a little experience with Fargate, but it works like magic.
+- CloudWatch - basic tool to collect, display and monitor logs.
+- S3 - object storage
+- Route 53 - managed DNS service (cool with Terraform even for small a lot of small websites)
