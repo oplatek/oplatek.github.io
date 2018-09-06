@@ -6,6 +6,7 @@ tags: Mff, School,Linguistics
 ---
 #### Cs:  Vybrané okruhy pro doktorskou zkoušku
 
+
 ## 1. Basic Methods in Natural Language Processing
 
 #### Cs: Základní přístupy k počítačovému zpracování přirozeného jazyka
@@ -39,8 +40,10 @@ General links
 - [Focus topic articulation by Jaroslav Peregrin (E. Hajicova)](http://www.jarda.peregrin.cz/mybibl/PDFTxt/313.pdf)
 - [wiki](https://cs.wikipedia.org/wiki/Zpracov%C3%A1n%C3%AD_p%C5%99irozen%C3%A9ho_jazyka#Fonetick.C3.A1_rovina)
 
-3. Statistical Methods and Machine Learning in NLP (Statistické metody a strojové učení v počítačové lingvistice)
------------------------------------------------------------------
+
+## 3. Statistical Methods and Machine Learning in NLP
+
+#### CS: Statistické metody a strojové učení v počítačové lingvistice
 
 - Probabilistic modelling of language (Pravděpodobnostní modelování jazyka.)
 - Classification and regression (Metody řízeného učení pro klasifikaci a regresi.)
@@ -49,7 +52,7 @@ General links
 - Logistic regression (Logistická regrese.)
 - Decision trees (Rozhodovací stromy.)
 - Unsupervised learning (Metody neřízeného učení.)
-- ?Noisy channel and language models? (Jazykové modely a modely kanálu.)
+- Noisy channel and language models (Jazykové modely a modely kanálu.)
 - LM smoothing (Vyhlazování modelů.)
 - HMM (Skryté Markovovy modely (algoritmy Baum–Welch, Forward–Backward, Viterbi).)
 - Algorithms for statistical POS tagging (Algoritmy pro statistický tagging.)
@@ -62,34 +65,35 @@ General links
 
 
 
-5. Aplikace metod pro zpracování mluvené řeči
-----------------------------------------------------------------
+## 5. Application of methods for spoken language processing
 
-- Metody zpracování řečového signálu. 
-- HMM modelování akustiky fonému.
-- Implementace Baum-Welch a Viterbi algoritmu pro rozpoznáváni řeči. 
+#### CS: Aplikace metod pro zpracování mluvené řeči
+
+- Methods of Speech Signal Processing (Metody zpracování řečového signálu.)
+- HMMs for modelling acoustics of phoneme (HMM modelování akustiky fonému.)
+- Baum-Welch & Viterbi algorithm implementation (Implementace Baum-Welch a Viterbi algoritmu pro rozpoznáváni řeči.)
     - Offline CS Psutka
     - [Automatic speech recognition using Kaldi](https://github.com/oplatek/kaldi-thesis/blob/master/text/tags/oplatek_thesis013.pdf?raw=true)
-- Adaptační techniky.
-- Sumarizace řečových nahrávek.
+- Adaptation techniques (Adaptační techniky.)
+- Summarization of spoken utterances (Sumarizace řečových nahrávek.)
     - Offline CS Psutka
-- Vyhledávání témat a slov v řečových korpusech. 
+- Topic search in Spoken Corpora (Vyhledávání témat a slov v řečových korpusech.)
     - Offline CS Psutka
-- Rozpoznávání mluvčího. 
+- Speaker diarization (Rozpoznávání mluvčího.)
     - Offline CS Psutka
     - [Comparison of scoring methods used in speaker recognition with joint factor analysis](http://www.crim.ca/perso/patrick.kenny/Ondrej_icassp2009.pdf)
     - [Audio enhancing with DNN autoencoder for speaker recognition](http://www.fit.vutbr.cz/research/groups/speech/publi/2016/plchot_icassp2016_0005090.pdf)
-- Generování promluvy. 
+-  Natural Language Generation (Generování promluvy.)
     [Sequence-to-Sequence Generation for Spoken Dialogue via Deep Syntax Trees and Strings](http://arxiv.org/pdf/1606.05491v1.pdf)
-- Metody syntézy řeči. 
+- Methods for Text-to-Speech (Metody syntézy řeči.)
     - [data-driven phrasing for speech synthesis in low-resource languages](https://www.cs.cmu.edu/~awb/papers/icassp2012_phrasing_lrl.pdf)
     - [A beginners’ guide to statistical parametric speech synthesis](http://www.cstr.ed.ac.uk/downloads/publications/2010/king_hmm_tutorial.pdf)
-- Zpracování textu pro syntézu řeči, prozodie. 
+- Text preprocessing for TTS - prosody (Zpracování textu pro syntézu řeči, prozodie.)
     - [A beginners’ guide to statistical parametric speech synthesis](http://www.cstr.ed.ac.uk/downloads/publications/2010/king_hmm_tutorial.pdf)
-- Základní komponenty dialogového systému.
-- Porozumění mluvené řeči. 
-- Stav dialogu, řízení dialogu. 
-- Hodnocení kvality dialogových systémů.
+- Basic components of a dialogue system (Základní komponenty dialogového systému.)
+- Spoken Language Understanding (Porozumění mluvené řeči.)
+- Dialogue State and Dialogue Management (Stav dialogu, řízení dialogu.)
+- Dialogue System Evaluation (Hodnocení kvality dialogových systémů.)
 
 
 PS: As usual, suggestions and improvements are welcome by [pull request](https://github.com/oplatek/oplatek.github.io/blob/master/_posts/2016-07-10-state-exam-questions.md).
