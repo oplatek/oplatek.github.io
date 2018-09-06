@@ -28,7 +28,7 @@ github:
   repo:              https://github.com/oplatek/opla.cz
 
 pages_list:       
-  About: '/about'
+  Oplatek: '/about'
   Teaching: '/teaching'
   Archive: '/archive'
 
