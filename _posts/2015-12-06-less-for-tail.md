@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Less for tail
+title: Less tail
 author: Ondrej Platek
 tags:  Shell, Utilities
 ---
