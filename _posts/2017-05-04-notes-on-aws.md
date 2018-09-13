@@ -36,18 +36,19 @@ I recommend following posts and videos to check:
  - [Amazing Scalable Terraform Development for Teams Talk](https://www.youtube.com/watch?v=wgzgVm7Sqlk&t=3s)
 
 However, I would like to make another point.
-*IaC* is also so awesome because it is an alternative view on the deployment.
+*IaC* is so awesome also because it is an alternative view on the deployment.
+
 One type of documentation already exists. This is the default AWS documentation.
 The form is well known; Click on resource XY (or use this http request). Select this parameter. Wait few minutes and continue by deploying resource YZ.
 The typical procedural view.
 
-*IaC* brings completely different and more concise documentation. It runs along: Declare resource XY and where you have to provide this parameters, and there another three completely optional parameters.
-Such documentation is concise and offers more high-level overview.
+*IaC* brings completely different and more concise documentation. Terraform documentation feels very different: Declare resource XY. You have to provide this parameters, and there another three completely optional parameters with sensible defaults.
+Such documentation offers more high-level overview.
 I find it much easier to read.
 
-Typically, I read first Terraform documentation to learn the high-level concepts, and later to understand it more deeply I study the AWS documentation directly.
+Typically, I read first Terraform documentation to learn the high-level concepts. Later, to understand the documentation more deeply I switch to the AWS documentation.
 It is very refreshing.
-In addition, IaC and open-source development offers a lot of examples and resource to learn from.
+IaC is also self documenting because in open-source development many freely available examples emerges, so there are multiple resources to learn from.
 
 I really enjoy combining the tools for debugging: Terraform plan & deploy commands are the commands where I discover the bugs. The AWS cli often helps me analyze the problemms, but returning to gold old fashion web browser and AWS console gives me alternative view where it is often on the first sight obvious what is wrong.
 
