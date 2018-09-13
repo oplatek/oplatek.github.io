@@ -13,10 +13,11 @@ Let me introduce my strategy.
 
 #### Billing alerts
  There is always danger of accidentally spending money.
- [Setting up alerts prevents](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html#turning_on_billing_metrics)
-  - overstepping budget actual budget plan
-  - expected budget plan
- one can be quite safe not to spend a fortune or at least know about it very soon.
+ [Set up alerts may prevent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html#turning_on_billing_metrics)
+  - overstepping a planned budget,
+  - ignoring increased usage of your service,
+  - keeping useless resources deployed.
+ If not setup one is able to spend a fortune on unfitting infrastructure.
 
 #### Setup logging
 If you never experienced random, rare, hard to replicate bugs, you are lucky. For the rest of us is logging the crucial tool examine behaviour over long period of time and across many deployments and devices.
