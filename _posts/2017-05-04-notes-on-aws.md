@@ -22,11 +22,11 @@ Let me introduce my strategy.
 #### Setup logging
 If you never experienced random, rare, hard to replicate bugs, you are lucky. For the rest of us is logging the crucial tool examine behaviour over long period of time and across many deployments and devices.
 
-[*CloudWatch*](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html) is very easy to integrate and archive but quite basic.
+[*CloudWatch*](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html) is very easy to integrate and archive, but it lacks more advanced features.
 Luckily, there is a plenty of tools which can analyze, filter and monitor logs and provide much prettier and efficient interface.
 Often they easily integrate with Cloudwatch which or can be used directly.
 I would like to mention two of them:
-- [Rapid7 InsightIps](https://www.rapid7.com/products/insight-platform/) for easy to use filters and setting up event notifcations. Plus I like their UI.
+- [Rapid7 InsightIps](https://www.rapid7.com/products/insight-platform/) for easy to use filters and setting up event notifications. Plus I like their UI.
 - [Loggly](https://www.loggly.com/) excels with their query language for the logs where you can query across different source of log streams with common value e.g. time stamps.
 
 #### Infrastructure as a code (IaC)
