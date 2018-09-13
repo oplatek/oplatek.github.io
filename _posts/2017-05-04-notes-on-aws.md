@@ -52,13 +52,13 @@ IaC is also self documenting because in open-source development many freely avai
 
 I really enjoy combining the tools for debugging: Terraform plan & deploy commands are the commands where I discover the bugs. The AWS cli often helps me analyze the problemms, but returning to gold old fashion web browser and AWS console gives me alternative view where it is often on the first sight obvious what is wrong.
 
-### List of services which
+### List of services
 - EC2
-    - renting machines
-    - autoscaling groups - which can automatically scale based on traffic
-- ALB or ELB - load balancers
-- ECR - hosted docker container registry
-- ECS/Fargate - hosted containers on demand. I have only a little experience with Fargate, but it works like magic.
+    - machines on demand - IaC can be used to build the machine image and also to manage the life cycle of the machine.
+    - autoscaling groups - which can automatically scale number of identical machines based on traffic which the machines serve.
+- ALB or ELB - load balancers for balancing the traffic among different machines.
+- ECR - hosted docker container registry.
+- ECS/Fargate - hosted containers on demand. I have only a little experience with Fargate, but it works like magic, no machines needed to be managed.
 - CloudWatch - basic tool to collect, display and monitor logs.
-- S3 - object storage
-- Route 53 - managed DNS service (cool with Terraform even for small a lot of small websites)
+- S3 - popular object storage.
+- Route 53 - managed DNS service. Very simple & cool together with Terraform since it allows to change domain names for services.
