@@ -48,9 +48,9 @@ I find it much easier to read.
 
 Typically, I read first Terraform documentation to learn the high-level concepts. Later, to understand the documentation more deeply I switch to the AWS documentation.
 It is very refreshing.
-IaC is also self documenting because in open-source development many freely available examples emerges, so there are multiple resources to learn from.
+IaC gives you benefit of many examples to learn from because there is a lot of open-source development in IaC community.
 
-I really enjoy combining the tools for debugging: Terraform plan & deploy commands are the commands where I discover the bugs. The AWS cli often helps me analyze the problemms, but returning to gold old fashion web browser and AWS console gives me alternative view where it is often on the first sight obvious what is wrong.
+I really enjoy combining the tools for debugging: Terraform plan & deploy commands are the commands where I discover the bugs. The AWS cli often helps me analyze the problems, but returning to gold old fashion web browser and AWS console gives me alternative view where it is often on the first sight obvious what is wrong.
 
 ### List of services
 - EC2
