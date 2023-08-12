@@ -3,8 +3,8 @@
 permalink:           pretty
 
 # Setup
-title:               oplaTech
-tagline:             Oplatek's external memory
+title:               Ondřej Plátek
+tagline:             PhD student @UFAL,  Prague. LLM & TTS evaluation. Applied researcher & developer.
 url:                 http://opla.cz
 paginate:            1
 baseurl:             ""
@@ -25,11 +25,12 @@ author:
 # Custom vars
 version:             1.0.0
 github:
-  repo:              https://github.com/oplatek/opla.cz
+  repo:              https://github.com/oplatek/oplatek.github.io
 
-pages_list:       
-  Oplatek: '/about'
-  Teaching: '/teaching'
+pages_list:
+  Oplatek: '/index'
+  Teaching(Deprecated): '/teaching'
+  Blog: '/blog'
   Archive: '/archive'
 
 gems: [jekyll-paginate]
