@@ -4,7 +4,7 @@ permalink:           pretty
 
 # Setup
 title:               Ondřej Plátek
-tagline:             PhD student @UFAL,  Prague. LLM & TTS evaluation. Applied researcher & developer.
+tagline:             PhD student@UFAL, Prague. LLM & TTS evaluation.
 url:                 http://opla.cz
 paginate:            1
 baseurl:             ""
@@ -28,7 +28,7 @@ github:
   repo:              https://github.com/oplatek/oplatek.github.io
 
 pages_list:
-  Oplatek: '/index'
+  # Oplatek: '/index'
   # Teaching(Deprecated): '/teaching'
   # Blog: '/blog'
   Archive: '/archive'

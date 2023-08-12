@@ -1,16 +1,16 @@
 ---
 layout: page
-title: Ondřej Plátek, PhD student, Researcher
+title: PhD student & Applied Researcher
 ---
 
 ## Hi! I am Ondra, Ondřej, oplatek, oplatk.
 
 <!-- ![Oplatek climbing on Czech Sandstone]({{ site.baseurl }}/public/oplatek-tisa.kocka1.jpg) -->
-![Oplatek climbing on Czech Sandstone]({{ site.baseurl }}/public/me_by_martin_vana_jsalt23_rectangle.png){: .align-left}
+![Ondra at JSALT 2023. Photo by Martin Vana.]({{ site.baseurl }}/public/me_by_martin_vana_jsalt23_rectangle.png){: .align-left}
 
 ## Academic Career
-I am PhD student in the group of Ondřej Dušek working and funded by the [ERC NG-NLG project](todo). 
-I also won the [GAUK project for (Evaluating) Conversational Speech Synthesis](todo).
+I am PhD student in the group of Ondřej Dušek working and funded by the [ERC NG-NLG project](https://ufal.mff.cuni.cz/grants/ng-nlg). 
+I also won the [GAUK project for (Evaluating) Conversational Speech Synthesis](https://ufal.mff.cuni.cz/grants/ecss).
 My research interests lie in the application of machine learning methods for speech and language tasks.
 I am working on <strong>automatic evaluation</strong> of open-ended(chat) and task-oriented(ToD) <strong>dialogue systems</strong>,
 Natural Language Generation(<strong>NLG</strong>), and <strong>conversational</strong> speech
@@ -25,7 +25,7 @@ Alternatively, meeting for two weeks every 6-8 weeks is also viable option.
 
 ## Why to work with me?
 - I am researcher with deep understanding of the NPL and Speech Processing field.
-- I have experience not only as researcher: I built a house, lead several small teams, was a ski-instructor a floorball coach, climbed few peaks, and few sandstone towers, enjoy start-up live in several startups, and I enjoy spending time with my kids and my [wife](todo link ada's linkedin).
+- I have experience not only as researcher: I built a house, lead several small teams, was a ski-instructor a floorball coach, climbed few peaks, and few sandstone towers, enjoy start-up live in several startups, and I enjoy spending time with my kids and my [wife](https://www.linkedin.com/in/ad%C3%A9la-pl%C3%A1tkov%C3%A1-87390283/).
 - I have learned to pay attention not only to the core algorithms, software architecture, but also including the user experience design into account.
 - I am Linux expert user and happy MacOS, iOS, Android user.
 - I like to write about my projects and I love to open-source them.
@@ -33,7 +33,7 @@ Alternatively, meeting for two weeks every 6-8 weeks is also viable option.
 
 ## Why not to work with me?
 - I am expensive: 100 Euro/hour for consultation on topic of my expertise -- See above! 50-100 Euro/hour for long-term/open-source/positive-impact projects.
-- I am not expert on XY latest AI product. I have expertise in applied research&development: I have a good knowledge of algorithms, research literature, and open-source libraries. I am not interested in details of API best use of proriatery technology - despite I typically evaluate and compare their quality to open-source libraries. E.g. [ChatGPT vs LLama 2 for Chat Evaluation](todo link).
+- I am not expert on XY latest AI product. I have expertise in applied research&development: I have a good knowledge of algorithms, research literature, and open-source libraries. I am not interested in details of API best use of proriatery technology - despite I typically evaluate and compare their quality to open-source libraries. E.g. [ChatGPT vs LLama 2 for Chat Evaluation](todo link arxiv published 2023-08-21).
 - I prefer typically mid- or long-term collaborative projects. The projects I tend to work on are simply too complex to tackle alone. The team of 2-6 people works best. For projects under 6 months, I am willing to work alone.
 - I don't do dirty tricks and I communicate transparently.
 
