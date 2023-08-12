@@ -5,7 +5,8 @@ title: Ondřej Plátek, PhD student, Researcher
 
 ## Hi! I am Ondra, Ondřej, oplatek, oplatk.
 
-![Oplatek climbing on Czech Sandstone]({{ site.baseurl }}/public/oplatek-tisa.kocka1.jpg)
+<!-- ![Oplatek climbing on Czech Sandstone]({{ site.baseurl }}/public/oplatek-tisa.kocka1.jpg) -->
+![Oplatek climbing on Czech Sandstone]({{ site.baseurl }}/public/me_by_martin_vana_jsalt23_rectangle.png){: .align-left}
 
 ## Academic Career
 I am PhD student in the group of Ondřej Dušek working and funded by the [ERC NG-NLG project](todo). 
