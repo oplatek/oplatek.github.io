@@ -29,8 +29,8 @@ github:
 
 pages_list:
   Oplatek: '/index'
-  Teaching(Deprecated): '/teaching'
-  Blog: '/blog'
+  # Teaching(Deprecated): '/teaching'
+  # Blog: '/blog'
   Archive: '/archive'
 
 gems: [jekyll-paginate]
