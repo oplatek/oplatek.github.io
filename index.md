@@ -29,12 +29,19 @@ Alternatively, meeting for two weeks every 6-8 weeks is also viable option.
 - I have learned to pay attention not only to the core algorithms, software architecture, but also including the user experience design into account.
 - I am Linux expert user and happy MacOS, iOS, Android user.
 - I like to write about my projects and I love to open-source them.
+- I like to work in team. I can lead and I can follow.
 - I prefer to work with my clients long-term. The record is 9 years (2014-2023).
 
 ## Why not to work with me?
 - I am expensive: 100 Euro/hour for consultation on topic of my expertise -- See above! 50-100 Euro/hour for long-term/open-source/positive-impact projects.
-- I am not expert on XY latest AI product. I have expertise in applied research&development: I have a good knowledge of algorithms, research literature, and open-source libraries. I am not interested in details of API best use of proriatery technology - despite I typically evaluate and compare their quality to open-source libraries. E.g. [ChatGPT vs LLama 2 for Chat Evaluation](todo link arxiv published 2023-08-21).
-- I prefer typically mid- or long-term collaborative projects. The projects I tend to work on are simply too complex to tackle alone. The team of 2-6 people works best. For projects under 6 months, I am willing to work alone.
+- I am not expert on XY latest AI product.
+  I have expertise in applied research&development: I have a good knowledge of algorithms, research literature, and open-source libraries.
+  I am not interested in details of closed-source APIs since I cannot improve them.
+  However, I typically monitor the best solutions and compare their quality to open-source libraries. E.g., we compared [ChatGPT vs LLama 2 for Chat Evaluation.](todo link arxiv published 2023-08-21).
+- I prefer typically mid- or long-term collaborative projects.
+  The projects I tend to work on are simply too complex to tackle alone quickly.
+  A focused team of 2-6 people works best.
+  For projects under 6 months, I am willing to work alone, but I prefer to work in team long-term.
 - I don't do dirty tricks and I communicate transparently.
 
 ## The Not So Brief Personal History
