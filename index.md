@@ -9,7 +9,7 @@ title: PhD student & Applied Researcher
 ![Ondra at JSALT 2023. Photo by Martin Vana.]({{ site.baseurl }}/public/me_by_martin_vana_jsalt23_rectangle.png){: .align-left}
 
 ## Academic Career
-I am PhD student in the group of Ondřej Dušek working and funded by the [ERC NG-NLG project](https://ufal.mff.cuni.cz/grants/ng-nlg). 
+I am PhD student in the group of [Ondřej Dušek](https://ufal.mff.cuni.cz/ondrej-dusek) working on and funded by the [ERC NG-NLG project](https://ufal.mff.cuni.cz/grants/ng-nlg). 
 I also won the [GAUK project for (Evaluating) Conversational Speech Synthesis](https://ufal.mff.cuni.cz/grants/ecss).
 My research interests lie in the application of machine learning methods for speech and language tasks.
 I am working on <strong>automatic evaluation</strong> of open-ended(chat) and task-oriented(ToD) <strong>dialogue systems</strong>,
