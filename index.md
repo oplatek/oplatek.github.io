@@ -58,7 +58,8 @@ I still remember how I was searching for the tilde sign during my first lab in t
 Continue writing this not-so-brief history is a continuous process, so stay tuned :).
 
 * [LinkedIn - Ondřej Plátek](https://cz.linkedin.com/in/ondrejplatek)
-* [Github - larger projects](https://github.com/oplatek/)
+* [Github - oplatek](https://github.com/oplatek/)
 * [HoMedik (CZ) - climbing friends](http://www.homedik.cz)
 * [Ufal website - Personal page at Charles University, Prague](https://ufal.mff.cuni.cz/ondrej-platek)
 * [Oplatai s.r.o - my favourite R&D company ](https://ufal.mff.cuni.cz/ondrej-platek)
+* [oplatk@Twitter](https://twitter.com/oplatk)
