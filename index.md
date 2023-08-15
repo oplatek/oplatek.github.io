@@ -63,3 +63,4 @@ Continue writing this not-so-brief history is a continuous process, so stay tune
 * [Ufal website - Personal page at Charles University, Prague](https://ufal.mff.cuni.cz/ondrej-platek)
 * [Oplatai s.r.o - my favourite R&D company ](https://ufal.mff.cuni.cz/ondrej-platek)
 * [oplatk@Twitter](https://twitter.com/oplatk)
+* [Google Scholar](https://scholar.google.com/citations?user=3rA1o9YAAAAJ&hl=en)
