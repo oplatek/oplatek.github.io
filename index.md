@@ -12,8 +12,8 @@ _Meet me on the Web!_
 
 * [Ondřej Plátek @ LinkedIn](https://cz.linkedin.com/in/ondrejplatek)
 * [Ondřej Plátek @ Google Scholar](https://scholar.google.com/citations?user=3rA1o9YAAAAJ&hl=en)
-* [oplatek @ Github](https://github.com/oplatek/)
 * [oplatk @ Twitter](https://twitter.com/oplatk)
+* [oplatek @ Github](https://github.com/oplatek/)
 * [oplatek @ Ufal, Charles Uni, Prague](https://ufal.mff.cuni.cz/ondrej-platek)
 * [Ondra @ HoMedik climbing](http://www.homedik.cz)
 
