@@ -10,12 +10,12 @@ title: PhD student & Applied Researcher
 
 _Meet me on the Web!_
 
-* [LinkedIn - Ondřej Plátek](https://cz.linkedin.com/in/ondrejplatek)
-* [Google Scholar](https://scholar.google.com/citations?user=3rA1o9YAAAAJ&hl=en)
-* [Github - oplatek](https://github.com/oplatek/)
-* [oplatk@Twitter](https://twitter.com/oplatk)
-* [Ufal website - Personal page at Charles University, Prague](https://ufal.mff.cuni.cz/ondrej-platek)
-* [HoMedik (CZ) - climbing friends](http://www.homedik.cz)
+* [Ondřej Plátek @ LinkedIn](https://cz.linkedin.com/in/ondrejplatek)
+* [Ondřej Plátek @ Google Scholar](https://scholar.google.com/citations?user=3rA1o9YAAAAJ&hl=en)
+* [oplatek @ Github](https://github.com/oplatek/)
+* [oplatk @ Twitter](https://twitter.com/oplatk)
+* [{oplatek, Ondřej Plátek} @ Ufal, Charles University, Prague](https://ufal.mff.cuni.cz/ondrej-platek)
+* [Ondra @ HoMedik (CZ) - climbing friends](http://www.homedik.cz)
 
 ## Academic Career
 I am PhD student in the group of [Ondřej Dušek](https://ufal.mff.cuni.cz/ondrej-dusek) working on and funded by the [ERC NG-NLG project](https://ufal.mff.cuni.cz/grants/ng-nlg). 
