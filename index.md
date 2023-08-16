@@ -8,6 +8,15 @@ title: PhD student & Applied Researcher
 <!-- ![Oplatek climbing on Czech Sandstone]({{ site.baseurl }}/public/oplatek-tisa.kocka1.jpg) -->
 ![Ondra at JSALT 2023. Photo by Martin Vana.]({{ site.baseurl }}/public/me_by_martin_vana_jsalt23_rectangle.png){: .align-left}
 
+_Meet me on the Web!_
+
+* [LinkedIn - Ondřej Plátek](https://cz.linkedin.com/in/ondrejplatek)
+* [Google Scholar](https://scholar.google.com/citations?user=3rA1o9YAAAAJ&hl=en)
+* [Github - oplatek](https://github.com/oplatek/)
+* [oplatk@Twitter](https://twitter.com/oplatk)
+* [Ufal website - Personal page at Charles University, Prague](https://ufal.mff.cuni.cz/ondrej-platek)
+* [HoMedik (CZ) - climbing friends](http://www.homedik.cz)
+
 ## Academic Career
 I am PhD student in the group of [Ondřej Dušek](https://ufal.mff.cuni.cz/ondrej-dusek) working on and funded by the [ERC NG-NLG project](https://ufal.mff.cuni.cz/grants/ng-nlg). 
 I also won the [GAUK project for (Evaluating) Conversational Speech Synthesis](https://ufal.mff.cuni.cz/grants/ecss).
@@ -56,11 +65,3 @@ In the beginning, I had no idea what I signed up for.
 I still remember how I was searching for the tilde sign during my first lab in the first week of the first semester.
 
 Continue writing this not-so-brief history is a continuous process, so stay tuned :).
-
-* [LinkedIn - Ondřej Plátek](https://cz.linkedin.com/in/ondrejplatek)
-* [Github - oplatek](https://github.com/oplatek/)
-* [HoMedik (CZ) - climbing friends](http://www.homedik.cz)
-* [Ufal website - Personal page at Charles University, Prague](https://ufal.mff.cuni.cz/ondrej-platek)
-* [Oplatai s.r.o - my favourite R&D company ](https://ufal.mff.cuni.cz/ondrej-platek)
-* [oplatk@Twitter](https://twitter.com/oplatk)
-* [Google Scholar](https://scholar.google.com/citations?user=3rA1o9YAAAAJ&hl=en)
