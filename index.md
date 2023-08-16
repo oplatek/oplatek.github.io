@@ -31,6 +31,7 @@ start-ups but I had also a wonderful time during my paid internships at Apple in
 I am used to working remotely, but I think it is necessary to meet other team members in person.
 In my opinion, meeting once a week for a day is the minimum for a fruitful collaboration.
 Alternatively, meeting for two weeks every 6-8 weeks is also a viable option.
+I am based near [Sedlčany](https://cs.wikipedia.org/wiki/Sedl%C4%8Dany) and commuting once or twice a week to [Prague](https://en.wikipedia.org/wiki/Prague) is optimal.
 
 ## Why work with me?
 - I am a researcher with a deep understanding of the NPL and Speech Processing field.
