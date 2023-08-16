@@ -17,6 +17,14 @@ _Meet me on the Web!_
 * [{oplatek, Ondřej Plátek} @ Ufal, Charles University, Prague](https://ufal.mff.cuni.cz/ondrej-platek)
 * [Ondra @ HoMedik (CZ) - climbing friends](http://www.homedik.cz)
 
+## Updates
+* July 2023 _[Three Ways of Using Large Language Models to Evaluate Chat](http://arxiv.org/abs/2308.06502)_ paper will be presented at [DSTC11 workshop at SigDial/INLG conference](https://sigdialinlg2023.github.io/workshops.html).
+* accepted
+* July 2023 _[With a Little Help from the Authors: Reproducing Human Evaluation of an MT Error Detector](http://arxiv.org/abs/2308.06527)_ paper will be presented at [ReproNLP workshop](https://repronlp.github.io/).
+* July 2023: I have been part of the [Petr Schwarz's](https://www.linkedin.com/in/petrschwarz/) [team](https://www.linkedin.com/posts/petrschwarz_jsalt-esperanto-activity-7092111057644568577-jTiL) working on _Automatic Design of Conversational Models from Observation of Human-to-Human Conversation_.
+* June 2023: Our paper _[MooseNet: A Trainable Metric for Synthesized Speech with a PLDA Module](https://arxiv.org/abs/2301.07087) is accepted to [12th ISCA Speech Synthesis Workshop (SSW)](https://ssw2023.org/index.php/conference-program/program/) for oral presentation.
+* June 2023: I prepared a [_Neural Conversational AI Lab_](https://github.com/keya-dialog/jsalt-dialogue-lab) for [JSALT Summer School](https://jsalt2023.univ-lemans.fr/en/summer-school.html). It demonstrated how to use [QLoRa](https://huggingface.co/blog/4bit-transformers-bitsandbytes) with LLMs for building simplified chat-bot on task-oriented data.
+
 ## Academic Career
 I am PhD student in the group of [Ondřej Dušek](https://ufal.mff.cuni.cz/ondrej-dusek) working on and funded by the [ERC NG-NLG project](https://ufal.mff.cuni.cz/grants/ng-nlg). 
 I also won the [GAUK project for (Evaluating) Conversational Speech Synthesis](https://ufal.mff.cuni.cz/grants/ecss).
