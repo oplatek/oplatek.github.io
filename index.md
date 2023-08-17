@@ -8,7 +8,7 @@ title: PhD student & Applied Researcher
 <!-- ![Oplatek climbing on Czech Sandstone]({{ site.baseurl }}/public/oplatek-tisa.kocka1.jpg) -->
 ![Ondra at JSALT 2023. Photo by Martin Vana.]({{ site.baseurl }}/public/me_by_martin_vana_jsalt23_rectangle.png){: .align-left}
 
-_Meet me on the Web!_
+_Meet me on the Web! Get in touch!_
 
 * [Ondřej Plátek @ LinkedIn](https://cz.linkedin.com/in/ondrejplatek)
 * [Ondřej Plátek @ Google Scholar](https://scholar.google.com/citations?user=3rA1o9YAAAAJ&hl=en)
