@@ -56,7 +56,7 @@ I am based near [Sedlčany](https://cs.wikipedia.org/wiki/Sedl%C4%8Dany) and com
 - I am not an expert on XY's latest AI product.
   I have expertise in applied research development: I know the core algorithms, research literature, and open-source libraries well.
   I am not interested in the details of closed-source APIs since I cannot improve them.
-  However, I typically monitor the best solutions and compare their quality to open-source libraries. E.g., we compared [ChatGPT vs. LLama 2 for Chat Evaluation.](todo link arxiv published 2023-08-21).
+  However, I typically monitor the best solutions and compare their quality to open-source libraries. E.g., we compared [ChatGPT vs. LLama 2 for Chat Evaluation.](https://arxiv.org/abs/2308.06502).
 - I typically prefer mid- or long-term collaborative projects.
   The projects I tend to work on are simply too complex to tackle alone quickly.
   A focused team of 2-6 people works best.
