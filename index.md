@@ -21,7 +21,7 @@ _Meet me on the Web!_
 * July 2023 _[Three Ways of Using Large Language Models to Evaluate Chat](http://arxiv.org/abs/2308.06502)_ paper will be presented at [DSTC11 workshop at SigDial/INLG conference](https://sigdialinlg2023.github.io/workshops.html).
 * July 2023 _[With a Little Help from the Authors: Reproducing Human Evaluation of an MT Error Detector](http://arxiv.org/abs/2308.06527)_ paper will be presented at [ReproNLP workshop](https://repronlp.github.io/).
 * July 2023: I have been part of the [Petr Schwarz's](https://www.linkedin.com/in/petrschwarz/) [team](https://www.linkedin.com/posts/petrschwarz_jsalt-esperanto-activity-7092111057644568577-jTiL) working on _Automatic Design of Conversational Models from Observation of Human-to-Human Conversation_ at [JSALT 2023](https://jsalt2023.univ-lemans.fr/en/index.html).
-* June 2023: Our paper _[MooseNet: A Trainable Metric for Synthesized Speech with a PLDA Module](https://arxiv.org/abs/2301.07087) is accepted to [12th ISCA Speech Synthesis Workshop (SSW)](https://ssw2023.org/index.php/conference-program/program/) for oral presentation.
+* June 2023: Our paper _[MooseNet: A Trainable Metric for Synthesized Speech with a PLDA Module](https://arxiv.org/abs/2301.07087)_ is accepted to [12th ISCA Speech Synthesis Workshop (SSW)](https://ssw2023.org/index.php/conference-program/program/) for oral presentation.
 * June 2023: I prepared a [_Neural Conversational AI Lab_](https://github.com/keya-dialog/jsalt-dialogue-lab) for [JSALT Summer School](https://jsalt2023.univ-lemans.fr/en/summer-school.html) demonstrating [QLoRa](https://huggingface.co/blog/4bit-transformers-bitsandbytes) usage. 
 
 ## Academic Career
@@ -38,7 +38,7 @@ start-ups but I had also a wonderful time during my paid internships at Apple in
 I am used to working remotely, but I think it is necessary to meet other team members in person.
 In my opinion, meeting once a week for a day is the minimum for a fruitful collaboration.
 Alternatively, meeting for two weeks every 6-8 weeks is also a viable option.
-I am based near [Sedlčany](https://cs.wikipedia.org/wiki/Sedl%C4%8Dany) and commuting once or twice a week to [Prague](https://en.wikipedia.org/wiki/Prague) is optimal.
+I am based near [Sedlčany](https://cs.wikipedia.org/wiki/Sedl%C4%8Dany) and commuting once or twice a week to [Prague](https://en.wikipedia.org/wiki/Prague) is working well for me.
 
 ## Why work with me?
 - I am a researcher with a deep understanding of the NPL and Speech Processing field.
