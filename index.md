@@ -12,10 +12,10 @@ _Meet me on the Web!_
 
 * [Ondřej Plátek @ LinkedIn](https://cz.linkedin.com/in/ondrejplatek)
 * [Ondřej Plátek @ Google Scholar](https://scholar.google.com/citations?user=3rA1o9YAAAAJ&hl=en)
-* [oplatek @ Github](https://github.com/oplatek/)
 * [oplatk @ Twitter](https://twitter.com/oplatk)
-* [{oplatek, Ondřej Plátek} @ Ufal, Charles University, Prague](https://ufal.mff.cuni.cz/ondrej-platek)
-* [Ondra @ HoMedik (CZ) - climbing friends](http://www.homedik.cz)
+* [oplatek @ Github](https://github.com/oplatek/)
+* [oplatek @ Ufal, Charles Uni, Prague](https://ufal.mff.cuni.cz/ondrej-platek)
+* [Ondra @ HoMedik climbing](http://www.homedik.cz)
 
 ## Updates
 * July 2023 _[Three Ways of Using Large Language Models to Evaluate Chat](http://arxiv.org/abs/2308.06502)_ paper will be presented at [DSTC11 workshop at SigDial/INLG conference](https://sigdialinlg2023.github.io/workshops.html).
