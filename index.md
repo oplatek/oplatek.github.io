@@ -35,14 +35,14 @@ synthesis(<strong>TTS</strong>).
 ## Industry Career
 Please check my [LinkedIn](https://www.linkedin.com/in/ondrejplatek/) for details, but the TL;DR is I love working with
 startups, but I also had a wonderful time during my paid internships at Apple in Cupertino.
-I am used to working remotely, but I think it is necessary to meet other team members in person.
-In my opinion, meeting once a week for a day is the minimum for a fruitful collaboration.
-Alternatively, meeting for two weeks every 6-8 weeks is also viable.
+I am used to working remotely, but I think it is beneficial to meet other team members in person.
+In my opinion, meeting once a week for a day is the minimum for a highly effective collaboration.
+Alternatively, meeting for two weeks every 6-8 weeks anywhere in Europe is also viable.
 I am based near [Sedlčany](https://cs.wikipedia.org/wiki/Sedl%C4%8Dany), and commuting to [Prague](https://en.wikipedia.org/wiki/Prague) once or twice a week works well for me.
 
 ## Why work with me?
 - I am a researcher with a deep understanding of the NPL and Speech Processing field.
-- I have experience not only as a researcher: I built a house, led several small teams, was a ski instructor, and a floorball coach.
+- I have experience not only as a researcher: I built a house, led several small software teams, was a ski instructor, and a floorball coach.
   Climbed [a](https://eu.zonerama.com/homedik/Album/7373646) [few](https://eu.zonerama.com/homedik/Album/6517857) [peaks](https://eu.zonerama.com/homedik/Album/6886499) and [a few sandstone towers](https://eu.zonerama.com/homedik/Album/4385809).
   I have enjoyed culture in several startups and still enjoy spending time with my kids and [wife](https://www.linkedin.com/in/ad%C3%A9la-pl%C3%A1tkov%C3%A1-87390283/).
 - I have learned to pay attention not only to the core algorithms and software architecture but also to consider the user experience design.
