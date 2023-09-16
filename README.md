@@ -10,4 +10,4 @@ See http://opla.cz or http://oplatek.github.io/
 Please report bugs via [Github issue tracker](https://github.com/oplatek/oplatek.github.io/issues/new).
 
 If you do not have a Github account or want to give me more detailed feedback, drop me an email.
-You can find information how to contact me on [page about me](http://opla.cz/about). 
+You can find information how to contact me on http://opla.cz
