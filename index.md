@@ -17,7 +17,7 @@ _Meet me on the Web! Get in touch!_
 * [oplatek @ Ufal, Charles Uni, Prague](https://ufal.mff.cuni.cz/ondrej-platek)
 * [Ondra @ HoMedik climbing](http://www.homedik.cz)
 
-## Updates
+## News 
 * July 2023 _[Three Ways of Using Large Language Models to Evaluate Chat](http://arxiv.org/abs/2308.06502)_ paper will be presented at [DSTC11 workshop at SigDial/INLG conference](https://sigdialinlg2023.github.io/workshops.html).
 * July 2023 _[With a Little Help from the Authors: Reproducing Human Evaluation of an MT Error Detector](http://arxiv.org/abs/2308.06527)_ paper will be presented at [ReproNLP workshop](https://repronlp.github.io/).
 * July 2023: I have been part of [Petr Schwarz's](https://www.linkedin.com/in/petrschwarz/) [team](https://www.linkedin.com/posts/petrschwarz_jsalt-esperanto-activity-7092111057644568577-jTiL) working on the _Automatic Design of Conversational Models from Observation of Human-to-Human Conversation_ at [JSALT 2023](https://jsalt2023.univ-lemans.fr/en/index.html).
