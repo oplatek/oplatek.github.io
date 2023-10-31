@@ -37,7 +37,7 @@ synthesis(<strong>TTS</strong>).
 Please check my [LinkedIn](https://www.linkedin.com/in/ondrejplatek/) for details, but the TL;DR is I love working with
 startups, but I also had a wonderful time during my paid internships at Apple in Cupertino.
 I am used to working remotely, but I think it is beneficial to meet other team members in person.
-In my opinion, meeting once a week for a day is the minimum for a highly effective collaboration.
+Meeting once a week for a day is the minimum for a highly effective collaboration.
 Alternatively, meeting for two weeks every 6-8 weeks anywhere in Europe is also viable.
 I am based near [Sedlčany](https://cs.wikipedia.org/wiki/Sedl%C4%8Dany), and commuting to [Prague](https://en.wikipedia.org/wiki/Prague) once or twice a week works well for me.
 
