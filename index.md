@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Machine Learning Scientist and Engineer
+title: Machine Learning Scientist
 ---
 
 ## Ondra, Ondřej, oplatek, oplatk; Get in touch!
