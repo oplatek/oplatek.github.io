@@ -5,7 +5,7 @@ title: Machine Learning Scientist
 
 ## Meet Ondra, Ondřej, oplatek, oplatk. Me :)
 
-## Let's find out how I can help you with your AI project!
+## Let us find out how I can help you with your AI project!
 
 _Reach out through any channel:_
 
