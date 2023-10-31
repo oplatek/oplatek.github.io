@@ -36,8 +36,9 @@ Natural Language Generation(<strong>NLG</strong>), and <strong>conversational</s
 synthesis(<strong>TTS</strong>).
 
 ## Industry Career
-Please check my [LinkedIn](https://www.linkedin.com/in/ondrejplatek/) for details, but the TL;DR is I love working with
-startups, but I also had a wonderful time during my paid internships at Apple in Cupertino.
+Please check my [LinkedIn](https://www.linkedin.com/in/ondrejplatek/) for details.
+TL;DR is I love working with startups.
+However, I also had a wonderful time during my paid internships at Apple in Cupertino.
 I am used to working remotely, but I think it is beneficial to meet other team members in person.
 Meeting once a week for a day is the minimum for a highly effective collaboration.
 Alternatively, meeting for two weeks every 6-8 weeks anywhere in Europe is also viable.
@@ -45,7 +46,7 @@ I am based near [Sedlčany](https://cs.wikipedia.org/wiki/Sedl%C4%8Dany), and co
 
 ## Why work with me?
 - I am a researcher with a deep understanding of the NPL and Speech Processing field.
-- I have experience not only as a researcher: I built a house, led several small software teams, was a ski instructor, and a floorball coach.
+- I have experience not only as a researcher: I built a house, led several small software teams, was a ski instructor, and a [floorball](https://en.wikipedia.org/wiki/Floorball) coach.
   Climbed [a](https://eu.zonerama.com/homedik/Album/7373646) [few](https://eu.zonerama.com/homedik/Album/6517857) [peaks](https://eu.zonerama.com/homedik/Album/6886499) and [a few sandstone towers](https://eu.zonerama.com/homedik/Album/4385809).
   I have enjoyed culture in several startups and still enjoy spending time with my kids and [wife](https://www.linkedin.com/in/ad%C3%A9la-pl%C3%A1tkov%C3%A1-87390283/).
 - I have learned to pay attention not only to the core algorithms and software architecture but also to consider the user experience design.
@@ -66,13 +67,13 @@ I am based near [Sedlčany](https://cs.wikipedia.org/wiki/Sedl%C4%8Dany), and co
   I am willing to work alone for projects under six months, but I prefer to work in a team long-term.
 - I don't do dirty tricks, and I communicate transparently.
 
-## The Not-So-Brief Personal History
-Back in high school, I was happy focusing on learning German and English and was deeply interested in politics.
-I was participating with my [high school](https://gymvod.cz) in the [European Youth Parliament](https://eyp.org/). Our team
-won its place in [Nyon](https://en.wikipedia.org/wiki/Nyon).
-However, I also met a lot of researchers, hackers, and programmers, and just before graduation, I decided that coding is much more fun than politics.
-I wanted to build things.
-In the beginning, I had no idea what I signed up for.
-I still remember how I was searching for the tilde sign during my first lab in the first week of the first semester.
-
-Writing this not-so-brief history is a continuous process, so stay tuned :).
+<!-- ## The Not-So-Brief Personal History -->
+<!-- Back in high school, I was happy focusing on learning German and English and was deeply interested in politics. -->
+<!-- I was participating with my [high school](https://gymvod.cz) in the [European Youth Parliament](https://eyp.org/). Our team -->
+<!-- won its place in [Nyon](https://en.wikipedia.org/wiki/Nyon). -->
+<!-- However, I also met a lot of researchers, hackers, and programmers, and just before graduation, I decided that coding is much more fun than politics. -->
+<!-- I wanted to build things. -->
+<!-- In the beginning, I had no idea what I signed up for. -->
+<!-- I still remember how I was searching for the tilde sign during my first lab in the first week of the first semester. -->
+<!--  -->
+<!-- Writing this not-so-brief history is a continuous process, so stay tuned :). -->
