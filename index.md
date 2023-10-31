@@ -3,9 +3,11 @@ layout: page
 title: Machine Learning Scientist
 ---
 
-## Reach out to Ondra, Ondřej, oplatek, oplatk
+## Reach out to Ondra, Ondřej, oplatek, oplatk.
 
-_Let us find out how I can help you!_
+## Let us find out how I can help you!
+
+_My online presence:_
 
 * [Ondřej Plátek @ LinkedIn](https://cz.linkedin.com/in/ondrejplatek)
 * [Ondřej Plátek @ Google Scholar](https://scholar.google.com/citations?user=3rA1o9YAAAAJ&hl=en)
