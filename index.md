@@ -3,7 +3,7 @@ layout: page
 title: Machine Learning Scientist
 ---
 
-## Reach out to Ondra, Ondřej, oplatek, oplatk.
+## Reach out to Ondra, Ondřej, oplatek, oplatk, me :)
 
 ## Let us find out how I can help you!
 
