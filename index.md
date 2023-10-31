@@ -1,14 +1,9 @@
 ---
 layout: page
-title: PhD student & Applied Researcher
+title: Machine Learning Scientist and Engineer
 ---
 
-## Hi! I am Ondra, Ondřej, oplatek, oplatk.
-
-<!-- ![Oplatek climbing on Czech Sandstone]({{ site.baseurl }}/public/oplatek-tisa.kocka1.jpg) -->
-![Ondra at JSALT 2023. Photo by Martin Vana.]({{ site.baseurl }}/public/me_by_martin_vana_jsalt23_rectangle.png){: .align-left}
-
-_Meet me on the Web! Get in touch!_
+## Ondra, Ondřej, oplatek, oplatk; Get in touch!
 
 * [Ondřej Plátek @ LinkedIn](https://cz.linkedin.com/in/ondrejplatek)
 * [Ondřej Plátek @ Google Scholar](https://scholar.google.com/citations?user=3rA1o9YAAAAJ&hl=en)
@@ -16,6 +11,10 @@ _Meet me on the Web! Get in touch!_
 * [oplatek @ Github](https://github.com/oplatek/)
 * [oplatek @ Ufal, Charles Uni, Prague](https://ufal.mff.cuni.cz/ondrej-platek)
 * [Ondra @ HoMedik climbing](http://www.homedik.cz)
+
+<!-- ![Oplatek climbing on Czech Sandstone]({{ site.baseurl }}/public/oplatek-tisa.kocka1.jpg) -->
+![Ondra at JSALT 2023. Photo by Martin Vana.]({{ site.baseurl }}/public/me_by_martin_vana_jsalt23_rectangle.png){: .align-left}
+
 
 ## News 
 * July 2023 _[Three Ways of Using Large Language Models to Evaluate Chat](http://arxiv.org/abs/2308.06502)_ paper will be presented at [DSTC11 workshop at SigDial/INLG conference](https://sigdialinlg2023.github.io/workshops.html).
