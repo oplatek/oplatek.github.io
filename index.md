@@ -10,8 +10,11 @@ title: Machine Learning Scientist
 _Reach out through any channel:_
 
 * [Ondřej Plátek @ LinkedIn](https://cz.linkedin.com/in/ondrejplatek)
-* [Ondřej Plátek @ Google Scholar](https://scholar.google.com/citations?user=3rA1o9YAAAAJ&hl=en)
 * [oplatk @ Twitter](https://twitter.com/oplatk)
+* ondrej dot platek at gmail
+
+_Me and my work online:_
+* [Ondřej Plátek @ Google Scholar](https://scholar.google.com/citations?user=3rA1o9YAAAAJ&hl=en)
 * [oplatek @ Github](https://github.com/oplatek/)
 * [oplatek @ Ufal, Charles Uni, Prague](https://ufal.mff.cuni.cz/ondrej-platek)
 * [Ondra @ HoMedik climbing](http://www.homedik.cz)
