@@ -54,7 +54,7 @@ I am based near [Sedlčany](https://cs.wikipedia.org/wiki/Sedl%C4%8Dany), and co
   I have enjoyed culture in several startups and still enjoy spending time with my kids and [wife](https://www.linkedin.com/in/ad%C3%A9la-pl%C3%A1tkov%C3%A1-87390283/).
 - I have learned to pay attention not only to the core algorithms and software architecture but also to consider the user experience design.
 - I am a Linux expert user and happy MacOS, iOS, and Android user.
-- I like to write about my projects, and I love to open-source them.
+- I love to open-source my projects and to contribute to other projects.
 - I enjoy working in a team. I can lead, and I can follow.
 - I prefer to work with my clients long-term. The record is nine years (2014-2023).
 
