@@ -68,7 +68,7 @@ I am based near [Sedlčany](https://cs.wikipedia.org/wiki/Sedl%C4%8Dany), and co
   The projects I work on are simply too complex to tackle alone quickly.
   A focused team of 2-6 people works best.
   I am willing to work alone for projects under six months, but I prefer to work in a team long-term.
-- I don't do dirty tricks, and I communicate transparently.
+- I don't do dirty tricks, I communicate transparently, I prefer projects with broader positive impact.
 
 <!-- ## The Not-So-Brief Personal History -->
 <!-- Back in high school, I was happy focusing on learning German and English and was deeply interested in politics. -->
