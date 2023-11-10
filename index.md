@@ -7,7 +7,7 @@ title: Machine Learning Scientist
 
 ## Let me help you with your AI project! 🚀
 
-_Reach out through any channel and let's find out!_
+_Reach out through any channel and let's find out a solution!_
 
 * [Ondřej Plátek @ LinkedIn](https://cz.linkedin.com/in/ondrejplatek)
 * [oplatk @ Twitter](https://twitter.com/oplatk)
