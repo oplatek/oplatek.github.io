@@ -16,7 +16,7 @@ _Reach out through any channel and let's find out!_
 _Take a look at what I do:_
 * [Ondřej Plátek @ Google Scholar](https://scholar.google.com/citations?user=3rA1o9YAAAAJ&hl=en)
 * [oplatek @ Github](https://github.com/oplatek/)
-* [oplatek @ Ufal, Charles Uni, Prague](https://ufal.mff.cuni.cz/ondrej-platek)
+* [oplatek @ Ufal MFF UK, Charles Uni, Prague](https://ufal.mff.cuni.cz/ondrej-platek)
 * [Ondra @ HoMedik climbing](http://www.homedik.cz)
 
 <!-- ![Oplatek climbing on Czech Sandstone]({{ site.baseurl }}/public/oplatek-tisa.kocka1.jpg) -->
