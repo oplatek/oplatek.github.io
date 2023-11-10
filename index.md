@@ -3,9 +3,9 @@ layout: page
 title: Machine Learning Scientist
 ---
 
-## Meet Ondra, Ondřej, oplatek, oplatk. Me :)
+## Ondra, Ondřej, oplatek, oplatk. Me.
 
-## How I can help you with your AI project?!
+## Let me help you with your AI project! 🚀
 
 _Reach out through any channel and let's find out!_
 
