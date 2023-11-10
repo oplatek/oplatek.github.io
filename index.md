@@ -11,7 +11,7 @@ _Reach out through any channel and let's find out!_
 
 * [Ondřej Plátek @ LinkedIn](https://cz.linkedin.com/in/ondrejplatek)
 * [oplatk @ Twitter](https://twitter.com/oplatk)
-* ondrej dot platek at gmail
+* ondrej dot platek at Gmail domain
 
 _Take a look at what I do:_
 * [Ondřej Plátek @ Google Scholar](https://scholar.google.com/citations?user=3rA1o9YAAAAJ&hl=en)
