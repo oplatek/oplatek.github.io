@@ -30,10 +30,10 @@ Contact me via email at `ondrejplatek at Gmail domain`
 
 _Take a look at what I do:_
 
-🎓📖[Ondřej Plátek @ Google Scholar](https://scholar.google.com/citations?user=3rA1o9YAAAAJ&hl=en)<br/>
+🎓📖 [Ondřej Plátek @ Google Scholar](https://scholar.google.com/citations?user=3rA1o9YAAAAJ&hl=en)<br/>
 🐙🤗 [oplatek @ Github](https://github.com/oplatek/)<br/>
-🎓🏫[oplatek @ Ufal MFF UK, Charles Uni, Prague](https://ufal.mff.cuni.cz/ondrej-platek)<br/>
-🌄🧗[Ondra @ HoMedik climbing](http://www.homedik.cz)<br/>
+🎓🏫 [oplatek @ Ufal MFF UK, Charles Uni, Prague](https://ufal.mff.cuni.cz/ondrej-platek)<br/>
+🌄🧗 [Ondra @ HoMedik climbing](http://www.homedik.cz)<br/>
 
 <!-- ![Oplatek climbing on Czech Sandstone]({{ site.baseurl }}/public/oplatek-tisa.kocka1.jpg) -->
 ![Ondra at JSALT 2023. Photo by Martin Vana.]({{ site.baseurl }}/public/me_by_martin_vana_jsalt23_rectangle.png){: .align-left}
