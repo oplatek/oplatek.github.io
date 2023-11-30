@@ -25,8 +25,7 @@ _Reach out through email or LinkedIn and let's find out a solution!_
 		font-family: "SF Pro Text", Helvetica, sans-serif;
 	}
 </style><a class="libutton" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=ondrejplatek" target="_blank">Follow me LinkedIn</a>
-
-Contact me via email at `ondrejplatek at Gmail domain`
+or contact me at `ondrejplatek at Gmail domain`
 
 _Take a look at what I do:_
 
