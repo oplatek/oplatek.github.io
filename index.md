@@ -24,7 +24,7 @@ _Reach out through email or LinkedIn and let's find out a solution!_
 		background-color: #0A66C2;
 		font-family: "SF Pro Text", Helvetica, sans-serif;
 	}
-</style><a class="libutton" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=ondrejplatek" target="_blank">Follow Ondřej Plátek on LinkedIn</a>
+</style><a class="libutton" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=ondrejplatek" target="_blank">Follow me LinkedIn</a>
 
 ```
 ondrejplatek at Gmail domain
