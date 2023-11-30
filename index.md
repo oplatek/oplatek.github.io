@@ -11,7 +11,7 @@ _Reach out through email or LinkedIn and let's find out a solution!_
 
 <style> .libutton {
 		display: flex;
-		flex-direction: column;
+		<!-- flex-direction: column; -->
 		justify-content: center;
 		padding: 7px;
 		text-align: center;
