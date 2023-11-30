@@ -9,7 +9,8 @@ title: Machine Learning Scientist
 
 _Reach out through email or LinkedIn and let's find out a solution!_
 
-Contact me at `ondrejplatek@gmail.com`.
+<div style="justify-content: center">
+<span>Contact me at `ondrejplatek@gmail.com`!</span>
 <style> .libutton {
 		display: flex;
 		flex-direction: column;
@@ -25,7 +26,8 @@ Contact me at `ondrejplatek@gmail.com`.
 		background-color: #0A66C2;
 		font-family: "SF Pro Text", Helvetica, sans-serif;
 	}
-</style><a class="libutton" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=ondrejplatek" target="_blank">Follow me LinkedIn</a>
+</style><a class="libutton" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=ondrejplatek" target="_blank">Follow me LinkedIn!</a>
+</div>
 
 _Take a look at what I do:_
 
