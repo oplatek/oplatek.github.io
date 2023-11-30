@@ -9,9 +9,7 @@ title: Machine Learning Scientist
 
 _Reach out through any channel and let's find out a solution!_
 
-* [Ondřej Plátek @ LinkedIn](https://cz.linkedin.com/in/ondrejplatek)
-<style>
-	.libutton {
+<style> .libutton {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -26,16 +24,17 @@ _Reach out through any channel and let's find out a solution!_
 		background-color: #0A66C2;
 		font-family: "SF Pro Text", Helvetica, sans-serif;
 	}
-</style>
-<a class="libutton" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=ondrejplatek" target="_blank">Follow on LinkedIn</a>
-* [oplatk @ Twitter](https://twitter.com/oplatk)
-* ondrejplatek at Gmail domain
+</style><a class="libutton" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=ondrejplatek" target="_blank">Follow Ondřej Plátek on LinkedIn</a>
+
+```
+ondrejplatek at Gmail domain
+```
 
 _Take a look at what I do:_
-* [Ondřej Plátek @ Google Scholar](https://scholar.google.com/citations?user=3rA1o9YAAAAJ&hl=en)
-* [oplatek @ Github](https://github.com/oplatek/)
-* [oplatek @ Ufal MFF UK, Charles Uni, Prague](https://ufal.mff.cuni.cz/ondrej-platek)
-* [Ondra @ HoMedik climbing](http://www.homedik.cz)
+* 🎓📖[Ondřej Plátek @ Google Scholar](https://scholar.google.com/citations?user=3rA1o9YAAAAJ&hl=en)
+* 🐙🤗 [oplatek @ Github](https://github.com/oplatek/)
+* 🎓🏫[oplatek @ Ufal MFF UK, Charles Uni, Prague](https://ufal.mff.cuni.cz/ondrej-platek)
+* 🌄🧗[Ondra @ HoMedik climbing](http://www.homedik.cz)
 
 <!-- ![Oplatek climbing on Czech Sandstone]({{ site.baseurl }}/public/oplatek-tisa.kocka1.jpg) -->
 ![Ondra at JSALT 2023. Photo by Martin Vana.]({{ site.baseurl }}/public/me_by_martin_vana_jsalt23_rectangle.png){: .align-left}
