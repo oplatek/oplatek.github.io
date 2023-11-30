@@ -7,7 +7,7 @@ title: Machine Learning Scientist
 
 ## Let me help you with your AI project! 🚀
 
-_Reach out through any channel and let's find out a solution!_
+_Reach out through email or LinkedIn and let's find out a solution!_
 
 <style> .libutton {
 		display: flex;
