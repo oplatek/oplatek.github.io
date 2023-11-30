@@ -9,7 +9,7 @@ title: Machine Learning Scientist
 
 _Reach out through email or LinkedIn and let's find out a solution!_
 
-Contact me at `ondrejplatek at Gmail domain`.
+Contact me at `ondrejplatek@gmail.com`.
 <style> .libutton {
 		display: flex;
 		flex-direction: column;
