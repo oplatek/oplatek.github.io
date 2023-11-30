@@ -26,9 +26,7 @@ _Reach out through email or LinkedIn and let's find out a solution!_
 	}
 </style><a class="libutton" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=ondrejplatek" target="_blank">Follow me LinkedIn</a>
 
-```
-ondrejplatek at Gmail domain
-```
+Contact me via email at `ondrejplatek at Gmail domain`
 
 _Take a look at what I do:_
 🎓📖[Ondřej Plátek @ Google Scholar](https://scholar.google.com/citations?user=3rA1o9YAAAAJ&hl=en)<br/>
