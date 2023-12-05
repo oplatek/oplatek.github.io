@@ -7,7 +7,7 @@ tags: Programming, Python, Debugging, VScode, Visual Studio Code
 
 
 
-# VSCode is the king! The Copilot is his best servant. But ipdb is still the debugging ninja.
+# VSCode is the king! The Copilot is his best servant. But Ipdb is still the debugging ninja.
 
 Why I am writing this blog post? Partially, to shoot out for the VScode developers, partially to document my setup, and mainly to get feedback for my debugging routine.
 Please let me know if I can use the current VScode features better for debugging.
@@ -15,14 +15,13 @@ Or share with me what are you missing in VScode! I am all ears!
 
 
 Let me quickly recapitulate for what I am thankful in VScode then I will describe how I debug code.
-Finally, I will share how the dream debugging interface will look for me.
+Finally, I will describe my perfect debugging workflow in Ipdb. Can it be replicated in VScode? I don't know.
 
 ## VScode excellence
 
 1. I was an addicted Vim user because I wanted to focus on the code - on the text. I also fell in love with the keyboard shortcuts' user experience.
    Surprisingly, VScode let me focus on code as well. Maximum focus on the text editor, minimal glitter around.
 
-   <!-- TODO link screenshot -->
 ![VScode in debug mode]({{ site.baseurl }}/public/2023-12-05-vscode.png "VScode in debug mode investigating OOM error")
 
 2. Copilot. The game changer. The best for me? I am not stuck and pissed anymore. I have a buddy who I can talk to when I
@@ -97,22 +96,22 @@ Where is the bad part? There is no bad part, there is just the better part outsi
 python -m ipdb -c "b psi/utils.py:54" -c "continue" ./zephyr_clm_yesno.py --model_name EleutherAI/pythia-160m --num_workers 0
 ```
 
-I was used at REPL from ipdb. The ipdb command `__import__('ipdb').set_trace()` at any line will give you a breakpoint at any line of code.
+I was used at REPL from Ipdb. The Ipdb command `__import__('ipdb').set_trace()` at any line will give you a breakpoint at any line of code.
 The problem is that you cannot set it up interactively, nor condition the breakpoint on a variable value, nor delete other breakpoints introduced via importing.
 Why is REPL so great? I use it as an interactive Python shell at the place where you need it. In the middle of the program with all the context initialized. I interactively try new solutions to my code at the given call stack.
 A mighty weapon!🚀
 
 VScode gives me all the other stuff, interactive breakpoints addition/removal, conditional breakpoints but no REPL.😭
 
-## Becoming the ipdb ninja
-After giving debugging in VScode a try I returned to debugging with ipdb for the REPL.
+## Becoming the Ipdb ninja
+After giving debugging in VScode a try I returned to debugging with Ipdb for the REPL.
 
 Finally, I was able to figure out a workflow where I could set breakpoints dynamically, delete them and condition them.
 Here is the trick. Let's avoid `__import__('ipdb').set_trace()` and use `-c` commands from CLI.
-The first line just loads the ipdb module. Starts the debugging process. 
+The first line just loads the Ipdb module. Starts the debugging process. 
 The second line sets the first break point to the file `psi/utils.py` on line `54`.
 The third line finally does the magic and runs the code until it hits the first breakpoint we have just set.
-The fourth line is the command which I run usually without the prefix for debugging with ipdb. 🚀
+The fourth line is the command which I run usually without the prefix for debugging with Ipdb. 🚀
 
 
 ```bash
