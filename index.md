@@ -29,9 +29,9 @@ Contact me at `ondrejplatek@gmail.com`!
 
 _Take a look at what I do:_
 
-🎓📖 [Ondřej Plátek @ Google Scholar](https://scholar.google.com/citations?user=3rA1o9YAAAAJ&hl=en)<br/>
-🐙🤗 [oplatek @ Github](https://github.com/oplatek/)<br/>
-🎓🏫 [oplatek @ Ufal MFF UK, Charles Uni, Prague](https://ufal.mff.cuni.cz/ondrej-platek)<br/>
+📖 [Ondřej Plátek @ Google Scholar](https://scholar.google.com/citations?user=3rA1o9YAAAAJ&hl=en)<br/>
+🤗 [oplatek @ Github](https://github.com/oplatek/)<br/>
+🎓 [oplatek @ Ufal MFF UK, Charles Uni, Prague](https://ufal.mff.cuni.cz/ondrej-platek)<br/>
 
 ![Ondra at JSALT 2023. Photo by Martin Vana.]({{ site.baseurl }}/public/me_by_martin_vana_jsalt23_rectangle.png){: .align-left}
 
