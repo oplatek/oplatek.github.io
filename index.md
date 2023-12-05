@@ -5,9 +5,9 @@ title: Machine Learning Scientist
 
 ## Ondra, Ondřej, oplatek, oplatk. Me.
 
-## Let me help you with your AI project! 🚀
+## Let me help you with your AI project 🚀
 
-_Reach out through email or LinkedIn and let's find out a solution!_
+_Reach out through email or LinkedIn and let's find out a solution_
 
 Contact me at `ondrejplatek@gmail.com`!
 <style> .libutton {
