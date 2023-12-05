@@ -31,6 +31,6 @@ pages_list:
   # Oplatek: '/index'
   # Teaching(Deprecated): '/teaching'
   # Blog: '/blog'
-  Archive: '/archive'
+  Blog: '/archive'
 
 gems: [jekyll-paginate]
