@@ -9,10 +9,6 @@ tags: Programming, Python, Debugging, VScode, Visual Studio Code
 
 # VSCode is the king! The Copilot is his best servant. But ipdb is still the debugging ninja.
 
-I am back at writing about technical nerdy details basically because I need to write them down.
-I want mostly to thank the VScode developers but I also need to improve the debugging experience.
-It still sucks. This just means the VScode default is not far better than anything else I know.
-
 Why I am writing this blog post? Partially, to shoot out for the VScode developers, partially to document my setup, and mainly to get feedback for my debugging routine.
 Please let me know if I can use the current VScode features better for debugging.
 Or share with me what are you missing in VScode! I am all ears!
