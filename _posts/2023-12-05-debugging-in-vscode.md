@@ -91,11 +91,6 @@ python -m debugpy --listen 0.0.0.0:5678 --wait-for-client  ./zephyr_clm_yesno.py
 
 Where is the bad part? There is no bad part, there is just the better part outside of VScode😉. At least for me.
 
-
-```bash
-python -m ipdb -c "b psi/utils.py:54" -c "continue" ./zephyr_clm_yesno.py --model_name EleutherAI/pythia-160m --num_workers 0
-```
-
 I was used at REPL from Ipdb. The Ipdb command `__import__('ipdb').set_trace()` at any line will give you a breakpoint at any line of code.
 The problem is that you cannot set it up interactively, nor condition the breakpoint on a variable value, nor delete other breakpoints introduced via importing.
 Why is REPL so great? I use it as an interactive Python shell at the place where you need it. In the middle of the program with all the context initialized. I interactively try new solutions to my code at the given call stack.
