@@ -22,8 +22,6 @@ Finally, I will describe my perfect debugging workflow in Ipdb. Can it be replic
 1. I was an addicted Vim user because I wanted to focus on the code - on the text. I also fell in love with the keyboard shortcuts' user experience.
    Surprisingly, VScode let me focus on code as well. Maximum focus on the text editor, minimal glitter around.
 
-![VScode in debug mode]({{ site.baseurl }}/public/2023-12-05-vscode.png "VScode in debug mode investigating OOM error")
-
 2. Copilot. The game changer. The best for me? I am not stuck and pissed anymore. I have a buddy who I can talk to when I
    am stuck. I am not frustrated anymore. Just formulating the thoughts to an attentive listener - the Copilot -
    often helps me to find the solution myself.
@@ -87,7 +85,8 @@ Nice! I can just add a simple prefix in the terminal! 🎉
 python -m debugpy --listen 0.0.0.0:5678 --wait-for-client  ./zephyr_clm_yesno.py --model_name EleutherAI/pythia-160m --max_steps 30 --eval_every_prc_steps 0.8
 ```
 
-<!-- TODO picture of interactive REPL -->
+
+![VScode in debug mode]({{ site.baseurl }}/public/2023-12-05-vscode.png "VScode in debug mode investigating OOM error")
 
 Where is the bad part? There is no bad part, there is just the better part outside of VScode😉. At least for me.
 
@@ -101,9 +100,11 @@ VScode gives me all the other stuff, interactive breakpoints addition/removal, c
 ## Becoming the Ipdb ninja
 After giving debugging in VScode a try I returned to debugging with Ipdb for the REPL.
 
+<!-- TODO picture of interactive REPL -->
+
 Finally, I was able to figure out a workflow where I could set breakpoints dynamically, delete them and condition them.
 Here is the trick. Let's avoid `__import__('ipdb').set_trace()` and use `-c` commands from CLI.
-The first line just loads the Ipdb module. Starts the debugging process. 
+The first line in the Ipbd example below, just loads the Ipdb module and starts the debugging process. 
 The second line sets the first break point to the file `psi/utils.py` on line `54`.
 The third line finally does the magic and runs the code until it hits the first breakpoint we have just set.
 The fourth line is the command which I run usually without the prefix for debugging with Ipdb. 🚀
