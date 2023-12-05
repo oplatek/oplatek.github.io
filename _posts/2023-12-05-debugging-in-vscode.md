@@ -103,15 +103,15 @@ python -m ipdb -c "b psi/utils.py:54" -c "continue" ./zephyr_clm_yesno.py --mode
 
 I was used at REPL from ipdb. The ipdb command `__import__('ipdb').set_trace()` at any line will give you a breakpoint at any line of code.
 The problem is that you cannot set it up interactively, nor condition the breakpoint on a variable value, nor delete other breakpoints introduced via importing.
-Why is REPL so great? I use it as an interactive python shell at the place where you need it. In the middle of the program with all the context initialized. I interactively try new solutions to my code at the given call stack.
+Why is REPL so great? I use it as an interactive Python shell at the place where you need it. In the middle of the program with all the context initialized. I interactively try new solutions to my code at the given call stack.
 A mighty weapon!🚀
 
 VScode gives me all the other stuff, interactive breakpoints addition/removal, conditional breakpoints but no REPL.😭
 
 ## Becoming the ipdb ninja
-After spending some time debugging with VScode  I returned to debugging with ipdb for the REPL.
+After giving debugging in VScode a try I returned to debugging with ipdb for the REPL.
 
-However, I was able to figure out a workflow where I can set breakpoints dynamically, delete them and condition them.
+Finally, I was able to figure out a workflow where I could set breakpoints dynamically, delete them and condition them.
 Here is the trick. Let's avoid `__import__('ipdb').set_trace()` and use `-c` commands from CLI.
 The first line just loads the ipdb module. Starts the debugging process. 
 The second line sets the first break point to the file `psi/utils.py` on line `54`.
@@ -126,4 +126,4 @@ python -m ipdb \
  ./zephyr_clm_yesno.py --model_name EleutherAI/pythia-160m --num_workers 0
 ```
 
-The rest is easy just check the [Ipdb cheat sheet](https://wangchuan.github.io/coding/2017/07/12/ipdb-cheat-sheet.html).
+The rest is easy. Just check the [Ipdb cheat sheet](https://wangchuan.github.io/coding/2017/07/12/ipdb-cheat-sheet.html). 🚀
