@@ -81,7 +81,8 @@ I recently debugged the command `./zephyr_clm_yesno.py --model_name EleutherAI/p
 Nice! I can just add a simple prefix in the terminal! 🎉 
 
 ```bash
-python -m debugpy --listen 0.0.0.0:5678 --wait-for-client  ./zephyr_clm_yesno.py --model_name EleutherAI/pythia-160m --max_steps 30 --eval_every_prc_steps 0.8
+python -m debugpy --listen 0.0.0.0:5678 --wait-for-client  \
+  ./zephyr_clm_yesno.py --model_name EleutherAI/pythia-160m --max_steps 30 --eval_every_prc_steps 0.8
 ```
 
 
