@@ -11,7 +11,9 @@ tags: Programming, Python, Debugging, VScode, Visual Studio Code
 
 Why I am writing this blog post? Partially, to shoot out for the VScode developers, partially to document my setup, and mainly to get feedback for my debugging routine.
 Please let me know if I can use the current VScode features better for debugging.
-Or share with me what are you missing in VScode! I am all ears!
+Or share with me what are you missing in VScode!
+
+[Let me know, I am all ears! ➔](https://www.linkedin.com/in/ondrejplatek/)
 
 
 Let me quickly recapitulate for what I am thankful in VScode then I will describe how I debug code.
