@@ -1,7 +1,6 @@
 ---
 layout: post
-title: Debugging in Visual Studio Code? REPL is still the best.
-subtitle: VSCode is the king! The Copilot is his best servant. But Ipdb is still the debugging ninja.
+title: Debugging in Visual Studio Code? Ipdb REPL is still the best.
 author: Ondrej Platek
 tags: Programming, Python, Debugging, VScode, Visual Studio Code 
 ---
