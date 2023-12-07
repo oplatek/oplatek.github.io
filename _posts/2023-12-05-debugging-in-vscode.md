@@ -90,7 +90,7 @@ python -m debugpy --listen 0.0.0.0:5678 --wait-for-client  \
 
 Where is the bad part? There is no bad part, there is just the better part outside of VScode😉. At least for me.
 
-I was used to debug with Ipdb [REPL](https://pythonprogramminglanguage.com/repl/). The Ipdb command `__import__('ipdb').set_trace()` at any line will give you a breakpoint at any line of code.
+I was used to debugging with Ipdb [REPL](https://pythonprogramminglanguage.com/repl/). The Ipdb command `__import__('ipdb').set_trace()` at any line will give you a breakpoint at any line of code.
 
 The problem is that you cannot set it up interactively, nor condition the breakpoint on a variable value, nor delete other breakpoints introduced via importing. Not without writing code just meant for debugging which you later need to remember to remove again.
 
@@ -124,9 +124,11 @@ The rest is easy. Just check the [Ipdb cheat sheet](https://wangchuan.github.io/
 
 Finito, Konec, The end. 
 
-Have a great day!
+160mHave a great day!
 
 Ondra 🙏🙏🙏
+
+UPDATE: I found an [old issue for implementing REPL in debugpy](https://github.com/microsoft/debugpy/issues/221)! Please give it some 👍!
 
 Feedback? Tips? Opinion? Share it on [LinkedIn ➔](https://www.linkedin.com/in/ondrejplatek/)<br/>
 If you want to see more posts like this. [Follow me. ➔](https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=ondrejplatek)
