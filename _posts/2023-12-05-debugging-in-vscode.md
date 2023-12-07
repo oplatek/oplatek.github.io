@@ -1,35 +1,33 @@
 ---
 layout: post
 title: Debugging in Visual Studio Code? REPL is still the best.
+subtitle: VSCode is the king! The Copilot is his best servant. But Ipdb is still the debugging ninja.
 author: Ondrej Platek
 tags: Programming, Python, Debugging, VScode, Visual Studio Code 
 ---
 
-
-
-# VSCode is the king! The Copilot is his best servant. But Ipdb is still the debugging ninja.
-
-Why I am writing this blog post? Partially, to shoot out for the VScode developers, partially to document my setup, and mainly to get feedback for my debugging routine.
-Please let me know if I can use the current VScode features better for debugging.
-Or share with me what are you missing in VScode!
+Why I am writing this blog post?
+Partially, to shoot out for the [VScode](https://code.visualstudio.com/) developers, partially to document my setup, and mainly to get feedback for my debugging routine.
+How can I use the current VScode features better for debugging?
+What am I still ignoring in VScode? What are your tips?
 
 [Let me know, I am all ears! ➔](https://www.linkedin.com/in/ondrejplatek/)
 
 
 Let me quickly recapitulate for what I am thankful in VScode then I will describe how I debug code.
-Finally, I will describe my perfect debugging workflow in Ipdb. Can it be replicated in VScode? I don't know.
+Finally, I will describe my perfect debugging workflow in [Ipdb](https://github.com/gotcha/ipdb). Can it be replicated in VScode? I don't know.
 
 ## VScode excellence
 
-1. I was an addicted Vim user because I wanted to focus on the code - on the text. I also fell in love with the keyboard shortcuts' user experience.
+1. I was an addicted [Vim](https://www.vim.org/) user because I wanted to focus on the code - on the text. I also fell in love with the keyboard shortcuts' user experience.
    Surprisingly, VScode let me focus on code as well. Maximum focus on the text editor, minimal glitter around.
 
-2. Copilot. The game changer. The best for me? I am not stuck and pissed anymore. I have a buddy who I can talk to when I
+2. [Copilot](https://code.visualstudio.com/blogs/2023/03/30/vscode-copilot). The game changer. The best for me? I am not stuck and pissed anymore. I have a buddy who I can talk to when I
    am stuck. I am not frustrated anymore. Just formulating the thoughts to an attentive listener - the Copilot -
    often helps me to find the solution myself.
 
-3. Plugins: The mandatory setup for me was the Vim plugin and the SSH plugin as I code remotely in the cloud.
-   The Tex, Grammarly, and Python plugins are just awesome additions that ramp the productivity instantly.
+3. Extensions - Plugins: The mandatory setup for me was the Vim extension and the [SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) extension as I code remotely in the cloud.
+   The [Tex](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop), [Grammarly](https://marketplace.visualstudio.com/items?itemName=znck.grammarly), and [Python plugins](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance) are just awesome additions that ramp the productivity instantly.
    The setup always felt smooth.
 
 4. The magic of mixing up shortcuts, GUI, and text-based configuration is awesome.
@@ -106,7 +104,7 @@ After giving debugging in VScode a try I returned to debugging with Ipdb for the
 
 Finally, I was able to figure out a workflow where I could set breakpoints dynamically, delete them and condition them.
 Here is the trick. Let's avoid `__import__('ipdb').set_trace()` and use `-c` commands from CLI.
-The first line in the Ipbd example below, just loads the Ipdb module and starts the debugging process. 
+The first line in the Ipbd example below just loads the Ipdb module and starts the debugging process. 
 The second line sets the first break point to the file `psi/utils.py` on line `54`.
 The third line finally does the magic and runs the code until it hits the first breakpoint we have just set.
 The fourth line is the command which I run usually without the prefix for debugging with Ipdb. 🚀
@@ -120,3 +118,13 @@ python -m ipdb \
 ```
 
 The rest is easy. Just check the [Ipdb cheat sheet](https://wangchuan.github.io/coding/2017/07/12/ipdb-cheat-sheet.html). 🚀
+
+
+Finito, Konec, The end. 
+
+Have a great day!
+
+Ondra 🙏🙏🙏
+
+Feedback? Tips? Opinion? Share it on [LinkedIn ➔](https://www.linkedin.com/in/ondrejplatek/)<br/>
+If you want to see more posts like this. [Follow me. ➔](https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=ondrejplatek)
