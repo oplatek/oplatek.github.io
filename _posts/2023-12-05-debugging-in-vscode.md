@@ -16,7 +16,7 @@ What am I still ignoring in VScode? What are your tips?
 Let me quickly recapitulate for what I am thankful in VScode then I will describe how I debug code.
 Finally, I will describe my perfect debugging workflow in [Ipdb](https://github.com/gotcha/ipdb). Can it be replicated in VScode? I don't know.
 
-**UPDATE: Pavel Minaev quickly replied to my comment about a missing feature and recommended [VScode Debug Console](https://code.visualstudio.com/docs/editor/debugging#_debug-console-repl ) the REPL Ipdb equivalent in VScode. I need to test it properly it seems as functional as Ipdb. 🎉**
+**UPDATE: Pavel Minaev quickly replied to my comment about a missing feature and recommended [VScode Debug Console](https://code.visualstudio.com/docs/editor/debugging#_debug-console-repl ). The REPL Ipdb equivalent in VScode. I need to test it properly but it seems as functional as Ipdb. 🎉**
 
 ## VScode excellence
 
