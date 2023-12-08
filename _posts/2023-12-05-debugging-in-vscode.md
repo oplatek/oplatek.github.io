@@ -16,6 +16,8 @@ What am I still ignoring in VScode? What are your tips?
 Let me quickly recapitulate for what I am thankful in VScode then I will describe how I debug code.
 Finally, I will describe my perfect debugging workflow in [Ipdb](https://github.com/gotcha/ipdb). Can it be replicated in VScode? I don't know.
 
+**UPDATE: Pavel Minaev quickly replied to my comment about a missing feature and recommended [VScode Debug Console](https://code.visualstudio.com/docs/editor/debugging#_debug-console-repl ) the REPL Ipdb equivalent in VScode. I need to test it properly it seems as functional as Ipdb. 🎉**
+
 ## VScode excellence
 
 1. I was an addicted [Vim](https://www.vim.org/) user because I wanted to focus on the code - on the text. I also fell in love with the keyboard shortcuts' user experience.
@@ -124,11 +126,11 @@ The rest is easy. Just check the [Ipdb cheat sheet](https://wangchuan.github.io/
 
 Finito, Konec, The end. 
 
-160mHave a great day!
+Have a great day!
 
 Ondra 🙏🙏🙏
 
-UPDATE: I found an [old issue for implementing REPL in debugpy](https://github.com/microsoft/debugpy/issues/221)! Please give it some 👍!
+UPDATE2: See [VScode Debug Console](https://code.visualstudio.com/docs/editor/debugging#_debug-console-repl), no need to implement any new functionality in VScode! Just to learn about the existing one.
 
 Feedback? Tips? Opinion? Share it on [LinkedIn ➔](https://www.linkedin.com/in/ondrejplatek/)<br/>
 If you want to see more posts like this. [Follow me. ➔](https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=ondrejplatek)
