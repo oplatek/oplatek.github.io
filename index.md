@@ -25,7 +25,7 @@ Contact me at `ondrejplatek@gmail.com`!
 		background-color: #0A66C2;
 		font-family: "SF Pro Text", Helvetica, sans-serif;
 	}
-</style><a class="libutton" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=ondrejplatek" target="_blank">Follow me LinkedIn!</a>
+</style><a class="libutton" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=ondrejplatek" target="_blank">Follow me on LinkedIn!</a>
 
 _Take a look at what I do:_
 
