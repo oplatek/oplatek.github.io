@@ -36,11 +36,12 @@ _Take a look at what I do:_
 ![Ondra at JSALT 2023. Photo by Martin Vana.]({{ site.baseurl }}/public/me_by_martin_vana_jsalt23_rectangle.png){: .align-left}
 
 
-## News 
+## News
+* May 2024 [I enjoyed a panel discussion on using AI/LLM in Academia at VSCHT, Prague](https://www.linkedin.com/posts/ondrejplatek_we-did-it-me-and-my-partner-in-crime-dajana-activity-7201491526655320065-rZoX)
 * November 2023 I gave a talk at the Netiquette+ Final Summit about How to use AI responsibly in Czech🇨🇿. [See the slides in the complementary blog post](https://opla.cz/2023/11/29/ai-etika/).
 * July 2023 _[Three Ways of Using Large Language Models to Evaluate Chat](http://arxiv.org/abs/2308.06502)_ paper will be presented at [DSTC11 workshop at SigDial/INLG conference](https://sigdialinlg2023.github.io/workshops.html).
 * July 2023 _[With a Little Help from the Authors: Reproducing Human Evaluation of an MT Error Detector](http://arxiv.org/abs/2308.06527)_ paper will be presented at [ReproNLP workshop](https://repronlp.github.io/).
-* July 2023: I have been part of [Petr Schwarz's](https://www.linkedin.com/in/petrschwarz/) [team](https://www.linkedin.com/posts/petrschwarz_jsalt-esperanto-activity-7092111057644568577-jTiL) working on the _Automatic Design of Conversational Models from Observation of Human-to-Human Conversation_ at [JSALT 2023](https://jsalt2023.univ-lemans.fr/en/index.html).
+<!-- * July 2023: I have been part of [Petr Schwarz's](https://www.linkedin.com/in/petrschwarz/) [team](https://www.linkedin.com/posts/petrschwarz_jsalt-esperanto-activity-7092111057644568577-jTiL) working on the _Automatic Design of Conversational Models from Observation of Human-to-Human Conversation_ at [JSALT 2023](https://jsalt2023.univ-lemans.fr/en/index.html). -->
 * June 2023: Our paper _[MooseNet: A Trainable Metric for Synthesized Speech with a PLDA Module](https://arxiv.org/abs/2301.07087)_ is accepted to [12th ISCA Speech Synthesis Workshop (SSW)](https://ssw2023.org/index.php/conference-program/program/) for oral presentation.
 * June 2023: I prepared a [_Neural Conversational AI Lab_](https://github.com/keya-dialog/jsalt-dialogue-lab) for [JSALT Summer School](https://jsalt2023.univ-lemans.fr/en/summer-school.html), demonstrating [QLoRa](https://huggingface.co/blog/4bit-transformers-bitsandbytes) usage. 
 
