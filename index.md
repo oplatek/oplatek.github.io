@@ -37,7 +37,7 @@ _Take a look at what I do:_
 
 
 ## News
-* May 2024 [I joined a panel discussion on using AI/LLM in Academia at VSCHT, Prague](https://www.linkedin.com/posts/ondrejplatek_we-did-it-me-and-my-partner-in-crime-dajana-activity-7201491526655320065-rZoX)
+* May 2024 [I joined a panel discussion on using AI/LLM in Academia at VSCHT, Prague](https://www.linkedin.com/posts/ondrejplatek_we-did-it-me-and-my-partner-in-crime-dajana-activity-7201491526655320065-rZoX).
 * November 2023 I gave a talk at the Netiquette+ Final Summit about How to use AI responsibly in Czech🇨🇿. [See the slides in the complementary blog post](https://opla.cz/2023/11/29/ai-etika/).
 * July 2023 _[Three Ways of Using Large Language Models to Evaluate Chat](http://arxiv.org/abs/2308.06502)_ paper will be presented at [DSTC11 workshop at SigDial/INLG conference](https://sigdialinlg2023.github.io/workshops.html).
 * July 2023 _[With a Little Help from the Authors: Reproducing Human Evaluation of an MT Error Detector](http://arxiv.org/abs/2308.06527)_ paper will be presented at [ReproNLP workshop](https://repronlp.github.io/).
