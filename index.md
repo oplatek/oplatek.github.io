@@ -5,11 +5,11 @@ title: Machine Learning Scientist
 
 ## Ondra, Ondřej, oplatek, oplatk. Me.
 
-## Let me help you with your AI project 🚀
+## Let's collaborate on AI projects together🚀
 
-_Reach out through email or LinkedIn and let's find out a solution_
+_Reach out through email or LinkedIn and let me help you_
 
-Contact me at `ondrejplatek@gmail.com`!
+Write me to `ondrejplatek@gmail.com`
 <style> .libutton {
 		display: flex;
 		flex-direction: column;
@@ -25,12 +25,12 @@ Contact me at `ondrejplatek@gmail.com`!
 		background-color: #0A66C2;
 		font-family: "SF Pro Text", Helvetica, sans-serif;
 	}
-</style><a class="libutton" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=ondrejplatek" target="_blank">Follow me on LinkedIn!</a>
+</style><a class="libutton" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=ondrejplatek" target="_blank">Follow me on LinkedIn</a>
 
 _Take a look at what I do:_
 
 📖 [Ondřej Plátek @ Google Scholar](https://scholar.google.com/citations?user=3rA1o9YAAAAJ&hl=en)<br/>
-🤗 [oplatek @ Github](https://github.com/oplatek/)<br/>
+🤗 [oplatek @ GitHub](https://github.com/oplatek/)<br/>
 🎓 [oplatek @ Ufal MFF UK, Charles Uni, Prague](https://ufal.mff.cuni.cz/ondrej-platek)<br/>
 
 ![Ondra at JSALT 2023. Photo by Martin Vana.]({{ site.baseurl }}/public/me_by_martin_vana_jsalt23_rectangle.png){: .align-left}
