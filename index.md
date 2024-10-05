@@ -1,15 +1,14 @@
 ---
 layout: page
-title: Machine Learning Scientist
+title: Ondra, Ondřej, oplatek, oplatk. Me.
+subtitle: Machine Learning Researcher
 ---
-
-## Ondra, Ondřej, oplatek, oplatk. Me.
 
 ## Let's collaborate on AI projects together🚀
 
 _Reach out through email or LinkedIn and let me help you_
 
-Write me to `ondrejplatek@gmail.com`
+Contact me at `ondrejplatek@gmail.com`
 <style> .libutton {
 		display: flex;
 		flex-direction: column;
@@ -55,9 +54,10 @@ Natural Language Generation(<strong>NLG</strong>), and <strong>conversational</s
 synthesis(<strong>TTS</strong>).
 
 ## Industry Career
+TL;DR I love working with startups.
+
 Please check my [LinkedIn](https://www.linkedin.com/in/ondrejplatek/) for details.
-TL;DR is I love working with startups.
-However, I also had a wonderful time during my paid internships at Apple in Cupertino.
+I also had a wonderful time during my paid internships at Apple in Cupertino.
 I am used to working remotely, but I think it is beneficial to meet other team members in person.
 Meeting once a week for a day is the minimum for a highly effective collaboration.
 Alternatively, meeting for two weeks every 6-8 weeks anywhere in Europe is also viable.
