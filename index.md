@@ -74,7 +74,7 @@ I am based near [Sedlčany](https://cs.wikipedia.org/wiki/Sedl%C4%8Dany), and co
 - I am a Linux expert user and happy MacOS, iOS, and Android user.
 - I love to open-source my projects and to contribute to other projects.
 - I enjoy working in a team. I can lead, and I can follow.
-- I prefer to work with my clients long-term. The record is nine years (2014-2023).
+- I prefer to work with my clients long-term. The record is nine years (2014-2023) as of 2023.
 
 ## Why not work with me?
 <!-- - I am expensive: 100 Euro/hour for consultation on a topic of my expertise -- See above! I take 35-70 Euro/hour for long-term/open-source/positive-impact projects. I openly admit that in Czech academia, I earn only a fraction of that. -->
