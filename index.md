@@ -57,7 +57,9 @@ synthesis(<strong>TTS</strong>).
 TL;DR I love working with startups.
 
 Please check my [LinkedIn](https://www.linkedin.com/in/ondrejplatek/) for details.
-I also had a wonderful time during my paid internships at Apple in Cupertino.
+I have worked almost exclusively with startups,
+but enjoyed my paid internships at Apple in Cupertino a lot.
+
 I am used to working remotely, but I think it is beneficial to meet other team members in person.
 Meeting once a week for a day is the minimum for a highly effective collaboration.
 Alternatively, meeting for two weeks every 6-8 weeks anywhere in Europe is also viable.
