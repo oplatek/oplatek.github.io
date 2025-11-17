@@ -36,7 +36,7 @@ _Take a look at what I do:_
 
 
 ## News
-* I joined [bottlecapai.com](https://www.bottlecapai.com).
+* I joined [bottlecapai.com](https://www.bottlecapai.com) as LLM research. Have fun and good results at [BottleCapAI/NoCap-test](https://github.com/BottleCapAI/NoCap-Test?tab=readme-ov-file#objective) and join too! I do recommend it.
 * July 2024 Our toolkit [factgenie](https://github.com/kasnerz/factgenie/) is under rapid development an the article [factgenie: A Framework for Span-based Evaluation of Generated Texts](https://arxiv.org/abs/2407.17863) was accepted to INLG 2024 as a system demonstration.
 * May 2024 [I joined a panel discussion on using AI/LLM in Academia at VSCHT, Prague](https://www.linkedin.com/posts/ondrejplatek_we-did-it-me-and-my-partner-in-crime-dajana-activity-7201491526655320065-rZoX).
 * November 2023 I gave a talk at the Netiquette+ Final Summit about How to use AI responsibly in Czech🇨🇿. [See the slides in the complementary blog post](https://opla.cz/2023/11/29/ai-etika/).
