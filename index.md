@@ -36,23 +36,23 @@ _Take a look at what I do:_
 
 
 ## News
-* I joined [bottlecapai.com](https://www.bottlecapai.com) as a LLM researcher. Join too! Have fun and good results at [BottleCapAI/NoCap-test](https://github.com/BottleCapAI/NoCap-Test?tab=readme-ov-file#objective). I do recommend it.
-* July 2024 Our toolkit [factgenie](https://github.com/kasnerz/factgenie/) is under rapid development an the article [factgenie: A Framework for Span-based Evaluation of Generated Texts](https://arxiv.org/abs/2407.17863) was accepted to INLG 2024 as a system demonstration.
-* May 2024 [I joined a panel discussion on using AI/LLM in Academia at VSCHT, Prague](https://www.linkedin.com/posts/ondrejplatek_we-did-it-me-and-my-partner-in-crime-dajana-activity-7201491526655320065-rZoX).
-* November 2023 I gave a talk at the Netiquette+ Final Summit about How to use AI responsibly in Czech🇨🇿. [See the slides in the complementary blog post](https://opla.cz/2023/11/29/ai-etika/).
-* July 2023 _[Three Ways of Using Large Language Models to Evaluate Chat](http://arxiv.org/abs/2308.06502)_ paper will be presented at [DSTC11 workshop at SigDial/INLG conference](https://sigdialinlg2023.github.io/workshops.html).
-* July 2023 _[With a Little Help from the Authors: Reproducing Human Evaluation of an MT Error Detector](http://arxiv.org/abs/2308.06527)_ paper will be presented at [ReproNLP workshop](https://repronlp.github.io/).
+* I joined [bottlecapai.com](https://www.bottlecapai.com) as an LLM researcher. Join too! Have fun and good results at [BottleCapAI/NoCap-test](https://github.com/BottleCapAI/NoCap-Test?tab=readme-ov-file#objective). I do recommend it.
+* July 2024: Our toolkit [factgenie](https://github.com/kasnerz/factgenie/) is under rapid development, and the article [factgenie: A Framework for Span-based Evaluation of Generated Texts](https://arxiv.org/abs/2407.17863) was accepted to INLG 2024 as a system demonstration.
+* May 2024: [I joined a panel discussion on using AI/LLM in Academia at VSCHT, Prague](https://www.linkedin.com/posts/ondrejplatek_we-did-it-me-and-my-partner-in-crime-dajana-activity-7201491526655320065-rZoX).
+* November 2023: I gave a talk at the Netiquette+ Final Summit about How to use AI responsibly in Czech🇨🇿. [See the slides in the complementary blog post](https://opla.cz/2023/11/29/ai-etika/).
+* July 2023: _[Three Ways of Using Large Language Models to Evaluate Chat](http://arxiv.org/abs/2308.06502)_ paper will be presented at [DSTC11 workshop at SigDial/INLG conference](https://sigdialinlg2023.github.io/workshops.html).
+* July 2023: _[With a Little Help from the Authors: Reproducing Human Evaluation of an MT Error Detector](http://arxiv.org/abs/2308.06527)_ paper will be presented at [ReproNLP workshop](https://repronlp.github.io/).
 <!-- * July 2023: I have been part of [Petr Schwarz's](https://www.linkedin.com/in/petrschwarz/) [team](https://www.linkedin.com/posts/petrschwarz_jsalt-esperanto-activity-7092111057644568577-jTiL) working on the _Automatic Design of Conversational Models from Observation of Human-to-Human Conversation_ at [JSALT 2023](https://jsalt2023.univ-lemans.fr/en/index.html). -->
 * June 2023: Our paper _[MooseNet: A Trainable Metric for Synthesized Speech with a PLDA Module](https://arxiv.org/abs/2301.07087)_ is accepted to [12th ISCA Speech Synthesis Workshop (SSW)](https://ssw2023.org/index.php/conference-program/program/) for oral presentation.
-* June 2023: I prepared a [_Neural Conversational AI Lab_](https://github.com/keya-dialog/jsalt-dialogue-lab) for [JSALT Summer School](https://jsalt2023.univ-lemans.fr/en/summer-school.html), demonstrating [QLoRa](https://huggingface.co/blog/4bit-transformers-bitsandbytes) usage. 
+* June 2023: I prepared a [_Neural Conversational AI Lab_](https://github.com/keya-dialog/jsalt-dialogue-lab) for [JSALT Summer School](https://jsalt2023.univ-lemans.fr/en/summer-school.html), demonstrating [QLoRA](https://huggingface.co/blog/4bit-transformers-bitsandbytes) usage.
 
 ## Academic Career
-I am PhD student in the group of [Ondřej Dušek](https://ufal.mff.cuni.cz/ondrej-dusek) working on and funded by the [ERC NG-NLG project](https://ufal.mff.cuni.cz/grants/ng-nlg). 
+I paused pursuing my PhD, where I worked under [Ondřej Dušek](https://ufal.mff.cuni.cz/ondrej-dusek), funded by the [ERC NG-NLG project](https://ufal.mff.cuni.cz/grants/ng-nlg).
 I also won the [GAUK project for (Evaluating) Conversational Speech Synthesis](https://ufal.mff.cuni.cz/grants/ecss).
 My research interests lie in the application of machine learning methods for speech and language tasks.
-I am working on the <strong>automatic evaluation</strong> of open-ended(chat) and task-oriented(ToD) <strong>dialogue systems</strong>,
-Natural Language Generation(<strong>NLG</strong>), and <strong>conversational</strong> speech
-synthesis(<strong>TTS</strong>).
+I am working on the <strong>automatic evaluation</strong> of open-ended (chat) and task-oriented (ToD) <strong>dialogue systems</strong>,
+Natural Language Generation (<strong>NLG</strong>), and <strong>conversational</strong> speech
+synthesis (<strong>TTS</strong>).
 
 ## Industry Career
 TL;DR I love working with startups.
@@ -67,7 +67,7 @@ Alternatively, meeting for two weeks every 6-8 weeks anywhere in Europe is also 
 I am based near [Sedlčany](https://cs.wikipedia.org/wiki/Sedl%C4%8Dany), and commuting to [Prague](https://en.wikipedia.org/wiki/Prague) once or twice a week works well for me.
 
 ## Why work with me?
-- I am a researcher with a deep understanding of the NPL and Speech Processing field.
+- I am a researcher with a deep understanding of the NLP and Speech Processing field.
 - I have experience not only as a researcher: I built a house, led several small software teams, was a ski instructor, and a [floorball](https://en.wikipedia.org/wiki/Floorball) coach.
   Climbed [a](https://eu.zonerama.com/homedik/Album/7373646) [few](https://eu.zonerama.com/homedik/Album/6517857) [peaks](https://eu.zonerama.com/homedik/Album/6886499) and [a few sandstone towers](https://eu.zonerama.com/homedik/Album/4385809).
   I have enjoyed culture in several startups and still enjoy spending time with my kids and [wife](https://www.linkedin.com/in/ad%C3%A9la-pl%C3%A1tkov%C3%A1-87390283/).
