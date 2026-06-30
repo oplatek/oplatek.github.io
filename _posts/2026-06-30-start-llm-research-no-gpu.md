@@ -12,9 +12,9 @@ Here are my resources, and they double as my updated recommendation for **any mo
 
 # My personal advice 
 
-- **Hard empirical evidence is the key.** Math and logic give you the intuition; the experiment tells you whether your intuition was right. Twenty minutes per round means you get hundreds of those reality checks instead of three. Quantity of valid experiments matters.
-- **To go fast, start small.** As a beginner you have almost no hardware, which forces you to **spend your thinking on the most interesting parts** instead of babysitting a giant run. Use it to your advantage and trust that it scales.
-- **Finally, when you trust the algorithm** it is time to scale. Find a place that will scale your research. I found BottleCap AI.
+- **Hard empirical evidence is the key.** Math and logic give you the intuition; the experiments tell you whether your intuition was right. You need hundreds experiments. Have hunderds of different reality checks instead of three. Quantity of valid experiments matters.
+- **To go fast, start small.** As a beginner you have almost no hardware, which forces you to **spend your thinking on the most interesting parts** instead of babysitting a giant run. Use it to your advantage and trust that it scales. Spend most time at designing experiments to give you the most informative and conclusive findings.
+- **Finally, when you trust your improvements** it is time to scale. Find a place that will scale your research. I found BottleCap AI.
 
 
 ## The map: two parts, pretraining and post-training
