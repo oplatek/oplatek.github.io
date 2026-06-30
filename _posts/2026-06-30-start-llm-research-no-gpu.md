@@ -81,7 +81,12 @@ For reinforcement learning, I do not know of any practical setup that directly s
 - Nice but very general introduction to Reinforcement Learning by [Sutton & Barto: Introduction to Reinforcement Learning](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf),
 - [Sebastian Raschka's blog about LLMs](https://sebastianraschka.com/blog/) — lately, all published models were trained by an algorithm at least inspired by reinforcement learning.
 
-## What does BottleCap do?
+To conclude: start small, go fast, and let the empirical evidence sharpen your intuition. And if you're stuck, reach out to people — or Claude Code, or Codex. Most importantly, have fun with fellow humans.
+
+
+[Reach out — let's research LLMs together. :) ➔](https://www.linkedin.com/in/ondrejplatek/)
+
+## Last but not least: what does BottleCap do?
 _The very first question I was asked today._
 
 We are working hard on speedups for training as well as inference.
@@ -92,7 +97,3 @@ We also ship products:
 - 🧪 We hire smart engineers and have fun. Improve LLM pretraining and join us! **[try the BottleCapAI/NoCap-Test](https://github.com/BottleCapAI/NoCap-Test)**.
 
 
-To conclude: start small, go fast, and let the empirical evidence sharpen your intuition. And if you're stuck, reach out to people — or Claude Code, or Codex. Most importantly, have fun with fellow humans.
-
-
-[Reach out — let's research LLMs together. :) ➔](https://www.linkedin.com/in/ondrejplatek/)
