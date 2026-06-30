@@ -1,6 +1,6 @@
 ---
 layout: post
-title: You don't need a GPU to start LLM research. Just 20 minutes and a math brain.
+title: Starting with LLM? Think hard, start small, iterate fast. Time is all you needed.
 author: Ondrej Platek
 tags: LLM, research, Math, Education, BottleCap AI, nanoGPT, pretraining, RL, getting started
 ---
