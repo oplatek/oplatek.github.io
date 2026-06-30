@@ -24,9 +24,9 @@ If you remember one thing about how modern LLMs are built, remember that there a
 
 ### 1. Pretraining — the math-motivated part
 
-This is where the model learns to predict the next token over a huge pile of text. The objective is beautifully mathematical: it is all about **entropy and cross-entropy.** If you enjoy information theory, this is your home turf — minimizing cross-entropy _is_ the whole game, and the intuition transfers directly.
+This is where the model learns to predict the next token over a huge pile of text. The objective is an elegant field of information theory: language modeling is literally just minimizing  **cross-entropy.**.
 
-Good news for beginners: **pretraining can be done efficiently and small.** This is exactly where the 20-minute loop lives.
+Good news for beginners: **pretraining can be done efficiently and small.** This is exactly where the 20-minute loop lives. See modded-nanogpt link below.
 
 ### 2. Post-training — the hacky part
 
@@ -80,20 +80,23 @@ Remember the whole point: **no GPU at home.** Here is where the 20-minute loop l
 
 Pick one, point it at your nanoGPT checkout, and let it handle the boilerplate while you think about the interesting parts.
 
-## What BottleCap AI ships (and you can poke at today)
+About reinforcement learning I do not know any practical setup which directly scales to SOTA research so I can only recommend two resources:
+- Nice but very general introduction to Reinforcement Learning by [Sutton & Barto: Introduction to Reinforcement Learning](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf),
+- [Sebastian Raschka blog about LLMs](https://sebastianraschka.com/blog/) -- lately all models include some traces and bit of reinforcement learning.
 
-We don't just talk efficiency — we ship it. Two things worth your attention:
+## What does BottleCap do?
+_The very first question I was asked_
+
+We are working hard on speedups for training as well as inference.
+We also ship products:
 
 - 🔎 [**AI Scan**](https://scan.bottlecapai.com/) — _AI models are manipulated. We reveal how._ It detects post-training modifications — opinion steering, topic avoidance, sensitivity filters — and lets you compare shift-evaluation reports across 25+ models. A perfect playground for the "post-training is hacky" lesson above.
 - 📱 [**Pulse**](https://www.bottlecapai.com/pulse-app) — community news powered by our own efficiency-first model CAP1. Cut signal from noise in real time. Grab it on [iOS](https://apps.apple.com/us/app/id6753948492) or [Android](https://play.google.com/store/apps/details?id=com.bottlecapai.pulse).
+- 🧪 We hire smart engieers and have fun. Improve the LLM pretraining and join us! **[try the BottleCapAI/NoCap-Test](https://github.com/BottleCapAI/NoCap-Test)**.
 
-## So, should you start?
 
-If you are motivated, if you like math, rockets, or teaching — yes.
-You don't need a GPU farm. You don't need permission. You need curiosity, a small model, and twenty minutes.
+To conclude. Start small. Go fast. Let the empirical evidence sharpen your intuition. And if stuck reach out to people
+or Claude Code or Codex. Most importantly have fun with fellow people.
 
-Start small. Go fast. Let the empirical evidence sharpen your intuition.
 
-And when you are ready to prove it: 🧪 **[try the BottleCapAI/NoCap-Test](https://github.com/BottleCapAI/NoCap-Test)** — our entrance hiring test, and the most honest 20-minute introduction to what this work feels like.
-
-[Reach out — let's research LLMs together. ➔](https://www.linkedin.com/in/ondrejplatek/)
+[Reach out — let's research LLMs together. :) ➔](https://www.linkedin.com/in/ondrejplatek/)
