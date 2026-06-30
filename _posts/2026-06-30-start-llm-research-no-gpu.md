@@ -29,13 +29,11 @@ Good news for beginners: **pretraining can be done efficiently and small.** This
 
 ### 2. Post-training — the hacky part
 
-This is where the model learns to be _useful_ — to follow instructions, to reason, to behave. It follows the **theory of reinforcement learning**, but in practice it is far more **hacky and empirical** than pretraining. The theory points the direction; taste and experiments do the rest. It is a different muscle, and just as fun.
-
-Take-home: _pretraining is math, post-training is RL-flavoured craft._
+This is where the model learns to be _useful_ — to follow instructions, to reason, to behave. It follows the **theory of reinforcement learning**, but in practice it is far more **hacky and empirical** than pretraining. These days it is crazy expensive, it needs model of few billion parameters to work well and the pre-training phase done right. I do not know how to scale it down, so I advice you to stay away. I will be happy if you prove me wrong!
 
 ## Resources overview
 
-Here is the path I actually have recommend many times.
+Here is the learning path I have recommend many times.
 
 **Build the foundations with Andrej Karpathy.** My favourite intro to neural networks and then to LLMs, full stop:
 
