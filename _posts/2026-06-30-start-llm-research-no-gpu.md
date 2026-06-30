@@ -55,7 +55,7 @@ Here is the path I actually have recommend many times.
 
 …and that speed-running culture is literally our entrance hiring test at BottleCap AI:
 
-- 🧪 [BottleCapAI/NoCap-Test](https://github.com/BottleCapAI/NoCap-Test) — **feel free to try it.** The 20-minute loop is real; go see your first result.
+- 🧪 [BottleCapAI/NoCap-Test](https://github.com/BottleCapAI/NoCap-Test) — **feel free to try it.** 
 
 ## Where to actually run it — for free or nearly free
 
@@ -84,7 +84,7 @@ For reinforcement learning, I do not know of any practical setup that directly s
 - [Sebastian Raschka's blog about LLMs](https://sebastianraschka.com/blog/) — lately, all published models were trained by an algorithm at least inspired by reinforcement learning.
 
 ## What does BottleCap do?
-_The very first question I was asked_
+_The very first question I was asked today._
 
 We are working hard on speedups for training as well as inference.
 We also ship products:
