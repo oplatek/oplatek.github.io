@@ -5,17 +5,16 @@ author: Ondrej Platek
 tags: LLM, research, Math, Education, BottleCap AI, nanoGPT, pretraining, RL, getting started
 ---
 
-David who literally helped [SpaceX](https://www.linkedin.com/in/davidpav/) the rockets fly asked me for a favour: _"Explain to kids from [Matika Cesku](https://www.linkedin.com/company/matika-cesku/)
-what BottleCap AI does and what you do as LLM researcher in plain words, I was hooked. Immediately. I am fan."_
+David — who literally helped make [SpaceX](https://www.linkedin.com/in/davidpav/) rockets fly — asked me for a favour: _"Explain to kids from [Matika Cesku](https://www.linkedin.com/company/matika-cesku/) what BottleCap AI does and what you do as an LLM researcher, in plain words."_ I was hooked. Immediately. I'm a fan.
 
-I am fan of Mathematics, Teaching and of course of LLM research.
-Here it is my rousources, and it doubles as my updated recommendation for **any motivated person who wants to start LLM research today.** 🚀
+I'm a fan of Mathematics, Teaching and, of course, LLM research.
+Here are my resources, and they double as my updated recommendation for **any motivated person who wants to start LLM research today.** 🚀
 
 # My personal advice 
 
-- **Hard empirical evidence is the key.** Math and logic give you the intuition; the experiment tells you whether your intuition was right. Twenty minutes per round means you get hundreds of those reality checks instead of three. Quantity of valid experiments matter.
-- **To go fast, start small.** As a beginner you have almost no hardware, which forces you to **spend your thinking on the most interesting parts** instead of babysitting a giant run. Use it to your advantage and trust it it scales.
-- **Finally, when you trust the algorithm** it is time to scale. Find a place who will scale your research. I found BottleCap AI.
+- **Hard empirical evidence is the key.** Math and logic give you the intuition; the experiment tells you whether your intuition was right. Twenty minutes per round means you get hundreds of those reality checks instead of three. Quantity of valid experiments matters.
+- **To go fast, start small.** As a beginner you have almost no hardware, which forces you to **spend your thinking on the most interesting parts** instead of babysitting a giant run. Use it to your advantage and trust that it scales.
+- **Finally, when you trust the algorithm** it is time to scale. Find a place that will scale your research. I found BottleCap AI.
 
 
 ## The map: two parts, pretraining and post-training
@@ -24,7 +23,7 @@ If you remember one thing about how modern LLMs are built, remember that there a
 
 ### 1. Pretraining — the math-motivated part
 
-This is where the model learns to predict the next token over a huge pile of text. The objective is an elegant field of information theory: language modeling is literally just minimizing  **cross-entropy.**.
+This is where the model learns to predict the next token over a huge pile of text. The objective is rooted in an elegant field of information theory: language modeling is literally just minimizing **cross-entropy**.
 
 Good news for beginners: **pretraining can be done efficiently and small.** This is exactly where the 20-minute loop lives. See modded-nanogpt link below.
 
@@ -80,9 +79,9 @@ Remember the whole point: **no GPU at home.** Here is where the 20-minute loop l
 
 Pick one, point it at your nanoGPT checkout, and let it handle the boilerplate while you think about the interesting parts.
 
-About reinforcement learning I do not know any practical setup which directly scales to SOTA research so I can only recommend two resources:
+For reinforcement learning, I do not know of any practical setup that directly scales to SOTA research, so I can only recommend two resources:
 - Nice but very general introduction to Reinforcement Learning by [Sutton & Barto: Introduction to Reinforcement Learning](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf),
-- [Sebastian Raschka blog about LLMs](https://sebastianraschka.com/blog/) -- lately all models include some traces and bit of reinforcement learning.
+- [Sebastian Raschka's blog about LLMs](https://sebastianraschka.com/blog/) — lately, all published models were trained by an algorithm at least inspired by reinforcement learning.
 
 ## What does BottleCap do?
 _The very first question I was asked_
@@ -92,11 +91,10 @@ We also ship products:
 
 - 🔎 [**AI Scan**](https://scan.bottlecapai.com/) — _AI models are manipulated. We reveal how._ It detects post-training modifications — opinion steering, topic avoidance, sensitivity filters — and lets you compare shift-evaluation reports across 25+ models. A perfect playground for the "post-training is hacky" lesson above.
 - 📱 [**Pulse**](https://www.bottlecapai.com/pulse-app) — community news powered by our own efficiency-first model CAP1. Cut signal from noise in real time. Grab it on [iOS](https://apps.apple.com/us/app/id6753948492) or [Android](https://play.google.com/store/apps/details?id=com.bottlecapai.pulse).
-- 🧪 We hire smart engieers and have fun. Improve the LLM pretraining and join us! **[try the BottleCapAI/NoCap-Test](https://github.com/BottleCapAI/NoCap-Test)**.
+- 🧪 We hire smart engineers and have fun. Improve LLM pretraining and join us! **[try the BottleCapAI/NoCap-Test](https://github.com/BottleCapAI/NoCap-Test)**.
 
 
-To conclude. Start small. Go fast. Let the empirical evidence sharpen your intuition. And if stuck reach out to people
-or Claude Code or Codex. Most importantly have fun with fellow people.
+To conclude: start small, go fast, and let the empirical evidence sharpen your intuition. And if you're stuck, reach out to people — or Claude Code, or Codex. Most importantly, have fun with fellow humans.
 
 
 [Reach out — let's research LLMs together. :) ➔](https://www.linkedin.com/in/ondrejplatek/)
