@@ -5,36 +5,18 @@ author: Ondrej Platek
 tags: LLM, research, Math, Education, BottleCap AI, nanoGPT, pretraining, RL, getting started
 ---
 
-A [friend from SpaceX](https://www.linkedin.com/in/davidpav/) asked me for a favour: _"Explain to me what BottleCap AI does. In plain words."_
+David who literally helped [SpaceX](https://www.linkedin.com/in/davidpav/) the rockets fly asked me for a favour: _"Explain to kids from [Matika Cesku](https://www.linkedin.com/company/matika-cesku/)
+what BottleCap AI does and what you do as LLM researcher in plain words, I was hooked. Immediately. I am fan."_
 
-He is the kind of person I instantly like — a fan of Mathematics, of rockets, and of teaching.
-So I owed him a good answer. Here it is, and it doubles as my updated recommendation for **any motivated person who wants to start LLM research today.** 🚀
+I am fan of Mathematics, Teaching and of course of LLM research.
+Here it is my rousources, and it doubles as my updated recommendation for **any motivated person who wants to start LLM research today.** 🚀
 
-## What BottleCap AI does, and why it exists
+# My personal advice 
 
-The cleanest pitch I have ever heard came from [Míša Pavlík](https://www.linkedin.com/in/michaelapavlik/) and her **Matika AI** — math for kids who do it _in their free time_, for fun, led by a charismatic teacher backed by AI.
-I was sold in 10 seconds. Míša organized the whole thing in under 10 minutes.
+- **Hard empirical evidence is the key.** Math and logic give you the intuition; the experiment tells you whether your intuition was right. Twenty minutes per round means you get hundreds of those reality checks instead of three. Quantity of valid experiments matter.
+- **To go fast, start small.** As a beginner you have almost no hardware, which forces you to **spend your thinking on the most interesting parts** instead of babysitting a giant run. Use it to your advantage and trust it it scales.
+- **Finally, when you trust the algorithm** it is time to scale. Find a place who will scale your research. I found BottleCap AI.
 
-That speed is not an accident — it _is_ the point.
-
-I do LLM research for the same reason Matika AI exists: because the most interesting machinery in the world right now should be reachable by curious people who like to think.
-Kids who do math in their free time are exactly the audience. They already have the one thing that matters most: **intuition built from logic and hard empirical evidence.**
-
-## The key ingredient I almost forgot to tell people
-
-Talking to my SpaceX friend pushed me to update my own intro materials, because I had buried the lede. Here it is:
-
-> **You do not need a GPU at home. You do not even need to wait long to see your first result.**
-
-The iteration time of a real experiment can be **~20 minutes**. That changes everything.
-
-Why does it matter so much for someone coming from math?
-
-- **Hard empirical evidence is the key.** Math and logic give you the intuition; the experiment tells you whether your intuition was right. Twenty minutes per round means you get hundreds of those reality checks instead of three.
-- **Iteration speed is _the_ advice for success.** Not cleverness, not hardware — speed. The faster you close the loop, the faster you learn.
-- **To go fast, start small.** And this is the beautiful trap: as a beginner with little hardware, you are _forced_ to be fast, which forces you to be small, which forces you to **spend your thinking on the most interesting parts** instead of babysitting a giant run.
-
-Constraints are a feature. Embrace them.
 
 ## The map: two parts, pretraining and post-training
 
