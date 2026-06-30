@@ -10,14 +10,14 @@ David — who literally helped make [SpaceX](https://www.linkedin.com/in/davidpa
 I'm a fan of Mathematics, Teaching and, of course, LLM research.
 Here are my resources, and they double as my updated recommendation for **any motivated person who wants to start LLM research today.** 🚀
 
-# My personal advice 
+## My personal advice 
 
 - **Hard empirical evidence is the key.** Math and logic give you the intuition; the experiments tell you whether your intuition was right. You need hundreds experiments. Have hunderds of different reality checks instead of three. Quantity of valid experiments matters.
 - **To go fast, start small.** As a beginner you have almost no hardware, which forces you to **spend your thinking on the most interesting parts** instead of babysitting a giant run. Use it to your advantage and trust that it scales. Spend most time at designing experiments to give you the most informative and conclusive findings.
 - **Finally, when you trust your improvements** it is time to scale. Find a place that will scale your research. I found BottleCap AI.
 
 
-## The map: two parts, pretraining and post-training
+## Two parts: pretraining and post-training
 
 If you remember one thing about how modern LLMs are built, remember that there are **two main parts**, and they have completely different flavours.
 
