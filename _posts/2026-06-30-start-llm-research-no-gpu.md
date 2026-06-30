@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Starting with LLM? Think hard, start small, iterate fast. Time is all you needed.
+title: Starting with LLM? Think hard, start small, iterate fast. Time is all you need.
 author: Ondrej Platek
 tags: LLM, research, Math, Education, BottleCap AI, nanoGPT, pretraining, RL, getting started
 ---
