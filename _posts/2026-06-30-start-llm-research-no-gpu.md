@@ -35,6 +35,8 @@ This is where the model learns to be _useful_ — to follow instructions, to rea
 
 Here is the learning path I have recommend many times.
 
+### The pre-training ninja path
+
 **Build the foundations with Andrej Karpathy.** My favourite intro to neural networks and then to LLMs, full stop:
 
 - ▶️ [Karpathy — Neural Networks: Zero to Hero](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ)
@@ -57,7 +59,7 @@ Here is the learning path I have recommend many times.
 
 ## Where to actually run it — for free or nearly free
 
-Remember the whole point: **no GPU at home.** Here is where the 20-minute loop lives without buying any hardware.
+Remember the whole point: **no GPU at home does not stop you.** You are able to execute many 20-minute loops without buying any hardware.
 
 **Free notebooks with a GPU attached:**
 
@@ -65,28 +67,38 @@ Remember the whole point: **no GPU at home.** Here is where the 20-minute loop l
 - 📓 [Kaggle Notebooks](https://www.kaggle.com/code) — free weekly GPU/TPU quota and a generous community.
 - 🤗 [Hugging Face Spaces](https://huggingface.co/spaces) — host and share your model and demos; literally showcases of the newest science.
 
+### Living on the edge with RL trained models
+
+_To inspect capabilities or get great (coding) advisors you can use inference engines cheaply.
+You can even power your own agent almost for free and hack it to your needs. Just mind sharing your private data and
+take the advices with grain of salt._
+
 **Cheap hosted inference (when you just want to _use_ a model, not train one):**
 
 - 🟢 [NVIDIA build (NIM APIs)](https://build.nvidia.com/) — a large catalogue of models behind a very cheap inference API, with free credits to get going.
 - 🔀 [OpenRouter](https://openrouter.ai/) — one API key, hundreds of models, pay-as-you-go. Great for comparing models without juggling accounts.
 
-**An agentic coding sidekick to move faster:**
 
 - 🤖 [Pi coding agent](https://pi.dev/) ([source](https://github.com/badlogic/pi-mono)) — a minimal, fully hackable terminal agent you extend in TypeScript.
 - 🤖 [OpenCode](https://opencode.ai/) — open-source terminal coding agent that works with 75+ providers (including OpenRouter above).
 
 Pick one, point it at your nanoGPT checkout, and let it handle the boilerplate while you think about the interesting parts.
 
+### Reinforement Learning theory
+
 For reinforcement learning, I do not know of any practical setup that directly scales to SOTA research, so I can only recommend two resources:
 - Nice but very general introduction to Reinforcement Learning by [Sutton & Barto: Introduction to Reinforcement Learning](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf),
 - [Sebastian Raschka's blog about LLMs](https://sebastianraschka.com/blog/) — lately, all published models were trained by an algorithm at least inspired by reinforcement learning.
 
-To conclude: start small, go fast, and let the empirical evidence sharpen your intuition. And if you're stuck, reach out to people — or Claude Code, or Codex. Most importantly, have fun with fellow humans.
 
+## Wrap up 
 
-[Reach out — let's research LLMs together. :) ➔](https://www.linkedin.com/in/ondrejplatek/)
+To conclude: start small, go fast, and let the empirical evidence sharpen your intuition.
+And if you're stuck, reach out to people — or Claude Code, or Codex. Most importantly, have fun with fellow humans.
 
-## Last but not least: what does BottleCap do?
+[Reach out — let's research LLMs together. I am a human. I need fun projects :) ➔](https://www.linkedin.com/in/ondrejplatek/)
+
+### Last but not least: what does BottleCap do?
 _The very first question I was asked today._
 
 We are working hard on speedups for training as well as inference.
@@ -95,5 +107,3 @@ We also ship products:
 - 🔎 [**AI Scan**](https://scan.bottlecapai.com/) — _AI models are manipulated. We reveal how._ It detects post-training modifications — opinion steering, topic avoidance, sensitivity filters — and lets you compare shift-evaluation reports across 25+ models. A perfect playground for the "post-training is hacky" lesson above.
 - 📱 [**Pulse**](https://www.bottlecapai.com/pulse-app) — community news powered by our own efficiency-first model CAP1. Cut signal from noise in real time. Grab it on [iOS](https://apps.apple.com/us/app/id6753948492) or [Android](https://play.google.com/store/apps/details?id=com.bottlecapai.pulse).
 - 🧪 We hire smart engineers and have fun. Improve LLM pretraining and join us! **[try the BottleCapAI/NoCap-Test](https://github.com/BottleCapAI/NoCap-Test)**.
-
-
