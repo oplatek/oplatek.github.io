@@ -33,9 +33,9 @@ This is where the model learns to be _useful_ — to follow instructions, to rea
 
 Take-home: _pretraining is math, post-training is RL-flavoured craft._
 
-## My recommended starting resources
+## Resources overview
 
-Here is the path I actually recommend — the same one I gave my friend.
+Here is the path I actually have recommend many times.
 
 **Build the foundations with Andrej Karpathy.** My favourite intro to neural networks and then to LLMs, full stop:
 
