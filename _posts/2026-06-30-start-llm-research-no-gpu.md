@@ -23,9 +23,11 @@ If you remember one thing about how modern LLMs are built, remember that there a
 
 ### 1. Pretraining — the math-motivated part
 
-This is where the model learns to predict the next token over a huge pile of text. The objective is rooted in an elegant field of information theory: language modeling is literally just minimizing **cross-entropy**.
+This is where the model learns to predict the next token over a huge pile of text.
+The objective is rooted in an elegant field of information theory: language modeling is literally just minimizing **cross-entropy**.
 
-Good news for beginners: **pretraining can be done efficiently and small.** This is exactly where the 20-minute loop lives. See modded-nanogpt link below.
+Good news for beginners: **pretraining algorithm can be developed efficiently on small scale.**
+This is exactly where the 20-minute loop lives. See modded-nanogpt link below.
 
 ### 2. Post-training — the hacky part
 
