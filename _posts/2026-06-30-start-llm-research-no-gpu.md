@@ -99,9 +99,11 @@ However, it must be opinionated and you need serious infra for the experiments. 
 ## Wrap up 
 
 To conclude: start small, go fast, and let the empirical evidence sharpen your intuition.
-And if you're stuck, reach out to people — or Claude Code, or Codex. Most importantly, have fun with fellow humans.
+And if you're stuck, reach out to people — or Claude Code, or Codex.
+The best coding agents today.
+Most importantly, have fun with fellow humans.
 
-[Reach out — let's research LLMs together. I am a human. I need fun projects :) ➔](https://www.linkedin.com/in/ondrejplatek/)
+[Reach out — let's research LLMs together. As a human, I need fun projects :) ➔](https://www.linkedin.com/in/ondrejplatek/)
 
 ### Last but not least: what does BottleCap do?
 _The very first question I was asked today._
