@@ -12,10 +12,32 @@ Here are my resources, and they double as my updated recommendation for **any mo
 
 ## My personal advice 
 
-- **Hard empirical evidence is the key.** Math and logic give you the intuition; the experiments tell you whether your intuition was right. You need hundreds experiments. Have hunderds of different reality checks instead of three. Quantity of valid experiments matters.
+- **Hard empirical evidence is the key.** Math and logic give you the intuition; the experiments tell you whether your intuition was right. You need hundreds of experiments. Have hundreds of different reality checks instead of three. Quantity of valid experiments matters.
 - **To go fast, start small.** As a beginner you have almost no hardware, which forces you to **spend your thinking on the most interesting parts** instead of babysitting a giant run. Use it to your advantage and trust that it scales. Spend most time at designing experiments to give you the most informative and conclusive findings.
 - **Finally, when you trust your improvements** it is time to scale. Find a place that will scale your research. I found BottleCap AI.
 
+## New to LLMs, what is an LLM?
+
+Let's break it down:
+
+- LLM - large language model -- as of 2026 a variant of Transformer neural network architecture with typically billions or trillions number of parameters.
+- LLMs are capable of solving hard math problems, are superior in coding to humans, are good compressors of information and remembers almost the whole textual Internet. However, recalling it exactly is a problem for the model sometimes. They hallucinate.
+- Training an LLM is costly and building the largest LLMs cost billions of dollars for a single checkpoint.
+- Running the inference at scale and supporting millions of users is even more expensive.
+- TL;DR today's LLMs are an engineering marvel as much as a product of many research ideas. 
+
+### What is a research
+For simplicity I will assume it is a process, where you collect findings by running experiments.
+
+What is an experiment? It is a process where you:
+
+1. Formulate a hypothesis:typically something well defined and narrow so you can compare it to existing baseline. E.g.
+   does more data collected a particular way e.g. in dataset XYZ improve training of our model M?
+2. Implement it in code, run it. This time the example experiment is about training  which has clear objective function.
+3. Finally you evaluate how your objective improved. You think about whether you did the experiment correctly, what it means in
+   practice.
+4. Finally, you repeat the process. Because you need thousands of these micro decisions and without them you have no
+   knowledge and people tend to have pretty bad intuition about the experiment outcome.
 
 ## Two parts: pretraining and post-training
 
@@ -31,11 +53,11 @@ This is exactly where the 20-minute loop lives. See modded-nanogpt link below.
 
 ### 2. Post-training — the hacky part
 
-This is where the model learns to be _useful_ — to follow instructions, to reason, to behave. It follows the **theory of reinforcement learning**, but in practice it is far more **hacky and empirical** than pretraining. These days it is crazy expensive, it needs model of few billion parameters to work well and the pre-training phase done right. I do not know how to scale it down, so I advice you to stay away. I will be happy if you prove me wrong!
+This is where the model learns to be _useful_ — to follow instructions, to reason, to behave. It follows the **theory of reinforcement learning**, but in practice it is far more **hacky and empirical** than pretraining. These days it is crazy expensive, it needs model of few billion parameters to work well and the pre-training phase done right. I do not know how to scale it down, so I advise you to stay away. I will be happy if you prove me wrong!
 
 ## Resources overview
 
-Here is the learning path I have recommend many times.
+Here is the learning path I have recommended many times.
 
 ### The pre-training ninja path
 
@@ -73,7 +95,7 @@ Remember the whole point: **no GPU at home does not stop you.** You are able to 
 
 _To inspect capabilities or get great (coding) advisors you can use inference engines cheaply.
 You can even power your own agent almost for free and hack it to your needs. Just mind sharing your private data and
-take the advices with grain of salt._
+take the advice with a grain of salt._
 
 **Cheap hosted inference (when you just want to _use_ a model, not train one):**
 
@@ -86,7 +108,7 @@ take the advices with grain of salt._
 
 Pick one, point it at your nanoGPT checkout, and let it handle the boilerplate while you think about the interesting parts.
 
-### Reinforement Learning theory
+### Reinforcement Learning theory
 
 For reinforcement learning, I do not know of any practical setup that directly scales to SOTA research, so I can only recommend two resources:
 - Nice but very general introduction to Reinforcement Learning by [Sutton & Barto: Introduction to Reinforcement Learning](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf),
