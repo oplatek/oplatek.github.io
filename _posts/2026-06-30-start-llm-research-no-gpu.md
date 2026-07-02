@@ -16,7 +16,8 @@ Here are my resources, and they double as my updated recommendation for **any mo
 - **To go fast, start small.** As a beginner you have almost no hardware, which forces you to **spend your thinking on the most interesting parts** instead of babysitting a giant run. Use it to your advantage and trust that it scales. Spend most time at designing experiments to give you the most informative and conclusive findings.
 - **Finally, when you trust your improvements** it is time to scale. Find a place that will scale your research. I found BottleCap AI.
 
-## New to LLMs, what is an LLM?
+<details markdown="1">
+<summary><strong>New to LLMs? Short dictionary and intro to research :)</strong></summary>
 
 Let's break it down:
 
@@ -38,6 +39,8 @@ What is an experiment? It is a process where you:
    practice.
 4. Finally, you repeat the process. Because you need thousands of these micro decisions and without them you have no
    knowledge and people tend to have pretty bad intuition about the experiment outcome.
+
+</details>
 
 ## Two parts: pretraining and post-training
 
