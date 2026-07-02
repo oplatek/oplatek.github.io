@@ -34,12 +34,15 @@ What is an experiment? It is a process where you:
 
 1. Formulate a hypothesis:typically something well defined and narrow so you can compare it to existing baseline. E.g.
    does more data collected a particular way e.g. in dataset XYZ improve training of our model M?
-2. Implement it in code, run it. This time the example experiment is about training  which has clear objective function.
+2. Implement it in code, run it. Our LLM example experiment is about training small LLM from scratch which has clear objective function.
 3. Finally you evaluate how your objective improved. You think about whether you did the experiment correctly, what it means in
    practice.
-4. Finally, you repeat the process. Because you need thousands of these micro decisions and without them you have no
-   knowledge and people tend to have pretty bad intuition about the experiment outcome.
+4. Finally, you repeat the process. Because you need thousands of these micro decisions for building a well performing LLM. Without the experiments you have no knowledge to guide you, and people tend to have pretty bad intuition about the experiment outcomes.
 
+By doing the experiments you decided on the right scale, right architecture of the model, evaluate your new improvements, data mix, training objective or the learning algorithm. Lot of new key words for you, right?
+
+For learning the key words you can ask Claude Code, Codex, or Gemini. 
+It is different to know something about it and know how to do it. Procedural knowledge is the key. Current Agentic intelligence proves it. Let's start building LLMs :)
 </details>
 
 ## Two parts: pretraining and post-training
