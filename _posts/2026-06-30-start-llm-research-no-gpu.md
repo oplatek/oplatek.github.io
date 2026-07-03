@@ -119,7 +119,7 @@ Pick one, point it at your nanoGPT checkout, and let it handle the boilerplate w
 
 ### Reinforcement Learning theory
 
-For reinforcement learning, I do not know of any practical setup that directly scales to SOTA research, so I can only recommend two resources:
+For reinforcement learning, I do not know of any practical setup that directly scales to SOTA research, so I can only recommend more theoretical resources:
 - Nice but very general introduction to Reinforcement Learning by [Sutton & Barto: Introduction to Reinforcement Learning](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf),
 - [Sebastian Raschka's blog about LLMs](https://sebastianraschka.com/blog/) — lately, all published models were trained by an algorithm at least inspired by reinforcement learning.
 - [Sebastian Raschka exercise for a book Build A Reasoning Model (From
