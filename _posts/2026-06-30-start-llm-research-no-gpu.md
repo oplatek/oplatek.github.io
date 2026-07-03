@@ -45,6 +45,9 @@ For learning the key words you can ask Claude Code, Codex, or Gemini.
 It is different to know something about it and know how to do it. Procedural knowledge is the key. Current Agentic intelligence proves it. Let's start building LLMs :)
 </details>
 
+Great intro to LLMs was built by former colleague Zdenek Kasner. See the [Animated LLM](https://animatedllm.github.io).
+I was always interested in how to built things. So let's jump into it by building them!
+
 ## Two parts: pretraining and post-training
 
 If you remember one thing about how modern LLMs are built, remember that there are **two main parts**, and they have completely different flavours.
