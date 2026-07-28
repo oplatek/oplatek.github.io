@@ -1,0 +1,376 @@
+---
+layout: page
+title: Is the NYSE open?
+permalink: /nyse-hours/
+description: NYSE trading hours, holidays and early closes in New York time, UTC and your local time — as a web page and as JSON for agents.
+---
+
+{% assign nyse = site.data.nyse_hours %}
+
+<style>
+.nyse-card{border:1px solid #ddd;border-left-width:6px;border-radius:4px;padding:1rem 1.25rem;margin:1.5rem 0;background:#fafafa}
+.nyse-card.is-open{border-left-color:#2e7d32}
+.nyse-card.is-ext{border-left-color:#f9a825}
+.nyse-card.is-closed{border-left-color:#c62828}
+.nyse-card.is-unknown{border-left-color:#999}
+.nyse-status{font-size:1.6rem;font-weight:700;line-height:1.2;margin:0 0 .35rem}
+.nyse-sub{margin:.15rem 0;color:#444}
+.nyse-warn{border:1px solid #f0c36d;background:#fdf6e3;border-radius:4px;padding:.75rem 1rem;margin:1.25rem 0}
+.nyse-warn strong{color:#8a6d3b}
+.nyse-table{width:100%;border-collapse:collapse;font-size:.85rem;margin:1rem 0;display:block;overflow-x:auto;white-space:nowrap}
+.nyse-table th,.nyse-table td{border-bottom:1px solid #eee;padding:.35rem .5rem;text-align:left}
+.nyse-table th{background:#f4f4f4;font-weight:600}
+.nyse-table tr.closed td{color:#999}
+.nyse-table tr.today td{background:#eef6ff;font-weight:600}
+.nyse-pill{display:inline-block;font-size:.7rem;padding:.1rem .4rem;border-radius:3px;background:#eee;color:#333;vertical-align:middle}
+.nyse-pill.holiday{background:#fdecea;color:#a32b20}
+.nyse-pill.early{background:#fff4e0;color:#8a5a00}
+.nyse-pill.regular{background:#e8f5e9;color:#1b5e20}
+.nyse-pill.weekend{background:#f0f0f0;color:#666}
+.nyse-meta{font-size:.8rem;color:#666}
+.nyse-cols{display:flex;flex-wrap:wrap;gap:1.5rem}
+.nyse-cols>div{flex:1 1 240px}
+code.nyse-endpoint{word-break:break-all}
+</style>
+
+<p class="nyse-meta">
+  Short answer for the impatient: <strong>09:30–16:00 New York time, Monday to Friday</strong>, plus pre-market from
+  04:00 and after-hours to 20:00 on the NYSE electronic venues. The details below are the ones that trip people up —
+  holidays, 1&nbsp;p.m. early closes, daylight-saving shifts, and which venue actually trades pre-market.
+</p>
+
+<div id="nyse-card" class="nyse-card is-unknown">
+  <p class="nyse-status" id="nyse-status">Checking the schedule…</p>
+  <p class="nyse-sub" id="nyse-next"></p>
+  <p class="nyse-sub nyse-meta" id="nyse-clocks"></p>
+  <p class="nyse-sub nyse-meta">
+    This is the <strong>published schedule</strong>, not live exchange status. It cannot see an intraday halt or an
+    outage announced after the last refresh.
+  </p>
+</div>
+
+<noscript>
+  <div class="nyse-warn">
+    The "right now" card needs JavaScript. The tables below are static and complete without it — all times in New York
+    time and UTC.
+  </div>
+</noscript>
+
+<div id="nyse-stale" class="nyse-warn" style="display:none">
+  <strong>Stale data warning.</strong>
+  <span id="nyse-stale-text"></span>
+</div>
+
+{% if nyse.stale %}
+<div class="nyse-warn">
+  <strong>Stale data warning.</strong> At the last site build this calendar was {{ nyse.ageDays }} days old
+  (older than the {{ nyse.staleAfterDays }}-day threshold), which means the scraper has been failing. Treat the times
+  below as unverified and check
+  <a href="https://www.nyse.com/trade/hours-calendars">nyse.com</a> directly.
+</div>
+{% endif %}
+
+{% if nyse.warnings and nyse.warnings.size > 0 %}
+<div class="nyse-warn">
+  <strong>Last refresh reported problems:</strong>
+  <ul>{% for w in nyse.warnings %}<li>{{ w }}</li>{% endfor %}</ul>
+</div>
+{% endif %}
+
+<h2>The next few weeks</h2>
+
+<p class="nyse-meta">
+  Verified {{ nyse.asOf }} · last checked {{ nyse.lastCheckedAt }} · window {{ nyse.window.from }} →
+  {{ nyse.window.to }}. The <em>your time</em> column is filled in by your browser
+  (<span id="nyse-tz-label">local timezone</span>).
+</p>
+
+<table class="nyse-table">
+  <thead>
+    <tr>
+      <th>Date</th><th>Day</th><th></th>
+      <th>Pre-market (ET)</th><th>Core (ET)</th><th>After-hours (ET)</th>
+      <th>Core (UTC)</th><th>Core (your time)</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for day in nyse.liveWindow limit: 28 %}
+    <tr class="{% if day.open == false %}closed{% endif %}" data-date="{{ day.date }}"
+        data-core-start="{{ day.coreStart }}" data-core-end="{{ day.coreEnd }}">
+      <td>{{ day.date }}</td>
+      <td>{{ day.date | date: "%a" }}</td>
+      <td>
+        {% if day.type == 'regular' %}<span class="nyse-pill regular">open</span>
+        {% elsif day.type == 'early_close' %}<span class="nyse-pill early">early close</span>
+        {% elsif day.type == 'holiday' %}<span class="nyse-pill holiday">holiday</span>
+        {% elsif day.type == 'weekend' %}<span class="nyse-pill weekend">weekend</span>
+        {% else %}<span class="nyse-pill holiday">{{ day.type | replace: '_', ' ' }}</span>{% endif %}
+        {% if day.reason %}<span class="nyse-meta"> {{ day.reason }}</span>{% endif %}
+      </td>
+      {% if day.open %}
+      <td>{{ day.pre | date: "%H:%M" }}–{{ day.coreStart | date: "%H:%M" }}</td>
+      <td>{{ day.coreStart | date: "%H:%M" }}–{{ day.coreEnd | date: "%H:%M" }}</td>
+      <td>{{ day.coreEnd | date: "%H:%M" }}–{{ day.postEnd | date: "%H:%M" }}</td>
+      <td>{{ day.coreStartUtc | date: "%H:%M" }}–{{ day.coreEndUtc | date: "%H:%M" }}Z</td>
+      <td class="nyse-local">—</td>
+      {% else %}
+      <td colspan="5">closed all day</td>
+      {% endif %}
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+<h2>Sessions, by venue</h2>
+
+<p>
+  "NYSE" is five equity venues, and they do not keep the same hours. The floor — the one people mean when they say the
+  New York Stock Exchange — has <strong>no pre-market or after-hours session at all</strong>. Extended-hours trading in
+  NYSE-listed stocks happens on NYSE Arca and the other electronic books.
+</p>
+
+<table class="nyse-table">
+  <thead><tr><th>Venue</th><th>Pre-opening (order entry)</th><th>Early trading</th><th>Core</th><th>Late trading</th></tr></thead>
+  <tbody>
+  {% for pair in nyse.venues %}
+    {% assign v = pair[1] %}
+    <tr>
+      <td>{{ v.name }} <span class="nyse-meta">{{ pair[0] }}</span></td>
+      <td>{{ v.preOpening }}{% if v.preOpeningIsOrderEntryOnly %} <span class="nyse-meta">(queued only)</span>{% endif %}</td>
+      <td>{% if v.earlyTrading %}{{ v.earlyTrading[0] }}–{{ v.earlyTrading[1] }}{% else %}—{% endif %}</td>
+      <td>{{ v.core[0] }}–{{ v.core[1] }}</td>
+      <td>{% if v.lateTrading %}{{ v.lateTrading[0] }}–{{ v.lateTrading[1] }}{% else %}—{% endif %}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+<p class="nyse-meta">All times New York (<code>America/New_York</code>). On a 1&nbsp;p.m. early close, late trading ends at 5&nbsp;p.m. instead of 8&nbsp;p.m.</p>
+
+<ul>
+{% for c in nyse.consolidatedSessions.caveats %}<li>{{ c }}</li>{% endfor %}
+</ul>
+
+<div class="nyse-cols">
+<div>
+<h2>Holidays</h2>
+<table class="nyse-table">
+  <thead><tr><th>Date</th><th>Holiday</th></tr></thead>
+  <tbody>
+  {% for h in nyse.holidays %}
+    <tr><td>{{ h.date }}</td><td>{{ h.name }}{% if h.observed %} <span class="nyse-meta">(observed)</span>{% endif %}</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+<div>
+<h2>Early closes (1&nbsp;p.m. ET)</h2>
+<table class="nyse-table">
+  <thead><tr><th>Date</th><th>Reason</th><th>Core close (UTC)</th></tr></thead>
+  <tbody>
+  {% for e in nyse.earlyCloses %}
+    <tr><td>{{ e.date }}</td><td>{{ e.reason }}</td><td>{{ e.core.endUtc }}</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+<p class="nyse-meta">Eligible options close at 1:15&nbsp;p.m. on these days.</p>
+</div>
+</div>
+
+{% if nyse.halts and nyse.halts.openHaltCount > 0 %}
+<h2>Trading halts at the last check</h2>
+<p class="nyse-meta">
+  {{ nyse.halts.openHaltCount }} single-security halt{% if nyse.halts.openHaltCount != 1 %}s{% endif %} were open in the
+  NYSE feed at {{ nyse.halts.fetchedAt }}{% if nyse.halts.marketWideHalt %}, <strong>including a market-wide circuit
+  breaker</strong>{% endif %}. A halt in one symbol does not close the exchange. This is a once-a-day snapshot and is
+  useless as a live feed — for that, read
+  <a href="https://www.nyse.com/trade-halt-current">nyse.com/trade-halt-current</a> directly.
+</p>
+{% endif %}
+
+<h2 id="for-agents">For agents</h2>
+
+<p>
+  Everything on this page comes from one file, and it is the thing to fetch if you are an LLM agent or a script:
+</p>
+
+<p><code class="nyse-endpoint">https://opla.cz/data/nyse-hours.json</code></p>
+
+<pre><code>curl -s https://opla.cz/data/nyse-hours.json | jq '{asOf, stale, summary}'
+curl -s https://opla.cz/data/nyse-hours.json | jq '.days[] | select(.date=="2026-11-27")'</code></pre>
+
+<p>Fields worth knowing:</p>
+
+<ul>
+  <li><code>summary</code> — one paragraph answering "is it open today" in prose, with instants in both ET and UTC.</li>
+  <li><code>days[]</code> — a rolling {{ nyse.window.from }} → {{ nyse.window.to }} window. Each entry has
+    <code>type</code> (<code>regular</code>, <code>early_close</code>, <code>weekend</code>, <code>holiday</code>,
+    <code>unscheduled_closure</code>), <code>open</code>, and <code>sessions</code> with
+    <code>preMarket</code>/<code>core</code>/<code>afterHours</code>. Every session carries
+    <code>start</code>/<code>end</code> as offset-bearing ISO-8601 <em>and</em> <code>startUtc</code>/<code>endUtc</code>
+    — do not do timezone arithmetic yourself, the offset changes twice a year.</li>
+  <li><code>holidays[]</code> and <code>earlyCloses[]</code> — the full published calendar through 2028, beyond the
+    rolling window.</li>
+  <li><code>venues</code> — per-venue session times, because "pre-market on the NYSE" is venue-dependent.</li>
+  <li><code>asOf</code> — when a scrape last <em>succeeded</em>. <code>lastCheckedAt</code> — when the job last
+    <em>ran</em>. These differ when the scraper is broken, which is the point.</li>
+  <li><code>stale</code>, <code>ageDays</code>, <code>staleAfterDays</code> — if <code>stale</code> is true, say so in
+    your answer instead of quoting the times as fact.</li>
+  <li><code>sources[]</code> — the NYSE URLs behind each field, with per-source <code>ok</code> flags.</li>
+</ul>
+
+<p>
+  <strong>What this is not.</strong> It is a cache of a published calendar, refreshed daily. It is not a market data
+  feed, it has no live status, and it will happily tell you the exchange is open during an outage. If the answer matters
+  financially, go to <a href="https://www.nyse.com/trade/hours-calendars">the source</a>.
+</p>
+
+<h2>How this is maintained</h2>
+
+<ul>
+  <li>A GitHub Actions job runs daily at <strong>07:10 UTC</strong> — around 03:10 New York time, after any evening
+    announcement and roughly an hour before Arca pre-market opens at 04:00, so a fresh answer is in place before the
+    trading day starts.</li>
+  <li>It scrapes the <a href="https://www.nyse.com/trade/hours-calendars">NYSE holiday calendar</a> and the
+    <a href="https://www.nyse.com/trade-halt-current">current trade-halt feed</a>, then commits only if something
+    changed.</li>
+  <li>A failed scrape keeps the previous data and leaves <code>asOf</code> alone, so staleness cannot be papered over by
+    a run that did nothing. Once the data passes {{ nyse.staleAfterDays }} days old the job fails loudly.</li>
+  <li>Unscheduled closures — days of mourning, weather, outages — are not in the published calendar and cannot be
+    scraped in advance. They go into
+    <a href="https://github.com/oplatek/oplatek.github.io/blob/master/_data/nyse_overrides.json"><code>_data/nyse_overrides.json</code></a>
+    by hand; the daily job reads that file and never overwrites it.</li>
+  <li>Source:
+    <a href="https://github.com/oplatek/oplatek.github.io/blob/master/utils/nyse/build-nyse-hours.mjs"><code>utils/nyse/build-nyse-hours.mjs</code></a>.
+    The compilation is CC0; the underlying facts are published by NYSE.</li>
+</ul>
+
+<script type="application/json" id="nyse-data">{{ nyse.liveWindow | jsonify }}</script>
+<script>
+(function () {
+  var AS_OF = {{ nyse.asOf | jsonify }};
+  var STALE_AFTER_DAYS = {{ nyse.staleAfterDays | default: 10 }};
+  var days;
+  try {
+    days = JSON.parse(document.getElementById('nyse-data').textContent);
+  } catch (e) {
+    return;
+  }
+  if (!days || !days.length) return;
+
+  var ET = 'America/New_York';
+  var localTz;
+  try { localTz = Intl.DateTimeFormat().resolvedOptions().timeZone; } catch (e) { localTz = null; }
+
+  function fmt(iso, tz) {
+    var d = new Date(iso);
+    if (isNaN(d)) return '—';
+    try {
+      return new Intl.DateTimeFormat('en-GB', {
+        timeZone: tz, weekday: 'short', day: '2-digit', month: 'short',
+        hour: '2-digit', minute: '2-digit', hour12: false
+      }).format(d);
+    } catch (e) { return d.toISOString(); }
+  }
+  function hhmm(iso, tz) {
+    var d = new Date(iso);
+    if (isNaN(d)) return '—';
+    try {
+      return new Intl.DateTimeFormat('en-GB', {
+        timeZone: tz, hour: '2-digit', minute: '2-digit', hour12: false
+      }).format(d);
+    } catch (e) { return '—'; }
+  }
+
+  // Local-time column in the day table.
+  if (localTz) {
+    var label = document.getElementById('nyse-tz-label');
+    if (label) label.textContent = localTz;
+    var rows = document.querySelectorAll('.nyse-table tr[data-core-start]');
+    for (var i = 0; i < rows.length; i++) {
+      var cell = rows[i].querySelector('.nyse-local');
+      var cs = rows[i].getAttribute('data-core-start');
+      var ce = rows[i].getAttribute('data-core-end');
+      if (cell && cs && ce) cell.textContent = hhmm(cs, localTz) + '–' + hhmm(ce, localTz);
+    }
+  }
+
+  // Staleness recomputed at view time, not at build time: a page served from a
+  // months-old build must admit that rather than quote itself as current.
+  if (AS_OF) {
+    var ageDays = (Date.now() - Date.parse(AS_OF)) / 86400000;
+    if (ageDays > STALE_AFTER_DAYS) {
+      var box = document.getElementById('nyse-stale');
+      document.getElementById('nyse-stale-text').textContent =
+        'This calendar was last verified ' + Math.floor(ageDays) + ' days ago (threshold ' + STALE_AFTER_DAYS +
+        ' days). The refresh job is probably broken. Check nyse.com before relying on these times.';
+      if (box) box.style.display = '';
+    }
+  }
+
+  function phaseOf(now) {
+    for (var i = 0; i < days.length; i++) {
+      var d = days[i];
+      if (!d.open) continue;
+      var pre = Date.parse(d.pre), cs = Date.parse(d.coreStart),
+          ce = Date.parse(d.coreEnd), pe = Date.parse(d.postEnd);
+      if (now < pre) return { state: 'closed', next: pre, nextLabel: 'pre-market opens', day: d };
+      if (now < cs) return { state: 'pre', next: cs, nextLabel: 'core session opens', day: d };
+      if (now < ce) return { state: 'core', next: ce, nextLabel: 'core session closes', day: d };
+      if (now < pe) return { state: 'post', next: pe, nextLabel: 'after-hours ends', day: d };
+    }
+    return null;
+  }
+
+  var TEXT = {
+    core:   { cls: 'is-open',   msg: 'Open — core session' },
+    pre:    { cls: 'is-ext',    msg: 'Pre-market only' },
+    post:   { cls: 'is-ext',    msg: 'After-hours only' },
+    closed: { cls: 'is-closed', msg: 'Closed' }
+  };
+
+  function render() {
+    var now = Date.now();
+    var p = phaseOf(now);
+    var card = document.getElementById('nyse-card');
+    var status = document.getElementById('nyse-status');
+    var next = document.getElementById('nyse-next');
+    var clocks = document.getElementById('nyse-clocks');
+
+    if (!p) {
+      card.className = 'nyse-card is-unknown';
+      status.textContent = 'Beyond the published window';
+      next.textContent = 'This page’s data window has run out. Check nyse.com.';
+      return;
+    }
+
+    var t = TEXT[p.state];
+    card.className = 'nyse-card ' + t.cls;
+
+    var todayEntry = null;
+    var etDate = new Intl.DateTimeFormat('en-CA', { timeZone: ET, year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
+    for (var i = 0; i < days.length; i++) if (days[i].date === etDate) todayEntry = days[i];
+
+    var suffix = '';
+    if (todayEntry && !todayEntry.open) {
+      suffix = ' — ' + (todayEntry.reason || (todayEntry.type === 'weekend' ? 'weekend' : 'closed'));
+    } else if (todayEntry && todayEntry.type === 'early_close') {
+      suffix = ' — early close' + (todayEntry.reason ? ' (' + todayEntry.reason + ')' : '') + ', 1 p.m. ET';
+    }
+    status.textContent = t.msg + suffix;
+
+    var mins = Math.round((p.next - now) / 60000);
+    var human = mins < 60 ? mins + ' min'
+      : mins < 1440 ? Math.floor(mins / 60) + ' h ' + (mins % 60) + ' min'
+      : Math.floor(mins / 1440) + ' d ' + Math.floor((mins % 1440) / 60) + ' h';
+    next.textContent = p.nextLabel + ' in ' + human + ' — ' + fmt(p.next, ET) + ' New York / ' + fmt(p.next, 'UTC') + ' UTC' +
+      (localTz && localTz !== ET ? ' / ' + fmt(p.next, localTz) + ' ' + localTz : '');
+
+    clocks.textContent = 'Now: ' + fmt(now, ET) + ' New York · ' + fmt(now, 'UTC') + ' UTC' +
+      (localTz && localTz !== ET ? ' · ' + fmt(now, localTz) + ' ' + localTz : '');
+  }
+
+  render();
+  setInterval(render, 30000);
+})();
+</script>

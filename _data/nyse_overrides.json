@@ -1,0 +1,25 @@
+{
+  "_readme": [
+    "Hand-maintained overrides applied on top of the scraped NYSE calendar.",
+    "utils/nyse/build-nyse-hours.mjs READS this file and never writes it, so the daily job cannot clobber your edits.",
+    "Use it for things the published holiday calendar cannot know in advance: national days of mourning, weather closures, technical outages, delayed opens.",
+    "Add an entry, commit, and GitHub Pages picks it up on the next build (~1 minute). Run the workflow manually (Actions -> NYSE hours -> Run workflow) to refresh the derived JSON immediately.",
+    "type: 'closed' | 'early_close' (optional coreClose HH:MM, default 13:00) | 'delayed_open' (optional coreOpen HH:MM) | 'note' (annotate without changing hours).",
+    "Times are wall-clock America/New_York. Always include a source URL — the page renders it."
+  ],
+  "_examples": [
+    {
+      "date": "2025-01-09",
+      "type": "closed",
+      "reason": "National day of mourning for President Jimmy Carter",
+      "source": "https://www.nyse.com/trader-update/history"
+    },
+    {
+      "date": "2012-10-29",
+      "type": "closed",
+      "reason": "Hurricane Sandy",
+      "source": "https://www.nyse.com/trader-update/history"
+    }
+  ],
+  "entries": []
+}

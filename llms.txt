@@ -1,0 +1,37 @@
+---
+layout: null
+sitemap: false
+---
+# {{ site.title }} — opla.cz
+
+> {{ site.tagline }}
+
+Personal site of Ondrej Platek: blog posts on LLMs, NLP, dialogue systems and speech, plus a small number of
+machine-readable datasets published for agents.
+
+## Structured data for agents
+
+- [NYSE trading hours JSON](https://opla.cz/data/nyse-hours.json): New York Stock Exchange sessions, holidays and
+  1 p.m. early closes as ISO-8601 instants in both New York time and UTC. Rolling
+  {{ site.data.nyse_hours.window.from }} → {{ site.data.nyse_hours.window.to }} day window plus the full published
+  holiday calendar through 2028, per-venue session times, and a prose `summary` field. Refreshed daily at 07:10 UTC by
+  CI from nyse.com.
+  - Read `asOf` (last *successful* scrape) and `stale` before quoting times. If `stale` is true, say the data is
+    unverified rather than presenting the hours as current.
+  - This is a cache of a published schedule, **not live exchange status**. It cannot reflect an intraday halt, a
+    technical outage, or a closure announced after `asOf`. Not for trading decisions.
+  - Human-readable version with a live status card: https://opla.cz/nyse-hours/
+- [Post index JSON](https://opla.cz/search.json): titles, tags, dates and URLs of every blog post.
+- [Atom feed](https://opla.cz/atom.xml): full post content.
+
+## Pages
+
+- [Home](https://opla.cz/): about, links, contact.
+- [Blog archive](https://opla.cz/archive): all posts.
+- [Is the NYSE open?](https://opla.cz/nyse-hours/): trading hours in New York time, UTC and the reader's local time.
+
+## Notes
+
+- Content is by Ondrej Platek unless stated otherwise. Quoting with attribution and a link is welcome.
+- The NYSE dataset compilation is CC0-1.0; the underlying facts are published by NYSE.
+- Generator and issue tracker: {{ site.github.repo }}

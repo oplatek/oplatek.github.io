@@ -1,0 +1,91 @@
+name: NYSE hours
+
+# Refresh the published NYSE calendar cache behind /nyse-hours/ and
+# /data/nyse-hours.json.
+#
+# 07:10 UTC is 03:10 New York time in summer, 02:10 in winter. That puts the run
+# after any evening trader-update announcement and about an hour before NYSE Arca
+# pre-market opens at 04:00 ET, so the site is fresh before the trading day —
+# while staying off the top of the hour, where GitHub's scheduler is most
+# congested and most likely to delay the job.
+#
+# The job commits every day even when the NYSE calendar has not changed, because
+# the generated file carries `today` and `lastCheckedAt`. That commit is what
+# rebuilds GitHub Pages, and without a rebuild a static site cannot answer
+# "is it open today".
+
+on:
+  schedule:
+    - cron: '10 7 * * *'
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Why this manual run (e.g. added an override for an unscheduled closure)'
+        required: false
+        default: 'manual refresh'
+  push:
+    branches: [master]
+    paths:
+      - '_data/nyse_overrides.json'
+      - 'utils/nyse/build-nyse-hours.mjs'
+      - '.github/workflows/nyse-hours.yml'
+  pull_request:
+    paths:
+      - '_data/nyse_overrides.json'
+      - 'utils/nyse/build-nyse-hours.mjs'
+      - '.github/workflows/nyse-hours.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nyse-hours
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Refresh NYSE calendar
+        id: build
+        run: node utils/nyse/build-nyse-hours.mjs
+
+      - name: Validate output
+        run: node utils/nyse/check-nyse-hours.mjs
+
+      - name: Commit if changed
+        # Pull requests only build and validate; nothing is pushed from a PR.
+        if: github.event_name != 'pull_request'
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- _data/nyse_hours.json; then
+            echo "No change to _data/nyse_hours.json"
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          as_of=$(node -e "process.stdout.write(require('./_data/nyse_hours.json').asOf ?? 'unknown')")
+          git add _data/nyse_hours.json
+          git commit -m "data: refresh NYSE hours (asOf ${as_of})"
+          git push
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "### NYSE hours refresh"
+            echo ''
+            echo '```json'
+            node -e "const d=require('./_data/nyse_hours.json');console.log(JSON.stringify({asOf:d.asOf,lastCheckedAt:d.lastCheckedAt,stale:d.stale,ageDays:d.ageDays,today:d.today,holidays:d.holidays.length,earlyCloses:d.earlyCloses.length,warnings:d.warnings,openHalts:d.halts&&d.halts.openHaltCount,marketWideHalt:d.halts&&d.halts.marketWideHalt},null,2))" 2>/dev/null || echo '{"error":"no data file produced"}'
+            echo '```'
+            echo ''
+            echo 'If this run failed with a stale-data error, the NYSE page layout probably changed.'
+            echo 'Fix the parser in `utils/nyse/build-nyse-hours.mjs`, or record the facts by hand in `_data/nyse_overrides.json`.'
+          } >> "$GITHUB_STEP_SUMMARY"
