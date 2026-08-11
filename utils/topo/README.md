@@ -8,11 +8,27 @@ browser: only ciphertext is ever committed or served.
   random salt + IV per file.
 - A wrong password fails the GCM authentication tag, so there is no separate "is the
   password right" check sitting in the page for someone to patch out.
-- The **listing is encrypted too**, so the route names are not public either — only the
-  URL slugs are (`/climbing/01-gesamter-suedgrat-grosser-priel.html`).
+- The **listings are encrypted too**, so route and area names are not public either — only
+  the URL slugs are (`/climbing/grosses-priel/01-gesamter-suedgrat-grosser-priel.html`).
 - One unlock per browser tab: the password is kept in `sessionStorage` and reused across
   topos, then discarded when the tab closes.
 - `robots.txt` disallows `/climbing/` and every page carries `noindex, nofollow`.
+
+## Layout
+
+`_topo_src/` is mirrored into `climbing/`, so **one folder per area**:
+
+```
+_topo_src/grosses-priel/01-gesamter-suedgrat-grosser-priel.html
+                     -> opla.cz/climbing/grosses-priel/01-gesamter-suedgrat-grosser-priel.html
+```
+
+Every folder gets its own gated `index.html` listing what is inside it, and
+`/climbing/` lists the areas with a route count. Adding an area is just a new folder —
+no code change. The folder name becomes the heading (`grosses-priel` → "Grosses Priel"),
+a leading `01-` style sort prefix is stripped, and nesting deeper than one level works
+too. Empty folders are skipped rather than published as dead links. Each page carries a
+back-link to its parent.
 
 ## Workflow
 

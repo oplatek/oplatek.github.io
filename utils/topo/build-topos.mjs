@@ -54,7 +54,7 @@ function encrypt (plaintext, password) {
 
 const escapeHtml = s => s.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]))
 
-function gatePage ({ title, payload, backLink }) {
+function gatePage ({ title, payload, backLink, backLabel }) {
   return `<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -95,6 +95,7 @@ button[disabled]{opacity:.6;cursor:progress}
   var ITER = ${ITERATIONS}
   var KEY = 'topo-pw'
   var BACK = ${JSON.stringify(backLink || '')}
+  var BACK_LABEL = ${JSON.stringify(backLabel || 'all topos')}
   var form = document.getElementById('gate')
   var input = document.getElementById('pw')
   var button = document.getElementById('go')
@@ -118,7 +119,8 @@ button[disabled]{opacity:.6;cursor:progress}
 
   function render (html) {
     if (BACK) {
-      var link = '<a class="back" href="' + BACK + '">\\u2190 all topos</a>'
+      var label = BACK_LABEL.replace(/&/g, '&amp;').replace(/</g, '&lt;')
+      var link = '<a class="back" href="' + BACK + '">\\u2190 ' + label + '</a>'
       var style = '<style>.back{position:fixed;top:10px;right:12px;z-index:9;' +
         'font:12px/1 ui-sans-serif,system-ui,sans-serif;background:#fff;border:1px solid #d9dcda;' +
         'border-radius:99px;padding:7px 12px;color:#2f6f4f;text-decoration:none}</style>'
@@ -161,14 +163,16 @@ button[disabled]{opacity:.6;cursor:progress}
 `
 }
 
-function indexDocument (entries) {
+function indexDocument (heading, entries) {
   const items = entries.map(e =>
-    `  <li><a href="${escapeHtml(e.href)}">${escapeHtml(e.title)}</a></li>`).join('\n')
+    `  <li><a href="${escapeHtml(e.href)}">${escapeHtml(e.title)}` +
+    (e.note ? `<span class="note">${escapeHtml(e.note)}</span>` : '') +
+    '</a></li>').join('\n')
   return `<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>${COLLECTION_TITLE}</title>
+<title>${escapeHtml(heading)}</title>
 <style>
 body{margin:0;background:#fbfaf7;color:#1b1d1c;
   font:16px/1.55 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
@@ -179,17 +183,84 @@ p.sub{color:#4a504d;font-size:15px;margin:0 0 28px;
 ul{list-style:none;padding:0;margin:0}
 li{border-top:1px solid #e6e8e6}
 li:last-child{border-bottom:1px solid #e6e8e6}
-li a{display:block;padding:16px 4px;color:#2f6f4f;text-decoration:none;font-size:18px}
+li a{display:flex;justify-content:space-between;align-items:baseline;gap:14px;
+  padding:16px 4px;color:#2f6f4f;text-decoration:none;font-size:18px}
 li a:hover{background:#e8f0eb}
+li .note{font-family:ui-sans-serif,system-ui,sans-serif;font-size:12px;color:#4a504d;white-space:nowrap}
 </style></head>
 <body><div class="wrap">
-<h1>${COLLECTION_TITLE}</h1>
+<h1>${escapeHtml(heading)}</h1>
 <p class="sub">Route guides. Planning documents — verify against the printed topo before you tie in.</p>
 <ul>
 ${items}
 </ul>
 </div></body></html>
 `
+}
+
+// "grosses-priel" -> "Grosses Priel". Drop a leading sort prefix like "01-" if present.
+const humanize = slug => slug
+  .replace(/^\d+[-_]/, '')
+  .split(/[-_]/)
+  .map(w => w.charAt(0).toUpperCase() + w.slice(1))
+  .join(' ')
+
+const routeTitle = (html, file) =>
+  (html.match(/<title>([^<]*)<\/title>/i)?.[1] || humanize(file.replace(/\.html$/, '')))
+    .replace(/\s+—\s+route guide$/i, '')
+
+// Mirror the shape of _topo_src/ into climbing/: every subfolder becomes an area with its
+// own gated index, so new areas need no changes here — just a new folder.
+function buildDir (relDir, password, log) {
+  const srcDir = path.join(SRC_DIR, relDir)
+  const outDir = path.join(OUT_DIR, relDir)
+  const dirUrl = '/climbing/' + (relDir ? relDir + '/' : '')
+  const urlOf = name => dirUrl + name
+  const isRoot = relDir === ''
+  const areaTitle = isRoot ? COLLECTION_TITLE : humanize(path.basename(relDir))
+  const parentDir = path.dirname(relDir)
+  const parentUrl = isRoot ? '' : '/climbing/' + (parentDir === '.' ? '' : parentDir + '/')
+  const parentLabel = isRoot ? '' : (parentDir === '.' ? COLLECTION_TITLE : humanize(parentDir))
+
+  fs.mkdirSync(outDir, { recursive: true })
+  const listed = []
+  let routeCount = 0
+
+  for (const item of fs.readdirSync(srcDir, { withFileTypes: true }).sort((a, b) => a.name.localeCompare(b.name))) {
+    if (item.name.startsWith('.')) continue
+
+    if (item.isDirectory()) {
+      const sub = buildDir(path.join(relDir, item.name), password, log)
+      if (!sub.routeCount) continue // skip empty folders rather than publishing a dead link
+      listed.push({ title: sub.areaTitle, href: urlOf(item.name) + '/', note: sub.routeCount + (sub.routeCount === 1 ? ' route' : ' routes') })
+      routeCount += sub.routeCount
+      continue
+    }
+    if (!item.name.endsWith('.html')) continue
+
+    const html = fs.readFileSync(path.join(srcDir, item.name), 'utf8')
+    const title = routeTitle(html, item.name)
+    fs.writeFileSync(path.join(outDir, item.name), gatePage({
+      title,
+      payload: encrypt(html, password),
+      backLink: dirUrl,
+      backLabel: areaTitle
+    }))
+    listed.push({ title, href: urlOf(item.name) })
+    routeCount++
+    log(`  encrypted  ${path.posix.join('climbing', relDir, item.name)}  (${title})`)
+  }
+
+  // The listing is encrypted too, so route and area names are not public either.
+  fs.writeFileSync(path.join(outDir, 'index.html'), gatePage({
+    title: areaTitle,
+    payload: encrypt(indexDocument(areaTitle, listed), password),
+    backLink: parentUrl,
+    backLabel: parentLabel
+  }))
+  log(`  encrypted  ${path.posix.join('climbing', relDir, 'index.html')}  (index of ${listed.length})`)
+
+  return { areaTitle, routeCount }
 }
 
 const password = await readPassword()
@@ -201,33 +272,14 @@ if (password.length < 10) {
 }
 
 if (!fs.existsSync(SRC_DIR)) { console.error(`Missing ${SRC_DIR}`); process.exit(1) }
-const sources = fs.readdirSync(SRC_DIR).filter(f => f.endsWith('.html')).sort()
-if (!sources.length) { console.error(`No .html files in ${SRC_DIR}`); process.exit(1) }
 
-fs.mkdirSync(OUT_DIR, { recursive: true })
-for (const stale of fs.readdirSync(OUT_DIR).filter(f => f.endsWith('.html'))) {
-  fs.unlinkSync(path.join(OUT_DIR, stale))
+// Wipe the whole output tree so renamed or deleted topos cannot linger as live URLs.
+fs.rmSync(OUT_DIR, { recursive: true, force: true })
+
+const { routeCount } = buildDir('', password, console.log)
+if (!routeCount) {
+  console.error(`No .html topos found under ${SRC_DIR}`)
+  process.exit(1)
 }
-
-const entries = []
-for (const file of sources) {
-  const html = fs.readFileSync(path.join(SRC_DIR, file), 'utf8')
-  const title = (html.match(/<title>([^<]*)<\/title>/i)?.[1] || file.replace(/\.html$/, ''))
-    .replace(/\s+—\s+route guide$/i, '')
-  fs.writeFileSync(path.join(OUT_DIR, file), gatePage({
-    title,
-    payload: encrypt(html, password),
-    backLink: '/climbing/'
-  }))
-  entries.push({ title, href: '/climbing/' + file })
-  console.log(`  encrypted  climbing/${file}  (${title})`)
-}
-
-// The listing is encrypted too, so the route names are not public either.
-fs.writeFileSync(path.join(OUT_DIR, 'index.html'), gatePage({
-  title: COLLECTION_TITLE,
-  payload: encrypt(indexDocument(entries), password),
-  backLink: ''
-}))
-console.log(`  encrypted  climbing/index.html  (${entries.length} routes)`)
-console.log(`\nDone. ${ITERATIONS.toLocaleString('en-US')} PBKDF2 iterations, AES-256-GCM. Commit climbing/ — never _topo_src/.`)
+console.log(`\nDone — ${routeCount} routes. ${ITERATIONS.toLocaleString('en-US')} PBKDF2 iterations, AES-256-GCM.`)
+console.log('Commit climbing/ — never _topo_src/.')

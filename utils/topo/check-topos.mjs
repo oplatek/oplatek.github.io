@@ -34,28 +34,39 @@ const payloadOf = file => JSON.parse(
 let failed = 0
 const check = (ok, label) => { console.log(`${ok ? 'ok  ' : 'FAIL'}  ${label}`); if (!ok) failed++ }
 
-for (const file of fs.readdirSync(OUT_DIR).filter(f => f.endsWith('.html'))) {
-  const built = path.join(OUT_DIR, file)
+const walk = dir => fs.readdirSync(dir, { withFileTypes: true }).flatMap(e =>
+  e.isDirectory() ? walk(path.join(dir, e.name)) : [path.join(dir, e.name)])
+
+const builtFiles = walk(OUT_DIR).filter(f => f.endsWith('.html'))
+const sourceFiles = fs.existsSync(SRC_DIR) ? walk(SRC_DIR).filter(f => f.endsWith('.html')) : []
+check(builtFiles.length === sourceFiles.length + new Set(builtFiles.map(path.dirname)).size,
+  `every source topo and one index per folder is built (${builtFiles.length} pages, ${sourceFiles.length} routes)`)
+
+for (const built of builtFiles) {
+  const file = path.relative(OUT_DIR, built)
   const plain = await decrypt(payloadOf(built), password)
 
-  if (file === 'index.html') {
-    check(/<h1>Climbing topos<\/h1>/.test(plain), 'index.html decrypts to the listing')
-    const links = [...plain.matchAll(/href="\/climbing\/([^"]+)"/g)].map(m => m[1])
-    check(links.length > 0 && links.every(l => fs.existsSync(path.join(OUT_DIR, l))),
-      `index links resolve (${links.length} routes)`)
+  if (path.basename(file) === 'index.html') {
+    check(/<h1>[^<]+<\/h1>/.test(plain), `${file} decrypts to a listing`)
+    const links = [...plain.matchAll(/href="\/climbing\/([^"]*)"/g)].map(m => m[1])
+    const resolved = links.filter(l => fs.existsSync(path.join(OUT_DIR, l.endsWith('/') ? l + 'index.html' : l)))
+    check(links.length > 0 && resolved.length === links.length,
+      `${file} links all resolve (${resolved.length}/${links.length})`)
   } else {
     check(plain === fs.readFileSync(path.join(SRC_DIR, file), 'utf8'), `${file} round-trips byte-for-byte`)
   }
 
-  // The route title is deliberately shown on the gate; everything else must stay sealed.
+  // The route title and the parent area's back-link label are deliberately shown on the
+  // gate; everything else must stay sealed.
   const published = fs.readFileSync(built, 'utf8')
-  const gateTitle = published.match(/<title>([^<]*)<\/title>/)[1]
+  const publicText = published.match(/<title>([^<]*)<\/title>/)[1] +
+    ' ' + (published.match(/var BACK_LABEL = "([^"]*)"/)?.[1] || '')
   const body = plain
     .replace(/<style[\s\S]*?<\/style>/gi, ' ')
     .replace(/<head[\s\S]*?<\/head>/i, ' ')
     .replace(/<[^>]+>/g, ' ')
   const leaked = [...new Set(body.match(/\b[A-Za-zÄÖÜäöüß]{9,}\b/g) || [])]
-    .filter(w => !gateTitle.includes(w))
+    .filter(w => !publicText.includes(w))
     .filter(w => published.includes(w))
   check(leaked.length === 0, `${file} leaks no body text${leaked.length ? ` (found: ${leaked.slice(0, 5)})` : ''}`)
 }
