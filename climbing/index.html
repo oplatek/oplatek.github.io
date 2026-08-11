@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Climbing topos</title>
+<style>
+:root{--ink:#1b1d1c;--ink-2:#4a504d;--line:#d9dcda;--bg:#fbfaf7;--accent:#2f6f4f;--err:#a3352b}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);display:grid;place-items:center;min-height:100vh;
+  font:16px/1.55 ui-sans-serif,system-ui,-apple-system,sans-serif}
+.gate{width:min(420px,92vw);padding:28px 26px 24px;background:#fff;border:1px solid var(--line);border-radius:10px}
+h1{font-size:19px;margin:0 0 6px}
+p{color:var(--ink-2);font-size:14px;margin:0 0 18px}
+label{display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);margin:0 0 6px}
+input{width:100%;padding:11px 12px;font-size:16px;border:1px solid var(--line);border-radius:7px;background:var(--bg)}
+input:focus{outline:2px solid var(--accent);outline-offset:1px}
+button{width:100%;margin-top:12px;padding:11px 12px;font-size:15px;font-weight:600;color:#fff;
+  background:var(--accent);border:0;border-radius:7px;cursor:pointer}
+button[disabled]{opacity:.6;cursor:progress}
+.msg{margin:12px 0 0;font-size:13.5px;min-height:1.2em}
+.msg.err{color:var(--err)}
+.back{position:fixed;top:10px;right:12px;z-index:9;font:12px/1 ui-sans-serif,system-ui,sans-serif;
+  background:#fff;border:1px solid #d9dcda;border-radius:99px;padding:7px 12px;color:#2f6f4f;text-decoration:none}
+</style></head>
+<body>
+<form class="gate" id="gate" autocomplete="on">
+  <h1>Climbing topos</h1>
+  <p>This page is encrypted. Enter the password to read it.</p>
+  <label for="pw">Password</label>
+  <input id="pw" name="password" type="password" autocomplete="current-password" autofocus>
+  <button type="submit" id="go">Unlock</button>
+  <p class="msg" id="msg"></p>
+</form>
+<script id="payload" type="application/json">{"salt":"OmOrJrzyIoqMhKQq+dF/XQ==","iv":"G4YFO+kfJadF7cqA","ct":"qXvJPyX01pHRRoozUrSFnq2MkqKKexsrOegv7lnaLqfNSkKKL4BWBmvIvLOmFvfBkzZ/fUi+W0XZ1Y0UAo/cchCnVsRHTU3VV7bL15P/sY79tgoO6hbm/RS82S+wKbtyScVhUbibjAbCRijc+tIBVANLd45oUXLolfn6Go1A+c97iNZT1V+iO7PCYetqqVi+r53o8k+ZgkOVOX0ceq2jki8VhZolAq6atyhtUkrIpU0dWEW4JNDwCmoObfxhkB2gaVL2URjvzgmk57wIZKCGVn/aKb7BRweuXfT1aWOYuXTky1nybfeSPafT1AosQMSbZy/C10Lze7qG5pI0hkvq9w0DhKVVM4/VD8xCsowQUsT8d4/yP1UJd5hylNOpeT2In59g8VWmidn+ppCQKiveLoCrq/TLxTmM+4pMBa3dSz0MYidcQE4DXIY4Mg2186nwqbB77wn8f/D5/31ZyC6IN/2Bjn+C3yvuZrURuM5Wea6k0BLJH3k/szOLRxX333Ugqp9N4o/X31PH/bb0kG/YcyVP5FXROlPqFA3vPHB+kqvQMrx/z6VMyzRCkune5IzvjV6qzchfMzNBXUIZHjSuZA+sghoOYfxhOLzodj99y1j7Zs8rL4XtwKQHxfIfpqjdt97poZ5Xci7BdjWsLhJUhXVqVWxbdxkCwyE4ANYcnATHzipAzwaMRz53pMrg0acxZ+b+fQV9dk1lkVpxkT8fleGsfj1zT0FYy0kFwb10PVXNtyAsWM2l5esLa7TsSG+d4BKu04xP88k1IVNHCRdVuTBYq8l+56DKtO34VStbqFZsPIizJ/f91MkPsfWsiQdazMC9L92K4JIiSPWSaKrmzSMW/0CJYe9+oP4VfsKq/Ap30iDzkgpSamBCjYEhjjGo0iPrJGK20uNM1SFDVXCfOGWu6AfPGIGbpOHwRA2+5XrfomD+Jqc9eddPCeOG9uyIgHwC3/vDhAxtgEqoahN8XKs+deP6nlt51WdLHp7J5XLvWpNHmqwYu6n7lHR6eSTamLemlqUSKe/mztOfh62XxuF/y8j0RV+c2axeFV9p2quGOikTWXC5W0xDI4xDOKAhtHQpGQ/+qihxWwI9DulrutC7l+329luflDDkInsjEA1C+LMYef7KxAv+WjMFdNGhn5OdL3WpiWfuDq7YV2ylxB/TFbHkJE1Sg4Uk8XQ4mxsLacTjjnImfYYQuSwWt+f+r4mIhkVHlUhvjf21Of+4tK+90Ko28neykL3DEJzxMqZMGLOf8+pP4gviWw7rdx2e3+PHvTllfR/4XIRECP0PrC7HNPP50R3DuxPu7cLG7O9YBoDD3C1pun6k3PWLSZUNw0VONvMWvIcX0SMFlA4MOFvjpSn675dBXaOXMeqKS6iZ+H0S8Pt3teOVcivX5C2pkjDF74mI+cXD24+Ck4AOn08rXkRnZ9VvLepnYSCO650L6DqrskafZdcb9A1wo1fKT0pIZRgw87smkttwB2cV9B6by210HXl+io1vPtAsvKBr1L9XaCUagkFVjBLnq6/EGGeorfbRjpFBLY7fPqs17bnPhGJm+X3pyT67mtKyIul/Mf6WL6r1VY+OfR3h8hKeExFKGEePuqroZqNg65/tBIYX79yBumbbqhRCfQ2NdebnB8ADVLvmZHHvL4vSLtHUinQtH8Tg1dtAEhxcNTcDrPsd5wZ0wnH8bb+z8aiSmKAIpGqVlDPs03nM65KdwIYC3uSZ1RRMe/WuBLUGYehFC3IZCmwwal9LHDZddKzdgH3QsaVCViFo+HFM9qmm8ZxVTVa54t+HJQL9TeyOWzVjrqbV57M7/qiYMXc0ZWgc0ddVmZ3vCS6izWiFgjiZmd3asiu9E/UaCujgVNN8ocLwKYl7VNU4SZJVkQVrwk0ef7oJTpI6ZzfPKyrRgeXErMeGMRK51gYG0Oyt5BdwV0jJg3KkH6iJOK0="}</script>
+<script>
+(function () {
+  var data = JSON.parse(document.getElementById('payload').textContent)
+  var ITER = 310000
+  var KEY = 'topo-pw'
+  var BACK = ""
+  var form = document.getElementById('gate')
+  var input = document.getElementById('pw')
+  var button = document.getElementById('go')
+  var msg = document.getElementById('msg')
+
+  function b64 (s) {
+    var raw = atob(s), out = new Uint8Array(raw.length)
+    for (var i = 0; i < raw.length; i++) out[i] = raw.charCodeAt(i)
+    return out
+  }
+
+  async function decrypt (password) {
+    var enc = new TextEncoder()
+    var base = await crypto.subtle.importKey('raw', enc.encode(password), 'PBKDF2', false, ['deriveKey'])
+    var key = await crypto.subtle.deriveKey(
+      { name: 'PBKDF2', salt: b64(data.salt), iterations: ITER, hash: 'SHA-256' },
+      base, { name: 'AES-GCM', length: 256 }, false, ['decrypt'])
+    var plain = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: b64(data.iv) }, key, b64(data.ct))
+    return new TextDecoder().decode(plain)
+  }
+
+  function render (html) {
+    if (BACK) {
+      var link = '<a class="back" href="' + BACK + '">\u2190 all topos</a>'
+      var style = '<style>.back{position:fixed;top:10px;right:12px;z-index:9;' +
+        'font:12px/1 ui-sans-serif,system-ui,sans-serif;background:#fff;border:1px solid #d9dcda;' +
+        'border-radius:99px;padding:7px 12px;color:#2f6f4f;text-decoration:none}</style>'
+      html = html.replace(/<body([^>]*)>/i, function (m) { return m + style + link })
+    }
+    document.open()
+    document.write(html)
+    document.close()
+  }
+
+  async function attempt (password, fromCache) {
+    button.disabled = true
+    msg.className = 'msg'
+    msg.textContent = 'Decrypting\u2026'
+    try {
+      var html = await decrypt(password)
+      try { sessionStorage.setItem(KEY, password) } catch (e) {}
+      render(html)
+    } catch (e) {
+      try { if (fromCache) sessionStorage.removeItem(KEY) } catch (e2) {}
+      button.disabled = false
+      msg.className = 'msg err'
+      msg.textContent = fromCache ? '' : 'Wrong password.'
+      input.select()
+    }
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault()
+    if (input.value) attempt(input.value, false)
+  })
+
+  // Unlock once per tab: reuse the password across topos within the session.
+  var cached = null
+  try { cached = sessionStorage.getItem(KEY) } catch (e) {}
+  if (cached) attempt(cached, true)
+})()
+</script>
+</body></html>
