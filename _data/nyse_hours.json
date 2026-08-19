@@ -8,9 +8,9 @@
     "timezone": "America/New_York",
     "country": "US"
   },
-  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-08-18 (Tuesday) is a regular day: core session 2026-08-18T09:30:00-04:00 (2026-08-18T13:30:00Z) to 2026-08-18T16:00:00-04:00 (2026-08-18T20:00:00Z). This is the published schedule as of 2026-08-18T07:49:56Z, not live exchange status.",
-  "asOf": "2026-08-18T07:49:56Z",
-  "lastCheckedAt": "2026-08-18T07:49:56Z",
+  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-08-19 (Wednesday) is a regular day: core session 2026-08-19T09:30:00-04:00 (2026-08-19T13:30:00Z) to 2026-08-19T16:00:00-04:00 (2026-08-19T20:00:00Z). This is the published schedule as of 2026-08-19T07:50:40Z, not live exchange status.",
+  "asOf": "2026-08-19T07:50:40Z",
+  "lastCheckedAt": "2026-08-19T07:50:40Z",
   "staleAfterDays": 10,
   "stale": false,
   "ageDays": 0,
@@ -19,7 +19,7 @@
     {
       "name": "NYSE holidays & trading hours",
       "url": "https://www.nyse.com/trade/hours-calendars",
-      "fetchedAt": "2026-08-18T07:49:56Z",
+      "fetchedAt": "2026-08-19T07:50:40Z",
       "ok": true,
       "holidaysParsed": 29,
       "earlyClosesParsed": 5
@@ -27,14 +27,14 @@
     {
       "name": "NYSE current trade halts",
       "url": "https://www.nyse.com/api/trade-halts/current/download",
-      "fetchedAt": "2026-08-18T07:49:56Z",
+      "fetchedAt": "2026-08-19T07:50:40Z",
       "ok": true
     }
   ],
-  "today": "2026-08-18",
+  "today": "2026-08-19",
   "window": {
-    "from": "2026-08-15",
-    "to": "2027-01-15"
+    "from": "2026-08-16",
+    "to": "2027-01-16"
   },
   "consolidatedSessions": {
     "timezone": "America/New_York",
@@ -129,15 +129,6 @@
     }
   },
   "days": [
-    {
-      "date": "2026-08-15",
-      "weekday": "Saturday",
-      "type": "weekend",
-      "open": false,
-      "reason": null,
-      "utcOffset": "-04:00",
-      "sessions": null
-    },
     {
       "date": "2026-08-16",
       "weekday": "Sunday",
@@ -3528,21 +3519,18 @@
           "endUtc": "2027-01-16T01:00:00Z"
         }
       }
+    },
+    {
+      "date": "2027-01-16",
+      "weekday": "Saturday",
+      "type": "weekend",
+      "open": false,
+      "reason": null,
+      "utcOffset": "-05:00",
+      "sessions": null
     }
   ],
   "liveWindow": [
-    {
-      "date": "2026-08-18",
-      "type": "regular",
-      "open": true,
-      "reason": null,
-      "pre": "2026-08-18T04:00:00-04:00",
-      "coreStart": "2026-08-18T09:30:00-04:00",
-      "coreEnd": "2026-08-18T16:00:00-04:00",
-      "postEnd": "2026-08-18T20:00:00-04:00",
-      "coreStartUtc": "2026-08-18T13:30:00Z",
-      "coreEndUtc": "2026-08-18T20:00:00Z"
-    },
     {
       "date": "2026-08-19",
       "type": "regular",
@@ -4070,6 +4058,18 @@
       "postEnd": "2026-10-01T20:00:00-04:00",
       "coreStartUtc": "2026-10-01T13:30:00Z",
       "coreEndUtc": "2026-10-01T20:00:00Z"
+    },
+    {
+      "date": "2026-10-02",
+      "type": "regular",
+      "open": true,
+      "reason": null,
+      "pre": "2026-10-02T04:00:00-04:00",
+      "coreStart": "2026-10-02T09:30:00-04:00",
+      "coreEnd": "2026-10-02T16:00:00-04:00",
+      "postEnd": "2026-10-02T20:00:00-04:00",
+      "coreStartUtc": "2026-10-02T13:30:00Z",
+      "coreEndUtc": "2026-10-02T20:00:00Z"
     }
   ],
   "holidays": [
@@ -4312,36 +4312,36 @@
     "scope": "Single-security trading halts across US exchanges, as published by NYSE. A symbol halt does not close the exchange.",
     "openHaltCount": 19,
     "byExchange": {
-      "Nasdaq": 15,
-      "NYSE": 1,
+      "NYSE": 2,
+      "Nasdaq": 14,
       "NYSE American": 3
     },
     "marketWideHalt": false,
     "marketWideHalts": [],
     "symbols": [
       {
-        "date": "2026-08-17",
+        "date": "2026-08-18",
+        "time": "19:50:49",
+        "symbol": "NRDY",
+        "name": "Nerdy Inc.",
+        "exchange": "NYSE",
+        "reason": "Corporate Action",
+        "resumed": false
+      },
+      {
+        "date": "2026-08-18",
         "time": "19:50:00",
-        "symbol": "CXAIW",
-        "name": "CXApp Inc. Warrant",
+        "symbol": "GLMD",
+        "name": "Galmed Pharmaceuticals Ltd.",
         "exchange": "Nasdaq",
         "reason": "News Pending",
         "resumed": false
       },
       {
-        "date": "2026-08-17",
+        "date": "2026-08-18",
         "time": "19:50:00",
-        "symbol": "RCON",
-        "name": "Recon Technology, Ltd. Class A Ordinary Shares",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-08-17",
-        "time": "19:50:00",
-        "symbol": "CXAI",
-        "name": "CXApp Inc. Class A Common Stock",
+        "symbol": "CISS",
+        "name": "C3is Inc. Common Stock",
         "exchange": "Nasdaq",
         "reason": "News Pending",
         "resumed": false
@@ -4492,7 +4492,7 @@
       }
     ],
     "truncated": false,
-    "fetchedAt": "2026-08-18T07:49:56Z"
+    "fetchedAt": "2026-08-19T07:50:40Z"
   },
   "meta": {
     "generator": "utils/nyse/build-nyse-hours.mjs",
