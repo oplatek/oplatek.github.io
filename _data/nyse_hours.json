@@ -8,9 +8,9 @@
     "timezone": "America/New_York",
     "country": "US"
   },
-  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-08-20 (Thursday) is a regular day: core session 2026-08-20T09:30:00-04:00 (2026-08-20T13:30:00Z) to 2026-08-20T16:00:00-04:00 (2026-08-20T20:00:00Z). This is the published schedule as of 2026-08-20T07:53:22Z, not live exchange status.",
-  "asOf": "2026-08-20T07:53:22Z",
-  "lastCheckedAt": "2026-08-20T07:53:22Z",
+  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-08-21 (Friday) is a regular day: core session 2026-08-21T09:30:00-04:00 (2026-08-21T13:30:00Z) to 2026-08-21T16:00:00-04:00 (2026-08-21T20:00:00Z). This is the published schedule as of 2026-08-21T07:53:32Z, not live exchange status.",
+  "asOf": "2026-08-21T07:53:32Z",
+  "lastCheckedAt": "2026-08-21T07:53:32Z",
   "staleAfterDays": 10,
   "stale": false,
   "ageDays": 0,
@@ -19,7 +19,7 @@
     {
       "name": "NYSE holidays & trading hours",
       "url": "https://www.nyse.com/trade/hours-calendars",
-      "fetchedAt": "2026-08-20T07:53:22Z",
+      "fetchedAt": "2026-08-21T07:53:32Z",
       "ok": true,
       "holidaysParsed": 29,
       "earlyClosesParsed": 5
@@ -27,14 +27,14 @@
     {
       "name": "NYSE current trade halts",
       "url": "https://www.nyse.com/api/trade-halts/current/download",
-      "fetchedAt": "2026-08-20T07:53:22Z",
+      "fetchedAt": "2026-08-21T07:53:32Z",
       "ok": true
     }
   ],
-  "today": "2026-08-20",
+  "today": "2026-08-21",
   "window": {
-    "from": "2026-08-17",
-    "to": "2027-01-17"
+    "from": "2026-08-18",
+    "to": "2027-01-18"
   },
   "consolidatedSessions": {
     "timezone": "America/New_York",
@@ -129,34 +129,6 @@
     }
   },
   "days": [
-    {
-      "date": "2026-08-17",
-      "weekday": "Monday",
-      "type": "regular",
-      "open": true,
-      "reason": null,
-      "utcOffset": "-04:00",
-      "sessions": {
-        "preMarket": {
-          "start": "2026-08-17T04:00:00-04:00",
-          "end": "2026-08-17T09:30:00-04:00",
-          "startUtc": "2026-08-17T08:00:00Z",
-          "endUtc": "2026-08-17T13:30:00Z"
-        },
-        "core": {
-          "start": "2026-08-17T09:30:00-04:00",
-          "end": "2026-08-17T16:00:00-04:00",
-          "startUtc": "2026-08-17T13:30:00Z",
-          "endUtc": "2026-08-17T20:00:00Z"
-        },
-        "afterHours": {
-          "start": "2026-08-17T16:00:00-04:00",
-          "end": "2026-08-17T20:00:00-04:00",
-          "startUtc": "2026-08-17T20:00:00Z",
-          "endUtc": "2026-08-18T00:00:00Z"
-        }
-      }
-    },
     {
       "date": "2026-08-18",
       "weekday": "Tuesday",
@@ -3528,21 +3500,18 @@
       "reason": null,
       "utcOffset": "-05:00",
       "sessions": null
+    },
+    {
+      "date": "2027-01-18",
+      "weekday": "Monday",
+      "type": "holiday",
+      "open": false,
+      "reason": "Martin Luther King, Jr. Day",
+      "utcOffset": "-05:00",
+      "sessions": null
     }
   ],
   "liveWindow": [
-    {
-      "date": "2026-08-20",
-      "type": "regular",
-      "open": true,
-      "reason": null,
-      "pre": "2026-08-20T04:00:00-04:00",
-      "coreStart": "2026-08-20T09:30:00-04:00",
-      "coreEnd": "2026-08-20T16:00:00-04:00",
-      "postEnd": "2026-08-20T20:00:00-04:00",
-      "coreStartUtc": "2026-08-20T13:30:00Z",
-      "coreEndUtc": "2026-08-20T20:00:00Z"
-    },
     {
       "date": "2026-08-21",
       "type": "regular",
@@ -4070,6 +4039,18 @@
       "postEnd": null,
       "coreStartUtc": null,
       "coreEndUtc": null
+    },
+    {
+      "date": "2026-10-04",
+      "type": "weekend",
+      "open": false,
+      "reason": null,
+      "pre": null,
+      "coreStart": null,
+      "coreEnd": null,
+      "postEnd": null,
+      "coreStartUtc": null,
+      "coreEndUtc": null
     }
   ],
   "holidays": [
@@ -4310,46 +4291,73 @@
   "halts": {
     "source": "https://www.nyse.com/api/trade-halts/current/download",
     "scope": "Single-security trading halts across US exchanges, as published by NYSE. A symbol halt does not close the exchange.",
-    "openHaltCount": 19,
+    "openHaltCount": 22,
     "byExchange": {
-      "Nasdaq": 16,
+      "Nasdaq": 19,
       "NYSE American": 3
     },
     "marketWideHalt": false,
     "marketWideHalts": [],
     "symbols": [
       {
-        "date": "2026-08-19",
+        "date": "2026-08-20",
         "time": "19:50:00",
-        "symbol": "LBRDA",
-        "name": "Liberty Broadband Corporation Class A",
+        "symbol": "SCNI",
+        "name": "Scinai Immunotherapeutics Ltd. American Depositary Shares",
         "exchange": "Nasdaq",
         "reason": "News Pending",
         "resumed": false
       },
       {
-        "date": "2026-08-19",
+        "date": "2026-08-20",
         "time": "19:50:00",
-        "symbol": "LBRDK",
-        "name": "Liberty Broadband Corporation Class C",
+        "symbol": "ELAB",
+        "name": "PMGC Holdings Inc. Common Stock",
         "exchange": "Nasdaq",
         "reason": "News Pending",
         "resumed": false
       },
       {
-        "date": "2026-08-19",
+        "date": "2026-08-20",
         "time": "19:50:00",
-        "symbol": "LBRDP",
-        "name": "Liberty Broadband Corporation Series A Cumulative Redeemable Preferred Stock",
+        "symbol": "LIMNW",
+        "name": "Liminatus Pharma, Inc. Warrants",
         "exchange": "Nasdaq",
         "reason": "News Pending",
         "resumed": false
       },
       {
-        "date": "2026-08-19",
+        "date": "2026-08-20",
         "time": "19:50:00",
-        "symbol": "CURX",
-        "name": "Curanex Pharmaceuticals Inc Common Stock",
+        "symbol": "SMTK",
+        "name": "SmartKem, Inc. Common Stock",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-08-20",
+        "time": "19:50:00",
+        "symbol": "XCH",
+        "name": "XCHG Limited American Depositary Share",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-08-20",
+        "time": "19:50:00",
+        "symbol": "BTOG",
+        "name": "Bit Origin Limited Class A Ordinary Shares",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-08-20",
+        "time": "19:50:00",
+        "symbol": "LIMN",
+        "name": "Liminatus Pharma, Inc. Class A Common Stock",
         "exchange": "Nasdaq",
         "reason": "News Pending",
         "resumed": false
@@ -4491,7 +4499,7 @@
       }
     ],
     "truncated": false,
-    "fetchedAt": "2026-08-20T07:53:22Z"
+    "fetchedAt": "2026-08-21T07:53:32Z"
   },
   "meta": {
     "generator": "utils/nyse/build-nyse-hours.mjs",
