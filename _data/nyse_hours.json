@@ -8,9 +8,9 @@
     "timezone": "America/New_York",
     "country": "US"
   },
-  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-08-21 (Friday) is a regular day: core session 2026-08-21T09:30:00-04:00 (2026-08-21T13:30:00Z) to 2026-08-21T16:00:00-04:00 (2026-08-21T20:00:00Z). This is the published schedule as of 2026-08-21T07:53:32Z, not live exchange status.",
-  "asOf": "2026-08-21T07:53:32Z",
-  "lastCheckedAt": "2026-08-21T07:53:32Z",
+  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-08-22 (Saturday) is a weekend day: the exchange is closed all day. This is the published schedule as of 2026-08-22T07:41:29Z, not live exchange status.",
+  "asOf": "2026-08-22T07:41:29Z",
+  "lastCheckedAt": "2026-08-22T07:41:29Z",
   "staleAfterDays": 10,
   "stale": false,
   "ageDays": 0,
@@ -19,7 +19,7 @@
     {
       "name": "NYSE holidays & trading hours",
       "url": "https://www.nyse.com/trade/hours-calendars",
-      "fetchedAt": "2026-08-21T07:53:32Z",
+      "fetchedAt": "2026-08-22T07:41:29Z",
       "ok": true,
       "holidaysParsed": 29,
       "earlyClosesParsed": 5
@@ -27,14 +27,14 @@
     {
       "name": "NYSE current trade halts",
       "url": "https://www.nyse.com/api/trade-halts/current/download",
-      "fetchedAt": "2026-08-21T07:53:32Z",
+      "fetchedAt": "2026-08-22T07:41:29Z",
       "ok": true
     }
   ],
-  "today": "2026-08-21",
+  "today": "2026-08-22",
   "window": {
-    "from": "2026-08-18",
-    "to": "2027-01-18"
+    "from": "2026-08-19",
+    "to": "2027-01-19"
   },
   "consolidatedSessions": {
     "timezone": "America/New_York",
@@ -129,34 +129,6 @@
     }
   },
   "days": [
-    {
-      "date": "2026-08-18",
-      "weekday": "Tuesday",
-      "type": "regular",
-      "open": true,
-      "reason": null,
-      "utcOffset": "-04:00",
-      "sessions": {
-        "preMarket": {
-          "start": "2026-08-18T04:00:00-04:00",
-          "end": "2026-08-18T09:30:00-04:00",
-          "startUtc": "2026-08-18T08:00:00Z",
-          "endUtc": "2026-08-18T13:30:00Z"
-        },
-        "core": {
-          "start": "2026-08-18T09:30:00-04:00",
-          "end": "2026-08-18T16:00:00-04:00",
-          "startUtc": "2026-08-18T13:30:00Z",
-          "endUtc": "2026-08-18T20:00:00Z"
-        },
-        "afterHours": {
-          "start": "2026-08-18T16:00:00-04:00",
-          "end": "2026-08-18T20:00:00-04:00",
-          "startUtc": "2026-08-18T20:00:00Z",
-          "endUtc": "2026-08-19T00:00:00Z"
-        }
-      }
-    },
     {
       "date": "2026-08-19",
       "weekday": "Wednesday",
@@ -3509,21 +3481,37 @@
       "reason": "Martin Luther King, Jr. Day",
       "utcOffset": "-05:00",
       "sessions": null
-    }
-  ],
-  "liveWindow": [
+    },
     {
-      "date": "2026-08-21",
+      "date": "2027-01-19",
+      "weekday": "Tuesday",
       "type": "regular",
       "open": true,
       "reason": null,
-      "pre": "2026-08-21T04:00:00-04:00",
-      "coreStart": "2026-08-21T09:30:00-04:00",
-      "coreEnd": "2026-08-21T16:00:00-04:00",
-      "postEnd": "2026-08-21T20:00:00-04:00",
-      "coreStartUtc": "2026-08-21T13:30:00Z",
-      "coreEndUtc": "2026-08-21T20:00:00Z"
-    },
+      "utcOffset": "-05:00",
+      "sessions": {
+        "preMarket": {
+          "start": "2027-01-19T04:00:00-05:00",
+          "end": "2027-01-19T09:30:00-05:00",
+          "startUtc": "2027-01-19T09:00:00Z",
+          "endUtc": "2027-01-19T14:30:00Z"
+        },
+        "core": {
+          "start": "2027-01-19T09:30:00-05:00",
+          "end": "2027-01-19T16:00:00-05:00",
+          "startUtc": "2027-01-19T14:30:00Z",
+          "endUtc": "2027-01-19T21:00:00Z"
+        },
+        "afterHours": {
+          "start": "2027-01-19T16:00:00-05:00",
+          "end": "2027-01-19T20:00:00-05:00",
+          "startUtc": "2027-01-19T21:00:00Z",
+          "endUtc": "2027-01-20T01:00:00Z"
+        }
+      }
+    }
+  ],
+  "liveWindow": [
     {
       "date": "2026-08-22",
       "type": "weekend",
@@ -4051,6 +4039,18 @@
       "postEnd": null,
       "coreStartUtc": null,
       "coreEndUtc": null
+    },
+    {
+      "date": "2026-10-05",
+      "type": "regular",
+      "open": true,
+      "reason": null,
+      "pre": "2026-10-05T04:00:00-04:00",
+      "coreStart": "2026-10-05T09:30:00-04:00",
+      "coreEnd": "2026-10-05T16:00:00-04:00",
+      "postEnd": "2026-10-05T20:00:00-04:00",
+      "coreStartUtc": "2026-10-05T13:30:00Z",
+      "coreEndUtc": "2026-10-05T20:00:00Z"
     }
   ],
   "holidays": [
@@ -4291,73 +4291,92 @@
   "halts": {
     "source": "https://www.nyse.com/api/trade-halts/current/download",
     "scope": "Single-security trading halts across US exchanges, as published by NYSE. A symbol halt does not close the exchange.",
-    "openHaltCount": 22,
+    "openHaltCount": 23,
     "byExchange": {
-      "Nasdaq": 19,
-      "NYSE American": 3
+      "NYSE": 1,
+      "Nasdaq": 20,
+      "NYSE American": 2
     },
     "marketWideHalt": false,
     "marketWideHalts": [],
     "symbols": [
       {
-        "date": "2026-08-20",
+        "date": "2026-08-21",
+        "time": "19:50:25",
+        "symbol": "BRCC",
+        "name": "BRC Inc.",
+        "exchange": "NYSE",
+        "reason": "Corporate Action",
+        "resumed": false
+      },
+      {
+        "date": "2026-08-21",
         "time": "19:50:00",
-        "symbol": "SCNI",
-        "name": "Scinai Immunotherapeutics Ltd. American Depositary Shares",
+        "symbol": "BIAFW",
+        "name": "bioAffinity Technologies, Inc. Warrant",
         "exchange": "Nasdaq",
         "reason": "News Pending",
         "resumed": false
       },
       {
-        "date": "2026-08-20",
+        "date": "2026-08-21",
         "time": "19:50:00",
-        "symbol": "ELAB",
-        "name": "PMGC Holdings Inc. Common Stock",
+        "symbol": "BIAF",
+        "name": "bioAffinity Technologies, Inc. Common Stock",
         "exchange": "Nasdaq",
         "reason": "News Pending",
         "resumed": false
       },
       {
-        "date": "2026-08-20",
+        "date": "2026-08-21",
         "time": "19:50:00",
-        "symbol": "LIMNW",
-        "name": "Liminatus Pharma, Inc. Warrants",
+        "symbol": "GRMLW",
+        "name": "Greenland Mines Ltd Warrant",
         "exchange": "Nasdaq",
         "reason": "News Pending",
         "resumed": false
       },
       {
-        "date": "2026-08-20",
+        "date": "2026-08-21",
         "time": "19:50:00",
-        "symbol": "SMTK",
-        "name": "SmartKem, Inc. Common Stock",
+        "symbol": "GRML",
+        "name": "Greenland Mines Ltd. Common Stock",
         "exchange": "Nasdaq",
         "reason": "News Pending",
         "resumed": false
       },
       {
-        "date": "2026-08-20",
+        "date": "2026-08-21",
         "time": "19:50:00",
-        "symbol": "XCH",
-        "name": "XCHG Limited American Depositary Share",
+        "symbol": "VCIG",
+        "name": "VCI Global Limited Ordinary Share",
         "exchange": "Nasdaq",
         "reason": "News Pending",
         "resumed": false
       },
       {
-        "date": "2026-08-20",
+        "date": "2026-08-21",
         "time": "19:50:00",
-        "symbol": "BTOG",
-        "name": "Bit Origin Limited Class A Ordinary Shares",
+        "symbol": "INCR",
+        "name": "Intercure Ltd. Ordinary Shares",
         "exchange": "Nasdaq",
         "reason": "News Pending",
         "resumed": false
       },
       {
-        "date": "2026-08-20",
+        "date": "2026-08-21",
         "time": "19:50:00",
-        "symbol": "LIMN",
-        "name": "Liminatus Pharma, Inc. Class A Common Stock",
+        "symbol": "GAME",
+        "name": "GameSquare Holdings, Inc. Common Stock",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-08-21",
+        "time": "19:50:00",
+        "symbol": "SKYE",
+        "name": "Skye Bioscience, Inc. Common Stock",
         "exchange": "Nasdaq",
         "reason": "News Pending",
         "resumed": false
@@ -4376,15 +4395,6 @@
         "time": "14:15:13",
         "symbol": "GPUS PRD",
         "name": "Hyperscale Data, Inc. 13.00% Series D Cumulative Redeemable Perpetual Preferred Stock",
-        "exchange": "NYSE American",
-        "reason": "Regulatory Concern",
-        "resumed": false
-      },
-      {
-        "date": "2026-06-24",
-        "time": "18:46:11",
-        "symbol": "NCL",
-        "name": "Northann Corp.",
         "exchange": "NYSE American",
         "reason": "Regulatory Concern",
         "resumed": false
@@ -4499,7 +4509,7 @@
       }
     ],
     "truncated": false,
-    "fetchedAt": "2026-08-21T07:53:32Z"
+    "fetchedAt": "2026-08-22T07:41:29Z"
   },
   "meta": {
     "generator": "utils/nyse/build-nyse-hours.mjs",
