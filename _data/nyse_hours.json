@@ -8,9 +8,9 @@
     "timezone": "America/New_York",
     "country": "US"
   },
-  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-08-29 (Saturday) is a weekend day: the exchange is closed all day. This is the published schedule as of 2026-08-29T13:08:22Z, not live exchange status.",
-  "asOf": "2026-08-29T13:08:22Z",
-  "lastCheckedAt": "2026-08-29T13:08:22Z",
+  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-08-30 (Sunday) is a weekend day: the exchange is closed all day. This is the published schedule as of 2026-08-30T12:49:45Z, not live exchange status.",
+  "asOf": "2026-08-30T12:49:45Z",
+  "lastCheckedAt": "2026-08-30T12:49:45Z",
   "staleAfterDays": 10,
   "stale": false,
   "ageDays": 0,
@@ -19,7 +19,7 @@
     {
       "name": "NYSE holidays & trading hours",
       "url": "https://www.nyse.com/trade/hours-calendars",
-      "fetchedAt": "2026-08-29T13:08:22Z",
+      "fetchedAt": "2026-08-30T12:49:45Z",
       "ok": true,
       "holidaysParsed": 29,
       "earlyClosesParsed": 5
@@ -27,14 +27,14 @@
     {
       "name": "NYSE current trade halts",
       "url": "https://www.nyse.com/api/trade-halts/current/download",
-      "fetchedAt": "2026-08-29T13:08:22Z",
+      "fetchedAt": "2026-08-30T12:49:45Z",
       "ok": true
     }
   ],
-  "today": "2026-08-29",
+  "today": "2026-08-30",
   "window": {
-    "from": "2026-08-26",
-    "to": "2027-01-26"
+    "from": "2026-08-27",
+    "to": "2027-01-27"
   },
   "consolidatedSessions": {
     "timezone": "America/New_York",
@@ -129,34 +129,6 @@
     }
   },
   "days": [
-    {
-      "date": "2026-08-26",
-      "weekday": "Wednesday",
-      "type": "regular",
-      "open": true,
-      "reason": null,
-      "utcOffset": "-04:00",
-      "sessions": {
-        "preMarket": {
-          "start": "2026-08-26T04:00:00-04:00",
-          "end": "2026-08-26T09:30:00-04:00",
-          "startUtc": "2026-08-26T08:00:00Z",
-          "endUtc": "2026-08-26T13:30:00Z"
-        },
-        "core": {
-          "start": "2026-08-26T09:30:00-04:00",
-          "end": "2026-08-26T16:00:00-04:00",
-          "startUtc": "2026-08-26T13:30:00Z",
-          "endUtc": "2026-08-26T20:00:00Z"
-        },
-        "afterHours": {
-          "start": "2026-08-26T16:00:00-04:00",
-          "end": "2026-08-26T20:00:00-04:00",
-          "startUtc": "2026-08-26T20:00:00Z",
-          "endUtc": "2026-08-27T00:00:00Z"
-        }
-      }
-    },
     {
       "date": "2026-08-27",
       "weekday": "Thursday",
@@ -3509,21 +3481,37 @@
           "endUtc": "2027-01-27T01:00:00Z"
         }
       }
+    },
+    {
+      "date": "2027-01-27",
+      "weekday": "Wednesday",
+      "type": "regular",
+      "open": true,
+      "reason": null,
+      "utcOffset": "-05:00",
+      "sessions": {
+        "preMarket": {
+          "start": "2027-01-27T04:00:00-05:00",
+          "end": "2027-01-27T09:30:00-05:00",
+          "startUtc": "2027-01-27T09:00:00Z",
+          "endUtc": "2027-01-27T14:30:00Z"
+        },
+        "core": {
+          "start": "2027-01-27T09:30:00-05:00",
+          "end": "2027-01-27T16:00:00-05:00",
+          "startUtc": "2027-01-27T14:30:00Z",
+          "endUtc": "2027-01-27T21:00:00Z"
+        },
+        "afterHours": {
+          "start": "2027-01-27T16:00:00-05:00",
+          "end": "2027-01-27T20:00:00-05:00",
+          "startUtc": "2027-01-27T21:00:00Z",
+          "endUtc": "2027-01-28T01:00:00Z"
+        }
+      }
     }
   ],
   "liveWindow": [
-    {
-      "date": "2026-08-29",
-      "type": "weekend",
-      "open": false,
-      "reason": null,
-      "pre": null,
-      "coreStart": null,
-      "coreEnd": null,
-      "postEnd": null,
-      "coreStartUtc": null,
-      "coreEndUtc": null
-    },
     {
       "date": "2026-08-30",
       "type": "weekend",
@@ -4051,6 +4039,18 @@
       "postEnd": "2026-10-12T20:00:00-04:00",
       "coreStartUtc": "2026-10-12T13:30:00Z",
       "coreEndUtc": "2026-10-12T20:00:00Z"
+    },
+    {
+      "date": "2026-10-13",
+      "type": "regular",
+      "open": true,
+      "reason": null,
+      "pre": "2026-10-13T04:00:00-04:00",
+      "coreStart": "2026-10-13T09:30:00-04:00",
+      "coreEnd": "2026-10-13T16:00:00-04:00",
+      "postEnd": "2026-10-13T20:00:00-04:00",
+      "coreStartUtc": "2026-10-13T13:30:00Z",
+      "coreEndUtc": "2026-10-13T20:00:00Z"
     }
   ],
   "holidays": [
@@ -4517,7 +4517,7 @@
       }
     ],
     "truncated": false,
-    "fetchedAt": "2026-08-29T13:08:22Z"
+    "fetchedAt": "2026-08-30T12:49:45Z"
   },
   "meta": {
     "generator": "utils/nyse/build-nyse-hours.mjs",
