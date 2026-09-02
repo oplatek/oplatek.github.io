@@ -8,9 +8,9 @@
     "timezone": "America/New_York",
     "country": "US"
   },
-  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-09-01 (Tuesday) is a regular day: core session 2026-09-01T09:30:00-04:00 (2026-09-01T13:30:00Z) to 2026-09-01T16:00:00-04:00 (2026-09-01T20:00:00Z). This is the published schedule as of 2026-09-01T12:32:10Z, not live exchange status.",
-  "asOf": "2026-09-01T12:32:10Z",
-  "lastCheckedAt": "2026-09-01T12:32:10Z",
+  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-09-02 (Wednesday) is a regular day: core session 2026-09-02T09:30:00-04:00 (2026-09-02T13:30:00Z) to 2026-09-02T16:00:00-04:00 (2026-09-02T20:00:00Z). This is the published schedule as of 2026-09-02T12:05:01Z, not live exchange status.",
+  "asOf": "2026-09-02T12:05:01Z",
+  "lastCheckedAt": "2026-09-02T12:05:01Z",
   "staleAfterDays": 10,
   "stale": false,
   "ageDays": 0,
@@ -19,7 +19,7 @@
     {
       "name": "NYSE holidays & trading hours",
       "url": "https://www.nyse.com/trade/hours-calendars",
-      "fetchedAt": "2026-09-01T12:32:10Z",
+      "fetchedAt": "2026-09-02T12:05:01Z",
       "ok": true,
       "holidaysParsed": 29,
       "earlyClosesParsed": 5
@@ -27,14 +27,14 @@
     {
       "name": "NYSE current trade halts",
       "url": "https://www.nyse.com/api/trade-halts/current/download",
-      "fetchedAt": "2026-09-01T12:32:10Z",
+      "fetchedAt": "2026-09-02T12:05:01Z",
       "ok": true
     }
   ],
-  "today": "2026-09-01",
+  "today": "2026-09-02",
   "window": {
-    "from": "2026-08-29",
-    "to": "2027-01-29"
+    "from": "2026-08-30",
+    "to": "2027-01-30"
   },
   "consolidatedSessions": {
     "timezone": "America/New_York",
@@ -129,15 +129,6 @@
     }
   },
   "days": [
-    {
-      "date": "2026-08-29",
-      "weekday": "Saturday",
-      "type": "weekend",
-      "open": false,
-      "reason": null,
-      "utcOffset": "-04:00",
-      "sessions": null
-    },
     {
       "date": "2026-08-30",
       "weekday": "Sunday",
@@ -3509,21 +3500,18 @@
           "endUtc": "2027-01-30T01:00:00Z"
         }
       }
+    },
+    {
+      "date": "2027-01-30",
+      "weekday": "Saturday",
+      "type": "weekend",
+      "open": false,
+      "reason": null,
+      "utcOffset": "-05:00",
+      "sessions": null
     }
   ],
   "liveWindow": [
-    {
-      "date": "2026-09-01",
-      "type": "regular",
-      "open": true,
-      "reason": null,
-      "pre": "2026-09-01T04:00:00-04:00",
-      "coreStart": "2026-09-01T09:30:00-04:00",
-      "coreEnd": "2026-09-01T16:00:00-04:00",
-      "postEnd": "2026-09-01T20:00:00-04:00",
-      "coreStartUtc": "2026-09-01T13:30:00Z",
-      "coreEndUtc": "2026-09-01T20:00:00Z"
-    },
     {
       "date": "2026-09-02",
       "type": "regular",
@@ -4051,6 +4039,18 @@
       "postEnd": "2026-10-15T20:00:00-04:00",
       "coreStartUtc": "2026-10-15T13:30:00Z",
       "coreEndUtc": "2026-10-15T20:00:00Z"
+    },
+    {
+      "date": "2026-10-16",
+      "type": "regular",
+      "open": true,
+      "reason": null,
+      "pre": "2026-10-16T04:00:00-04:00",
+      "coreStart": "2026-10-16T09:30:00-04:00",
+      "coreEnd": "2026-10-16T16:00:00-04:00",
+      "postEnd": "2026-10-16T20:00:00-04:00",
+      "coreStartUtc": "2026-10-16T13:30:00Z",
+      "coreEndUtc": "2026-10-16T20:00:00Z"
     }
   ],
   "holidays": [
@@ -4291,93 +4291,21 @@
   "halts": {
     "source": "https://www.nyse.com/api/trade-halts/current/download",
     "scope": "Single-security trading halts across US exchanges, as published by NYSE. A symbol halt does not close the exchange.",
-    "openHaltCount": 21,
+    "openHaltCount": 13,
     "byExchange": {
-      "Nasdaq": 20,
-      "NYSE American": 1
+      "NYSE": 1,
+      "Nasdaq": 12
     },
     "marketWideHalt": false,
     "marketWideHalts": [],
     "symbols": [
       {
         "date": "2026-09-01",
-        "time": "07:25:00",
-        "symbol": "ALMS",
-        "name": "Alumis Inc. Common Stock",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-08-31",
-        "time": "19:50:23",
-        "symbol": "KAPA",
-        "name": "Kairos Pharma, Ltd.",
-        "exchange": "NYSE American",
-        "reason": "Corporate Action",
-        "resumed": false
-      },
-      {
-        "date": "2026-08-31",
-        "time": "19:50:00",
-        "symbol": "FEED",
-        "name": "ENvue Medical, Inc. Common Stock",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-08-31",
-        "time": "19:50:00",
-        "symbol": "LGCL",
-        "name": "Lucas GC Limited Ordinary Shares",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-08-31",
-        "time": "19:50:00",
-        "symbol": "FGL",
-        "name": "Founder Group Limited Class A Ordinary Shares",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-08-31",
-        "time": "19:50:00",
-        "symbol": "CRNX",
-        "name": "Crinetics Pharmaceuticals, Inc.",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-08-31",
-        "time": "19:50:00",
-        "symbol": "NIVFW",
-        "name": "NewGenIvf Group Limited Warrants",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-08-31",
-        "time": "19:50:00",
-        "symbol": "NCSM",
-        "name": "NCS Multistage Holdings, Inc.",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-08-31",
-        "time": "19:50:00",
-        "symbol": "NIVF",
-        "name": "NewGenIvf Group Limited Class A ordinary shares",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
+        "time": "10:08:23",
+        "symbol": "ACHR WS",
+        "name": "Archer Aviation Inc. Redeemable Warrants, each whole warrant exercisable for one Class A common stock at an exercise price of $11.50",
+        "exchange": "NYSE",
+        "reason": "Regulatory Concern",
         "resumed": false
       },
       {
@@ -4490,7 +4418,7 @@
       }
     ],
     "truncated": false,
-    "fetchedAt": "2026-09-01T12:32:10Z"
+    "fetchedAt": "2026-09-02T12:05:01Z"
   },
   "meta": {
     "generator": "utils/nyse/build-nyse-hours.mjs",
