@@ -8,9 +8,9 @@
     "timezone": "America/New_York",
     "country": "US"
   },
-  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-09-04 (Friday) is a regular day: core session 2026-09-04T09:30:00-04:00 (2026-09-04T13:30:00Z) to 2026-09-04T16:00:00-04:00 (2026-09-04T20:00:00Z). This is the published schedule as of 2026-09-04T12:05:56Z, not live exchange status.",
-  "asOf": "2026-09-04T12:05:56Z",
-  "lastCheckedAt": "2026-09-04T12:05:56Z",
+  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-09-05 (Saturday) is a weekend day: the exchange is closed all day. This is the published schedule as of 2026-09-05T11:14:44Z, not live exchange status.",
+  "asOf": "2026-09-05T11:14:44Z",
+  "lastCheckedAt": "2026-09-05T11:14:44Z",
   "staleAfterDays": 10,
   "stale": false,
   "ageDays": 0,
@@ -19,7 +19,7 @@
     {
       "name": "NYSE holidays & trading hours",
       "url": "https://www.nyse.com/trade/hours-calendars",
-      "fetchedAt": "2026-09-04T12:05:56Z",
+      "fetchedAt": "2026-09-05T11:14:44Z",
       "ok": true,
       "holidaysParsed": 29,
       "earlyClosesParsed": 5
@@ -27,14 +27,14 @@
     {
       "name": "NYSE current trade halts",
       "url": "https://www.nyse.com/api/trade-halts/current/download",
-      "fetchedAt": "2026-09-04T12:05:56Z",
+      "fetchedAt": "2026-09-05T11:14:44Z",
       "ok": true
     }
   ],
-  "today": "2026-09-04",
+  "today": "2026-09-05",
   "window": {
-    "from": "2026-09-01",
-    "to": "2027-02-01"
+    "from": "2026-09-02",
+    "to": "2027-02-02"
   },
   "consolidatedSessions": {
     "timezone": "America/New_York",
@@ -129,34 +129,6 @@
     }
   },
   "days": [
-    {
-      "date": "2026-09-01",
-      "weekday": "Tuesday",
-      "type": "regular",
-      "open": true,
-      "reason": null,
-      "utcOffset": "-04:00",
-      "sessions": {
-        "preMarket": {
-          "start": "2026-09-01T04:00:00-04:00",
-          "end": "2026-09-01T09:30:00-04:00",
-          "startUtc": "2026-09-01T08:00:00Z",
-          "endUtc": "2026-09-01T13:30:00Z"
-        },
-        "core": {
-          "start": "2026-09-01T09:30:00-04:00",
-          "end": "2026-09-01T16:00:00-04:00",
-          "startUtc": "2026-09-01T13:30:00Z",
-          "endUtc": "2026-09-01T20:00:00Z"
-        },
-        "afterHours": {
-          "start": "2026-09-01T16:00:00-04:00",
-          "end": "2026-09-01T20:00:00-04:00",
-          "startUtc": "2026-09-01T20:00:00Z",
-          "endUtc": "2026-09-02T00:00:00Z"
-        }
-      }
-    },
     {
       "date": "2026-09-02",
       "weekday": "Wednesday",
@@ -3509,21 +3481,37 @@
           "endUtc": "2027-02-02T01:00:00Z"
         }
       }
-    }
-  ],
-  "liveWindow": [
+    },
     {
-      "date": "2026-09-04",
+      "date": "2027-02-02",
+      "weekday": "Tuesday",
       "type": "regular",
       "open": true,
       "reason": null,
-      "pre": "2026-09-04T04:00:00-04:00",
-      "coreStart": "2026-09-04T09:30:00-04:00",
-      "coreEnd": "2026-09-04T16:00:00-04:00",
-      "postEnd": "2026-09-04T20:00:00-04:00",
-      "coreStartUtc": "2026-09-04T13:30:00Z",
-      "coreEndUtc": "2026-09-04T20:00:00Z"
-    },
+      "utcOffset": "-05:00",
+      "sessions": {
+        "preMarket": {
+          "start": "2027-02-02T04:00:00-05:00",
+          "end": "2027-02-02T09:30:00-05:00",
+          "startUtc": "2027-02-02T09:00:00Z",
+          "endUtc": "2027-02-02T14:30:00Z"
+        },
+        "core": {
+          "start": "2027-02-02T09:30:00-05:00",
+          "end": "2027-02-02T16:00:00-05:00",
+          "startUtc": "2027-02-02T14:30:00Z",
+          "endUtc": "2027-02-02T21:00:00Z"
+        },
+        "afterHours": {
+          "start": "2027-02-02T16:00:00-05:00",
+          "end": "2027-02-02T20:00:00-05:00",
+          "startUtc": "2027-02-02T21:00:00Z",
+          "endUtc": "2027-02-03T01:00:00Z"
+        }
+      }
+    }
+  ],
+  "liveWindow": [
     {
       "date": "2026-09-05",
       "type": "weekend",
@@ -4051,6 +4039,18 @@
       "postEnd": null,
       "coreStartUtc": null,
       "coreEndUtc": null
+    },
+    {
+      "date": "2026-10-19",
+      "type": "regular",
+      "open": true,
+      "reason": null,
+      "pre": "2026-10-19T04:00:00-04:00",
+      "coreStart": "2026-10-19T09:30:00-04:00",
+      "coreEnd": "2026-10-19T16:00:00-04:00",
+      "postEnd": "2026-10-19T20:00:00-04:00",
+      "coreStartUtc": "2026-10-19T13:30:00Z",
+      "coreEndUtc": "2026-10-19T20:00:00Z"
     }
   ],
   "holidays": [
@@ -4291,37 +4291,109 @@
   "halts": {
     "source": "https://www.nyse.com/api/trade-halts/current/download",
     "scope": "Single-security trading halts across US exchanges, as published by NYSE. A symbol halt does not close the exchange.",
-    "openHaltCount": 16,
+    "openHaltCount": 24,
     "byExchange": {
-      "Nasdaq": 15,
-      "NYSE": 1
+      "NYSE": 2,
+      "Nasdaq": 22
     },
     "marketWideHalt": false,
     "marketWideHalts": [],
     "symbols": [
       {
-        "date": "2026-09-03",
+        "date": "2026-09-04",
+        "time": "19:50:23",
+        "symbol": "IGR",
+        "name": "CBRE Global Real Estate Income Fund",
+        "exchange": "NYSE",
+        "reason": "Corporate Action",
+        "resumed": false
+      },
+      {
+        "date": "2026-09-04",
         "time": "19:50:00",
-        "symbol": "TANH",
-        "name": "Tantech Holdings Ltd. Class A Common Shares",
+        "symbol": "LRHC",
+        "name": "La Rosa Holding Corp. Common Stock",
         "exchange": "Nasdaq",
         "reason": "News Pending",
         "resumed": false
       },
       {
-        "date": "2026-09-03",
+        "date": "2026-09-04",
         "time": "19:50:00",
-        "symbol": "LPSN",
-        "name": "LivePerson Inc",
+        "symbol": "TNMG",
+        "name": "TNL Mediagene Ordinary Shares",
         "exchange": "Nasdaq",
         "reason": "News Pending",
         "resumed": false
       },
       {
-        "date": "2026-09-03",
+        "date": "2026-09-04",
         "time": "19:50:00",
-        "symbol": "CLGN",
-        "name": "CollPlant Biotechnologies Ltd Ordinary Shares",
+        "symbol": "CTSO",
+        "name": "Cytosorbents Corp.",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-09-04",
+        "time": "19:50:00",
+        "symbol": "WCT",
+        "name": "Wellchange Holdings Company Limited Class A Ordinary shares",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-09-04",
+        "time": "19:50:00",
+        "symbol": "SFWL",
+        "name": "Shengfeng Development Limited Class A Ordinary Shares",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-09-04",
+        "time": "19:50:00",
+        "symbol": "GTBP",
+        "name": "GT Biopharma Inc. Common Stock",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-09-04",
+        "time": "19:50:00",
+        "symbol": "BRTX",
+        "name": "BioRestorative Therapies, Inc. Common Stock (NV)",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-09-04",
+        "time": "19:50:00",
+        "symbol": "AIXI",
+        "name": "XIAO-I Corporation American Depositary Shares",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-09-04",
+        "time": "19:50:00",
+        "symbol": "TXXD",
+        "name": "21Shares 2x Long Dogecoin ETF",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-09-04",
+        "time": "19:50:00",
+        "symbol": "MGN",
+        "name": "Megan Holdings Limited Class A Ordinary Shares",
         "exchange": "Nasdaq",
         "reason": "News Pending",
         "resumed": false
@@ -4445,7 +4517,7 @@
       }
     ],
     "truncated": false,
-    "fetchedAt": "2026-09-04T12:05:56Z"
+    "fetchedAt": "2026-09-05T11:14:44Z"
   },
   "meta": {
     "generator": "utils/nyse/build-nyse-hours.mjs",
