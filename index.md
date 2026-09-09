@@ -70,7 +70,7 @@ I am based near [Sedlčany](https://cs.wikipedia.org/wiki/Sedl%C4%8Dany), and co
 - I am a researcher with a deep understanding of the NLP and Speech Processing field.
 - I have experience not only as a researcher: I built a house, led several small software teams, was a ski instructor, and a [floorball](https://en.wikipedia.org/wiki/Floorball) coach.
   Climbed [a](https://eu.zonerama.com/homedik/Album/7373646) [few](https://eu.zonerama.com/homedik/Album/6517857) [peaks](https://eu.zonerama.com/homedik/Album/6886499) and [a few sandstone towers](https://eu.zonerama.com/homedik/Album/4385809).
-  I have enjoyed culture in several startups and still enjoy spending time with my kids and listen to my [wife](https://www.linkedin.com/in/ad%C3%A9la-pl%C3%A1tkov%C3%A1-87390283/) especially when she is [singing](https://prvnikava.cz).
+  I have enjoyed culture in several startups and still enjoy spending time with my kids and listening to my [wife](https://www.linkedin.com/in/ad%C3%A9la-pl%C3%A1tkov%C3%A1-87390283/), especially when she is [singing](https://prvnikava.cz).
 - I have learned to pay attention not only to the core algorithms and software architecture but also to consider the user experience design.
 - I am a Linux expert user and happy MacOS, iOS, and Android user.
 - I love to open-source my projects and to contribute to other projects.
