@@ -8,9 +8,9 @@
     "timezone": "America/New_York",
     "country": "US"
   },
-  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-09-10 (Thursday) is a regular day: core session 2026-09-10T09:30:00-04:00 (2026-09-10T13:30:00Z) to 2026-09-10T16:00:00-04:00 (2026-09-10T20:00:00Z). This is the published schedule as of 2026-09-10T12:12:12Z, not live exchange status.",
-  "asOf": "2026-09-10T12:12:12Z",
-  "lastCheckedAt": "2026-09-10T12:12:12Z",
+  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-09-11 (Friday) is a regular day: core session 2026-09-11T09:30:00-04:00 (2026-09-11T13:30:00Z) to 2026-09-11T16:00:00-04:00 (2026-09-11T20:00:00Z). This is the published schedule as of 2026-09-11T12:10:31Z, not live exchange status.",
+  "asOf": "2026-09-11T12:10:31Z",
+  "lastCheckedAt": "2026-09-11T12:10:31Z",
   "staleAfterDays": 10,
   "stale": false,
   "ageDays": 0,
@@ -19,7 +19,7 @@
     {
       "name": "NYSE holidays & trading hours",
       "url": "https://www.nyse.com/trade/hours-calendars",
-      "fetchedAt": "2026-09-10T12:12:12Z",
+      "fetchedAt": "2026-09-11T12:10:31Z",
       "ok": true,
       "holidaysParsed": 29,
       "earlyClosesParsed": 5
@@ -27,14 +27,14 @@
     {
       "name": "NYSE current trade halts",
       "url": "https://www.nyse.com/api/trade-halts/current/download",
-      "fetchedAt": "2026-09-10T12:12:12Z",
+      "fetchedAt": "2026-09-11T12:10:31Z",
       "ok": true
     }
   ],
-  "today": "2026-09-10",
+  "today": "2026-09-11",
   "window": {
-    "from": "2026-09-07",
-    "to": "2027-02-07"
+    "from": "2026-09-08",
+    "to": "2027-02-08"
   },
   "consolidatedSessions": {
     "timezone": "America/New_York",
@@ -129,15 +129,6 @@
     }
   },
   "days": [
-    {
-      "date": "2026-09-07",
-      "weekday": "Monday",
-      "type": "holiday",
-      "open": false,
-      "reason": "Labor Day",
-      "utcOffset": "-04:00",
-      "sessions": null
-    },
     {
       "date": "2026-09-08",
       "weekday": "Tuesday",
@@ -3509,21 +3500,37 @@
       "reason": null,
       "utcOffset": "-05:00",
       "sessions": null
-    }
-  ],
-  "liveWindow": [
+    },
     {
-      "date": "2026-09-10",
+      "date": "2027-02-08",
+      "weekday": "Monday",
       "type": "regular",
       "open": true,
       "reason": null,
-      "pre": "2026-09-10T04:00:00-04:00",
-      "coreStart": "2026-09-10T09:30:00-04:00",
-      "coreEnd": "2026-09-10T16:00:00-04:00",
-      "postEnd": "2026-09-10T20:00:00-04:00",
-      "coreStartUtc": "2026-09-10T13:30:00Z",
-      "coreEndUtc": "2026-09-10T20:00:00Z"
-    },
+      "utcOffset": "-05:00",
+      "sessions": {
+        "preMarket": {
+          "start": "2027-02-08T04:00:00-05:00",
+          "end": "2027-02-08T09:30:00-05:00",
+          "startUtc": "2027-02-08T09:00:00Z",
+          "endUtc": "2027-02-08T14:30:00Z"
+        },
+        "core": {
+          "start": "2027-02-08T09:30:00-05:00",
+          "end": "2027-02-08T16:00:00-05:00",
+          "startUtc": "2027-02-08T14:30:00Z",
+          "endUtc": "2027-02-08T21:00:00Z"
+        },
+        "afterHours": {
+          "start": "2027-02-08T16:00:00-05:00",
+          "end": "2027-02-08T20:00:00-05:00",
+          "startUtc": "2027-02-08T21:00:00Z",
+          "endUtc": "2027-02-09T01:00:00Z"
+        }
+      }
+    }
+  ],
+  "liveWindow": [
     {
       "date": "2026-09-11",
       "type": "regular",
@@ -4051,6 +4058,18 @@
       "postEnd": null,
       "coreStartUtc": null,
       "coreEndUtc": null
+    },
+    {
+      "date": "2026-10-25",
+      "type": "weekend",
+      "open": false,
+      "reason": null,
+      "pre": null,
+      "coreStart": null,
+      "coreEnd": null,
+      "postEnd": null,
+      "coreStartUtc": null,
+      "coreEndUtc": null
     }
   ],
   "holidays": [
@@ -4291,83 +4310,46 @@
   "halts": {
     "source": "https://www.nyse.com/api/trade-halts/current/download",
     "scope": "Single-security trading halts across US exchanges, as published by NYSE. A symbol halt does not close the exchange.",
-    "openHaltCount": 21,
+    "openHaltCount": 17,
     "byExchange": {
-      "NYSE Arca": 2,
-      "NYSE": 2,
-      "Nasdaq": 17
+      "Nasdaq": 16,
+      "NYSE": 1
     },
     "marketWideHalt": false,
     "marketWideHalts": [],
     "symbols": [
       {
-        "date": "2026-09-09",
-        "time": "19:51:02",
-        "symbol": "STSM",
-        "name": "Defiance Daily Target 2X Short TSM ETF",
-        "exchange": "NYSE Arca",
-        "reason": "Corporate Action",
-        "resumed": false
-      },
-      {
-        "date": "2026-09-09",
-        "time": "19:51:02",
-        "symbol": "DAMD",
-        "name": "Defiance Daily Target 2X Short AMD ETF",
-        "exchange": "NYSE Arca",
-        "reason": "Corporate Action",
-        "resumed": false
-      },
-      {
-        "date": "2026-09-09",
-        "time": "19:50:27",
-        "symbol": "LFT",
-        "name": "Lument Finance Trust, Inc.",
-        "exchange": "NYSE",
-        "reason": "Corporate Action",
-        "resumed": false
-      },
-      {
-        "date": "2026-09-09",
+        "date": "2026-09-10",
         "time": "19:50:00",
-        "symbol": "QBTZ",
-        "name": "Defiance Daily Target 2x Short QBTS ETF",
+        "symbol": "GAUZ",
+        "name": "Gauzy Ltd. Ordinary Shares",
         "exchange": "Nasdaq",
         "reason": "News Pending",
         "resumed": false
       },
       {
-        "date": "2026-09-09",
+        "date": "2026-09-10",
         "time": "19:50:00",
-        "symbol": "RGTZ",
-        "name": "Defiance Daily Target 2x Short RGTI ETF",
+        "symbol": "NFE",
+        "name": "New Fortress Energy Inc. Class A Common Stock",
         "exchange": "Nasdaq",
         "reason": "News Pending",
         "resumed": false
       },
       {
-        "date": "2026-09-09",
+        "date": "2026-09-10",
         "time": "19:50:00",
-        "symbol": "SMCZ",
-        "name": "Defiance Daily Target 2X Short SMCI ETF",
+        "symbol": "ATAI",
+        "name": "AtaiBeckley Inc. Common Stock",
         "exchange": "Nasdaq",
         "reason": "News Pending",
         "resumed": false
       },
       {
-        "date": "2026-09-09",
+        "date": "2026-09-10",
         "time": "19:50:00",
-        "symbol": "OKLL",
-        "name": "Defiance Daily Target 2x Long OKLO ETF",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-09-09",
-        "time": "19:50:00",
-        "symbol": "LGHL",
-        "name": "Lion Group Holding Ltd. American Depositary Share",
+        "symbol": "GOSS",
+        "name": "Gossamer Bio, Inc. Common Stock",
         "exchange": "Nasdaq",
         "reason": "News Pending",
         "resumed": false
@@ -4491,7 +4473,7 @@
       }
     ],
     "truncated": false,
-    "fetchedAt": "2026-09-10T12:12:12Z"
+    "fetchedAt": "2026-09-11T12:10:31Z"
   },
   "meta": {
     "generator": "utils/nyse/build-nyse-hours.mjs",
