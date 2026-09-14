@@ -8,9 +8,9 @@
     "timezone": "America/New_York",
     "country": "US"
   },
-  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-09-13 (Sunday) is a weekend day: the exchange is closed all day. This is the published schedule as of 2026-09-13T12:41:47Z, not live exchange status.",
-  "asOf": "2026-09-13T12:41:47Z",
-  "lastCheckedAt": "2026-09-13T12:41:47Z",
+  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-09-14 (Monday) is a regular day: core session 2026-09-14T09:30:00-04:00 (2026-09-14T13:30:00Z) to 2026-09-14T16:00:00-04:00 (2026-09-14T20:00:00Z). This is the published schedule as of 2026-09-14T13:57:58Z, not live exchange status.",
+  "asOf": "2026-09-14T13:57:58Z",
+  "lastCheckedAt": "2026-09-14T13:57:58Z",
   "staleAfterDays": 10,
   "stale": false,
   "ageDays": 0,
@@ -19,7 +19,7 @@
     {
       "name": "NYSE holidays & trading hours",
       "url": "https://www.nyse.com/trade/hours-calendars",
-      "fetchedAt": "2026-09-13T12:41:47Z",
+      "fetchedAt": "2026-09-14T13:57:58Z",
       "ok": true,
       "holidaysParsed": 29,
       "earlyClosesParsed": 5
@@ -27,14 +27,14 @@
     {
       "name": "NYSE current trade halts",
       "url": "https://www.nyse.com/api/trade-halts/current/download",
-      "fetchedAt": "2026-09-13T12:41:47Z",
+      "fetchedAt": "2026-09-14T13:57:58Z",
       "ok": true
     }
   ],
-  "today": "2026-09-13",
+  "today": "2026-09-14",
   "window": {
-    "from": "2026-09-10",
-    "to": "2027-02-10"
+    "from": "2026-09-11",
+    "to": "2027-02-11"
   },
   "consolidatedSessions": {
     "timezone": "America/New_York",
@@ -129,34 +129,6 @@
     }
   },
   "days": [
-    {
-      "date": "2026-09-10",
-      "weekday": "Thursday",
-      "type": "regular",
-      "open": true,
-      "reason": null,
-      "utcOffset": "-04:00",
-      "sessions": {
-        "preMarket": {
-          "start": "2026-09-10T04:00:00-04:00",
-          "end": "2026-09-10T09:30:00-04:00",
-          "startUtc": "2026-09-10T08:00:00Z",
-          "endUtc": "2026-09-10T13:30:00Z"
-        },
-        "core": {
-          "start": "2026-09-10T09:30:00-04:00",
-          "end": "2026-09-10T16:00:00-04:00",
-          "startUtc": "2026-09-10T13:30:00Z",
-          "endUtc": "2026-09-10T20:00:00Z"
-        },
-        "afterHours": {
-          "start": "2026-09-10T16:00:00-04:00",
-          "end": "2026-09-10T20:00:00-04:00",
-          "startUtc": "2026-09-10T20:00:00Z",
-          "endUtc": "2026-09-11T00:00:00Z"
-        }
-      }
-    },
     {
       "date": "2026-09-11",
       "weekday": "Friday",
@@ -3528,21 +3500,37 @@
           "endUtc": "2027-02-11T01:00:00Z"
         }
       }
+    },
+    {
+      "date": "2027-02-11",
+      "weekday": "Thursday",
+      "type": "regular",
+      "open": true,
+      "reason": null,
+      "utcOffset": "-05:00",
+      "sessions": {
+        "preMarket": {
+          "start": "2027-02-11T04:00:00-05:00",
+          "end": "2027-02-11T09:30:00-05:00",
+          "startUtc": "2027-02-11T09:00:00Z",
+          "endUtc": "2027-02-11T14:30:00Z"
+        },
+        "core": {
+          "start": "2027-02-11T09:30:00-05:00",
+          "end": "2027-02-11T16:00:00-05:00",
+          "startUtc": "2027-02-11T14:30:00Z",
+          "endUtc": "2027-02-11T21:00:00Z"
+        },
+        "afterHours": {
+          "start": "2027-02-11T16:00:00-05:00",
+          "end": "2027-02-11T20:00:00-05:00",
+          "startUtc": "2027-02-11T21:00:00Z",
+          "endUtc": "2027-02-12T01:00:00Z"
+        }
+      }
     }
   ],
   "liveWindow": [
-    {
-      "date": "2026-09-13",
-      "type": "weekend",
-      "open": false,
-      "reason": null,
-      "pre": null,
-      "coreStart": null,
-      "coreEnd": null,
-      "postEnd": null,
-      "coreStartUtc": null,
-      "coreEndUtc": null
-    },
     {
       "date": "2026-09-14",
       "type": "regular",
@@ -4070,6 +4058,18 @@
       "postEnd": "2026-10-27T20:00:00-04:00",
       "coreStartUtc": "2026-10-27T13:30:00Z",
       "coreEndUtc": "2026-10-27T20:00:00Z"
+    },
+    {
+      "date": "2026-10-28",
+      "type": "regular",
+      "open": true,
+      "reason": null,
+      "pre": "2026-10-28T04:00:00-04:00",
+      "coreStart": "2026-10-28T09:30:00-04:00",
+      "coreEnd": "2026-10-28T16:00:00-04:00",
+      "postEnd": "2026-10-28T20:00:00-04:00",
+      "coreStartUtc": "2026-10-28T13:30:00Z",
+      "coreEndUtc": "2026-10-28T20:00:00Z"
     }
   ],
   "holidays": [
@@ -4310,103 +4310,40 @@
   "halts": {
     "source": "https://www.nyse.com/api/trade-halts/current/download",
     "scope": "Single-security trading halts across US exchanges, as published by NYSE. A symbol halt does not close the exchange.",
-    "openHaltCount": 23,
+    "openHaltCount": 16,
     "byExchange": {
-      "NYSE American": 1,
-      "Nasdaq": 21,
+      "Cboe BZX": 1,
+      "Nasdaq": 14,
       "NYSE": 1
     },
     "marketWideHalt": false,
     "marketWideHalts": [],
     "symbols": [
       {
-        "date": "2026-09-11",
-        "time": "19:51:13",
-        "symbol": "OPTT",
-        "name": "Ocean Power Technologies, Inc.",
-        "exchange": "NYSE American",
-        "reason": "Corporate Action",
+        "date": "2026-09-14",
+        "time": "09:55:41",
+        "symbol": "TERC",
+        "name": "Corgi TER 2x Daily ETF",
+        "exchange": "Cboe BZX",
+        "reason": "LULD Pause",
         "resumed": false
       },
       {
-        "date": "2026-09-11",
-        "time": "19:50:00",
-        "symbol": "HUBCZ",
-        "name": "Hub Cyber Security Ltd. Warrant",
+        "date": "2026-09-14",
+        "time": "09:54:08",
+        "symbol": "LSE",
+        "name": "Leishen Energy Holding Co., Ltd. Class A Ordinary Shares",
         "exchange": "Nasdaq",
-        "reason": "News Pending",
+        "reason": "LULD Pause",
         "resumed": false
       },
       {
-        "date": "2026-09-11",
-        "time": "19:50:00",
-        "symbol": "HUBCW",
-        "name": "Hub Cyber Security Ltd. Warrant 2/27/28",
+        "date": "2026-09-14",
+        "time": "09:48:55",
+        "symbol": "RIBB",
+        "name": "Ribbon Acquisition Corp Class A Ordinary Shares",
         "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-09-11",
-        "time": "19:50:00",
-        "symbol": "NRSNW",
-        "name": "NeuroSense Therapeutics Ltd. Warrant",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-09-11",
-        "time": "19:50:00",
-        "symbol": "HUBC",
-        "name": "Hub Cyber Security Ltd. Ordinary Shares",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-09-11",
-        "time": "19:50:00",
-        "symbol": "NXXT",
-        "name": "NextNRG, Inc. Common Stock",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-09-11",
-        "time": "19:50:00",
-        "symbol": "NRSN",
-        "name": "NeuroSense Therapeutics Ltd. Ordinary Shares",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-09-11",
-        "time": "19:50:00",
-        "symbol": "CPOP",
-        "name": "Pop Culture Group Co., Ltd Class A Ordinary Shares",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-09-11",
-        "time": "19:50:00",
-        "symbol": "IPDN",
-        "name": "Professional Diversity Network, Inc.",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-09-10",
-        "time": "19:50:00",
-        "symbol": "NFE",
-        "name": "New Fortress Energy Inc. Class A Common Stock",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
+        "reason": "LULD Pause",
         "resumed": false
       },
       {
@@ -4528,7 +4465,7 @@
       }
     ],
     "truncated": false,
-    "fetchedAt": "2026-09-13T12:41:47Z"
+    "fetchedAt": "2026-09-14T13:57:58Z"
   },
   "meta": {
     "generator": "utils/nyse/build-nyse-hours.mjs",
