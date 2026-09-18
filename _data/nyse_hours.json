@@ -8,9 +8,9 @@
     "timezone": "America/New_York",
     "country": "US"
   },
-  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-09-17 (Thursday) is a regular day: core session 2026-09-17T09:30:00-04:00 (2026-09-17T13:30:00Z) to 2026-09-17T16:00:00-04:00 (2026-09-17T20:00:00Z). This is the published schedule as of 2026-09-17T12:33:50Z, not live exchange status.",
-  "asOf": "2026-09-17T12:33:50Z",
-  "lastCheckedAt": "2026-09-17T12:33:50Z",
+  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-09-18 (Friday) is a regular day: core session 2026-09-18T09:30:00-04:00 (2026-09-18T13:30:00Z) to 2026-09-18T16:00:00-04:00 (2026-09-18T20:00:00Z). This is the published schedule as of 2026-09-18T12:12:05Z, not live exchange status.",
+  "asOf": "2026-09-18T12:12:05Z",
+  "lastCheckedAt": "2026-09-18T12:12:05Z",
   "staleAfterDays": 10,
   "stale": false,
   "ageDays": 0,
@@ -19,7 +19,7 @@
     {
       "name": "NYSE holidays & trading hours",
       "url": "https://www.nyse.com/trade/hours-calendars",
-      "fetchedAt": "2026-09-17T12:33:50Z",
+      "fetchedAt": "2026-09-18T12:12:05Z",
       "ok": true,
       "holidaysParsed": 29,
       "earlyClosesParsed": 5
@@ -27,14 +27,14 @@
     {
       "name": "NYSE current trade halts",
       "url": "https://www.nyse.com/api/trade-halts/current/download",
-      "fetchedAt": "2026-09-17T12:33:50Z",
+      "fetchedAt": "2026-09-18T12:12:05Z",
       "ok": true
     }
   ],
-  "today": "2026-09-17",
+  "today": "2026-09-18",
   "window": {
-    "from": "2026-09-14",
-    "to": "2027-02-14"
+    "from": "2026-09-15",
+    "to": "2027-02-15"
   },
   "consolidatedSessions": {
     "timezone": "America/New_York",
@@ -129,34 +129,6 @@
     }
   },
   "days": [
-    {
-      "date": "2026-09-14",
-      "weekday": "Monday",
-      "type": "regular",
-      "open": true,
-      "reason": null,
-      "utcOffset": "-04:00",
-      "sessions": {
-        "preMarket": {
-          "start": "2026-09-14T04:00:00-04:00",
-          "end": "2026-09-14T09:30:00-04:00",
-          "startUtc": "2026-09-14T08:00:00Z",
-          "endUtc": "2026-09-14T13:30:00Z"
-        },
-        "core": {
-          "start": "2026-09-14T09:30:00-04:00",
-          "end": "2026-09-14T16:00:00-04:00",
-          "startUtc": "2026-09-14T13:30:00Z",
-          "endUtc": "2026-09-14T20:00:00Z"
-        },
-        "afterHours": {
-          "start": "2026-09-14T16:00:00-04:00",
-          "end": "2026-09-14T20:00:00-04:00",
-          "startUtc": "2026-09-14T20:00:00Z",
-          "endUtc": "2026-09-15T00:00:00Z"
-        }
-      }
-    },
     {
       "date": "2026-09-15",
       "weekday": "Tuesday",
@@ -3528,21 +3500,18 @@
       "reason": null,
       "utcOffset": "-05:00",
       "sessions": null
+    },
+    {
+      "date": "2027-02-15",
+      "weekday": "Monday",
+      "type": "holiday",
+      "open": false,
+      "reason": "Washington’s Birthday",
+      "utcOffset": "-05:00",
+      "sessions": null
     }
   ],
   "liveWindow": [
-    {
-      "date": "2026-09-17",
-      "type": "regular",
-      "open": true,
-      "reason": null,
-      "pre": "2026-09-17T04:00:00-04:00",
-      "coreStart": "2026-09-17T09:30:00-04:00",
-      "coreEnd": "2026-09-17T16:00:00-04:00",
-      "postEnd": "2026-09-17T20:00:00-04:00",
-      "coreStartUtc": "2026-09-17T13:30:00Z",
-      "coreEndUtc": "2026-09-17T20:00:00Z"
-    },
     {
       "date": "2026-09-18",
       "type": "regular",
@@ -4070,6 +4039,18 @@
       "postEnd": null,
       "coreStartUtc": null,
       "coreEndUtc": null
+    },
+    {
+      "date": "2026-11-01",
+      "type": "weekend",
+      "open": false,
+      "reason": null,
+      "pre": null,
+      "coreStart": null,
+      "coreEnd": null,
+      "postEnd": null,
+      "coreStartUtc": null,
+      "coreEndUtc": null
     }
   ],
   "holidays": [
@@ -4310,46 +4291,57 @@
   "halts": {
     "source": "https://www.nyse.com/api/trade-halts/current/download",
     "scope": "Single-security trading halts across US exchanges, as published by NYSE. A symbol halt does not close the exchange.",
-    "openHaltCount": 16,
+    "openHaltCount": 17,
     "byExchange": {
-      "Nasdaq": 16
+      "NYSE American": 3,
+      "Nasdaq": 13,
+      "NYSE": 1
     },
     "marketWideHalt": false,
     "marketWideHalts": [],
     "symbols": [
       {
+        "date": "2026-09-18",
+        "time": "00:22:20",
+        "symbol": "HOST",
+        "name": "Host Digital Inc.",
+        "exchange": "NYSE American",
+        "reason": "Regulatory Concern",
+        "resumed": false
+      },
+      {
         "date": "2026-09-17",
-        "time": "07:55:00",
-        "symbol": "LSTA",
-        "name": "Lisata Therapeutics, Inc. Common Stock",
+        "time": "19:50:00",
+        "symbol": "EPOW",
+        "name": "E-Power Inc. Class A Ordinary Shares",
         "exchange": "Nasdaq",
         "reason": "News Pending",
         "resumed": false
       },
       {
-        "date": "2026-09-16",
-        "time": "19:50:00",
-        "symbol": "NCT",
-        "name": "Intercont (Cayman) Limited Class A Ordinary shares",
-        "exchange": "Nasdaq",
+        "date": "2026-09-17",
+        "time": "16:13:17",
+        "symbol": "HCWC",
+        "name": "Healthy Choice Wellness Corp.",
+        "exchange": "NYSE American",
+        "reason": "Regulatory Concern",
+        "resumed": false
+      },
+      {
+        "date": "2026-09-17",
+        "time": "15:28:41",
+        "symbol": "SOS",
+        "name": "SOS Limited",
+        "exchange": "NYSE",
         "reason": "News Pending",
         "resumed": false
       },
       {
-        "date": "2026-09-16",
-        "time": "19:50:00",
-        "symbol": "MGN",
-        "name": "Megan Holdings Limited Class A Ordinary Shares",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-09-16",
-        "time": "19:50:00",
-        "symbol": "JAGX",
-        "name": "Jaguar Health, Inc.",
-        "exchange": "Nasdaq",
+        "date": "2026-09-17",
+        "time": "11:50:06",
+        "symbol": "PAAI",
+        "name": "Paradium.AI, Inc.",
+        "exchange": "NYSE American",
         "reason": "News Pending",
         "resumed": false
       },
@@ -4463,7 +4455,7 @@
       }
     ],
     "truncated": false,
-    "fetchedAt": "2026-09-17T12:33:50Z"
+    "fetchedAt": "2026-09-18T12:12:05Z"
   },
   "meta": {
     "generator": "utils/nyse/build-nyse-hours.mjs",
