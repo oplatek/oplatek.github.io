@@ -8,9 +8,9 @@
     "timezone": "America/New_York",
     "country": "US"
   },
-  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-09-22 (Tuesday) is a regular day: core session 2026-09-22T09:30:00-04:00 (2026-09-22T13:30:00Z) to 2026-09-22T16:00:00-04:00 (2026-09-22T20:00:00Z). This is the published schedule as of 2026-09-22T12:33:37Z, not live exchange status.",
-  "asOf": "2026-09-22T12:33:37Z",
-  "lastCheckedAt": "2026-09-22T12:33:37Z",
+  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-09-23 (Wednesday) is a regular day: core session 2026-09-23T09:30:00-04:00 (2026-09-23T13:30:00Z) to 2026-09-23T16:00:00-04:00 (2026-09-23T20:00:00Z). This is the published schedule as of 2026-09-23T12:43:24Z, not live exchange status.",
+  "asOf": "2026-09-23T12:43:24Z",
+  "lastCheckedAt": "2026-09-23T12:43:24Z",
   "staleAfterDays": 10,
   "stale": false,
   "ageDays": 0,
@@ -19,7 +19,7 @@
     {
       "name": "NYSE holidays & trading hours",
       "url": "https://www.nyse.com/trade/hours-calendars",
-      "fetchedAt": "2026-09-22T12:33:37Z",
+      "fetchedAt": "2026-09-23T12:43:24Z",
       "ok": true,
       "holidaysParsed": 29,
       "earlyClosesParsed": 5
@@ -27,14 +27,14 @@
     {
       "name": "NYSE current trade halts",
       "url": "https://www.nyse.com/api/trade-halts/current/download",
-      "fetchedAt": "2026-09-22T12:33:37Z",
+      "fetchedAt": "2026-09-23T12:43:24Z",
       "ok": true
     }
   ],
-  "today": "2026-09-22",
+  "today": "2026-09-23",
   "window": {
-    "from": "2026-09-19",
-    "to": "2027-02-19"
+    "from": "2026-09-20",
+    "to": "2027-02-20"
   },
   "consolidatedSessions": {
     "timezone": "America/New_York",
@@ -129,15 +129,6 @@
     }
   },
   "days": [
-    {
-      "date": "2026-09-19",
-      "weekday": "Saturday",
-      "type": "weekend",
-      "open": false,
-      "reason": null,
-      "utcOffset": "-04:00",
-      "sessions": null
-    },
     {
       "date": "2026-09-20",
       "weekday": "Sunday",
@@ -3509,21 +3500,18 @@
           "endUtc": "2027-02-20T01:00:00Z"
         }
       }
+    },
+    {
+      "date": "2027-02-20",
+      "weekday": "Saturday",
+      "type": "weekend",
+      "open": false,
+      "reason": null,
+      "utcOffset": "-05:00",
+      "sessions": null
     }
   ],
   "liveWindow": [
-    {
-      "date": "2026-09-22",
-      "type": "regular",
-      "open": true,
-      "reason": null,
-      "pre": "2026-09-22T04:00:00-04:00",
-      "coreStart": "2026-09-22T09:30:00-04:00",
-      "coreEnd": "2026-09-22T16:00:00-04:00",
-      "postEnd": "2026-09-22T20:00:00-04:00",
-      "coreStartUtc": "2026-09-22T13:30:00Z",
-      "coreEndUtc": "2026-09-22T20:00:00Z"
-    },
     {
       "date": "2026-09-23",
       "type": "regular",
@@ -4051,6 +4039,18 @@
       "postEnd": "2026-11-05T20:00:00-05:00",
       "coreStartUtc": "2026-11-05T14:30:00Z",
       "coreEndUtc": "2026-11-05T21:00:00Z"
+    },
+    {
+      "date": "2026-11-06",
+      "type": "regular",
+      "open": true,
+      "reason": null,
+      "pre": "2026-11-06T04:00:00-05:00",
+      "coreStart": "2026-11-06T09:30:00-05:00",
+      "coreEnd": "2026-11-06T16:00:00-05:00",
+      "postEnd": "2026-11-06T20:00:00-05:00",
+      "coreStartUtc": "2026-11-06T14:30:00Z",
+      "coreEndUtc": "2026-11-06T21:00:00Z"
     }
   ],
   "holidays": [
@@ -4291,65 +4291,40 @@
   "halts": {
     "source": "https://www.nyse.com/api/trade-halts/current/download",
     "scope": "Single-security trading halts across US exchanges, as published by NYSE. A symbol halt does not close the exchange.",
-    "openHaltCount": 18,
+    "openHaltCount": 14,
     "byExchange": {
-      "Nasdaq": 18
+      "Nasdaq": 12,
+      "NYSE American": 1,
+      "NYSE": 1
     },
     "marketWideHalt": false,
     "marketWideHalts": [],
     "symbols": [
       {
-        "date": "2026-09-21",
-        "time": "19:50:00",
-        "symbol": "WHLRP",
-        "name": "Wheeler Real Estate Investment Trust, Inc. Preferred Stock",
+        "date": "2026-09-23",
+        "time": "06:55:00",
+        "symbol": "GRAL",
+        "name": "GRAIL, Inc. Common Stock",
         "exchange": "Nasdaq",
         "reason": "News Pending",
         "resumed": false
       },
       {
-        "date": "2026-09-21",
-        "time": "19:50:00",
-        "symbol": "WHLRL",
-        "name": "Wheeler Real Estate Investment Trust, Inc. 7.00% Senior Subordinated Convertible Notes Due 2031",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
+        "date": "2026-09-22",
+        "time": "19:50:26",
+        "symbol": "IBO",
+        "name": "Impact BioMedical, Inc.",
+        "exchange": "NYSE American",
+        "reason": "Corporate Action",
         "resumed": false
       },
       {
-        "date": "2026-09-21",
-        "time": "19:50:00",
-        "symbol": "WHLRD",
-        "name": "Wheeler Real Estate Investment Trust, Inc. Series D Cumulative Preferred Stock",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-09-21",
-        "time": "19:50:00",
-        "symbol": "VWAVW",
-        "name": "VisionWave Holdings, Inc. Warrant",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-09-21",
-        "time": "19:50:00",
-        "symbol": "WHLR",
-        "name": "Wheeler Real Estate Investment Trust, Inc",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-09-21",
-        "time": "19:50:00",
-        "symbol": "VWAV",
-        "name": "VisionWave Holdings, Inc. Common Stock",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
+        "date": "2026-09-22",
+        "time": "16:15:52",
+        "symbol": "BKKT WS",
+        "name": "Bakkt, Inc. Warrants to purchase Class A Common Stock Each Warrant entitles to purchase 1/25th of a share of Class A common stock at an exercise price",
+        "exchange": "NYSE",
+        "reason": "Regulatory Concern",
         "resumed": false
       },
       {
@@ -4409,15 +4384,6 @@
       {
         "date": "2025-10-03",
         "time": "19:50:00",
-        "symbol": "PLTS",
-        "name": "Platinum Analytics Cayman Limited Class A Ordinary Shares",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2025-10-03",
-        "time": "19:50:00",
         "symbol": "EFTY",
         "name": "Etoiles Capital Group Co., Ltd. Class A Ordinary Shares",
         "exchange": "Nasdaq",
@@ -4462,7 +4428,7 @@
       }
     ],
     "truncated": false,
-    "fetchedAt": "2026-09-22T12:33:37Z"
+    "fetchedAt": "2026-09-23T12:43:24Z"
   },
   "meta": {
     "generator": "utils/nyse/build-nyse-hours.mjs",
