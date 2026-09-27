@@ -8,36 +8,33 @@
     "timezone": "America/New_York",
     "country": "US"
   },
-  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-09-26 (Saturday) is a weekend day: the exchange is closed all day. This is the published schedule as of 2026-09-25T12:43:54Z, not live exchange status.",
-  "asOf": "2026-09-25T12:43:54Z",
-  "lastCheckedAt": "2026-09-26T12:11:36Z",
+  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-09-27 (Sunday) is a weekend day: the exchange is closed all day. This is the published schedule as of 2026-09-27T12:58:03Z, not live exchange status.",
+  "asOf": "2026-09-27T12:58:03Z",
+  "lastCheckedAt": "2026-09-27T12:58:03Z",
   "staleAfterDays": 10,
   "stale": false,
-  "ageDays": 0.98,
-  "warnings": [
-    "holiday calendar scrape failed (hours-calendars: HTTP 403); keeping previously stored calendar",
-    "trade-halt scrape failed (trade-halts: HTTP 403); keeping previous halt snapshot"
-  ],
+  "ageDays": 0,
+  "warnings": [],
   "sources": [
     {
       "name": "NYSE holidays & trading hours",
       "url": "https://www.nyse.com/trade/hours-calendars",
-      "fetchedAt": "2026-09-26T12:11:36Z",
-      "ok": false,
-      "error": "hours-calendars: HTTP 403"
+      "fetchedAt": "2026-09-27T12:58:03Z",
+      "ok": true,
+      "holidaysParsed": 29,
+      "earlyClosesParsed": 5
     },
     {
       "name": "NYSE current trade halts",
       "url": "https://www.nyse.com/api/trade-halts/current/download",
-      "fetchedAt": "2026-09-26T12:11:36Z",
-      "ok": false,
-      "error": "trade-halts: HTTP 403"
+      "fetchedAt": "2026-09-27T12:58:03Z",
+      "ok": true
     }
   ],
-  "today": "2026-09-26",
+  "today": "2026-09-27",
   "window": {
-    "from": "2026-09-23",
-    "to": "2027-02-23"
+    "from": "2026-09-24",
+    "to": "2027-02-24"
   },
   "consolidatedSessions": {
     "timezone": "America/New_York",
@@ -132,34 +129,6 @@
     }
   },
   "days": [
-    {
-      "date": "2026-09-23",
-      "weekday": "Wednesday",
-      "type": "regular",
-      "open": true,
-      "reason": null,
-      "utcOffset": "-04:00",
-      "sessions": {
-        "preMarket": {
-          "start": "2026-09-23T04:00:00-04:00",
-          "end": "2026-09-23T09:30:00-04:00",
-          "startUtc": "2026-09-23T08:00:00Z",
-          "endUtc": "2026-09-23T13:30:00Z"
-        },
-        "core": {
-          "start": "2026-09-23T09:30:00-04:00",
-          "end": "2026-09-23T16:00:00-04:00",
-          "startUtc": "2026-09-23T13:30:00Z",
-          "endUtc": "2026-09-23T20:00:00Z"
-        },
-        "afterHours": {
-          "start": "2026-09-23T16:00:00-04:00",
-          "end": "2026-09-23T20:00:00-04:00",
-          "startUtc": "2026-09-23T20:00:00Z",
-          "endUtc": "2026-09-24T00:00:00Z"
-        }
-      }
-    },
     {
       "date": "2026-09-24",
       "weekday": "Thursday",
@@ -3512,21 +3481,37 @@
           "endUtc": "2027-02-24T01:00:00Z"
         }
       }
+    },
+    {
+      "date": "2027-02-24",
+      "weekday": "Wednesday",
+      "type": "regular",
+      "open": true,
+      "reason": null,
+      "utcOffset": "-05:00",
+      "sessions": {
+        "preMarket": {
+          "start": "2027-02-24T04:00:00-05:00",
+          "end": "2027-02-24T09:30:00-05:00",
+          "startUtc": "2027-02-24T09:00:00Z",
+          "endUtc": "2027-02-24T14:30:00Z"
+        },
+        "core": {
+          "start": "2027-02-24T09:30:00-05:00",
+          "end": "2027-02-24T16:00:00-05:00",
+          "startUtc": "2027-02-24T14:30:00Z",
+          "endUtc": "2027-02-24T21:00:00Z"
+        },
+        "afterHours": {
+          "start": "2027-02-24T16:00:00-05:00",
+          "end": "2027-02-24T20:00:00-05:00",
+          "startUtc": "2027-02-24T21:00:00Z",
+          "endUtc": "2027-02-25T01:00:00Z"
+        }
+      }
     }
   ],
   "liveWindow": [
-    {
-      "date": "2026-09-26",
-      "type": "weekend",
-      "open": false,
-      "reason": null,
-      "pre": null,
-      "coreStart": null,
-      "coreEnd": null,
-      "postEnd": null,
-      "coreStartUtc": null,
-      "coreEndUtc": null
-    },
     {
       "date": "2026-09-27",
       "type": "weekend",
@@ -4054,6 +4039,18 @@
       "postEnd": "2026-11-09T20:00:00-05:00",
       "coreStartUtc": "2026-11-09T14:30:00Z",
       "coreEndUtc": "2026-11-09T21:00:00Z"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "regular",
+      "open": true,
+      "reason": null,
+      "pre": "2026-11-10T04:00:00-05:00",
+      "coreStart": "2026-11-10T09:30:00-05:00",
+      "coreEnd": "2026-11-10T16:00:00-05:00",
+      "postEnd": "2026-11-10T20:00:00-05:00",
+      "coreStartUtc": "2026-11-10T14:30:00Z",
+      "coreEndUtc": "2026-11-10T21:00:00Z"
     }
   ],
   "holidays": [
@@ -4294,37 +4291,83 @@
   "halts": {
     "source": "https://www.nyse.com/api/trade-halts/current/download",
     "scope": "Single-security trading halts across US exchanges, as published by NYSE. A symbol halt does not close the exchange.",
-    "openHaltCount": 15,
+    "openHaltCount": 20,
     "byExchange": {
-      "Nasdaq": 14,
+      "NYSE American": 1,
+      "Nasdaq": 18,
       "NYSE": 1
     },
     "marketWideHalt": false,
     "marketWideHalts": [],
     "symbols": [
       {
-        "date": "2026-09-24",
+        "date": "2026-09-25",
+        "time": "19:50:08",
+        "symbol": "MTNB",
+        "name": "Matinas BioPharma Holdings, Inc.",
+        "exchange": "NYSE American",
+        "reason": "Corporate Action",
+        "resumed": false
+      },
+      {
+        "date": "2026-09-25",
         "time": "19:50:00",
-        "symbol": "RPGL",
-        "name": "Republic Power Group Limited Class A Ordinary Shares",
+        "symbol": "BTLN",
+        "name": "Brightline Interactive, Inc. Common Stock",
         "exchange": "Nasdaq",
         "reason": "News Pending",
         "resumed": false
       },
       {
-        "date": "2026-09-24",
+        "date": "2026-09-25",
         "time": "19:50:00",
-        "symbol": "KITTW",
-        "name": "Nauticus Robotics, Inc Warrant",
+        "symbol": "CTNT",
+        "name": "Cheetah Net Supply Chain Service Inc. Class A Common Stock",
         "exchange": "Nasdaq",
         "reason": "News Pending",
         "resumed": false
       },
       {
-        "date": "2026-09-24",
+        "date": "2026-09-25",
         "time": "19:50:00",
-        "symbol": "KITT",
-        "name": "Nauticus Robotics, Inc. Common stock",
+        "symbol": "DLXY",
+        "name": "Delixy Holdings Limited Class A Ordinary Shares",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-09-25",
+        "time": "19:50:00",
+        "symbol": "FBGL",
+        "name": "FBS Global Limited Ordinary Shares",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-09-25",
+        "time": "19:50:00",
+        "symbol": "DCX",
+        "name": "Digital Currency X Technology Inc. Class A Ordinary Shares",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-09-25",
+        "time": "19:50:00",
+        "symbol": "IMMP",
+        "name": "Immutep Limited American Depositary Shares",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-09-25",
+        "time": "19:50:00",
+        "symbol": "GMEX",
+        "name": "GMEX ROBOTICS CORPORATION Class A Ordinary Shares",
         "exchange": "Nasdaq",
         "reason": "News Pending",
         "resumed": false
@@ -4439,8 +4482,7 @@
       }
     ],
     "truncated": false,
-    "fetchedAt": "2026-09-25T12:43:54Z",
-    "stale": true
+    "fetchedAt": "2026-09-27T12:58:03Z"
   },
   "meta": {
     "generator": "utils/nyse/build-nyse-hours.mjs",
