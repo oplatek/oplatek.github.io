@@ -8,9 +8,9 @@
     "timezone": "America/New_York",
     "country": "US"
   },
-  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-09-29 (Tuesday) is a regular day: core session 2026-09-29T09:30:00-04:00 (2026-09-29T13:30:00Z) to 2026-09-29T16:00:00-04:00 (2026-09-29T20:00:00Z). This is the published schedule as of 2026-09-29T14:01:02Z, not live exchange status.",
-  "asOf": "2026-09-29T14:01:02Z",
-  "lastCheckedAt": "2026-09-29T14:01:02Z",
+  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-09-30 (Wednesday) is a regular day: core session 2026-09-30T09:30:00-04:00 (2026-09-30T13:30:00Z) to 2026-09-30T16:00:00-04:00 (2026-09-30T20:00:00Z). This is the published schedule as of 2026-09-30T13:37:56Z, not live exchange status.",
+  "asOf": "2026-09-30T13:37:56Z",
+  "lastCheckedAt": "2026-09-30T13:37:56Z",
   "staleAfterDays": 10,
   "stale": false,
   "ageDays": 0,
@@ -19,7 +19,7 @@
     {
       "name": "NYSE holidays & trading hours",
       "url": "https://www.nyse.com/trade/hours-calendars",
-      "fetchedAt": "2026-09-29T14:01:02Z",
+      "fetchedAt": "2026-09-30T13:37:56Z",
       "ok": true,
       "holidaysParsed": 29,
       "earlyClosesParsed": 5
@@ -27,14 +27,14 @@
     {
       "name": "NYSE current trade halts",
       "url": "https://www.nyse.com/api/trade-halts/current/download",
-      "fetchedAt": "2026-09-29T14:01:02Z",
+      "fetchedAt": "2026-09-30T13:37:56Z",
       "ok": true
     }
   ],
-  "today": "2026-09-29",
+  "today": "2026-09-30",
   "window": {
-    "from": "2026-09-26",
-    "to": "2027-02-26"
+    "from": "2026-09-27",
+    "to": "2027-02-27"
   },
   "consolidatedSessions": {
     "timezone": "America/New_York",
@@ -129,15 +129,6 @@
     }
   },
   "days": [
-    {
-      "date": "2026-09-26",
-      "weekday": "Saturday",
-      "type": "weekend",
-      "open": false,
-      "reason": null,
-      "utcOffset": "-04:00",
-      "sessions": null
-    },
     {
       "date": "2026-09-27",
       "weekday": "Sunday",
@@ -3509,21 +3500,18 @@
           "endUtc": "2027-02-27T01:00:00Z"
         }
       }
+    },
+    {
+      "date": "2027-02-27",
+      "weekday": "Saturday",
+      "type": "weekend",
+      "open": false,
+      "reason": null,
+      "utcOffset": "-05:00",
+      "sessions": null
     }
   ],
   "liveWindow": [
-    {
-      "date": "2026-09-29",
-      "type": "regular",
-      "open": true,
-      "reason": null,
-      "pre": "2026-09-29T04:00:00-04:00",
-      "coreStart": "2026-09-29T09:30:00-04:00",
-      "coreEnd": "2026-09-29T16:00:00-04:00",
-      "postEnd": "2026-09-29T20:00:00-04:00",
-      "coreStartUtc": "2026-09-29T13:30:00Z",
-      "coreEndUtc": "2026-09-29T20:00:00Z"
-    },
     {
       "date": "2026-09-30",
       "type": "regular",
@@ -4051,6 +4039,18 @@
       "postEnd": "2026-11-12T20:00:00-05:00",
       "coreStartUtc": "2026-11-12T14:30:00Z",
       "coreEndUtc": "2026-11-12T21:00:00Z"
+    },
+    {
+      "date": "2026-11-13",
+      "type": "regular",
+      "open": true,
+      "reason": null,
+      "pre": "2026-11-13T04:00:00-05:00",
+      "coreStart": "2026-11-13T09:30:00-05:00",
+      "coreEnd": "2026-11-13T16:00:00-05:00",
+      "postEnd": "2026-11-13T20:00:00-05:00",
+      "coreStartUtc": "2026-11-13T14:30:00Z",
+      "coreEndUtc": "2026-11-13T21:00:00Z"
     }
   ],
   "holidays": [
@@ -4291,49 +4291,58 @@
   "halts": {
     "source": "https://www.nyse.com/api/trade-halts/current/download",
     "scope": "Single-security trading halts across US exchanges, as published by NYSE. A symbol halt does not close the exchange.",
-    "openHaltCount": 16,
+    "openHaltCount": 17,
     "byExchange": {
-      "NYSE American": 1,
-      "Nasdaq": 12,
-      "NYSE": 3
+      "Nasdaq": 14,
+      "Cboe BZX": 1,
+      "NYSE": 2
     },
     "marketWideHalt": false,
     "marketWideHalts": [],
     "symbols": [
       {
-        "date": "2026-09-29",
-        "time": "09:39:27",
-        "symbol": "AMZE",
-        "name": "Amaze Holdings, Inc.",
-        "exchange": "NYSE American",
-        "reason": "Regulatory Concern",
-        "resumed": false
-      },
-      {
-        "date": "2026-09-29",
-        "time": "09:33:41",
-        "symbol": "DXST",
-        "name": "Decent Holding Inc Class A Ordinary Shares",
+        "date": "2026-09-30",
+        "time": "09:36:33",
+        "symbol": "RZAI",
+        "name": "Roze AI Inc. Common Shares",
         "exchange": "Nasdaq",
         "reason": "LULD Pause",
         "resumed": false
       },
       {
-        "date": "2026-09-29",
-        "time": "08:16:36",
-        "symbol": "GBTG",
-        "name": "Global Business Travel Group, Inc.",
-        "exchange": "NYSE",
-        "reason": "Merger Effective",
+        "date": "2026-09-30",
+        "time": "09:35:29",
+        "symbol": "NCI",
+        "name": "Neo-Concept International Group Holdings Limited Class A Ordinary Shares",
+        "exchange": "Nasdaq",
+        "reason": "LULD Pause",
         "resumed": false
       },
       {
-        "date": "2026-09-28",
-        "time": "14:31:51",
-        "symbol": "GETY",
-        "name": "Getty Images Holdings, Inc.",
+        "date": "2026-09-30",
+        "time": "09:33:34",
+        "symbol": "WZRD",
+        "name": "Opportunistic Trader ETF",
+        "exchange": "Cboe BZX",
+        "reason": "LULD Pause",
+        "resumed": false
+      },
+      {
+        "date": "2026-09-30",
+        "time": "09:33:30",
+        "symbol": "SVRN",
+        "name": "SVRN, Inc. Common Stock",
+        "exchange": "Nasdaq",
+        "reason": "LULD Pause",
+        "resumed": false
+      },
+      {
+        "date": "2026-09-30",
+        "time": "08:41:58",
+        "symbol": "DBRG",
+        "name": "DigitalBridge Group, Inc.",
         "exchange": "NYSE",
-        "reason": "Regulatory Concern",
+        "reason": "Merger Effective",
         "resumed": false
       },
       {
@@ -4446,7 +4455,7 @@
       }
     ],
     "truncated": false,
-    "fetchedAt": "2026-09-29T14:01:02Z"
+    "fetchedAt": "2026-09-30T13:37:56Z"
   },
   "meta": {
     "generator": "utils/nyse/build-nyse-hours.mjs",
