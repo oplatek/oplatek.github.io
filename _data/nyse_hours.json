@@ -8,9 +8,9 @@
     "timezone": "America/New_York",
     "country": "US"
   },
-  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-10-04 (Sunday) is a weekend day: the exchange is closed all day. This is the published schedule as of 2026-10-04T13:09:44Z, not live exchange status.",
-  "asOf": "2026-10-04T13:09:44Z",
-  "lastCheckedAt": "2026-10-04T13:09:44Z",
+  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-10-05 (Monday) is a regular day: core session 2026-10-05T09:30:00-04:00 (2026-10-05T13:30:00Z) to 2026-10-05T16:00:00-04:00 (2026-10-05T20:00:00Z). This is the published schedule as of 2026-10-05T15:56:21Z, not live exchange status.",
+  "asOf": "2026-10-05T15:56:21Z",
+  "lastCheckedAt": "2026-10-05T15:56:21Z",
   "staleAfterDays": 10,
   "stale": false,
   "ageDays": 0,
@@ -19,7 +19,7 @@
     {
       "name": "NYSE holidays & trading hours",
       "url": "https://www.nyse.com/trade/hours-calendars",
-      "fetchedAt": "2026-10-04T13:09:44Z",
+      "fetchedAt": "2026-10-05T15:56:21Z",
       "ok": true,
       "holidaysParsed": 29,
       "earlyClosesParsed": 5
@@ -27,14 +27,14 @@
     {
       "name": "NYSE current trade halts",
       "url": "https://www.nyse.com/api/trade-halts/current/download",
-      "fetchedAt": "2026-10-04T13:09:44Z",
+      "fetchedAt": "2026-10-05T15:56:21Z",
       "ok": true
     }
   ],
-  "today": "2026-10-04",
+  "today": "2026-10-05",
   "window": {
-    "from": "2026-10-01",
-    "to": "2027-03-03"
+    "from": "2026-10-02",
+    "to": "2027-03-04"
   },
   "consolidatedSessions": {
     "timezone": "America/New_York",
@@ -129,34 +129,6 @@
     }
   },
   "days": [
-    {
-      "date": "2026-10-01",
-      "weekday": "Thursday",
-      "type": "regular",
-      "open": true,
-      "reason": null,
-      "utcOffset": "-04:00",
-      "sessions": {
-        "preMarket": {
-          "start": "2026-10-01T04:00:00-04:00",
-          "end": "2026-10-01T09:30:00-04:00",
-          "startUtc": "2026-10-01T08:00:00Z",
-          "endUtc": "2026-10-01T13:30:00Z"
-        },
-        "core": {
-          "start": "2026-10-01T09:30:00-04:00",
-          "end": "2026-10-01T16:00:00-04:00",
-          "startUtc": "2026-10-01T13:30:00Z",
-          "endUtc": "2026-10-01T20:00:00Z"
-        },
-        "afterHours": {
-          "start": "2026-10-01T16:00:00-04:00",
-          "end": "2026-10-01T20:00:00-04:00",
-          "startUtc": "2026-10-01T20:00:00Z",
-          "endUtc": "2026-10-02T00:00:00Z"
-        }
-      }
-    },
     {
       "date": "2026-10-02",
       "weekday": "Friday",
@@ -3509,21 +3481,37 @@
           "endUtc": "2027-03-04T01:00:00Z"
         }
       }
+    },
+    {
+      "date": "2027-03-04",
+      "weekday": "Thursday",
+      "type": "regular",
+      "open": true,
+      "reason": null,
+      "utcOffset": "-05:00",
+      "sessions": {
+        "preMarket": {
+          "start": "2027-03-04T04:00:00-05:00",
+          "end": "2027-03-04T09:30:00-05:00",
+          "startUtc": "2027-03-04T09:00:00Z",
+          "endUtc": "2027-03-04T14:30:00Z"
+        },
+        "core": {
+          "start": "2027-03-04T09:30:00-05:00",
+          "end": "2027-03-04T16:00:00-05:00",
+          "startUtc": "2027-03-04T14:30:00Z",
+          "endUtc": "2027-03-04T21:00:00Z"
+        },
+        "afterHours": {
+          "start": "2027-03-04T16:00:00-05:00",
+          "end": "2027-03-04T20:00:00-05:00",
+          "startUtc": "2027-03-04T21:00:00Z",
+          "endUtc": "2027-03-05T01:00:00Z"
+        }
+      }
     }
   ],
   "liveWindow": [
-    {
-      "date": "2026-10-04",
-      "type": "weekend",
-      "open": false,
-      "reason": null,
-      "pre": null,
-      "coreStart": null,
-      "coreEnd": null,
-      "postEnd": null,
-      "coreStartUtc": null,
-      "coreEndUtc": null
-    },
     {
       "date": "2026-10-05",
       "type": "regular",
@@ -4051,6 +4039,18 @@
       "postEnd": "2026-11-17T20:00:00-05:00",
       "coreStartUtc": "2026-11-17T14:30:00Z",
       "coreEndUtc": "2026-11-17T21:00:00Z"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "regular",
+      "open": true,
+      "reason": null,
+      "pre": "2026-11-18T04:00:00-05:00",
+      "coreStart": "2026-11-18T09:30:00-05:00",
+      "coreEnd": "2026-11-18T16:00:00-05:00",
+      "postEnd": "2026-11-18T20:00:00-05:00",
+      "coreStartUtc": "2026-11-18T14:30:00Z",
+      "coreEndUtc": "2026-11-18T21:00:00Z"
     }
   ],
   "holidays": [
@@ -4291,10 +4291,10 @@
   "halts": {
     "source": "https://www.nyse.com/api/trade-halts/current/download",
     "scope": "Single-security trading halts across US exchanges, as published by NYSE. A symbol halt does not close the exchange.",
-    "openHaltCount": 19,
+    "openHaltCount": 15,
     "byExchange": {
       "NYSE American": 1,
-      "Nasdaq": 17,
+      "Nasdaq": 13,
       "NYSE": 1
     },
     "marketWideHalt": false,
@@ -4307,42 +4307,6 @@
         "name": "Catheter Precision, Inc.",
         "exchange": "NYSE American",
         "reason": "Corporate Action",
-        "resumed": false
-      },
-      {
-        "date": "2026-10-02",
-        "time": "19:50:00",
-        "symbol": "VIVK",
-        "name": "Vivakor, Inc. Common Stock",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-10-02",
-        "time": "19:50:00",
-        "symbol": "SCNX",
-        "name": "Scienture Holdings, Inc. Common Stock",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-10-02",
-        "time": "19:50:00",
-        "symbol": "CMND",
-        "name": "Clearmind Medicine Inc. Common Shares",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-10-02",
-        "time": "19:50:00",
-        "symbol": "GUTS",
-        "name": "Fractyl Health, Inc. Common Stock",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
         "resumed": false
       },
       {
@@ -4473,7 +4437,7 @@
       }
     ],
     "truncated": false,
-    "fetchedAt": "2026-10-04T13:09:44Z"
+    "fetchedAt": "2026-10-05T15:56:21Z"
   },
   "meta": {
     "generator": "utils/nyse/build-nyse-hours.mjs",
