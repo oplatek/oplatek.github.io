@@ -74,7 +74,7 @@ I am based near [Sedlčany](https://cs.wikipedia.org/wiki/Sedl%C4%8Dany), and co
   Climbed [a](https://eu.zonerama.com/homedik/Album/7373646) [few](https://eu.zonerama.com/homedik/Album/6517857) [peaks](https://eu.zonerama.com/homedik/Album/6886499) and [a few sandstone towers](https://eu.zonerama.com/homedik/Album/4385809).
   I have enjoyed culture in several startups and still enjoy spending time with my kids and listening to my [wife](https://www.linkedin.com/in/ad%C3%A9la-pl%C3%A1tkov%C3%A1-87390283/), especially when she is [singing](https://prvnikava.cz).
 - I have learned to pay attention not only to the core algorithms and software architecture but also to consider the user experience design.
-- I am a Linux expert user and happy MacOS, iOS, and Android user.
+- I am a Linux expert user and happy MacOS, iOS, and Android user. I use agents. My tools are sharp.
 - I love to open-source my projects and to contribute to other projects.
 - I enjoy working in a team. I can lead, and I can follow.
 - I prefer to work with my clients long-term. The record is nine years (2014-2023) as of 2023.
