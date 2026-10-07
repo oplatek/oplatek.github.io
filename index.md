@@ -36,7 +36,7 @@ _Take a look at what I do:_
 
 
 ## News
-* October 2026: BottleCap is [hiring an NLP researcher](https://bottlecapai.com/careers/natural-language-processing-researcher) in Prague. Improve benchmarks the pre-training test [NoCap-Test](https://github.com/BottleCapAI/NoCap-Test?tab=readme-ov-file#objective), or beat us at inference-efficiency [ThinkingCap-Test](https://github.com/BottleCapAI/ThinkingCap-Test): scaled down to Qwen3-0.6B to focus on algorithms not infra.
+* October 2026: BottleCap is [hiring an NLP researcher](https://bottlecapai.com/careers/natural-language-processing-researcher) in Prague. Improve benchmarks the pre-training test [NoCap-Test](https://github.com/BottleCapAI/NoCap-Test?tab=readme-ov-file#objective), or beat us at inference-efficiency [ThinkingCap-Test](https://github.com/BottleCapAI/ThinkingCap-Test#objective): scaled down to Qwen3-0.6B to focus on algorithms not infra.
 * September 2026: I contributed strongly to the release of [ThinkingCap-Qwen3.8-27B](https://bottlecapai.com/post/thinkingcap-qwen3-8-27b/), which uses 37% fewer reasoning tokens than Qwen3.8-27B at comparable answer quality. [Quantized versions](https://huggingface.co/collections/bottlecapai/thinkingcap-qwen-38-quants-6ab534cf5aee57103f21390d) (NVFP4, AWQ, GGUF, MLX) are on Hugging Face.
 * July 2026: I contributed to the release of [ThinkingCap-Qwen3.6-27B](https://bottlecapai.com/post/thinkingcap-qwen3-6-27b/), which uses 46% fewer reasoning tokens than Qwen3.6-27B at comparable benchmark scores.
 * May 2025: I joined [bottlecapai.com](https://www.bottlecapai.com) as an LLM researcher. Join too! Have fun and good results at [BottleCapAI/NoCap-test](https://github.com/BottleCapAI/NoCap-Test?tab=readme-ov-file#objective). I do recommend it.
