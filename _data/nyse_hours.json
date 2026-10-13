@@ -8,9 +8,9 @@
     "timezone": "America/New_York",
     "country": "US"
   },
-  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-10-12 (Monday) is a regular day: core session 2026-10-12T09:30:00-04:00 (2026-10-12T13:30:00Z) to 2026-10-12T16:00:00-04:00 (2026-10-12T20:00:00Z). This is the published schedule as of 2026-10-12T16:41:25Z, not live exchange status.",
-  "asOf": "2026-10-12T16:41:25Z",
-  "lastCheckedAt": "2026-10-12T16:41:25Z",
+  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-10-13 (Tuesday) is a regular day: core session 2026-10-13T09:30:00-04:00 (2026-10-13T13:30:00Z) to 2026-10-13T16:00:00-04:00 (2026-10-13T20:00:00Z). This is the published schedule as of 2026-10-13T14:58:25Z, not live exchange status.",
+  "asOf": "2026-10-13T14:58:25Z",
+  "lastCheckedAt": "2026-10-13T14:58:25Z",
   "staleAfterDays": 10,
   "stale": false,
   "ageDays": 0,
@@ -19,7 +19,7 @@
     {
       "name": "NYSE holidays & trading hours",
       "url": "https://www.nyse.com/trade/hours-calendars",
-      "fetchedAt": "2026-10-12T16:41:25Z",
+      "fetchedAt": "2026-10-13T14:58:25Z",
       "ok": true,
       "holidaysParsed": 29,
       "earlyClosesParsed": 5
@@ -27,14 +27,14 @@
     {
       "name": "NYSE current trade halts",
       "url": "https://www.nyse.com/api/trade-halts/current/download",
-      "fetchedAt": "2026-10-12T16:41:25Z",
+      "fetchedAt": "2026-10-13T14:58:25Z",
       "ok": true
     }
   ],
-  "today": "2026-10-12",
+  "today": "2026-10-13",
   "window": {
-    "from": "2026-10-09",
-    "to": "2027-03-11"
+    "from": "2026-10-10",
+    "to": "2027-03-12"
   },
   "consolidatedSessions": {
     "timezone": "America/New_York",
@@ -129,34 +129,6 @@
     }
   },
   "days": [
-    {
-      "date": "2026-10-09",
-      "weekday": "Friday",
-      "type": "regular",
-      "open": true,
-      "reason": null,
-      "utcOffset": "-04:00",
-      "sessions": {
-        "preMarket": {
-          "start": "2026-10-09T04:00:00-04:00",
-          "end": "2026-10-09T09:30:00-04:00",
-          "startUtc": "2026-10-09T08:00:00Z",
-          "endUtc": "2026-10-09T13:30:00Z"
-        },
-        "core": {
-          "start": "2026-10-09T09:30:00-04:00",
-          "end": "2026-10-09T16:00:00-04:00",
-          "startUtc": "2026-10-09T13:30:00Z",
-          "endUtc": "2026-10-09T20:00:00Z"
-        },
-        "afterHours": {
-          "start": "2026-10-09T16:00:00-04:00",
-          "end": "2026-10-09T20:00:00-04:00",
-          "startUtc": "2026-10-09T20:00:00Z",
-          "endUtc": "2026-10-10T00:00:00Z"
-        }
-      }
-    },
     {
       "date": "2026-10-10",
       "weekday": "Saturday",
@@ -3509,21 +3481,37 @@
           "endUtc": "2027-03-12T01:00:00Z"
         }
       }
-    }
-  ],
-  "liveWindow": [
+    },
     {
-      "date": "2026-10-12",
+      "date": "2027-03-12",
+      "weekday": "Friday",
       "type": "regular",
       "open": true,
       "reason": null,
-      "pre": "2026-10-12T04:00:00-04:00",
-      "coreStart": "2026-10-12T09:30:00-04:00",
-      "coreEnd": "2026-10-12T16:00:00-04:00",
-      "postEnd": "2026-10-12T20:00:00-04:00",
-      "coreStartUtc": "2026-10-12T13:30:00Z",
-      "coreEndUtc": "2026-10-12T20:00:00Z"
-    },
+      "utcOffset": "-05:00",
+      "sessions": {
+        "preMarket": {
+          "start": "2027-03-12T04:00:00-05:00",
+          "end": "2027-03-12T09:30:00-05:00",
+          "startUtc": "2027-03-12T09:00:00Z",
+          "endUtc": "2027-03-12T14:30:00Z"
+        },
+        "core": {
+          "start": "2027-03-12T09:30:00-05:00",
+          "end": "2027-03-12T16:00:00-05:00",
+          "startUtc": "2027-03-12T14:30:00Z",
+          "endUtc": "2027-03-12T21:00:00Z"
+        },
+        "afterHours": {
+          "start": "2027-03-12T16:00:00-05:00",
+          "end": "2027-03-12T20:00:00-05:00",
+          "startUtc": "2027-03-12T21:00:00Z",
+          "endUtc": "2027-03-13T01:00:00Z"
+        }
+      }
+    }
+  ],
+  "liveWindow": [
     {
       "date": "2026-10-13",
       "type": "regular",
@@ -4051,6 +4039,18 @@
       "postEnd": "2026-11-25T20:00:00-05:00",
       "coreStartUtc": "2026-11-25T14:30:00Z",
       "coreEndUtc": "2026-11-25T21:00:00Z"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "holiday",
+      "open": false,
+      "reason": "Thanksgiving Day",
+      "pre": null,
+      "coreStart": null,
+      "coreEnd": null,
+      "postEnd": null,
+      "coreStartUtc": null,
+      "coreEndUtc": null
     }
   ],
   "holidays": [
@@ -4291,26 +4291,17 @@
   "halts": {
     "source": "https://www.nyse.com/api/trade-halts/current/download",
     "scope": "Single-security trading halts across US exchanges, as published by NYSE. A symbol halt does not close the exchange.",
-    "openHaltCount": 14,
+    "openHaltCount": 13,
     "byExchange": {
       "Nasdaq": 12,
-      "NYSE": 2
+      "NYSE": 1
     },
     "marketWideHalt": false,
     "marketWideHalts": [],
     "symbols": [
       {
-        "date": "2026-10-12",
-        "time": "12:40:00",
-        "symbol": "FVNNU",
-        "name": "Future Vision II Acquisition Corporation Units",
-        "exchange": "Nasdaq",
-        "reason": "LULD Pause",
-        "resumed": false
-      },
-      {
-        "date": "2026-10-12",
-        "time": "12:39:09",
+        "date": "2026-10-13",
+        "time": "10:52:59",
         "symbol": "WFF",
         "name": "WF Holding Limited Ordinary Shares",
         "exchange": "Nasdaq",
@@ -4318,12 +4309,12 @@
         "resumed": false
       },
       {
-        "date": "2026-10-12",
-        "time": "10:33:15",
-        "symbol": "YRD",
-        "name": "Yiren Digital Ltd.",
-        "exchange": "NYSE",
-        "reason": "News Pending",
+        "date": "2026-10-13",
+        "time": "10:26:15",
+        "symbol": "JBDI",
+        "name": "JBDI Holdings Limited Ordinary Shares",
+        "exchange": "Nasdaq",
+        "reason": "LULD Pause",
         "resumed": false
       },
       {
@@ -4427,7 +4418,7 @@
       }
     ],
     "truncated": false,
-    "fetchedAt": "2026-10-12T16:41:25Z"
+    "fetchedAt": "2026-10-13T14:58:25Z"
   },
   "meta": {
     "generator": "utils/nyse/build-nyse-hours.mjs",
