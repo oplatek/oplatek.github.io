@@ -8,9 +8,9 @@
     "timezone": "America/New_York",
     "country": "US"
   },
-  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-10-14 (Wednesday) is a regular day: core session 2026-10-14T09:30:00-04:00 (2026-10-14T13:30:00Z) to 2026-10-14T16:00:00-04:00 (2026-10-14T20:00:00Z). This is the published schedule as of 2026-10-14T12:50:06Z, not live exchange status.",
-  "asOf": "2026-10-14T12:50:06Z",
-  "lastCheckedAt": "2026-10-14T12:50:06Z",
+  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-10-15 (Thursday) is a regular day: core session 2026-10-15T09:30:00-04:00 (2026-10-15T13:30:00Z) to 2026-10-15T16:00:00-04:00 (2026-10-15T20:00:00Z). This is the published schedule as of 2026-10-15T12:36:57Z, not live exchange status.",
+  "asOf": "2026-10-15T12:36:57Z",
+  "lastCheckedAt": "2026-10-15T12:36:57Z",
   "staleAfterDays": 10,
   "stale": false,
   "ageDays": 0,
@@ -19,7 +19,7 @@
     {
       "name": "NYSE holidays & trading hours",
       "url": "https://www.nyse.com/trade/hours-calendars",
-      "fetchedAt": "2026-10-14T12:50:06Z",
+      "fetchedAt": "2026-10-15T12:36:57Z",
       "ok": true,
       "holidaysParsed": 29,
       "earlyClosesParsed": 5
@@ -27,14 +27,14 @@
     {
       "name": "NYSE current trade halts",
       "url": "https://www.nyse.com/api/trade-halts/current/download",
-      "fetchedAt": "2026-10-14T12:50:06Z",
+      "fetchedAt": "2026-10-15T12:36:57Z",
       "ok": true
     }
   ],
-  "today": "2026-10-14",
+  "today": "2026-10-15",
   "window": {
-    "from": "2026-10-11",
-    "to": "2027-03-13"
+    "from": "2026-10-12",
+    "to": "2027-03-14"
   },
   "consolidatedSessions": {
     "timezone": "America/New_York",
@@ -129,15 +129,6 @@
     }
   },
   "days": [
-    {
-      "date": "2026-10-11",
-      "weekday": "Sunday",
-      "type": "weekend",
-      "open": false,
-      "reason": null,
-      "utcOffset": "-04:00",
-      "sessions": null
-    },
     {
       "date": "2026-10-12",
       "weekday": "Monday",
@@ -3509,21 +3500,18 @@
       "reason": null,
       "utcOffset": "-05:00",
       "sessions": null
+    },
+    {
+      "date": "2027-03-14",
+      "weekday": "Sunday",
+      "type": "weekend",
+      "open": false,
+      "reason": null,
+      "utcOffset": "-04:00",
+      "sessions": null
     }
   ],
   "liveWindow": [
-    {
-      "date": "2026-10-14",
-      "type": "regular",
-      "open": true,
-      "reason": null,
-      "pre": "2026-10-14T04:00:00-04:00",
-      "coreStart": "2026-10-14T09:30:00-04:00",
-      "coreEnd": "2026-10-14T16:00:00-04:00",
-      "postEnd": "2026-10-14T20:00:00-04:00",
-      "coreStartUtc": "2026-10-14T13:30:00Z",
-      "coreEndUtc": "2026-10-14T20:00:00Z"
-    },
     {
       "date": "2026-10-15",
       "type": "regular",
@@ -4051,6 +4039,18 @@
       "postEnd": "2026-11-27T17:00:00-05:00",
       "coreStartUtc": "2026-11-27T14:30:00Z",
       "coreEndUtc": "2026-11-27T18:00:00Z"
+    },
+    {
+      "date": "2026-11-28",
+      "type": "weekend",
+      "open": false,
+      "reason": null,
+      "pre": null,
+      "coreStart": null,
+      "coreEnd": null,
+      "postEnd": null,
+      "coreStartUtc": null,
+      "coreEndUtc": null
     }
   ],
   "holidays": [
@@ -4291,10 +4291,9 @@
   "halts": {
     "source": "https://www.nyse.com/api/trade-halts/current/download",
     "scope": "Single-security trading halts across US exchanges, as published by NYSE. A symbol halt does not close the exchange.",
-    "openHaltCount": 14,
+    "openHaltCount": 13,
     "byExchange": {
-      "NYSE": 2,
-      "Nasdaq": 11,
+      "Nasdaq": 12,
       "NYSE American": 1
     },
     "marketWideHalt": false,
@@ -4302,27 +4301,18 @@
     "symbols": [
       {
         "date": "2026-10-14",
-        "time": "02:55:03",
-        "symbol": "SKYD",
-        "name": "Skydance Corporation",
-        "exchange": "NYSE",
-        "reason": "Corporate Action",
+        "time": "19:50:00",
+        "symbol": "BTOC",
+        "name": "Armlogi Holding Corp. common stock",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
         "resumed": false
       },
       {
         "date": "2026-10-14",
-        "time": "02:55:03",
-        "symbol": "SKYD WS",
-        "name": "Skydance Corporation Warrants to Purchase Class B Common Stock",
-        "exchange": "NYSE",
-        "reason": "Corporate Action",
-        "resumed": false
-      },
-      {
-        "date": "2026-10-13",
         "time": "19:50:00",
-        "symbol": "SKIN",
-        "name": "SkinHealth Systems Inc. Class A Common Stock",
+        "symbol": "TJGC",
+        "name": "TJGC Group Limited Class A Ordinary Shares",
         "exchange": "Nasdaq",
         "reason": "News Pending",
         "resumed": false
@@ -4428,7 +4418,7 @@
       }
     ],
     "truncated": false,
-    "fetchedAt": "2026-10-14T12:50:06Z"
+    "fetchedAt": "2026-10-15T12:36:57Z"
   },
   "meta": {
     "generator": "utils/nyse/build-nyse-hours.mjs",
