@@ -8,9 +8,9 @@
     "timezone": "America/New_York",
     "country": "US"
   },
-  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-10-16 (Friday) is a regular day: core session 2026-10-16T09:30:00-04:00 (2026-10-16T13:30:00Z) to 2026-10-16T16:00:00-04:00 (2026-10-16T20:00:00Z). This is the published schedule as of 2026-10-16T12:20:30Z, not live exchange status.",
-  "asOf": "2026-10-16T12:20:30Z",
-  "lastCheckedAt": "2026-10-16T12:20:30Z",
+  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-10-17 (Saturday) is a weekend day: the exchange is closed all day. This is the published schedule as of 2026-10-17T11:33:28Z, not live exchange status.",
+  "asOf": "2026-10-17T11:33:28Z",
+  "lastCheckedAt": "2026-10-17T11:33:28Z",
   "staleAfterDays": 10,
   "stale": false,
   "ageDays": 0,
@@ -19,7 +19,7 @@
     {
       "name": "NYSE holidays & trading hours",
       "url": "https://www.nyse.com/trade/hours-calendars",
-      "fetchedAt": "2026-10-16T12:20:30Z",
+      "fetchedAt": "2026-10-17T11:33:28Z",
       "ok": true,
       "holidaysParsed": 29,
       "earlyClosesParsed": 5
@@ -27,14 +27,14 @@
     {
       "name": "NYSE current trade halts",
       "url": "https://www.nyse.com/api/trade-halts/current/download",
-      "fetchedAt": "2026-10-16T12:20:30Z",
+      "fetchedAt": "2026-10-17T11:33:28Z",
       "ok": true
     }
   ],
-  "today": "2026-10-16",
+  "today": "2026-10-17",
   "window": {
-    "from": "2026-10-13",
-    "to": "2027-03-15"
+    "from": "2026-10-14",
+    "to": "2027-03-16"
   },
   "consolidatedSessions": {
     "timezone": "America/New_York",
@@ -129,34 +129,6 @@
     }
   },
   "days": [
-    {
-      "date": "2026-10-13",
-      "weekday": "Tuesday",
-      "type": "regular",
-      "open": true,
-      "reason": null,
-      "utcOffset": "-04:00",
-      "sessions": {
-        "preMarket": {
-          "start": "2026-10-13T04:00:00-04:00",
-          "end": "2026-10-13T09:30:00-04:00",
-          "startUtc": "2026-10-13T08:00:00Z",
-          "endUtc": "2026-10-13T13:30:00Z"
-        },
-        "core": {
-          "start": "2026-10-13T09:30:00-04:00",
-          "end": "2026-10-13T16:00:00-04:00",
-          "startUtc": "2026-10-13T13:30:00Z",
-          "endUtc": "2026-10-13T20:00:00Z"
-        },
-        "afterHours": {
-          "start": "2026-10-13T16:00:00-04:00",
-          "end": "2026-10-13T20:00:00-04:00",
-          "startUtc": "2026-10-13T20:00:00Z",
-          "endUtc": "2026-10-14T00:00:00Z"
-        }
-      }
-    },
     {
       "date": "2026-10-14",
       "weekday": "Wednesday",
@@ -3509,21 +3481,37 @@
           "endUtc": "2027-03-16T00:00:00Z"
         }
       }
-    }
-  ],
-  "liveWindow": [
+    },
     {
-      "date": "2026-10-16",
+      "date": "2027-03-16",
+      "weekday": "Tuesday",
       "type": "regular",
       "open": true,
       "reason": null,
-      "pre": "2026-10-16T04:00:00-04:00",
-      "coreStart": "2026-10-16T09:30:00-04:00",
-      "coreEnd": "2026-10-16T16:00:00-04:00",
-      "postEnd": "2026-10-16T20:00:00-04:00",
-      "coreStartUtc": "2026-10-16T13:30:00Z",
-      "coreEndUtc": "2026-10-16T20:00:00Z"
-    },
+      "utcOffset": "-04:00",
+      "sessions": {
+        "preMarket": {
+          "start": "2027-03-16T04:00:00-04:00",
+          "end": "2027-03-16T09:30:00-04:00",
+          "startUtc": "2027-03-16T08:00:00Z",
+          "endUtc": "2027-03-16T13:30:00Z"
+        },
+        "core": {
+          "start": "2027-03-16T09:30:00-04:00",
+          "end": "2027-03-16T16:00:00-04:00",
+          "startUtc": "2027-03-16T13:30:00Z",
+          "endUtc": "2027-03-16T20:00:00Z"
+        },
+        "afterHours": {
+          "start": "2027-03-16T16:00:00-04:00",
+          "end": "2027-03-16T20:00:00-04:00",
+          "startUtc": "2027-03-16T20:00:00Z",
+          "endUtc": "2027-03-17T00:00:00Z"
+        }
+      }
+    }
+  ],
+  "liveWindow": [
     {
       "date": "2026-10-17",
       "type": "weekend",
@@ -4051,6 +4039,18 @@
       "postEnd": null,
       "coreStartUtc": null,
       "coreEndUtc": null
+    },
+    {
+      "date": "2026-11-30",
+      "type": "regular",
+      "open": true,
+      "reason": null,
+      "pre": "2026-11-30T04:00:00-05:00",
+      "coreStart": "2026-11-30T09:30:00-05:00",
+      "coreEnd": "2026-11-30T16:00:00-05:00",
+      "postEnd": "2026-11-30T20:00:00-05:00",
+      "coreStartUtc": "2026-11-30T14:30:00Z",
+      "coreEndUtc": "2026-11-30T21:00:00Z"
     }
   ],
   "holidays": [
@@ -4291,19 +4291,299 @@
   "halts": {
     "source": "https://www.nyse.com/api/trade-halts/current/download",
     "scope": "Single-security trading halts across US exchanges, as published by NYSE. A symbol halt does not close the exchange.",
-    "openHaltCount": 13,
+    "openHaltCount": 44,
     "byExchange": {
-      "Nasdaq": 12,
+      "Nasdaq": 42,
+      "NYSE Arca": 1,
       "NYSE American": 1
     },
     "marketWideHalt": false,
     "marketWideHalts": [],
     "symbols": [
       {
-        "date": "2026-10-15",
+        "date": "2026-10-17",
+        "time": "22:56:09",
+        "symbol": "SKIN",
+        "name": "SkinHealth Systems Inc. Class A Common Stock",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-17",
+        "time": "22:56:09",
+        "symbol": "SCNX",
+        "name": "Scienture Holdings, Inc. Common Stock",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-17",
+        "time": "22:56:09",
+        "symbol": "RUBI",
+        "name": "Rubico Inc. Common Stock",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-17",
+        "time": "22:56:09",
+        "symbol": "RNTZ",
+        "name": "Rantizo Class A Ordinary Shares",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-17",
+        "time": "22:56:08",
+        "symbol": "SVIAW",
+        "name": "Silvia, Inc. Warrant",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-17",
+        "time": "22:56:08",
+        "symbol": "VIVK",
+        "name": "Vivakor, Inc. Common Stock",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-17",
+        "time": "22:56:08",
+        "symbol": "SVIA",
+        "name": "Silvia, Inc. Common Stock",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-17",
+        "time": "22:56:08",
+        "symbol": "SRTM",
+        "name": "Stratum Holdings Corp. Common Stock",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-17",
+        "time": "22:56:08",
+        "symbol": "HUCK",
+        "name": "Huckleberry.ai, Inc. Class B Common Stock",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-17",
+        "time": "22:56:08",
+        "symbol": "IRLA",
+        "name": "IRulya Therapeutics Inc. Common Stock",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-17",
+        "time": "22:56:08",
+        "symbol": "HELP",
+        "name": "Helus Pharma Inc. Common Stock",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-17",
+        "time": "22:56:08",
+        "symbol": "GUTS",
+        "name": "Fractyl Health, Inc. Common Stock",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-17",
+        "time": "22:56:08",
+        "symbol": "BTOC",
+        "name": "Armlogi Holding Corp. common stock",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-17",
+        "time": "22:56:08",
+        "symbol": "AXNX",
+        "name": "Axonex AI Group Limited Class A Ordinary Shares",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-17",
+        "time": "22:56:08",
+        "symbol": "FGCPP",
+        "name": "FG Communities Holdings Inc. 8.00% Cumulative Preferred Stock",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-17",
+        "time": "22:56:08",
+        "symbol": "FFR",
+        "name": "FF EAI Robotics Ecosystem Inc. Common Stock",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-17",
+        "time": "22:56:08",
+        "symbol": "FGC",
+        "name": "FG Communities Holdings Inc. Common Stock",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-17",
+        "time": "22:56:08",
+        "symbol": "ATTT",
+        "name": "Atlas Trinity Tech Limited Ordinary Shares",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-17",
+        "time": "22:56:08",
+        "symbol": "MDCX",
+        "name": "Medicus Pharma Ltd. Common Stock",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-17",
+        "time": "22:56:08",
+        "symbol": "NXGL",
+        "name": "NexGel, Inc Common Stock",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-17",
+        "time": "22:56:08",
+        "symbol": "NHP",
+        "name": "National Healthcare Properties, Inc. Common Stock",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-17",
+        "time": "22:56:08",
+        "symbol": "ETHA",
+        "name": "iShares Ethereum Trust ETF",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-17",
+        "time": "22:56:08",
+        "symbol": "ESYN",
+        "name": "EnerSyn Global Inc. Common Stock",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-17",
+        "time": "22:56:08",
+        "symbol": "EOCN",
+        "name": "Eocene Ltd. Ordinary Shares",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-17",
+        "time": "22:56:08",
+        "symbol": "DRK",
+        "name": "DarkHorse Technologies Inc. Common Shares",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-17",
+        "time": "22:56:08",
+        "symbol": "DFLI",
+        "name": "Dragonfly Energy Holdings Corp. Common Stock (NV)",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-17",
+        "time": "22:56:08",
+        "symbol": "CMND",
+        "name": "Clearmind Medicine Inc. Common Shares",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-17",
+        "time": "22:56:03",
+        "symbol": "AIED",
+        "name": "Defiance LLM Catalyst Momentum ETF",
+        "exchange": "NYSE Arca",
+        "reason": "Corporate Action",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-16",
         "time": "19:50:00",
-        "symbol": "KNDI",
-        "name": "Kandi Technologies Group, Inc. Ordinary Shares",
+        "symbol": "FRGT",
+        "name": "Freight Technologies, Inc. Ordinary Shares",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-16",
+        "time": "19:50:00",
+        "symbol": "OBAI",
+        "name": "Our Bond, Inc. Common Stock",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-16",
+        "time": "19:50:00",
+        "symbol": "CAPS",
+        "name": "Capstone Holding Corp. Common Stock",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-16",
+        "time": "19:50:00",
+        "symbol": "GP",
+        "name": "GreenPower Motor Company Inc. Common Shares",
         "exchange": "Nasdaq",
         "reason": "News Pending",
         "resumed": false
@@ -4379,46 +4659,10 @@
         "exchange": "Nasdaq",
         "reason": "News Pending",
         "resumed": false
-      },
-      {
-        "date": "2025-10-01",
-        "time": "11:28:10",
-        "symbol": "UCFIW",
-        "name": "CN Healthy Food Tech Group Corp. Warrant",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2025-10-01",
-        "time": "11:28:10",
-        "symbol": "UCFI",
-        "name": "CN Healthy Food Tech Group Corp. Common Stock",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2025-09-12",
-        "time": "12:24:23",
-        "symbol": "OST",
-        "name": "Ostin Technology Group Co., Ltd. Class A Ordinary Shares",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2025-05-19",
-        "time": "00:21:31",
-        "symbol": "SVA",
-        "name": "Sinovac Biotech, Ltd",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
       }
     ],
-    "truncated": false,
-    "fetchedAt": "2026-10-16T12:20:30Z"
+    "truncated": true,
+    "fetchedAt": "2026-10-17T11:33:28Z"
   },
   "meta": {
     "generator": "utils/nyse/build-nyse-hours.mjs",
