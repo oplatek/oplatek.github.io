@@ -8,9 +8,9 @@
     "timezone": "America/New_York",
     "country": "US"
   },
-  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-10-18 (Sunday) is a weekend day: the exchange is closed all day. This is the published schedule as of 2026-10-18T12:01:25Z, not live exchange status.",
-  "asOf": "2026-10-18T12:01:25Z",
-  "lastCheckedAt": "2026-10-18T12:01:25Z",
+  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-10-19 (Monday) is a regular day: core session 2026-10-19T09:30:00-04:00 (2026-10-19T13:30:00Z) to 2026-10-19T16:00:00-04:00 (2026-10-19T20:00:00Z). This is the published schedule as of 2026-10-19T14:37:14Z, not live exchange status.",
+  "asOf": "2026-10-19T14:37:14Z",
+  "lastCheckedAt": "2026-10-19T14:37:14Z",
   "staleAfterDays": 10,
   "stale": false,
   "ageDays": 0,
@@ -19,7 +19,7 @@
     {
       "name": "NYSE holidays & trading hours",
       "url": "https://www.nyse.com/trade/hours-calendars",
-      "fetchedAt": "2026-10-18T12:01:25Z",
+      "fetchedAt": "2026-10-19T14:37:14Z",
       "ok": true,
       "holidaysParsed": 29,
       "earlyClosesParsed": 5
@@ -27,14 +27,14 @@
     {
       "name": "NYSE current trade halts",
       "url": "https://www.nyse.com/api/trade-halts/current/download",
-      "fetchedAt": "2026-10-18T12:01:25Z",
+      "fetchedAt": "2026-10-19T14:37:14Z",
       "ok": true
     }
   ],
-  "today": "2026-10-18",
+  "today": "2026-10-19",
   "window": {
-    "from": "2026-10-15",
-    "to": "2027-03-17"
+    "from": "2026-10-16",
+    "to": "2027-03-18"
   },
   "consolidatedSessions": {
     "timezone": "America/New_York",
@@ -129,34 +129,6 @@
     }
   },
   "days": [
-    {
-      "date": "2026-10-15",
-      "weekday": "Thursday",
-      "type": "regular",
-      "open": true,
-      "reason": null,
-      "utcOffset": "-04:00",
-      "sessions": {
-        "preMarket": {
-          "start": "2026-10-15T04:00:00-04:00",
-          "end": "2026-10-15T09:30:00-04:00",
-          "startUtc": "2026-10-15T08:00:00Z",
-          "endUtc": "2026-10-15T13:30:00Z"
-        },
-        "core": {
-          "start": "2026-10-15T09:30:00-04:00",
-          "end": "2026-10-15T16:00:00-04:00",
-          "startUtc": "2026-10-15T13:30:00Z",
-          "endUtc": "2026-10-15T20:00:00Z"
-        },
-        "afterHours": {
-          "start": "2026-10-15T16:00:00-04:00",
-          "end": "2026-10-15T20:00:00-04:00",
-          "startUtc": "2026-10-15T20:00:00Z",
-          "endUtc": "2026-10-16T00:00:00Z"
-        }
-      }
-    },
     {
       "date": "2026-10-16",
       "weekday": "Friday",
@@ -3509,21 +3481,37 @@
           "endUtc": "2027-03-18T00:00:00Z"
         }
       }
+    },
+    {
+      "date": "2027-03-18",
+      "weekday": "Thursday",
+      "type": "regular",
+      "open": true,
+      "reason": null,
+      "utcOffset": "-04:00",
+      "sessions": {
+        "preMarket": {
+          "start": "2027-03-18T04:00:00-04:00",
+          "end": "2027-03-18T09:30:00-04:00",
+          "startUtc": "2027-03-18T08:00:00Z",
+          "endUtc": "2027-03-18T13:30:00Z"
+        },
+        "core": {
+          "start": "2027-03-18T09:30:00-04:00",
+          "end": "2027-03-18T16:00:00-04:00",
+          "startUtc": "2027-03-18T13:30:00Z",
+          "endUtc": "2027-03-18T20:00:00Z"
+        },
+        "afterHours": {
+          "start": "2027-03-18T16:00:00-04:00",
+          "end": "2027-03-18T20:00:00-04:00",
+          "startUtc": "2027-03-18T20:00:00Z",
+          "endUtc": "2027-03-19T00:00:00Z"
+        }
+      }
     }
   ],
   "liveWindow": [
-    {
-      "date": "2026-10-18",
-      "type": "weekend",
-      "open": false,
-      "reason": null,
-      "pre": null,
-      "coreStart": null,
-      "coreEnd": null,
-      "postEnd": null,
-      "coreStartUtc": null,
-      "coreEndUtc": null
-    },
     {
       "date": "2026-10-19",
       "type": "regular",
@@ -4051,6 +4039,18 @@
       "postEnd": "2026-12-01T20:00:00-05:00",
       "coreStartUtc": "2026-12-01T14:30:00Z",
       "coreEndUtc": "2026-12-01T21:00:00Z"
+    },
+    {
+      "date": "2026-12-02",
+      "type": "regular",
+      "open": true,
+      "reason": null,
+      "pre": "2026-12-02T04:00:00-05:00",
+      "coreStart": "2026-12-02T09:30:00-05:00",
+      "coreEnd": "2026-12-02T16:00:00-05:00",
+      "postEnd": "2026-12-02T20:00:00-05:00",
+      "coreStartUtc": "2026-12-02T14:30:00Z",
+      "coreEndUtc": "2026-12-02T21:00:00Z"
     }
   ],
   "holidays": [
@@ -4291,48 +4291,31 @@
   "halts": {
     "source": "https://www.nyse.com/api/trade-halts/current/download",
     "scope": "Single-security trading halts across US exchanges, as published by NYSE. A symbol halt does not close the exchange.",
-    "openHaltCount": 16,
+    "openHaltCount": 14,
     "byExchange": {
-      "Nasdaq": 15,
-      "NYSE American": 1
+      "NYSE": 1,
+      "NYSE American": 2,
+      "Nasdaq": 11
     },
     "marketWideHalt": false,
     "marketWideHalts": [],
     "symbols": [
       {
-        "date": "2026-10-16",
-        "time": "19:50:00",
-        "symbol": "FRGT",
-        "name": "Freight Technologies, Inc. Ordinary Shares",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
+        "date": "2026-10-19",
+        "time": "08:40:36",
+        "symbol": "ATKR",
+        "name": "Atkore Inc.",
+        "exchange": "NYSE",
+        "reason": "Merger Effective",
         "resumed": false
       },
       {
-        "date": "2026-10-16",
-        "time": "19:50:00",
-        "symbol": "OBAI",
-        "name": "Our Bond, Inc. Common Stock",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-10-16",
-        "time": "19:50:00",
-        "symbol": "CAPS",
-        "name": "Capstone Holding Corp. Common Stock",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-10-16",
-        "time": "19:50:00",
-        "symbol": "GP",
-        "name": "GreenPower Motor Company Inc. Common Shares",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
+        "date": "2026-10-19",
+        "time": "01:47:35",
+        "symbol": "ZONE",
+        "name": "Zone Frontier Inc.",
+        "exchange": "NYSE American",
+        "reason": "Regulatory Concern",
         "resumed": false
       },
       {
@@ -4445,7 +4428,7 @@
       }
     ],
     "truncated": false,
-    "fetchedAt": "2026-10-18T12:01:25Z"
+    "fetchedAt": "2026-10-19T14:37:14Z"
   },
   "meta": {
     "generator": "utils/nyse/build-nyse-hours.mjs",
