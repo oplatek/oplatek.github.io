@@ -8,9 +8,9 @@
     "timezone": "America/New_York",
     "country": "US"
   },
-  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-10-22 (Thursday) is a regular day: core session 2026-10-22T09:30:00-04:00 (2026-10-22T13:30:00Z) to 2026-10-22T16:00:00-04:00 (2026-10-22T20:00:00Z). This is the published schedule as of 2026-10-22T12:55:39Z, not live exchange status.",
-  "asOf": "2026-10-22T12:55:39Z",
-  "lastCheckedAt": "2026-10-22T12:55:39Z",
+  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-10-23 (Friday) is a regular day: core session 2026-10-23T09:30:00-04:00 (2026-10-23T13:30:00Z) to 2026-10-23T16:00:00-04:00 (2026-10-23T20:00:00Z). This is the published schedule as of 2026-10-23T12:34:54Z, not live exchange status.",
+  "asOf": "2026-10-23T12:34:54Z",
+  "lastCheckedAt": "2026-10-23T12:34:54Z",
   "staleAfterDays": 10,
   "stale": false,
   "ageDays": 0,
@@ -19,7 +19,7 @@
     {
       "name": "NYSE holidays & trading hours",
       "url": "https://www.nyse.com/trade/hours-calendars",
-      "fetchedAt": "2026-10-22T12:55:39Z",
+      "fetchedAt": "2026-10-23T12:34:54Z",
       "ok": true,
       "holidaysParsed": 29,
       "earlyClosesParsed": 5
@@ -27,14 +27,14 @@
     {
       "name": "NYSE current trade halts",
       "url": "https://www.nyse.com/api/trade-halts/current/download",
-      "fetchedAt": "2026-10-22T12:55:39Z",
+      "fetchedAt": "2026-10-23T12:34:54Z",
       "ok": true
     }
   ],
-  "today": "2026-10-22",
+  "today": "2026-10-23",
   "window": {
-    "from": "2026-10-19",
-    "to": "2027-03-21"
+    "from": "2026-10-20",
+    "to": "2027-03-22"
   },
   "consolidatedSessions": {
     "timezone": "America/New_York",
@@ -129,34 +129,6 @@
     }
   },
   "days": [
-    {
-      "date": "2026-10-19",
-      "weekday": "Monday",
-      "type": "regular",
-      "open": true,
-      "reason": null,
-      "utcOffset": "-04:00",
-      "sessions": {
-        "preMarket": {
-          "start": "2026-10-19T04:00:00-04:00",
-          "end": "2026-10-19T09:30:00-04:00",
-          "startUtc": "2026-10-19T08:00:00Z",
-          "endUtc": "2026-10-19T13:30:00Z"
-        },
-        "core": {
-          "start": "2026-10-19T09:30:00-04:00",
-          "end": "2026-10-19T16:00:00-04:00",
-          "startUtc": "2026-10-19T13:30:00Z",
-          "endUtc": "2026-10-19T20:00:00Z"
-        },
-        "afterHours": {
-          "start": "2026-10-19T16:00:00-04:00",
-          "end": "2026-10-19T20:00:00-04:00",
-          "startUtc": "2026-10-19T20:00:00Z",
-          "endUtc": "2026-10-20T00:00:00Z"
-        }
-      }
-    },
     {
       "date": "2026-10-20",
       "weekday": "Tuesday",
@@ -3509,21 +3481,37 @@
       "reason": null,
       "utcOffset": "-04:00",
       "sessions": null
-    }
-  ],
-  "liveWindow": [
+    },
     {
-      "date": "2026-10-22",
+      "date": "2027-03-22",
+      "weekday": "Monday",
       "type": "regular",
       "open": true,
       "reason": null,
-      "pre": "2026-10-22T04:00:00-04:00",
-      "coreStart": "2026-10-22T09:30:00-04:00",
-      "coreEnd": "2026-10-22T16:00:00-04:00",
-      "postEnd": "2026-10-22T20:00:00-04:00",
-      "coreStartUtc": "2026-10-22T13:30:00Z",
-      "coreEndUtc": "2026-10-22T20:00:00Z"
-    },
+      "utcOffset": "-04:00",
+      "sessions": {
+        "preMarket": {
+          "start": "2027-03-22T04:00:00-04:00",
+          "end": "2027-03-22T09:30:00-04:00",
+          "startUtc": "2027-03-22T08:00:00Z",
+          "endUtc": "2027-03-22T13:30:00Z"
+        },
+        "core": {
+          "start": "2027-03-22T09:30:00-04:00",
+          "end": "2027-03-22T16:00:00-04:00",
+          "startUtc": "2027-03-22T13:30:00Z",
+          "endUtc": "2027-03-22T20:00:00Z"
+        },
+        "afterHours": {
+          "start": "2027-03-22T16:00:00-04:00",
+          "end": "2027-03-22T20:00:00-04:00",
+          "startUtc": "2027-03-22T20:00:00Z",
+          "endUtc": "2027-03-23T00:00:00Z"
+        }
+      }
+    }
+  ],
+  "liveWindow": [
     {
       "date": "2026-10-23",
       "type": "regular",
@@ -4051,6 +4039,18 @@
       "postEnd": null,
       "coreStartUtc": null,
       "coreEndUtc": null
+    },
+    {
+      "date": "2026-12-06",
+      "type": "weekend",
+      "open": false,
+      "reason": null,
+      "pre": null,
+      "coreStart": null,
+      "coreEnd": null,
+      "postEnd": null,
+      "coreStartUtc": null,
+      "coreEndUtc": null
     }
   ],
   "holidays": [
@@ -4291,48 +4291,66 @@
   "halts": {
     "source": "https://www.nyse.com/api/trade-halts/current/download",
     "scope": "Single-security trading halts across US exchanges, as published by NYSE. A symbol halt does not close the exchange.",
-    "openHaltCount": 17,
+    "openHaltCount": 19,
     "byExchange": {
-      "Nasdaq": 13,
+      "NYSE American": 3,
       "NYSE": 1,
-      "NYSE American": 3
+      "Nasdaq": 15
     },
     "marketWideHalt": false,
     "marketWideHalts": [],
     "symbols": [
       {
-        "date": "2026-10-21",
-        "time": "19:50:00",
-        "symbol": "AXNX",
-        "name": "Axonex AI Group Limited Class A Ordinary Shares",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-10-21",
-        "time": "19:50:00",
-        "symbol": "DKI",
-        "name": "DarkIris Inc. Class A Ordinary Shares",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-10-21",
-        "time": "16:06:44",
-        "symbol": "EVEX WS",
-        "name": "Eve Holding, Inc. Warrants, each exercisable for one share of Common Stock at an exercise price of $11.50 per share",
-        "exchange": "NYSE",
-        "reason": "Regulatory Concern",
-        "resumed": false
-      },
-      {
-        "date": "2026-10-21",
-        "time": "09:29:23",
-        "symbol": "CHOW",
-        "name": "ChowChow Cloud International Holdings Limited",
+        "date": "2026-10-23",
+        "time": "08:12:00",
+        "symbol": "CATX",
+        "name": "Perspective Therapeutics, Inc.",
         "exchange": "NYSE American",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-23",
+        "time": "02:03:52",
+        "symbol": "LU",
+        "name": "Lufax Holding Ltd. American Depositary Shares, (each representing twenty (20) Ordinary Shares)",
+        "exchange": "NYSE",
+        "reason": "Corporate Action",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-22",
+        "time": "19:50:00",
+        "symbol": "NIVFW",
+        "name": "NewGenIvf Group Limited Warrants",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-22",
+        "time": "19:50:00",
+        "symbol": "HCAI",
+        "name": "Huachen AI Parking Management Technology Holding Co., Ltd. Ordinary Shares",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-22",
+        "time": "19:50:00",
+        "symbol": "NIVF",
+        "name": "NewGenIvf Group Limited Class A ordinary shares",
+        "exchange": "Nasdaq",
+        "reason": "News Pending",
+        "resumed": false
+      },
+      {
+        "date": "2026-10-22",
+        "time": "19:50:00",
+        "symbol": "PASW",
+        "name": "Ping An Biomedical Co., Ltd. Class A Ordinary Shares",
+        "exchange": "Nasdaq",
         "reason": "News Pending",
         "resumed": false
       },
@@ -4455,7 +4473,7 @@
       }
     ],
     "truncated": false,
-    "fetchedAt": "2026-10-22T12:55:39Z"
+    "fetchedAt": "2026-10-23T12:34:54Z"
   },
   "meta": {
     "generator": "utils/nyse/build-nyse-hours.mjs",
