@@ -8,9 +8,9 @@
     "timezone": "America/New_York",
     "country": "US"
   },
-  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-10-25 (Sunday) is a weekend day: the exchange is closed all day. This is the published schedule as of 2026-10-25T12:31:43Z, not live exchange status.",
-  "asOf": "2026-10-25T12:31:43Z",
-  "lastCheckedAt": "2026-10-25T12:31:43Z",
+  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-10-26 (Monday) is a regular day: core session 2026-10-26T09:30:00-04:00 (2026-10-26T13:30:00Z) to 2026-10-26T16:00:00-04:00 (2026-10-26T20:00:00Z). This is the published schedule as of 2026-10-26T14:10:37Z, not live exchange status.",
+  "asOf": "2026-10-26T14:10:37Z",
+  "lastCheckedAt": "2026-10-26T14:10:37Z",
   "staleAfterDays": 10,
   "stale": false,
   "ageDays": 0,
@@ -19,7 +19,7 @@
     {
       "name": "NYSE holidays & trading hours",
       "url": "https://www.nyse.com/trade/hours-calendars",
-      "fetchedAt": "2026-10-25T12:31:43Z",
+      "fetchedAt": "2026-10-26T14:10:37Z",
       "ok": true,
       "holidaysParsed": 29,
       "earlyClosesParsed": 5
@@ -27,14 +27,14 @@
     {
       "name": "NYSE current trade halts",
       "url": "https://www.nyse.com/api/trade-halts/current/download",
-      "fetchedAt": "2026-10-25T12:31:43Z",
+      "fetchedAt": "2026-10-26T14:10:37Z",
       "ok": true
     }
   ],
-  "today": "2026-10-25",
+  "today": "2026-10-26",
   "window": {
-    "from": "2026-10-22",
-    "to": "2027-03-24"
+    "from": "2026-10-23",
+    "to": "2027-03-25"
   },
   "consolidatedSessions": {
     "timezone": "America/New_York",
@@ -129,34 +129,6 @@
     }
   },
   "days": [
-    {
-      "date": "2026-10-22",
-      "weekday": "Thursday",
-      "type": "regular",
-      "open": true,
-      "reason": null,
-      "utcOffset": "-04:00",
-      "sessions": {
-        "preMarket": {
-          "start": "2026-10-22T04:00:00-04:00",
-          "end": "2026-10-22T09:30:00-04:00",
-          "startUtc": "2026-10-22T08:00:00Z",
-          "endUtc": "2026-10-22T13:30:00Z"
-        },
-        "core": {
-          "start": "2026-10-22T09:30:00-04:00",
-          "end": "2026-10-22T16:00:00-04:00",
-          "startUtc": "2026-10-22T13:30:00Z",
-          "endUtc": "2026-10-22T20:00:00Z"
-        },
-        "afterHours": {
-          "start": "2026-10-22T16:00:00-04:00",
-          "end": "2026-10-22T20:00:00-04:00",
-          "startUtc": "2026-10-22T20:00:00Z",
-          "endUtc": "2026-10-23T00:00:00Z"
-        }
-      }
-    },
     {
       "date": "2026-10-23",
       "weekday": "Friday",
@@ -3509,21 +3481,37 @@
           "endUtc": "2027-03-25T00:00:00Z"
         }
       }
+    },
+    {
+      "date": "2027-03-25",
+      "weekday": "Thursday",
+      "type": "regular",
+      "open": true,
+      "reason": null,
+      "utcOffset": "-04:00",
+      "sessions": {
+        "preMarket": {
+          "start": "2027-03-25T04:00:00-04:00",
+          "end": "2027-03-25T09:30:00-04:00",
+          "startUtc": "2027-03-25T08:00:00Z",
+          "endUtc": "2027-03-25T13:30:00Z"
+        },
+        "core": {
+          "start": "2027-03-25T09:30:00-04:00",
+          "end": "2027-03-25T16:00:00-04:00",
+          "startUtc": "2027-03-25T13:30:00Z",
+          "endUtc": "2027-03-25T20:00:00Z"
+        },
+        "afterHours": {
+          "start": "2027-03-25T16:00:00-04:00",
+          "end": "2027-03-25T20:00:00-04:00",
+          "startUtc": "2027-03-25T20:00:00Z",
+          "endUtc": "2027-03-26T00:00:00Z"
+        }
+      }
     }
   ],
   "liveWindow": [
-    {
-      "date": "2026-10-25",
-      "type": "weekend",
-      "open": false,
-      "reason": null,
-      "pre": null,
-      "coreStart": null,
-      "coreEnd": null,
-      "postEnd": null,
-      "coreStartUtc": null,
-      "coreEndUtc": null
-    },
     {
       "date": "2026-10-26",
       "type": "regular",
@@ -4051,6 +4039,18 @@
       "postEnd": "2026-12-08T20:00:00-05:00",
       "coreStartUtc": "2026-12-08T14:30:00Z",
       "coreEndUtc": "2026-12-08T21:00:00Z"
+    },
+    {
+      "date": "2026-12-09",
+      "type": "regular",
+      "open": true,
+      "reason": null,
+      "pre": "2026-12-09T04:00:00-05:00",
+      "coreStart": "2026-12-09T09:30:00-05:00",
+      "coreEnd": "2026-12-09T16:00:00-05:00",
+      "postEnd": "2026-12-09T20:00:00-05:00",
+      "coreStartUtc": "2026-12-09T14:30:00Z",
+      "coreEndUtc": "2026-12-09T21:00:00Z"
     }
   ],
   "holidays": [
@@ -4291,66 +4291,31 @@
   "halts": {
     "source": "https://www.nyse.com/api/trade-halts/current/download",
     "scope": "Single-security trading halts across US exchanges, as published by NYSE. A symbol halt does not close the exchange.",
-    "openHaltCount": 27,
+    "openHaltCount": 15,
     "byExchange": {
-      "Nasdaq": 25,
-      "NYSE American": 2
+      "NYSE": 2,
+      "Nasdaq": 12,
+      "NYSE American": 1
     },
     "marketWideHalt": false,
     "marketWideHalts": [],
     "symbols": [
       {
-        "date": "2026-10-23",
-        "time": "19:50:00",
-        "symbol": "IPW",
-        "name": "iPower, Inc. Common Stock",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
+        "date": "2026-10-26",
+        "time": "10:08:45",
+        "symbol": "GTN A",
+        "name": "Gray Media, Inc. Class A",
+        "exchange": "NYSE",
+        "reason": "LULD Pause",
         "resumed": false
       },
       {
-        "date": "2026-10-23",
-        "time": "19:50:00",
-        "symbol": "HKPD",
-        "name": "Cellyan Biotechnology Co., Ltd Class A Ordinary Shares",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-10-23",
-        "time": "19:50:00",
-        "symbol": "SXTC",
-        "name": "China SXT Pharmaceuticals, Inc. Class A Ordinary Shares",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-10-23",
-        "time": "19:50:00",
-        "symbol": "TWG",
-        "name": "Top Wealth Group Holding Limited Class A Ordinary Shares",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-10-23",
-        "time": "19:50:00",
-        "symbol": "SBFMW",
-        "name": "Sunshine Biopharma Inc. warrant",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-10-23",
-        "time": "19:50:00",
-        "symbol": "GCTK",
-        "name": "GlucoTrack, Inc. Common Stock",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
+        "date": "2026-10-26",
+        "time": "08:28:53",
+        "symbol": "WEAV",
+        "name": "Weave Communications, Inc.",
+        "exchange": "NYSE",
+        "reason": "Merger Effective",
         "resumed": false
       },
       {
@@ -4360,78 +4325,6 @@
         "name": "Nathan's Famous Inc",
         "exchange": "Nasdaq",
         "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-10-23",
-        "time": "19:50:00",
-        "symbol": "LHSW",
-        "name": "Lianhe Sowell International Group Ltd Class A Ordinary Shares",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-10-23",
-        "time": "19:50:00",
-        "symbol": "PPCB",
-        "name": "Propanc Biopharma, Inc. Common Stock",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-10-23",
-        "time": "19:50:00",
-        "symbol": "SBFM",
-        "name": "Sunshine Biopharma Inc.",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-10-23",
-        "time": "19:50:00",
-        "symbol": "HCTI",
-        "name": "Healthcare Triangle, Inc. Common Stock",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-10-23",
-        "time": "19:50:00",
-        "symbol": "COCHW",
-        "name": "Envoy Medical, Inc Warrant",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-10-23",
-        "time": "19:50:00",
-        "symbol": "BDRX",
-        "name": "Biodexa Pharmaceuticals plc American Depositary Shs",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-10-23",
-        "time": "19:50:00",
-        "symbol": "COCH",
-        "name": "Envoy Medical, Inc. Class A Common Stock",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-10-23",
-        "time": "16:12:31",
-        "symbol": "AZTR",
-        "name": "Azitra Inc",
-        "exchange": "NYSE American",
-        "reason": "Corporate Action",
         "resumed": false
       },
       {
@@ -4544,7 +4437,7 @@
       }
     ],
     "truncated": false,
-    "fetchedAt": "2026-10-25T12:31:43Z"
+    "fetchedAt": "2026-10-26T14:10:37Z"
   },
   "meta": {
     "generator": "utils/nyse/build-nyse-hours.mjs",
