@@ -8,9 +8,9 @@
     "timezone": "America/New_York",
     "country": "US"
   },
-  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-10-28 (Wednesday) is a regular day: core session 2026-10-28T09:30:00-04:00 (2026-10-28T13:30:00Z) to 2026-10-28T16:00:00-04:00 (2026-10-28T20:00:00Z). This is the published schedule as of 2026-10-28T13:58:22Z, not live exchange status.",
-  "asOf": "2026-10-28T13:58:22Z",
-  "lastCheckedAt": "2026-10-28T13:58:22Z",
+  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-10-29 (Thursday) is a regular day: core session 2026-10-29T09:30:00-04:00 (2026-10-29T13:30:00Z) to 2026-10-29T16:00:00-04:00 (2026-10-29T20:00:00Z). This is the published schedule as of 2026-10-29T14:11:39Z, not live exchange status.",
+  "asOf": "2026-10-29T14:11:39Z",
+  "lastCheckedAt": "2026-10-29T14:11:39Z",
   "staleAfterDays": 10,
   "stale": false,
   "ageDays": 0,
@@ -19,7 +19,7 @@
     {
       "name": "NYSE holidays & trading hours",
       "url": "https://www.nyse.com/trade/hours-calendars",
-      "fetchedAt": "2026-10-28T13:58:22Z",
+      "fetchedAt": "2026-10-29T14:11:39Z",
       "ok": true,
       "holidaysParsed": 29,
       "earlyClosesParsed": 5
@@ -27,14 +27,14 @@
     {
       "name": "NYSE current trade halts",
       "url": "https://www.nyse.com/api/trade-halts/current/download",
-      "fetchedAt": "2026-10-28T13:58:22Z",
+      "fetchedAt": "2026-10-29T14:11:39Z",
       "ok": true
     }
   ],
-  "today": "2026-10-28",
+  "today": "2026-10-29",
   "window": {
-    "from": "2026-10-25",
-    "to": "2027-03-27"
+    "from": "2026-10-26",
+    "to": "2027-03-28"
   },
   "consolidatedSessions": {
     "timezone": "America/New_York",
@@ -129,15 +129,6 @@
     }
   },
   "days": [
-    {
-      "date": "2026-10-25",
-      "weekday": "Sunday",
-      "type": "weekend",
-      "open": false,
-      "reason": null,
-      "utcOffset": "-04:00",
-      "sessions": null
-    },
     {
       "date": "2026-10-26",
       "weekday": "Monday",
@@ -3490,21 +3481,18 @@
       "reason": null,
       "utcOffset": "-04:00",
       "sessions": null
+    },
+    {
+      "date": "2027-03-28",
+      "weekday": "Sunday",
+      "type": "weekend",
+      "open": false,
+      "reason": null,
+      "utcOffset": "-04:00",
+      "sessions": null
     }
   ],
   "liveWindow": [
-    {
-      "date": "2026-10-28",
-      "type": "regular",
-      "open": true,
-      "reason": null,
-      "pre": "2026-10-28T04:00:00-04:00",
-      "coreStart": "2026-10-28T09:30:00-04:00",
-      "coreEnd": "2026-10-28T16:00:00-04:00",
-      "postEnd": "2026-10-28T20:00:00-04:00",
-      "coreStartUtc": "2026-10-28T13:30:00Z",
-      "coreEndUtc": "2026-10-28T20:00:00Z"
-    },
     {
       "date": "2026-10-29",
       "type": "regular",
@@ -4032,6 +4020,18 @@
       "postEnd": "2026-12-11T20:00:00-05:00",
       "coreStartUtc": "2026-12-11T14:30:00Z",
       "coreEndUtc": "2026-12-11T21:00:00Z"
+    },
+    {
+      "date": "2026-12-12",
+      "type": "weekend",
+      "open": false,
+      "reason": null,
+      "pre": null,
+      "coreStart": null,
+      "coreEnd": null,
+      "postEnd": null,
+      "coreStartUtc": null,
+      "coreEndUtc": null
     }
   ],
   "holidays": [
@@ -4272,28 +4272,19 @@
   "halts": {
     "source": "https://www.nyse.com/api/trade-halts/current/download",
     "scope": "Single-security trading halts across US exchanges, as published by NYSE. A symbol halt does not close the exchange.",
-    "openHaltCount": 14,
+    "openHaltCount": 13,
     "byExchange": {
-      "Nasdaq": 13,
+      "Nasdaq": 12,
       "NYSE American": 1
     },
     "marketWideHalt": false,
     "marketWideHalts": [],
     "symbols": [
       {
-        "date": "2026-10-28",
-        "time": "09:52:52",
-        "symbol": "CHSN",
-        "name": "Chanson International Holding Class A Ordinary Shares",
-        "exchange": "Nasdaq",
-        "reason": "LULD Pause",
-        "resumed": false
-      },
-      {
-        "date": "2026-10-28",
-        "time": "09:48:39",
-        "symbol": "MGN",
-        "name": "Megan Holdings Limited Class A Ordinary Shares",
+        "date": "2026-10-29",
+        "time": "10:06:28",
+        "symbol": "RPGL",
+        "name": "Republic Power Group Limited Class A Ordinary Shares",
         "exchange": "Nasdaq",
         "reason": "LULD Pause",
         "resumed": false
@@ -4408,7 +4399,7 @@
       }
     ],
     "truncated": false,
-    "fetchedAt": "2026-10-28T13:58:22Z"
+    "fetchedAt": "2026-10-29T14:11:39Z"
   },
   "meta": {
     "generator": "utils/nyse/build-nyse-hours.mjs",
