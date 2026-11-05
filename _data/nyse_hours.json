@@ -8,9 +8,9 @@
     "timezone": "America/New_York",
     "country": "US"
   },
-  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-11-04 (Wednesday) is a regular day: core session 2026-11-04T09:30:00-05:00 (2026-11-04T14:30:00Z) to 2026-11-04T16:00:00-05:00 (2026-11-04T21:00:00Z). This is the published schedule as of 2026-11-04T15:21:40Z, not live exchange status.",
-  "asOf": "2026-11-04T15:21:40Z",
-  "lastCheckedAt": "2026-11-04T15:21:40Z",
+  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-11-05 (Thursday) is a regular day: core session 2026-11-05T09:30:00-05:00 (2026-11-05T14:30:00Z) to 2026-11-05T16:00:00-05:00 (2026-11-05T21:00:00Z). This is the published schedule as of 2026-11-05T15:24:43Z, not live exchange status.",
+  "asOf": "2026-11-05T15:24:43Z",
+  "lastCheckedAt": "2026-11-05T15:24:43Z",
   "staleAfterDays": 10,
   "stale": false,
   "ageDays": 0,
@@ -19,7 +19,7 @@
     {
       "name": "NYSE holidays & trading hours",
       "url": "https://www.nyse.com/trade/hours-calendars",
-      "fetchedAt": "2026-11-04T15:21:40Z",
+      "fetchedAt": "2026-11-05T15:24:43Z",
       "ok": true,
       "holidaysParsed": 29,
       "earlyClosesParsed": 5
@@ -27,14 +27,14 @@
     {
       "name": "NYSE current trade halts",
       "url": "https://www.nyse.com/api/trade-halts/current/download",
-      "fetchedAt": "2026-11-04T15:21:40Z",
+      "fetchedAt": "2026-11-05T15:24:43Z",
       "ok": true
     }
   ],
-  "today": "2026-11-04",
+  "today": "2026-11-05",
   "window": {
-    "from": "2026-11-01",
-    "to": "2027-04-03"
+    "from": "2026-11-02",
+    "to": "2027-04-04"
   },
   "consolidatedSessions": {
     "timezone": "America/New_York",
@@ -129,15 +129,6 @@
     }
   },
   "days": [
-    {
-      "date": "2026-11-01",
-      "weekday": "Sunday",
-      "type": "weekend",
-      "open": false,
-      "reason": null,
-      "utcOffset": "-05:00",
-      "sessions": null
-    },
     {
       "date": "2026-11-02",
       "weekday": "Monday",
@@ -3490,21 +3481,18 @@
       "reason": null,
       "utcOffset": "-04:00",
       "sessions": null
+    },
+    {
+      "date": "2027-04-04",
+      "weekday": "Sunday",
+      "type": "weekend",
+      "open": false,
+      "reason": null,
+      "utcOffset": "-04:00",
+      "sessions": null
     }
   ],
   "liveWindow": [
-    {
-      "date": "2026-11-04",
-      "type": "regular",
-      "open": true,
-      "reason": null,
-      "pre": "2026-11-04T04:00:00-05:00",
-      "coreStart": "2026-11-04T09:30:00-05:00",
-      "coreEnd": "2026-11-04T16:00:00-05:00",
-      "postEnd": "2026-11-04T20:00:00-05:00",
-      "coreStartUtc": "2026-11-04T14:30:00Z",
-      "coreEndUtc": "2026-11-04T21:00:00Z"
-    },
     {
       "date": "2026-11-05",
       "type": "regular",
@@ -4032,6 +4020,18 @@
       "postEnd": "2026-12-18T20:00:00-05:00",
       "coreStartUtc": "2026-12-18T14:30:00Z",
       "coreEndUtc": "2026-12-18T21:00:00Z"
+    },
+    {
+      "date": "2026-12-19",
+      "type": "weekend",
+      "open": false,
+      "reason": null,
+      "pre": null,
+      "coreStart": null,
+      "coreEnd": null,
+      "postEnd": null,
+      "coreStartUtc": null,
+      "coreEndUtc": null
     }
   ],
   "holidays": [
@@ -4272,18 +4272,28 @@
   "halts": {
     "source": "https://www.nyse.com/api/trade-halts/current/download",
     "scope": "Single-security trading halts across US exchanges, as published by NYSE. A symbol halt does not close the exchange.",
-    "openHaltCount": 12,
+    "openHaltCount": 13,
     "byExchange": {
+      "Cboe BZX": 1,
       "Nasdaq": 12
     },
     "marketWideHalt": false,
     "marketWideHalts": [],
     "symbols": [
       {
-        "date": "2026-11-04",
-        "time": "10:17:21",
-        "symbol": "CCXIU",
-        "name": "Churchill Capital Corp XI Units",
+        "date": "2026-11-05",
+        "time": "10:22:30",
+        "symbol": "HOOC",
+        "name": "Corgi HOOD 2x Daily ETF",
+        "exchange": "Cboe BZX",
+        "reason": "LULD Pause",
+        "resumed": false
+      },
+      {
+        "date": "2026-11-05",
+        "time": "10:20:16",
+        "symbol": "SLBT",
+        "name": "SL Science Holding Limited Ordinary Shares",
         "exchange": "Nasdaq",
         "reason": "LULD Pause",
         "resumed": false
@@ -4389,7 +4399,7 @@
       }
     ],
     "truncated": false,
-    "fetchedAt": "2026-11-04T15:21:40Z"
+    "fetchedAt": "2026-11-05T15:24:43Z"
   },
   "meta": {
     "generator": "utils/nyse/build-nyse-hours.mjs",
