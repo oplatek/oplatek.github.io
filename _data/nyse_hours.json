@@ -8,9 +8,9 @@
     "timezone": "America/New_York",
     "country": "US"
   },
-  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-11-09 (Monday) is a regular day: core session 2026-11-09T09:30:00-05:00 (2026-11-09T14:30:00Z) to 2026-11-09T16:00:00-05:00 (2026-11-09T21:00:00Z). This is the published schedule as of 2026-11-09T17:25:19Z, not live exchange status.",
-  "asOf": "2026-11-09T17:25:19Z",
-  "lastCheckedAt": "2026-11-09T17:25:19Z",
+  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-11-10 (Tuesday) is a regular day: core session 2026-11-10T09:30:00-05:00 (2026-11-10T14:30:00Z) to 2026-11-10T16:00:00-05:00 (2026-11-10T21:00:00Z). This is the published schedule as of 2026-11-10T15:31:42Z, not live exchange status.",
+  "asOf": "2026-11-10T15:31:42Z",
+  "lastCheckedAt": "2026-11-10T15:31:42Z",
   "staleAfterDays": 10,
   "stale": false,
   "ageDays": 0,
@@ -19,7 +19,7 @@
     {
       "name": "NYSE holidays & trading hours",
       "url": "https://www.nyse.com/trade/hours-calendars",
-      "fetchedAt": "2026-11-09T17:25:19Z",
+      "fetchedAt": "2026-11-10T15:31:42Z",
       "ok": true,
       "holidaysParsed": 29,
       "earlyClosesParsed": 5
@@ -27,14 +27,14 @@
     {
       "name": "NYSE current trade halts",
       "url": "https://www.nyse.com/api/trade-halts/current/download",
-      "fetchedAt": "2026-11-09T17:25:19Z",
+      "fetchedAt": "2026-11-10T15:31:42Z",
       "ok": true
     }
   ],
-  "today": "2026-11-09",
+  "today": "2026-11-10",
   "window": {
-    "from": "2026-11-06",
-    "to": "2027-04-08"
+    "from": "2026-11-07",
+    "to": "2027-04-09"
   },
   "consolidatedSessions": {
     "timezone": "America/New_York",
@@ -129,34 +129,6 @@
     }
   },
   "days": [
-    {
-      "date": "2026-11-06",
-      "weekday": "Friday",
-      "type": "regular",
-      "open": true,
-      "reason": null,
-      "utcOffset": "-05:00",
-      "sessions": {
-        "preMarket": {
-          "start": "2026-11-06T04:00:00-05:00",
-          "end": "2026-11-06T09:30:00-05:00",
-          "startUtc": "2026-11-06T09:00:00Z",
-          "endUtc": "2026-11-06T14:30:00Z"
-        },
-        "core": {
-          "start": "2026-11-06T09:30:00-05:00",
-          "end": "2026-11-06T16:00:00-05:00",
-          "startUtc": "2026-11-06T14:30:00Z",
-          "endUtc": "2026-11-06T21:00:00Z"
-        },
-        "afterHours": {
-          "start": "2026-11-06T16:00:00-05:00",
-          "end": "2026-11-06T20:00:00-05:00",
-          "startUtc": "2026-11-06T21:00:00Z",
-          "endUtc": "2026-11-07T01:00:00Z"
-        }
-      }
-    },
     {
       "date": "2026-11-07",
       "weekday": "Saturday",
@@ -3490,21 +3462,37 @@
           "endUtc": "2027-04-09T00:00:00Z"
         }
       }
-    }
-  ],
-  "liveWindow": [
+    },
     {
-      "date": "2026-11-09",
+      "date": "2027-04-09",
+      "weekday": "Friday",
       "type": "regular",
       "open": true,
       "reason": null,
-      "pre": "2026-11-09T04:00:00-05:00",
-      "coreStart": "2026-11-09T09:30:00-05:00",
-      "coreEnd": "2026-11-09T16:00:00-05:00",
-      "postEnd": "2026-11-09T20:00:00-05:00",
-      "coreStartUtc": "2026-11-09T14:30:00Z",
-      "coreEndUtc": "2026-11-09T21:00:00Z"
-    },
+      "utcOffset": "-04:00",
+      "sessions": {
+        "preMarket": {
+          "start": "2027-04-09T04:00:00-04:00",
+          "end": "2027-04-09T09:30:00-04:00",
+          "startUtc": "2027-04-09T08:00:00Z",
+          "endUtc": "2027-04-09T13:30:00Z"
+        },
+        "core": {
+          "start": "2027-04-09T09:30:00-04:00",
+          "end": "2027-04-09T16:00:00-04:00",
+          "startUtc": "2027-04-09T13:30:00Z",
+          "endUtc": "2027-04-09T20:00:00Z"
+        },
+        "afterHours": {
+          "start": "2027-04-09T16:00:00-04:00",
+          "end": "2027-04-09T20:00:00-04:00",
+          "startUtc": "2027-04-09T20:00:00Z",
+          "endUtc": "2027-04-10T00:00:00Z"
+        }
+      }
+    }
+  ],
+  "liveWindow": [
     {
       "date": "2026-11-10",
       "type": "regular",
@@ -4032,6 +4020,18 @@
       "postEnd": "2026-12-23T20:00:00-05:00",
       "coreStartUtc": "2026-12-23T14:30:00Z",
       "coreEndUtc": "2026-12-23T21:00:00Z"
+    },
+    {
+      "date": "2026-12-24",
+      "type": "early_close",
+      "open": true,
+      "reason": "Christmas Eve",
+      "pre": "2026-12-24T04:00:00-05:00",
+      "coreStart": "2026-12-24T09:30:00-05:00",
+      "coreEnd": "2026-12-24T13:00:00-05:00",
+      "postEnd": "2026-12-24T17:00:00-05:00",
+      "coreStartUtc": "2026-12-24T14:30:00Z",
+      "coreEndUtc": "2026-12-24T18:00:00Z"
     }
   ],
   "holidays": [
@@ -4272,57 +4272,38 @@
   "halts": {
     "source": "https://www.nyse.com/api/trade-halts/current/download",
     "scope": "Single-security trading halts across US exchanges, as published by NYSE. A symbol halt does not close the exchange.",
-    "openHaltCount": 15,
+    "openHaltCount": 13,
     "byExchange": {
-      "Cboe BZX": 1,
-      "Nasdaq": 13,
-      "NYSE": 1
+      "Nasdaq": 11,
+      "NYSE American": 2
     },
     "marketWideHalt": false,
     "marketWideHalts": [],
     "symbols": [
       {
-        "date": "2026-11-09",
-        "time": "12:22:44",
-        "symbol": "WZRD",
-        "name": "Opportunistic Trader ETF",
-        "exchange": "Cboe BZX",
-        "reason": "LULD Pause",
-        "resumed": false
-      },
-      {
-        "date": "2026-11-09",
-        "time": "12:22:11",
-        "symbol": "OMH",
-        "name": "Ohmyhome Limited Class A Ordinary Shares",
+        "date": "2026-11-10",
+        "time": "10:22:28",
+        "symbol": "NCI",
+        "name": "Neo-Concept International Group Holdings Limited Class A Ordinary Shares",
         "exchange": "Nasdaq",
         "reason": "LULD Pause",
         "resumed": false
       },
       {
-        "date": "2026-11-09",
-        "time": "12:22:05",
-        "symbol": "NWGL",
-        "name": "CL Workshop Group Limited American Depositary Shares",
-        "exchange": "Nasdaq",
-        "reason": "LULD Pause",
+        "date": "2026-11-10",
+        "time": "10:07:18",
+        "symbol": "HLSQ",
+        "name": "Tessera Defense and Homeland Security Inc.",
+        "exchange": "NYSE American",
+        "reason": "Regulatory Concern",
         "resumed": false
       },
       {
-        "date": "2026-11-09",
-        "time": "11:46:32",
-        "symbol": "PCTTU",
-        "name": "PureCycle Technologies, Inc. Unit",
-        "exchange": "Nasdaq",
-        "reason": "LULD Pause",
-        "resumed": false
-      },
-      {
-        "date": "2026-11-06",
-        "time": "16:04:00",
-        "symbol": "PSQH WS",
-        "name": "PSQ Holdings, Inc. Warrants, Each whole warrant exercisable for 1/15th of a share of Class A common stock at an exercise price of $172.50 per share",
-        "exchange": "NYSE",
+        "date": "2026-11-10",
+        "time": "09:28:04",
+        "symbol": "GNS",
+        "name": "Genius Group Limited",
+        "exchange": "NYSE American",
         "reason": "Regulatory Concern",
         "resumed": false
       },
@@ -4418,7 +4399,7 @@
       }
     ],
     "truncated": false,
-    "fetchedAt": "2026-11-09T17:25:19Z"
+    "fetchedAt": "2026-11-10T15:31:42Z"
   },
   "meta": {
     "generator": "utils/nyse/build-nyse-hours.mjs",
