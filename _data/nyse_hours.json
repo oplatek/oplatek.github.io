@@ -8,9 +8,9 @@
     "timezone": "America/New_York",
     "country": "US"
   },
-  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-11-10 (Tuesday) is a regular day: core session 2026-11-10T09:30:00-05:00 (2026-11-10T14:30:00Z) to 2026-11-10T16:00:00-05:00 (2026-11-10T21:00:00Z). This is the published schedule as of 2026-11-10T15:31:42Z, not live exchange status.",
-  "asOf": "2026-11-10T15:31:42Z",
-  "lastCheckedAt": "2026-11-10T15:31:42Z",
+  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-11-11 (Wednesday) is a regular day: core session 2026-11-11T09:30:00-05:00 (2026-11-11T14:30:00Z) to 2026-11-11T16:00:00-05:00 (2026-11-11T21:00:00Z). This is the published schedule as of 2026-11-11T15:06:18Z, not live exchange status.",
+  "asOf": "2026-11-11T15:06:18Z",
+  "lastCheckedAt": "2026-11-11T15:06:18Z",
   "staleAfterDays": 10,
   "stale": false,
   "ageDays": 0,
@@ -19,7 +19,7 @@
     {
       "name": "NYSE holidays & trading hours",
       "url": "https://www.nyse.com/trade/hours-calendars",
-      "fetchedAt": "2026-11-10T15:31:42Z",
+      "fetchedAt": "2026-11-11T15:06:18Z",
       "ok": true,
       "holidaysParsed": 29,
       "earlyClosesParsed": 5
@@ -27,14 +27,14 @@
     {
       "name": "NYSE current trade halts",
       "url": "https://www.nyse.com/api/trade-halts/current/download",
-      "fetchedAt": "2026-11-10T15:31:42Z",
+      "fetchedAt": "2026-11-11T15:06:18Z",
       "ok": true
     }
   ],
-  "today": "2026-11-10",
+  "today": "2026-11-11",
   "window": {
-    "from": "2026-11-07",
-    "to": "2027-04-09"
+    "from": "2026-11-08",
+    "to": "2027-04-10"
   },
   "consolidatedSessions": {
     "timezone": "America/New_York",
@@ -129,15 +129,6 @@
     }
   },
   "days": [
-    {
-      "date": "2026-11-07",
-      "weekday": "Saturday",
-      "type": "weekend",
-      "open": false,
-      "reason": null,
-      "utcOffset": "-05:00",
-      "sessions": null
-    },
     {
       "date": "2026-11-08",
       "weekday": "Sunday",
@@ -3490,21 +3481,18 @@
           "endUtc": "2027-04-10T00:00:00Z"
         }
       }
+    },
+    {
+      "date": "2027-04-10",
+      "weekday": "Saturday",
+      "type": "weekend",
+      "open": false,
+      "reason": null,
+      "utcOffset": "-04:00",
+      "sessions": null
     }
   ],
   "liveWindow": [
-    {
-      "date": "2026-11-10",
-      "type": "regular",
-      "open": true,
-      "reason": null,
-      "pre": "2026-11-10T04:00:00-05:00",
-      "coreStart": "2026-11-10T09:30:00-05:00",
-      "coreEnd": "2026-11-10T16:00:00-05:00",
-      "postEnd": "2026-11-10T20:00:00-05:00",
-      "coreStartUtc": "2026-11-10T14:30:00Z",
-      "coreEndUtc": "2026-11-10T21:00:00Z"
-    },
     {
       "date": "2026-11-11",
       "type": "regular",
@@ -4032,6 +4020,18 @@
       "postEnd": "2026-12-24T17:00:00-05:00",
       "coreStartUtc": "2026-12-24T14:30:00Z",
       "coreEndUtc": "2026-12-24T18:00:00Z"
+    },
+    {
+      "date": "2026-12-25",
+      "type": "holiday",
+      "open": false,
+      "reason": "Christmas Day",
+      "pre": null,
+      "coreStart": null,
+      "coreEnd": null,
+      "postEnd": null,
+      "coreStartUtc": null,
+      "coreEndUtc": null
     }
   ],
   "holidays": [
@@ -4272,28 +4272,73 @@
   "halts": {
     "source": "https://www.nyse.com/api/trade-halts/current/download",
     "scope": "Single-security trading halts across US exchanges, as published by NYSE. A symbol halt does not close the exchange.",
-    "openHaltCount": 13,
+    "openHaltCount": 18,
     "byExchange": {
-      "Nasdaq": 11,
-      "NYSE American": 2
+      "Nasdaq": 14,
+      "NYSE American": 4
     },
     "marketWideHalt": false,
     "marketWideHalts": [],
     "symbols": [
       {
-        "date": "2026-11-10",
-        "time": "10:22:28",
-        "symbol": "NCI",
-        "name": "Neo-Concept International Group Holdings Limited Class A Ordinary Shares",
+        "date": "2026-11-11",
+        "time": "10:05:45",
+        "symbol": "SENEB",
+        "name": "Seneca Foods Corp",
+        "exchange": "Nasdaq",
+        "reason": "LULD Pause",
+        "resumed": false
+      },
+      {
+        "date": "2026-11-11",
+        "time": "10:05:10",
+        "symbol": "OMH",
+        "name": "Ohmyhome Limited Class A Ordinary Shares",
+        "exchange": "Nasdaq",
+        "reason": "LULD Pause",
+        "resumed": false
+      },
+      {
+        "date": "2026-11-11",
+        "time": "10:03:18",
+        "symbol": "NXXT",
+        "name": "NextNRG, Inc. Common Stock",
+        "exchange": "Nasdaq",
+        "reason": "LULD Pause",
+        "resumed": false
+      },
+      {
+        "date": "2026-11-11",
+        "time": "09:42:34",
+        "symbol": "ENGS",
+        "name": "Energys Group Limited Ordinary Shares",
         "exchange": "Nasdaq",
         "reason": "LULD Pause",
         "resumed": false
       },
       {
         "date": "2026-11-10",
-        "time": "10:07:18",
-        "symbol": "HLSQ",
-        "name": "Tessera Defense and Homeland Security Inc.",
+        "time": "11:52:36",
+        "symbol": "KNRX",
+        "name": "KNOREX LTD.",
+        "exchange": "NYSE American",
+        "reason": "Regulatory Concern",
+        "resumed": false
+      },
+      {
+        "date": "2026-11-10",
+        "time": "11:52:36",
+        "symbol": "ITP",
+        "name": "IT Tech Packaging, Inc.",
+        "exchange": "NYSE American",
+        "reason": "Regulatory Concern",
+        "resumed": false
+      },
+      {
+        "date": "2026-11-10",
+        "time": "11:38:25",
+        "symbol": "TOPP",
+        "name": "Toppoint Holdings Inc.",
         "exchange": "NYSE American",
         "reason": "Regulatory Concern",
         "resumed": false
@@ -4399,7 +4444,7 @@
       }
     ],
     "truncated": false,
-    "fetchedAt": "2026-11-10T15:31:42Z"
+    "fetchedAt": "2026-11-11T15:06:18Z"
   },
   "meta": {
     "generator": "utils/nyse/build-nyse-hours.mjs",
