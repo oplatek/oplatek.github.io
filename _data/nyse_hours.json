@@ -8,9 +8,9 @@
     "timezone": "America/New_York",
     "country": "US"
   },
-  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-11-11 (Wednesday) is a regular day: core session 2026-11-11T09:30:00-05:00 (2026-11-11T14:30:00Z) to 2026-11-11T16:00:00-05:00 (2026-11-11T21:00:00Z). This is the published schedule as of 2026-11-11T15:06:18Z, not live exchange status.",
-  "asOf": "2026-11-11T15:06:18Z",
-  "lastCheckedAt": "2026-11-11T15:06:18Z",
+  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-11-12 (Thursday) is a regular day: core session 2026-11-12T09:30:00-05:00 (2026-11-12T14:30:00Z) to 2026-11-12T16:00:00-05:00 (2026-11-12T21:00:00Z). This is the published schedule as of 2026-11-12T15:56:07Z, not live exchange status.",
+  "asOf": "2026-11-12T15:56:07Z",
+  "lastCheckedAt": "2026-11-12T15:56:07Z",
   "staleAfterDays": 10,
   "stale": false,
   "ageDays": 0,
@@ -19,7 +19,7 @@
     {
       "name": "NYSE holidays & trading hours",
       "url": "https://www.nyse.com/trade/hours-calendars",
-      "fetchedAt": "2026-11-11T15:06:18Z",
+      "fetchedAt": "2026-11-12T15:56:07Z",
       "ok": true,
       "holidaysParsed": 29,
       "earlyClosesParsed": 5
@@ -27,14 +27,14 @@
     {
       "name": "NYSE current trade halts",
       "url": "https://www.nyse.com/api/trade-halts/current/download",
-      "fetchedAt": "2026-11-11T15:06:18Z",
+      "fetchedAt": "2026-11-12T15:56:07Z",
       "ok": true
     }
   ],
-  "today": "2026-11-11",
+  "today": "2026-11-12",
   "window": {
-    "from": "2026-11-08",
-    "to": "2027-04-10"
+    "from": "2026-11-09",
+    "to": "2027-04-11"
   },
   "consolidatedSessions": {
     "timezone": "America/New_York",
@@ -129,15 +129,6 @@
     }
   },
   "days": [
-    {
-      "date": "2026-11-08",
-      "weekday": "Sunday",
-      "type": "weekend",
-      "open": false,
-      "reason": null,
-      "utcOffset": "-05:00",
-      "sessions": null
-    },
     {
       "date": "2026-11-09",
       "weekday": "Monday",
@@ -3490,21 +3481,18 @@
       "reason": null,
       "utcOffset": "-04:00",
       "sessions": null
+    },
+    {
+      "date": "2027-04-11",
+      "weekday": "Sunday",
+      "type": "weekend",
+      "open": false,
+      "reason": null,
+      "utcOffset": "-04:00",
+      "sessions": null
     }
   ],
   "liveWindow": [
-    {
-      "date": "2026-11-11",
-      "type": "regular",
-      "open": true,
-      "reason": null,
-      "pre": "2026-11-11T04:00:00-05:00",
-      "coreStart": "2026-11-11T09:30:00-05:00",
-      "coreEnd": "2026-11-11T16:00:00-05:00",
-      "postEnd": "2026-11-11T20:00:00-05:00",
-      "coreStartUtc": "2026-11-11T14:30:00Z",
-      "coreEndUtc": "2026-11-11T21:00:00Z"
-    },
     {
       "date": "2026-11-12",
       "type": "regular",
@@ -4032,6 +4020,18 @@
       "postEnd": null,
       "coreStartUtc": null,
       "coreEndUtc": null
+    },
+    {
+      "date": "2026-12-26",
+      "type": "weekend",
+      "open": false,
+      "reason": null,
+      "pre": null,
+      "coreStart": null,
+      "coreEnd": null,
+      "postEnd": null,
+      "coreStartUtc": null,
+      "coreEndUtc": null
     }
   ],
   "holidays": [
@@ -4272,56 +4272,40 @@
   "halts": {
     "source": "https://www.nyse.com/api/trade-halts/current/download",
     "scope": "Single-security trading halts across US exchanges, as published by NYSE. A symbol halt does not close the exchange.",
-    "openHaltCount": 18,
+    "openHaltCount": 16,
     "byExchange": {
-      "Nasdaq": 14,
-      "NYSE American": 4
+      "TXSE": 1,
+      "Nasdaq": 11,
+      "NYSE": 1,
+      "NYSE American": 3
     },
     "marketWideHalt": false,
     "marketWideHalts": [],
     "symbols": [
       {
-        "date": "2026-11-11",
-        "time": "10:05:45",
-        "symbol": "SENEB",
-        "name": "Seneca Foods Corp",
+        "date": "2026-11-12",
+        "time": "10:50:17",
+        "symbol": "WSLS",
+        "name": "WisdomTree Efficient Long/Short U.S. SmallCap Equity Fund",
+        "exchange": "TXSE",
+        "reason": "LULD Pause",
+        "resumed": false
+      },
+      {
+        "date": "2026-11-12",
+        "time": "10:46:24",
+        "symbol": "AIMD",
+        "name": "Ainos, Inc. Common Stock",
         "exchange": "Nasdaq",
         "reason": "LULD Pause",
         "resumed": false
       },
       {
         "date": "2026-11-11",
-        "time": "10:05:10",
-        "symbol": "OMH",
-        "name": "Ohmyhome Limited Class A Ordinary Shares",
-        "exchange": "Nasdaq",
-        "reason": "LULD Pause",
-        "resumed": false
-      },
-      {
-        "date": "2026-11-11",
-        "time": "10:03:18",
-        "symbol": "NXXT",
-        "name": "NextNRG, Inc. Common Stock",
-        "exchange": "Nasdaq",
-        "reason": "LULD Pause",
-        "resumed": false
-      },
-      {
-        "date": "2026-11-11",
-        "time": "09:42:34",
-        "symbol": "ENGS",
-        "name": "Energys Group Limited Ordinary Shares",
-        "exchange": "Nasdaq",
-        "reason": "LULD Pause",
-        "resumed": false
-      },
-      {
-        "date": "2026-11-10",
-        "time": "11:52:36",
-        "symbol": "KNRX",
-        "name": "KNOREX LTD.",
-        "exchange": "NYSE American",
+        "time": "16:04:30",
+        "symbol": "LVWR WS",
+        "name": "LiveWire Group, Inc. Warrants, each exercisable for one share of Common Stock at an exercise price of $11.50 per share",
+        "exchange": "NYSE",
         "reason": "Regulatory Concern",
         "resumed": false
       },
@@ -4444,7 +4428,7 @@
       }
     ],
     "truncated": false,
-    "fetchedAt": "2026-11-11T15:06:18Z"
+    "fetchedAt": "2026-11-12T15:56:07Z"
   },
   "meta": {
     "generator": "utils/nyse/build-nyse-hours.mjs",
