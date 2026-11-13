@@ -8,9 +8,9 @@
     "timezone": "America/New_York",
     "country": "US"
   },
-  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-11-12 (Thursday) is a regular day: core session 2026-11-12T09:30:00-05:00 (2026-11-12T14:30:00Z) to 2026-11-12T16:00:00-05:00 (2026-11-12T21:00:00Z). This is the published schedule as of 2026-11-12T15:56:07Z, not live exchange status.",
-  "asOf": "2026-11-12T15:56:07Z",
-  "lastCheckedAt": "2026-11-12T15:56:07Z",
+  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-11-13 (Friday) is a regular day: core session 2026-11-13T09:30:00-05:00 (2026-11-13T14:30:00Z) to 2026-11-13T16:00:00-05:00 (2026-11-13T21:00:00Z). This is the published schedule as of 2026-11-13T15:18:19Z, not live exchange status.",
+  "asOf": "2026-11-13T15:18:19Z",
+  "lastCheckedAt": "2026-11-13T15:18:19Z",
   "staleAfterDays": 10,
   "stale": false,
   "ageDays": 0,
@@ -19,7 +19,7 @@
     {
       "name": "NYSE holidays & trading hours",
       "url": "https://www.nyse.com/trade/hours-calendars",
-      "fetchedAt": "2026-11-12T15:56:07Z",
+      "fetchedAt": "2026-11-13T15:18:19Z",
       "ok": true,
       "holidaysParsed": 29,
       "earlyClosesParsed": 5
@@ -27,14 +27,14 @@
     {
       "name": "NYSE current trade halts",
       "url": "https://www.nyse.com/api/trade-halts/current/download",
-      "fetchedAt": "2026-11-12T15:56:07Z",
+      "fetchedAt": "2026-11-13T15:18:19Z",
       "ok": true
     }
   ],
-  "today": "2026-11-12",
+  "today": "2026-11-13",
   "window": {
-    "from": "2026-11-09",
-    "to": "2027-04-11"
+    "from": "2026-11-10",
+    "to": "2027-04-12"
   },
   "consolidatedSessions": {
     "timezone": "America/New_York",
@@ -129,34 +129,6 @@
     }
   },
   "days": [
-    {
-      "date": "2026-11-09",
-      "weekday": "Monday",
-      "type": "regular",
-      "open": true,
-      "reason": null,
-      "utcOffset": "-05:00",
-      "sessions": {
-        "preMarket": {
-          "start": "2026-11-09T04:00:00-05:00",
-          "end": "2026-11-09T09:30:00-05:00",
-          "startUtc": "2026-11-09T09:00:00Z",
-          "endUtc": "2026-11-09T14:30:00Z"
-        },
-        "core": {
-          "start": "2026-11-09T09:30:00-05:00",
-          "end": "2026-11-09T16:00:00-05:00",
-          "startUtc": "2026-11-09T14:30:00Z",
-          "endUtc": "2026-11-09T21:00:00Z"
-        },
-        "afterHours": {
-          "start": "2026-11-09T16:00:00-05:00",
-          "end": "2026-11-09T20:00:00-05:00",
-          "startUtc": "2026-11-09T21:00:00Z",
-          "endUtc": "2026-11-10T01:00:00Z"
-        }
-      }
-    },
     {
       "date": "2026-11-10",
       "weekday": "Tuesday",
@@ -3490,21 +3462,37 @@
       "reason": null,
       "utcOffset": "-04:00",
       "sessions": null
-    }
-  ],
-  "liveWindow": [
+    },
     {
-      "date": "2026-11-12",
+      "date": "2027-04-12",
+      "weekday": "Monday",
       "type": "regular",
       "open": true,
       "reason": null,
-      "pre": "2026-11-12T04:00:00-05:00",
-      "coreStart": "2026-11-12T09:30:00-05:00",
-      "coreEnd": "2026-11-12T16:00:00-05:00",
-      "postEnd": "2026-11-12T20:00:00-05:00",
-      "coreStartUtc": "2026-11-12T14:30:00Z",
-      "coreEndUtc": "2026-11-12T21:00:00Z"
-    },
+      "utcOffset": "-04:00",
+      "sessions": {
+        "preMarket": {
+          "start": "2027-04-12T04:00:00-04:00",
+          "end": "2027-04-12T09:30:00-04:00",
+          "startUtc": "2027-04-12T08:00:00Z",
+          "endUtc": "2027-04-12T13:30:00Z"
+        },
+        "core": {
+          "start": "2027-04-12T09:30:00-04:00",
+          "end": "2027-04-12T16:00:00-04:00",
+          "startUtc": "2027-04-12T13:30:00Z",
+          "endUtc": "2027-04-12T20:00:00Z"
+        },
+        "afterHours": {
+          "start": "2027-04-12T16:00:00-04:00",
+          "end": "2027-04-12T20:00:00-04:00",
+          "startUtc": "2027-04-12T20:00:00Z",
+          "endUtc": "2027-04-13T00:00:00Z"
+        }
+      }
+    }
+  ],
+  "liveWindow": [
     {
       "date": "2026-11-13",
       "type": "regular",
@@ -4032,6 +4020,18 @@
       "postEnd": null,
       "coreStartUtc": null,
       "coreEndUtc": null
+    },
+    {
+      "date": "2026-12-27",
+      "type": "weekend",
+      "open": false,
+      "reason": null,
+      "pre": null,
+      "coreStart": null,
+      "coreEnd": null,
+      "postEnd": null,
+      "coreStartUtc": null,
+      "coreEndUtc": null
     }
   ],
   "holidays": [
@@ -4272,30 +4272,47 @@
   "halts": {
     "source": "https://www.nyse.com/api/trade-halts/current/download",
     "scope": "Single-security trading halts across US exchanges, as published by NYSE. A symbol halt does not close the exchange.",
-    "openHaltCount": 16,
+    "openHaltCount": 18,
     "byExchange": {
-      "TXSE": 1,
-      "Nasdaq": 11,
-      "NYSE": 1,
-      "NYSE American": 3
+      "Nasdaq": 13,
+      "NYSE American": 4,
+      "NYSE": 1
     },
     "marketWideHalt": false,
     "marketWideHalts": [],
     "symbols": [
       {
-        "date": "2026-11-12",
-        "time": "10:50:17",
-        "symbol": "WSLS",
-        "name": "WisdomTree Efficient Long/Short U.S. SmallCap Equity Fund",
-        "exchange": "TXSE",
+        "date": "2026-11-13",
+        "time": "10:15:31",
+        "symbol": "BKHAU",
+        "name": "Black Hawk Acquisition Corporation Units",
+        "exchange": "Nasdaq",
         "reason": "LULD Pause",
         "resumed": false
       },
       {
-        "date": "2026-11-12",
-        "time": "10:46:24",
-        "symbol": "AIMD",
-        "name": "Ainos, Inc. Common Stock",
+        "date": "2026-11-13",
+        "time": "10:15:30",
+        "symbol": "BRBI",
+        "name": "BRBI BR Partners S.A. ADSs",
+        "exchange": "Nasdaq",
+        "reason": "LULD Pause",
+        "resumed": false
+      },
+      {
+        "date": "2026-11-13",
+        "time": "10:15:18",
+        "symbol": "POAS",
+        "name": "Phaos Technology Holdings (Cayman) Limited",
+        "exchange": "NYSE American",
+        "reason": "LULD Pause",
+        "resumed": false
+      },
+      {
+        "date": "2026-11-13",
+        "time": "10:13:51",
+        "symbol": "RIBBU",
+        "name": "Ribbon Acquisition Corp Unit",
         "exchange": "Nasdaq",
         "reason": "LULD Pause",
         "resumed": false
@@ -4428,7 +4445,7 @@
       }
     ],
     "truncated": false,
-    "fetchedAt": "2026-11-12T15:56:07Z"
+    "fetchedAt": "2026-11-13T15:18:19Z"
   },
   "meta": {
     "generator": "utils/nyse/build-nyse-hours.mjs",
