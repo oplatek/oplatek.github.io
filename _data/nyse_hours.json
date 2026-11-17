@@ -8,9 +8,9 @@
     "timezone": "America/New_York",
     "country": "US"
   },
-  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-11-16 (Monday) is a regular day: core session 2026-11-16T09:30:00-05:00 (2026-11-16T14:30:00Z) to 2026-11-16T16:00:00-05:00 (2026-11-16T21:00:00Z). This is the published schedule as of 2026-11-16T16:57:21Z, not live exchange status.",
-  "asOf": "2026-11-16T16:57:21Z",
-  "lastCheckedAt": "2026-11-16T16:57:21Z",
+  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-11-17 (Tuesday) is a regular day: core session 2026-11-17T09:30:00-05:00 (2026-11-17T14:30:00Z) to 2026-11-17T16:00:00-05:00 (2026-11-17T21:00:00Z). This is the published schedule as of 2026-11-17T16:50:50Z, not live exchange status.",
+  "asOf": "2026-11-17T16:50:50Z",
+  "lastCheckedAt": "2026-11-17T16:50:50Z",
   "staleAfterDays": 10,
   "stale": false,
   "ageDays": 0,
@@ -19,7 +19,7 @@
     {
       "name": "NYSE holidays & trading hours",
       "url": "https://www.nyse.com/trade/hours-calendars",
-      "fetchedAt": "2026-11-16T16:57:21Z",
+      "fetchedAt": "2026-11-17T16:50:50Z",
       "ok": true,
       "holidaysParsed": 29,
       "earlyClosesParsed": 5
@@ -27,14 +27,14 @@
     {
       "name": "NYSE current trade halts",
       "url": "https://www.nyse.com/api/trade-halts/current/download",
-      "fetchedAt": "2026-11-16T16:57:21Z",
+      "fetchedAt": "2026-11-17T16:50:50Z",
       "ok": true
     }
   ],
-  "today": "2026-11-16",
+  "today": "2026-11-17",
   "window": {
-    "from": "2026-11-13",
-    "to": "2027-04-15"
+    "from": "2026-11-14",
+    "to": "2027-04-16"
   },
   "consolidatedSessions": {
     "timezone": "America/New_York",
@@ -129,34 +129,6 @@
     }
   },
   "days": [
-    {
-      "date": "2026-11-13",
-      "weekday": "Friday",
-      "type": "regular",
-      "open": true,
-      "reason": null,
-      "utcOffset": "-05:00",
-      "sessions": {
-        "preMarket": {
-          "start": "2026-11-13T04:00:00-05:00",
-          "end": "2026-11-13T09:30:00-05:00",
-          "startUtc": "2026-11-13T09:00:00Z",
-          "endUtc": "2026-11-13T14:30:00Z"
-        },
-        "core": {
-          "start": "2026-11-13T09:30:00-05:00",
-          "end": "2026-11-13T16:00:00-05:00",
-          "startUtc": "2026-11-13T14:30:00Z",
-          "endUtc": "2026-11-13T21:00:00Z"
-        },
-        "afterHours": {
-          "start": "2026-11-13T16:00:00-05:00",
-          "end": "2026-11-13T20:00:00-05:00",
-          "startUtc": "2026-11-13T21:00:00Z",
-          "endUtc": "2026-11-14T01:00:00Z"
-        }
-      }
-    },
     {
       "date": "2026-11-14",
       "weekday": "Saturday",
@@ -3490,21 +3462,37 @@
           "endUtc": "2027-04-16T00:00:00Z"
         }
       }
-    }
-  ],
-  "liveWindow": [
+    },
     {
-      "date": "2026-11-16",
+      "date": "2027-04-16",
+      "weekday": "Friday",
       "type": "regular",
       "open": true,
       "reason": null,
-      "pre": "2026-11-16T04:00:00-05:00",
-      "coreStart": "2026-11-16T09:30:00-05:00",
-      "coreEnd": "2026-11-16T16:00:00-05:00",
-      "postEnd": "2026-11-16T20:00:00-05:00",
-      "coreStartUtc": "2026-11-16T14:30:00Z",
-      "coreEndUtc": "2026-11-16T21:00:00Z"
-    },
+      "utcOffset": "-04:00",
+      "sessions": {
+        "preMarket": {
+          "start": "2027-04-16T04:00:00-04:00",
+          "end": "2027-04-16T09:30:00-04:00",
+          "startUtc": "2027-04-16T08:00:00Z",
+          "endUtc": "2027-04-16T13:30:00Z"
+        },
+        "core": {
+          "start": "2027-04-16T09:30:00-04:00",
+          "end": "2027-04-16T16:00:00-04:00",
+          "startUtc": "2027-04-16T13:30:00Z",
+          "endUtc": "2027-04-16T20:00:00Z"
+        },
+        "afterHours": {
+          "start": "2027-04-16T16:00:00-04:00",
+          "end": "2027-04-16T20:00:00-04:00",
+          "startUtc": "2027-04-16T20:00:00Z",
+          "endUtc": "2027-04-17T00:00:00Z"
+        }
+      }
+    }
+  ],
+  "liveWindow": [
     {
       "date": "2026-11-17",
       "type": "regular",
@@ -4032,6 +4020,18 @@
       "postEnd": "2026-12-30T20:00:00-05:00",
       "coreStartUtc": "2026-12-30T14:30:00Z",
       "coreEndUtc": "2026-12-30T21:00:00Z"
+    },
+    {
+      "date": "2026-12-31",
+      "type": "regular",
+      "open": true,
+      "reason": null,
+      "pre": "2026-12-31T04:00:00-05:00",
+      "coreStart": "2026-12-31T09:30:00-05:00",
+      "coreEnd": "2026-12-31T16:00:00-05:00",
+      "postEnd": "2026-12-31T20:00:00-05:00",
+      "coreStartUtc": "2026-12-31T14:30:00Z",
+      "coreEndUtc": "2026-12-31T21:00:00Z"
     }
   ],
   "holidays": [
@@ -4272,30 +4272,40 @@
   "halts": {
     "source": "https://www.nyse.com/api/trade-halts/current/download",
     "scope": "Single-security trading halts across US exchanges, as published by NYSE. A symbol halt does not close the exchange.",
-    "openHaltCount": 15,
+    "openHaltCount": 16,
     "byExchange": {
-      "Nasdaq": 12,
-      "NYSE American": 3
+      "NYSE": 1,
+      "Nasdaq": 11,
+      "NYSE American": 4
     },
     "marketWideHalt": false,
     "marketWideHalts": [],
     "symbols": [
       {
-        "date": "2026-11-16",
-        "time": "11:55:46",
-        "symbol": "NCT",
-        "name": "Intercont (Cayman) Limited Class A Ordinary shares",
+        "date": "2026-11-17",
+        "time": "08:56:11",
+        "symbol": "ITGR",
+        "name": "Integer Holdings Corporation",
+        "exchange": "NYSE",
+        "reason": "Merger Effective",
+        "resumed": false
+      },
+      {
+        "date": "2026-11-17",
+        "time": "02:48:27",
+        "symbol": "PCRX",
+        "name": "Pacira BioSciences, Inc. Common Stock",
         "exchange": "Nasdaq",
-        "reason": "LULD Pause",
+        "reason": "News Pending",
         "resumed": false
       },
       {
         "date": "2026-11-16",
-        "time": "11:53:20",
-        "symbol": "TDTH",
-        "name": "Trident Digital Tech Holdings Ltd Class B Ordinary Shares",
-        "exchange": "Nasdaq",
-        "reason": "LULD Pause",
+        "time": "15:41:40",
+        "symbol": "DDC",
+        "name": "DDC Enterprise Limited",
+        "exchange": "NYSE American",
+        "reason": "Regulatory Concern",
         "resumed": false
       },
       {
@@ -4417,7 +4427,7 @@
       }
     ],
     "truncated": false,
-    "fetchedAt": "2026-11-16T16:57:21Z"
+    "fetchedAt": "2026-11-17T16:50:50Z"
   },
   "meta": {
     "generator": "utils/nyse/build-nyse-hours.mjs",
