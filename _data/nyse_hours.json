@@ -8,9 +8,9 @@
     "timezone": "America/New_York",
     "country": "US"
   },
-  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-11-21 (Saturday) is a weekend day: the exchange is closed all day. This is the published schedule as of 2026-11-21T15:17:34Z, not live exchange status.",
-  "asOf": "2026-11-21T15:17:34Z",
-  "lastCheckedAt": "2026-11-21T15:17:34Z",
+  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-11-22 (Sunday) is a weekend day: the exchange is closed all day. This is the published schedule as of 2026-11-22T15:14:25Z, not live exchange status.",
+  "asOf": "2026-11-22T15:14:25Z",
+  "lastCheckedAt": "2026-11-22T15:14:25Z",
   "staleAfterDays": 10,
   "stale": false,
   "ageDays": 0,
@@ -19,7 +19,7 @@
     {
       "name": "NYSE holidays & trading hours",
       "url": "https://www.nyse.com/trade/hours-calendars",
-      "fetchedAt": "2026-11-21T15:17:34Z",
+      "fetchedAt": "2026-11-22T15:14:25Z",
       "ok": true,
       "holidaysParsed": 29,
       "earlyClosesParsed": 5
@@ -27,14 +27,14 @@
     {
       "name": "NYSE current trade halts",
       "url": "https://www.nyse.com/api/trade-halts/current/download",
-      "fetchedAt": "2026-11-21T15:17:34Z",
+      "fetchedAt": "2026-11-22T15:14:25Z",
       "ok": true
     }
   ],
-  "today": "2026-11-21",
+  "today": "2026-11-22",
   "window": {
-    "from": "2026-11-18",
-    "to": "2027-04-20"
+    "from": "2026-11-19",
+    "to": "2027-04-21"
   },
   "consolidatedSessions": {
     "timezone": "America/New_York",
@@ -129,34 +129,6 @@
     }
   },
   "days": [
-    {
-      "date": "2026-11-18",
-      "weekday": "Wednesday",
-      "type": "regular",
-      "open": true,
-      "reason": null,
-      "utcOffset": "-05:00",
-      "sessions": {
-        "preMarket": {
-          "start": "2026-11-18T04:00:00-05:00",
-          "end": "2026-11-18T09:30:00-05:00",
-          "startUtc": "2026-11-18T09:00:00Z",
-          "endUtc": "2026-11-18T14:30:00Z"
-        },
-        "core": {
-          "start": "2026-11-18T09:30:00-05:00",
-          "end": "2026-11-18T16:00:00-05:00",
-          "startUtc": "2026-11-18T14:30:00Z",
-          "endUtc": "2026-11-18T21:00:00Z"
-        },
-        "afterHours": {
-          "start": "2026-11-18T16:00:00-05:00",
-          "end": "2026-11-18T20:00:00-05:00",
-          "startUtc": "2026-11-18T21:00:00Z",
-          "endUtc": "2026-11-19T01:00:00Z"
-        }
-      }
-    },
     {
       "date": "2026-11-19",
       "weekday": "Thursday",
@@ -3490,21 +3462,37 @@
           "endUtc": "2027-04-21T00:00:00Z"
         }
       }
+    },
+    {
+      "date": "2027-04-21",
+      "weekday": "Wednesday",
+      "type": "regular",
+      "open": true,
+      "reason": null,
+      "utcOffset": "-04:00",
+      "sessions": {
+        "preMarket": {
+          "start": "2027-04-21T04:00:00-04:00",
+          "end": "2027-04-21T09:30:00-04:00",
+          "startUtc": "2027-04-21T08:00:00Z",
+          "endUtc": "2027-04-21T13:30:00Z"
+        },
+        "core": {
+          "start": "2027-04-21T09:30:00-04:00",
+          "end": "2027-04-21T16:00:00-04:00",
+          "startUtc": "2027-04-21T13:30:00Z",
+          "endUtc": "2027-04-21T20:00:00Z"
+        },
+        "afterHours": {
+          "start": "2027-04-21T16:00:00-04:00",
+          "end": "2027-04-21T20:00:00-04:00",
+          "startUtc": "2027-04-21T20:00:00Z",
+          "endUtc": "2027-04-22T00:00:00Z"
+        }
+      }
     }
   ],
   "liveWindow": [
-    {
-      "date": "2026-11-21",
-      "type": "weekend",
-      "open": false,
-      "reason": null,
-      "pre": null,
-      "coreStart": null,
-      "coreEnd": null,
-      "postEnd": null,
-      "coreStartUtc": null,
-      "coreEndUtc": null
-    },
     {
       "date": "2026-11-22",
       "type": "weekend",
@@ -4032,6 +4020,18 @@
       "postEnd": "2027-01-04T20:00:00-05:00",
       "coreStartUtc": "2027-01-04T14:30:00Z",
       "coreEndUtc": "2027-01-04T21:00:00Z"
+    },
+    {
+      "date": "2027-01-05",
+      "type": "regular",
+      "open": true,
+      "reason": null,
+      "pre": "2027-01-05T04:00:00-05:00",
+      "coreStart": "2027-01-05T09:30:00-05:00",
+      "coreEnd": "2027-01-05T16:00:00-05:00",
+      "postEnd": "2027-01-05T20:00:00-05:00",
+      "coreStartUtc": "2027-01-05T14:30:00Z",
+      "coreEndUtc": "2027-01-05T21:00:00Z"
     }
   ],
   "holidays": [
@@ -4272,257 +4272,21 @@
   "halts": {
     "source": "https://www.nyse.com/api/trade-halts/current/download",
     "scope": "Single-security trading halts across US exchanges, as published by NYSE. A symbol halt does not close the exchange.",
-    "openHaltCount": 38,
+    "openHaltCount": 9,
     "byExchange": {
-      "Nasdaq": 25,
-      "NYSE": 10,
-      "NYSE Arca": 2,
-      "NYSE American": 1
+      "NYSE American": 2,
+      "Nasdaq": 7
     },
     "marketWideHalt": false,
     "marketWideHalts": [],
     "symbols": [
       {
-        "date": "2026-11-21",
-        "time": "10:16:59",
-        "symbol": "YOUL",
-        "name": "Youlife Group Inc. American Depositary Shares",
-        "exchange": "Nasdaq",
-        "reason": "LULD Pause",
-        "resumed": false
-      },
-      {
-        "date": "2026-11-21",
-        "time": "10:16:32",
-        "symbol": "HAIN",
-        "name": "Hain Celestial Group Inc",
-        "exchange": "Nasdaq",
-        "reason": "LULD Pause",
-        "resumed": false
-      },
-      {
-        "date": "2026-11-21",
-        "time": "10:16:02",
-        "symbol": "ADBT",
-        "name": "Advasa Holdings, Inc. Common Stock",
-        "exchange": "Nasdaq",
-        "reason": "LULD Pause",
-        "resumed": false
-      },
-      {
-        "date": "2026-11-21",
-        "time": "10:15:43",
-        "symbol": "INVZ",
-        "name": "Innoviz Technologies Ltd. Ordinary shares",
-        "exchange": "Nasdaq",
-        "reason": "LULD Pause",
-        "resumed": false
-      },
-      {
-        "date": "2026-11-21",
-        "time": "10:15:37",
-        "symbol": "AIFC",
-        "name": "AI Financial Corporation Common Stock",
-        "exchange": "Nasdaq",
-        "reason": "LULD Pause",
-        "resumed": false
-      },
-      {
-        "date": "2026-11-21",
-        "time": "10:15:27",
-        "symbol": "SAFX",
-        "name": "XCF Global, Inc. Class A Common Stock",
-        "exchange": "Nasdaq",
-        "reason": "LULD Pause",
-        "resumed": false
-      },
-      {
-        "date": "2026-11-21",
-        "time": "10:15:16",
-        "symbol": "EVTL",
-        "name": "Vertical Aerospace Ltd.",
-        "exchange": "NYSE",
-        "reason": "LULD Pause",
-        "resumed": false
-      },
-      {
-        "date": "2026-11-21",
-        "time": "10:15:03",
-        "symbol": "FAMI",
-        "name": "Farmmi, Inc. Class A Ordinary Shares",
-        "exchange": "Nasdaq",
-        "reason": "LULD Pause",
-        "resumed": false
-      },
-      {
-        "date": "2026-11-21",
-        "time": "10:14:41",
-        "symbol": "RBNE",
-        "name": "Robin Energy Ltd. Common Stock",
-        "exchange": "Nasdaq",
-        "reason": "LULD Pause",
-        "resumed": false
-      },
-      {
-        "date": "2026-11-21",
-        "time": "10:14:38",
-        "symbol": "CAN",
-        "name": "Canaan Inc. American Depositary Shares",
-        "exchange": "Nasdaq",
-        "reason": "LULD Pause",
-        "resumed": false
-      },
-      {
-        "date": "2026-11-21",
-        "time": "10:13:56",
-        "symbol": "CLYD",
-        "name": "Clywedog Therapeutics Holdings, Inc. Common Stock",
-        "exchange": "Nasdaq",
-        "reason": "LULD Pause",
-        "resumed": false
-      },
-      {
-        "date": "2026-11-21",
-        "time": "10:13:45",
-        "symbol": "ZBAO",
-        "name": "Zhibao Technology Inc. Class A Ordinary Shares",
-        "exchange": "Nasdaq",
-        "reason": "LULD Pause",
-        "resumed": false
-      },
-      {
-        "date": "2026-11-21",
-        "time": "10:13:42",
-        "symbol": "GDHG",
-        "name": "Golden Heaven Group Holdings Ltd. Class A Ordinary Shares",
-        "exchange": "Nasdaq",
-        "reason": "LULD Pause",
-        "resumed": false
-      },
-      {
-        "date": "2026-11-21",
-        "time": "10:13:33",
-        "symbol": "BDMD",
-        "name": "Baird Medical Investment Holdings Ltd Ordinary Share",
-        "exchange": "Nasdaq",
-        "reason": "LULD Pause",
-        "resumed": false
-      },
-      {
-        "date": "2026-11-21",
-        "time": "10:12:32",
-        "symbol": "SURG",
-        "name": "SurgePays, Inc. Common Stock",
-        "exchange": "Nasdaq",
-        "reason": "LULD Pause",
-        "resumed": false
-      },
-      {
-        "date": "2026-11-21",
-        "time": "10:12:17",
-        "symbol": "INMB",
-        "name": "INmune Bio Inc. Common stock",
-        "exchange": "Nasdaq",
-        "reason": "LULD Pause",
-        "resumed": false
-      },
-      {
-        "date": "2026-11-21",
-        "time": "10:10:16",
-        "symbol": "SITC",
-        "name": "SITE Centers Corp. Common Shares",
-        "exchange": "NYSE",
-        "reason": "LULD Pause",
-        "resumed": false
-      },
-      {
-        "date": "2026-11-21",
-        "time": "10:01:15",
-        "symbol": "CNP",
-        "name": "CenterPoint Energy, Inc.",
-        "exchange": "NYSE",
-        "reason": "LULD Pause",
-        "resumed": false
-      },
-      {
-        "date": "2026-11-21",
-        "time": "10:00:50",
-        "symbol": "RBLY",
-        "name": "YieldMax RBLX Option Income Strategy ETF",
-        "exchange": "NYSE Arca",
-        "reason": "ETF IIV / ETF Component Prices Not Available",
-        "resumed": false
-      },
-      {
-        "date": "2026-11-21",
-        "time": "10:00:46",
-        "symbol": "CVNY",
-        "name": "YieldMax CVNA Option Income Strategy ETF",
-        "exchange": "NYSE Arca",
-        "reason": "ETF IIV / ETF Component Prices Not Available",
-        "resumed": false
-      },
-      {
-        "date": "2026-11-21",
-        "time": "09:31:19",
-        "symbol": "CBL",
-        "name": "CBL & Associates Properties, Inc.",
-        "exchange": "NYSE",
-        "reason": "LULD Pause",
-        "resumed": false
-      },
-      {
-        "date": "2026-11-21",
-        "time": "09:31:19",
-        "symbol": "NIO",
-        "name": "NIO Inc. American depositary shares, each representing one Class A ordinary share",
-        "exchange": "NYSE",
-        "reason": "LULD Pause",
-        "resumed": false
-      },
-      {
-        "date": "2026-11-21",
-        "time": "09:31:19",
-        "symbol": "OHI",
-        "name": "Omega Healthcare Investors Inc.",
-        "exchange": "NYSE",
-        "reason": "LULD Pause",
-        "resumed": false
-      },
-      {
-        "date": "2026-11-21",
-        "time": "09:31:19",
-        "symbol": "GLW",
-        "name": "Corning Incorporated",
-        "exchange": "NYSE",
-        "reason": "LULD Pause",
-        "resumed": false
-      },
-      {
-        "date": "2026-11-21",
-        "time": "09:31:19",
-        "symbol": "NEE",
-        "name": "NextEra Energy, Inc.",
-        "exchange": "NYSE",
-        "reason": "LULD Pause",
-        "resumed": false
-      },
-      {
-        "date": "2026-11-21",
-        "time": "09:31:19",
-        "symbol": "FRO",
-        "name": "Frontline Plc",
-        "exchange": "NYSE",
-        "reason": "LULD Pause",
-        "resumed": false
-      },
-      {
-        "date": "2026-11-21",
-        "time": "09:31:19",
-        "symbol": "USB",
-        "name": "U.S. Bancorp",
-        "exchange": "NYSE",
-        "reason": "LULD Pause",
+        "date": "2026-11-20",
+        "time": "22:41:39",
+        "symbol": "TOPP",
+        "name": "Toppoint Holdings Inc.",
+        "exchange": "NYSE American",
+        "reason": "Regulatory Concern",
         "resumed": false
       },
       {
@@ -4544,37 +4308,10 @@
         "resumed": false
       },
       {
-        "date": "2026-06-11",
-        "time": "19:50:00",
-        "symbol": "HCHL",
-        "name": "Happy City Holdings Limited Class A Ordinary shares",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
         "date": "2025-12-04",
         "time": "19:50:00",
         "symbol": "MAGH",
         "name": "Magnitude International Ltd Ordinary Shares",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2025-10-22",
-        "time": "19:50:00",
-        "symbol": "LAWR",
-        "name": "Robot Consulting Co., Ltd. ADS",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2025-10-16",
-        "time": "19:50:00",
-        "symbol": "PC",
-        "name": "Premium Catering (Holdings) Limited Ordinary Shares",
         "exchange": "Nasdaq",
         "reason": "News Pending",
         "resumed": false
@@ -4626,7 +4363,7 @@
       }
     ],
     "truncated": false,
-    "fetchedAt": "2026-11-21T15:17:34Z"
+    "fetchedAt": "2026-11-22T15:14:25Z"
   },
   "meta": {
     "generator": "utils/nyse/build-nyse-hours.mjs",
