@@ -21,6 +21,10 @@ machine-readable datasets published for agents.
   - This is a cache of a published schedule, **not live exchange status**. It cannot reflect an intraday halt, a
     technical outage, or a closure announced after `asOf`. Not for trading decisions.
   - Human-readable version with a live status card: https://opla.cz/nyse-hours/
+- [Recall flashcard decks](https://opla.cz/recall/decks.md): plain-Markdown flashcard decks (DPO, GRPO, Czech
+  entrance-exam practice) for the Recall spaced-repetition app. Each deck is `# Name`, `id:`/`version:`/`summary:` lines,
+  then cards as `### <card-id> | tags` followed by `Q:`, `A:` and optional `N:` lines. Human page:
+  https://opla.cz/recall/
 - [Post index JSON](https://opla.cz/search.json): titles, tags, dates and URLs of every blog post.
 - [Atom feed](https://opla.cz/atom.xml): full post content.
 
