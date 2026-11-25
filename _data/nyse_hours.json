@@ -8,9 +8,9 @@
     "timezone": "America/New_York",
     "country": "US"
   },
-  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-11-24 (Tuesday) is a regular day: core session 2026-11-24T09:30:00-05:00 (2026-11-24T14:30:00Z) to 2026-11-24T16:00:00-05:00 (2026-11-24T21:00:00Z). This is the published schedule as of 2026-11-24T18:50:29Z, not live exchange status.",
-  "asOf": "2026-11-24T18:50:29Z",
-  "lastCheckedAt": "2026-11-24T18:50:29Z",
+  "summary": "NYSE core trading runs 09:30–16:00 America/New_York, Monday to Friday, except on the listed holidays. Pre-market is 04:00–09:30 (NYSE Arca; 07:00 on American/National/Texas) and after-hours is 16:00–20:00. 2026-11-25 (Wednesday) is a regular day: core session 2026-11-25T09:30:00-05:00 (2026-11-25T14:30:00Z) to 2026-11-25T16:00:00-05:00 (2026-11-25T21:00:00Z). This is the published schedule as of 2026-11-25T17:55:48Z, not live exchange status.",
+  "asOf": "2026-11-25T17:55:48Z",
+  "lastCheckedAt": "2026-11-25T17:55:48Z",
   "staleAfterDays": 10,
   "stale": false,
   "ageDays": 0,
@@ -19,7 +19,7 @@
     {
       "name": "NYSE holidays & trading hours",
       "url": "https://www.nyse.com/trade/hours-calendars",
-      "fetchedAt": "2026-11-24T18:50:29Z",
+      "fetchedAt": "2026-11-25T17:55:48Z",
       "ok": true,
       "holidaysParsed": 29,
       "earlyClosesParsed": 5
@@ -27,14 +27,14 @@
     {
       "name": "NYSE current trade halts",
       "url": "https://www.nyse.com/api/trade-halts/current/download",
-      "fetchedAt": "2026-11-24T18:50:29Z",
+      "fetchedAt": "2026-11-25T17:55:48Z",
       "ok": true
     }
   ],
-  "today": "2026-11-24",
+  "today": "2026-11-25",
   "window": {
-    "from": "2026-11-21",
-    "to": "2027-04-23"
+    "from": "2026-11-22",
+    "to": "2027-04-24"
   },
   "consolidatedSessions": {
     "timezone": "America/New_York",
@@ -129,15 +129,6 @@
     }
   },
   "days": [
-    {
-      "date": "2026-11-21",
-      "weekday": "Saturday",
-      "type": "weekend",
-      "open": false,
-      "reason": null,
-      "utcOffset": "-05:00",
-      "sessions": null
-    },
     {
       "date": "2026-11-22",
       "weekday": "Sunday",
@@ -3490,21 +3481,18 @@
           "endUtc": "2027-04-24T00:00:00Z"
         }
       }
+    },
+    {
+      "date": "2027-04-24",
+      "weekday": "Saturday",
+      "type": "weekend",
+      "open": false,
+      "reason": null,
+      "utcOffset": "-04:00",
+      "sessions": null
     }
   ],
   "liveWindow": [
-    {
-      "date": "2026-11-24",
-      "type": "regular",
-      "open": true,
-      "reason": null,
-      "pre": "2026-11-24T04:00:00-05:00",
-      "coreStart": "2026-11-24T09:30:00-05:00",
-      "coreEnd": "2026-11-24T16:00:00-05:00",
-      "postEnd": "2026-11-24T20:00:00-05:00",
-      "coreStartUtc": "2026-11-24T14:30:00Z",
-      "coreEndUtc": "2026-11-24T21:00:00Z"
-    },
     {
       "date": "2026-11-25",
       "type": "regular",
@@ -4032,6 +4020,18 @@
       "postEnd": "2027-01-07T20:00:00-05:00",
       "coreStartUtc": "2027-01-07T14:30:00Z",
       "coreEndUtc": "2027-01-07T21:00:00Z"
+    },
+    {
+      "date": "2027-01-08",
+      "type": "regular",
+      "open": true,
+      "reason": null,
+      "pre": "2027-01-08T04:00:00-05:00",
+      "coreStart": "2027-01-08T09:30:00-05:00",
+      "coreEnd": "2027-01-08T16:00:00-05:00",
+      "postEnd": "2027-01-08T20:00:00-05:00",
+      "coreStartUtc": "2027-01-08T14:30:00Z",
+      "coreEndUtc": "2027-01-08T21:00:00Z"
     }
   ],
   "holidays": [
@@ -4272,21 +4272,22 @@
   "halts": {
     "source": "https://www.nyse.com/api/trade-halts/current/download",
     "scope": "Single-security trading halts across US exchanges, as published by NYSE. A symbol halt does not close the exchange.",
-    "openHaltCount": 15,
+    "openHaltCount": 13,
     "byExchange": {
-      "Nasdaq": 12,
+      "Cboe BZX": 1,
       "NYSE": 1,
-      "NYSE American": 2
+      "NYSE American": 2,
+      "Nasdaq": 9
     },
     "marketWideHalt": false,
     "marketWideHalts": [],
     "symbols": [
       {
-        "date": "2026-11-24",
-        "time": "13:43:27",
-        "symbol": "NCT",
-        "name": "Intercont (Cayman) Limited Class A Ordinary shares",
-        "exchange": "Nasdaq",
+        "date": "2026-11-25",
+        "time": "12:54:37",
+        "symbol": "ACHX",
+        "name": "Corgi ACHR 2x Daily ETF",
+        "exchange": "Cboe BZX",
         "reason": "LULD Pause",
         "resumed": false
       },
@@ -4306,24 +4307,6 @@
         "name": "Theriva Biologics, Inc.",
         "exchange": "NYSE American",
         "reason": "Regulatory Concern",
-        "resumed": false
-      },
-      {
-        "date": "2026-11-23",
-        "time": "02:42:44",
-        "symbol": "IPFX",
-        "name": "Inflection Point Acquisition Corp. VI Class A Ordinary Shares",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
-        "resumed": false
-      },
-      {
-        "date": "2026-11-23",
-        "time": "02:42:44",
-        "symbol": "IPFXW",
-        "name": "Inflection Point Acquisition Corp. VI Warrant",
-        "exchange": "Nasdaq",
-        "reason": "News Pending",
         "resumed": false
       },
       {
@@ -4418,7 +4401,7 @@
       }
     ],
     "truncated": false,
-    "fetchedAt": "2026-11-24T18:50:29Z"
+    "fetchedAt": "2026-11-25T17:55:48Z"
   },
   "meta": {
     "generator": "utils/nyse/build-nyse-hours.mjs",
